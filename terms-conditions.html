@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UangRumah Terms and Conditions - Read the terms of use for our expense tracking app.">
+    <title>Terms & Conditions - UangRumah</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #2563eb;
+            --primary-dark: #1e40af;
+            --secondary-color: #10b981;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --bg-light: #f9fafb;
+            --white: #ffffff;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            overflow-x: hidden;
+            background: var(--bg-light);
+        }
+
+        /* Header */
+        header {
+            background: var(--white);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .page-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: var(--white);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .page-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+
+        .page-hero p {
+            font-size: 1.125rem;
+            opacity: 0.95;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Content Section */
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .content-card {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 3rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            margin-bottom: 2rem;
+        }
+
+        .last-updated {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .content h2 {
+            font-size: 1.75rem;
+            color: var(--text-dark);
+            margin: 2rem 0 1rem 0;
+            font-weight: 700;
+        }
+
+        .content h2:first-child {
+            margin-top: 0;
+        }
+
+        .content h3 {
+            font-size: 1.25rem;
+            color: var(--text-dark);
+            margin: 1.5rem 0 0.75rem 0;
+            font-weight: 600;
+        }
+
+        .content p {
+            color: var(--text-light);
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .content ul, .content ol {
+            margin: 1rem 0 1rem 2rem;
+            color: var(--text-light);
+        }
+
+        .content li {
+            margin-bottom: 0.5rem;
+            line-height: 1.8;
+        }
+
+        .content strong {
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+
+        .highlight-box {
+            background: #eff6ff;
+            border-left: 4px solid var(--primary-color);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .highlight-box p {
+            margin: 0;
+        }
+
+        .warning-box {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .warning-box p {
+            margin: 0;
+            color: #92400e;
+        }
+
+        .contact-section {
+            background: var(--bg-light);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .contact-section h3 {
+            color: var(--text-dark);
+            margin: 0 0 1rem 0;
+        }
+
+        .contact-section p {
+            margin-bottom: 1rem;
+        }
+
+        .contact-link {
+            color: var(--primary-color);
+            font-weight: 600;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-link:hover {
+            color: var(--primary-dark);
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--text-dark);
+            color: var(--white);
+            padding: 3rem 2rem 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--white);
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+        }
+
+        .copyright {
+            opacity: 0.6;
+            font-size: 0.9rem;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .page-hero h1 {
+                font-size: 2rem;
+            }
+
+            .page-hero p {
+                font-size: 1rem;
+            }
+
+            .content {
+                padding: 2rem 1rem;
+            }
+
+            .content-card {
+                padding: 2rem 1.5rem;
+            }
+
+            .content h2 {
+                font-size: 1.5rem;
+            }
+
+            .content h3 {
+                font-size: 1.125rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <span>💰</span>
+                <span>UangRumah</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="privacy-policy.html">Privacy</a></li>
+                <li><a href="terms-conditions.html">Terms</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <h1>Terms & Conditions</h1>
+        <p>Please read these terms carefully before using UangRumah.</p>
+    </section>
+
+    <!-- Main Content -->
+    <section class="content">
+        <div class="content-card">
+            <p class="last-updated"><strong>Last Updated:</strong> November 17, 2025</p>
+
+            <h2>1. Acceptance of Terms</h2>
+            <p>Welcome to UangRumah. By downloading, installing, or using our iOS expense tracking application ("App"), you agree to be bound by these Terms and Conditions ("Terms"). If you do not agree to these Terms, please do not use the App.</p>
+            <p>These Terms constitute a legally binding agreement between you ("User," "you," or "your") and UangRumah ("we," "us," or "our") regarding your use of the App.</p>
+
+            <div class="highlight-box">
+                <p><strong>Beta Version Notice:</strong> UangRumah is currently in version 0.1.0 Beta. As a beta product, some features may be incomplete, and you may experience bugs or unexpected behavior. We appreciate your patience and feedback as we continue to improve the App.</p>
+            </div>
+
+            <h2>2. Description of Service</h2>
+            <p>UangRumah is a household expense tracking application designed for Indonesian couples to manage their personal finances. The App provides the following features:</p>
+            <ul>
+                <li>Expense tracking and categorization</li>
+                <li>Budget management with monthly and weekly limits</li>
+                <li>Financial dashboard with visualizations and analytics</li>
+                <li>Multiple payment method (cost center) tracking</li>
+                <li>Data export in PDF and CSV formats</li>
+                <li>Optional iCloud synchronization across devices</li>
+                <li>Recurring expense management</li>
+                <li>Customizable reminders and notifications</li>
+            </ul>
+
+            <h2>3. User Eligibility</h2>
+            <p>To use UangRumah, you must:</p>
+            <ul>
+                <li>Be at least 18 years of age</li>
+                <li>Have the legal capacity to enter into binding agreements</li>
+                <li>Own or have authorized access to an iOS device running iOS 16.0 or later</li>
+                <li>Have a valid Apple ID for app installation</li>
+                <li>Comply with all applicable local, state, national, and international laws</li>
+            </ul>
+
+            <h2>4. User Responsibilities</h2>
+            <p>As a user of UangRumah, you agree to:</p>
+
+            <h3>Data Accuracy</h3>
+            <ul>
+                <li>Enter accurate and complete financial information</li>
+                <li>Regularly review and update your expense records</li>
+                <li>Maintain the security of your device and iCloud account</li>
+                <li>Take responsibility for all data entered into the App</li>
+            </ul>
+
+            <h3>Prohibited Uses</h3>
+            <p>You agree NOT to:</p>
+            <ul>
+                <li>Use the App for any illegal or unauthorized purpose</li>
+                <li>Attempt to reverse engineer, decompile, or disassemble the App</li>
+                <li>Remove, alter, or obscure any copyright, trademark, or proprietary notices</li>
+                <li>Use the App to track expenses for business accounting or tax preparation (unless you accept sole responsibility for accuracy)</li>
+                <li>Share your device or iCloud credentials with unauthorized persons</li>
+                <li>Attempt to gain unauthorized access to any portion of the App or related systems</li>
+                <li>Transmit viruses, malware, or any harmful code</li>
+                <li>Interfere with or disrupt the App's functionality</li>
+            </ul>
+
+            <h3>Personal Use Only</h3>
+            <p>UangRumah is licensed for personal, non-commercial use only. You may not use the App for business expense tracking, corporate accounting, or any commercial purpose without explicit written permission.</p>
+
+            <h2>5. Intellectual Property Rights</h2>
+            <p>All intellectual property rights in and to UangRumah, including but not limited to software code, design, user interface, graphics, text, and documentation, are owned by UangRumah or its licensors.</p>
+
+            <h3>Your License</h3>
+            <p>Subject to your compliance with these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to:</p>
+            <ul>
+                <li>Download and install the App on iOS devices you own or control</li>
+                <li>Use the App for personal expense tracking purposes</li>
+            </ul>
+
+            <h3>Restrictions</h3>
+            <p>You may not:</p>
+            <ul>
+                <li>Copy, modify, or create derivative works of the App</li>
+                <li>Rent, lease, lend, sell, sublicense, or distribute the App</li>
+                <li>Use the App's branding, logos, or trademarks without permission</li>
+            </ul>
+
+            <h2>6. Subscription and Payment Terms</h2>
+
+            <div class="highlight-box">
+                <p><strong>Current Status:</strong> UangRumah version 0.1.0 Beta is currently offered free of charge. Future versions may introduce optional premium features or subscriptions.</p>
+            </div>
+
+            <h3>Future Subscription Plans (If Implemented)</h3>
+            <p>Should we introduce paid features in the future:</p>
+            <ul>
+                <li>You will be notified in advance of any pricing or subscription changes</li>
+                <li>Subscriptions will be processed through Apple's App Store with their standard terms</li>
+                <li>Prices will be clearly displayed before purchase</li>
+                <li>Subscriptions will auto-renew unless cancelled at least 24 hours before the renewal date</li>
+                <li>Refunds will be handled according to Apple's App Store refund policy</li>
+                <li>You can manage or cancel subscriptions through your Apple ID account settings</li>
+            </ul>
+
+            <h2>7. Data Ownership and Privacy</h2>
+            <p>Your financial data belongs to you. We respect your privacy and data ownership rights:</p>
+
+            <h3>Your Data</h3>
+            <ul>
+                <li>You retain all ownership rights to the data you enter into UangRumah</li>
+                <li>You can export your data at any time in PDF or CSV format</li>
+                <li>You can delete your data at any time by removing expenses or uninstalling the App</li>
+                <li>We do not claim any ownership over your personal financial information</li>
+            </ul>
+
+            <h3>Privacy</h3>
+            <p>Your use of UangRumah is also governed by our Privacy Policy, which is incorporated into these Terms by reference. Please review our <a href="privacy-policy.html" class="contact-link">Privacy Policy</a> to understand how we collect, use, and protect your data.</p>
+
+            <h2>8. iCloud Synchronization</h2>
+            <p>UangRumah offers optional iCloud synchronization:</p>
+            <ul>
+                <li>iCloud sync is disabled by default and must be explicitly enabled by you</li>
+                <li>When enabled, your expense data is backed up to your personal iCloud account</li>
+                <li>You are responsible for managing your iCloud storage space</li>
+                <li>iCloud sync is subject to Apple's iCloud terms and conditions</li>
+                <li>We are not responsible for data loss due to iCloud service interruptions or account issues</li>
+                <li>You should maintain local backups of important financial data</li>
+            </ul>
+
+            <h2>9. Disclaimer of Warranties</h2>
+            <div class="warning-box">
+                <p><strong>⚠️ Important Legal Notice:</strong> Please read this section carefully as it limits our liability.</p>
+            </div>
+
+            <p>UangRumah is provided "AS IS" and "AS AVAILABLE" without warranties of any kind, either express or implied, including but not limited to:</p>
+
+            <ul>
+                <li><strong>Accuracy:</strong> We do not warrant that the App will accurately calculate budgets, expenses, or financial summaries. You are responsible for verifying all calculations.</li>
+                <li><strong>Availability:</strong> We do not guarantee that the App will be available at all times, uninterrupted, or error-free.</li>
+                <li><strong>Fitness for Purpose:</strong> We do not warrant that the App will meet your specific financial tracking needs.</li>
+                <li><strong>Data Loss:</strong> We do not guarantee against data loss. You should maintain backups of important financial records.</li>
+                <li><strong>Security:</strong> While we implement security measures, we cannot guarantee absolute security against unauthorized access.</li>
+                <li><strong>Compatibility:</strong> We do not warrant compatibility with all iOS devices or future iOS versions.</li>
+            </ul>
+
+            <h3>Beta Software Notice</h3>
+            <p>As beta software (version 0.1.0), UangRumah may contain bugs, errors, or incomplete features. Use at your own risk.</p>
+
+            <h2>10. Limitation of Liability</h2>
+            <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, UANGRUMAH AND ITS DEVELOPERS SHALL NOT BE LIABLE FOR:</p>
+
+            <ul>
+                <li><strong>Indirect Damages:</strong> Any indirect, incidental, special, consequential, or punitive damages</li>
+                <li><strong>Financial Losses:</strong> Any financial losses resulting from incorrect calculations, data loss, or app errors</li>
+                <li><strong>Data Loss:</strong> Loss of data due to device failure, iCloud issues, or app bugs</li>
+                <li><strong>Tax or Legal Issues:</strong> Any tax penalties, legal issues, or financial problems arising from use of the App</li>
+                <li><strong>Third-Party Services:</strong> Issues with Apple, iCloud, or other third-party services</li>
+                <li><strong>Downtime:</strong> Service interruptions, bugs, or unavailability</li>
+            </ul>
+
+            <p>IN NO EVENT SHALL OUR TOTAL LIABILITY EXCEED THE AMOUNT YOU PAID FOR THE APP IN THE PAST 12 MONTHS (CURRENTLY $0 FOR BETA VERSION).</p>
+
+            <h3>Financial Advice Disclaimer</h3>
+            <p>UangRumah is a personal finance tracking tool, NOT a financial advisor. We do not provide:</p>
+            <ul>
+                <li>Financial planning or investment advice</li>
+                <li>Tax preparation or accounting services</li>
+                <li>Legal or professional financial counseling</li>
+                <li>Business expense or corporate accounting features</li>
+            </ul>
+            <p>Consult qualified professionals for financial, tax, or legal advice.</p>
+
+            <h2>11. Indemnification</h2>
+            <p>You agree to indemnify, defend, and hold harmless UangRumah and its developers from any claims, damages, losses, liabilities, and expenses (including legal fees) arising from:</p>
+            <ul>
+                <li>Your use or misuse of the App</li>
+                <li>Your violation of these Terms</li>
+                <li>Your violation of any third-party rights</li>
+                <li>Inaccurate data you enter into the App</li>
+                <li>Financial decisions you make based on App data</li>
+            </ul>
+
+            <h2>12. Termination</h2>
+
+            <h3>Termination by You</h3>
+            <p>You may terminate your use of UangRumah at any time by:</p>
+            <ul>
+                <li>Uninstalling the App from your device(s)</li>
+                <li>Deleting your iCloud backup data (if applicable)</li>
+                <li>Ceasing to use the App</li>
+            </ul>
+
+            <h3>Termination by Us</h3>
+            <p>We reserve the right to:</p>
+            <ul>
+                <li>Discontinue the App at any time with or without notice</li>
+                <li>Modify or remove features in future updates</li>
+                <li>Terminate access for users who violate these Terms</li>
+            </ul>
+
+            <h3>Effect of Termination</h3>
+            <p>Upon termination:</p>
+            <ul>
+                <li>Your license to use the App immediately ends</li>
+                <li>You must delete the App from all devices</li>
+                <li>Sections of these Terms that by nature should survive (warranties, liability, etc.) will remain in effect</li>
+                <li>We are not obligated to provide refunds for any reason</li>
+            </ul>
+
+            <h2>13. Updates and Modifications</h2>
+
+            <h3>App Updates</h3>
+            <p>We may release updates to UangRumah from time to time that:</p>
+            <ul>
+                <li>Add new features or functionality</li>
+                <li>Fix bugs or improve performance</li>
+                <li>Modify or remove existing features</li>
+                <li>Change the user interface or design</li>
+            </ul>
+            <p>You are not obligated to install updates, but we recommend keeping the App updated for the best experience and security.</p>
+
+            <h3>Changes to Terms</h3>
+            <p>We reserve the right to modify these Terms at any time. When we make changes:</p>
+            <ul>
+                <li>We will update the "Last Updated" date at the top of this page</li>
+                <li>Material changes will be communicated through in-app notifications</li>
+                <li>Your continued use of the App after changes constitutes acceptance of the new Terms</li>
+                <li>If you do not agree to the changes, you must stop using the App</li>
+            </ul>
+
+            <h2>14. Geographic Restrictions</h2>
+            <p>UangRumah is designed primarily for use in Indonesia and displays currency in Indonesian Rupiah (IDR). While the App may function in other countries:</p>
+            <ul>
+                <li>Currency conversion is not supported (only IDR)</li>
+                <li>Some features may not be relevant outside Indonesia</li>
+                <li>We make no representations that the App is appropriate for use in other locations</li>
+                <li>You are responsible for compliance with local laws in your jurisdiction</li>
+            </ul>
+
+            <h2>15. Third-Party Services</h2>
+            <p>UangRumah integrates with the following third-party services:</p>
+
+            <h3>Apple Services</h3>
+            <ul>
+                <li><strong>App Store:</strong> App distribution and updates (subject to Apple's terms)</li>
+                <li><strong>iCloud:</strong> Optional data synchronization (subject to Apple's iCloud terms)</li>
+                <li><strong>iOS:</strong> Operating system platform (subject to Apple's iOS license)</li>
+            </ul>
+
+            <p>We are not responsible for the availability, functionality, or terms of third-party services. Your use of these services is subject to their respective terms and conditions.</p>
+
+            <h2>16. Export Compliance</h2>
+            <p>You agree to comply with all applicable export and import control laws and regulations. You shall not export or re-export the App to any prohibited country or person.</p>
+
+            <h2>17. Governing Law and Dispute Resolution</h2>
+
+            <h3>Governing Law</h3>
+            <p>These Terms are governed by the laws of Indonesia, without regard to conflict of law principles. Any disputes arising from these Terms or the App shall be subject to the exclusive jurisdiction of the courts of Jakarta, Indonesia.</p>
+
+            <h3>Dispute Resolution</h3>
+            <p>In the event of any dispute:</p>
+            <ol>
+                <li><strong>Informal Resolution:</strong> Contact us first at support@pyudi.com to attempt to resolve the issue informally</li>
+                <li><strong>Mediation:</strong> If informal resolution fails, we agree to attempt mediation before litigation</li>
+                <li><strong>Arbitration/Litigation:</strong> If mediation fails, disputes will be resolved through arbitration or in courts of competent jurisdiction in Jakarta</li>
+            </ol>
+
+            <h2>18. Severability</h2>
+            <p>If any provision of these Terms is found to be invalid, illegal, or unenforceable, the remaining provisions shall continue in full force and effect.</p>
+
+            <h2>19. Entire Agreement</h2>
+            <p>These Terms, together with our Privacy Policy, constitute the entire agreement between you and UangRumah regarding the App and supersede all prior agreements, understandings, and representations.</p>
+
+            <h2>20. No Waiver</h2>
+            <p>Our failure to enforce any right or provision of these Terms shall not constitute a waiver of such right or provision. No waiver shall be effective unless made in writing and signed by an authorized representative.</p>
+
+            <h2>21. Assignment</h2>
+            <p>You may not assign or transfer these Terms or your rights under them without our prior written consent. We may assign these Terms to any successor or affiliate without restriction.</p>
+
+            <h2>22. Contact Information</h2>
+            <div class="contact-section">
+                <h3>Questions About These Terms?</h3>
+                <p>If you have questions or concerns regarding these Terms and Conditions, please contact us:</p>
+                <p>
+                    <strong>Email:</strong> <a href="mailto:support@pyudi.com" class="contact-link">support@pyudi.com</a><br>
+                    <strong>Website:</strong> <a href="https://uangrumah.com" class="contact-link" target="_blank">uangrumah.com</a><br>
+                    <strong>Location:</strong> Jakarta, Indonesia
+                </p>
+                <p>We will respond to inquiries within 7 business days.</p>
+            </div>
+
+            <h2>23. Acknowledgment</h2>
+            <p>BY DOWNLOADING, INSTALLING, OR USING UANGRUMAH, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY THESE TERMS AND CONDITIONS.</p>
+
+            <div class="highlight-box">
+                <p><strong>Current Version:</strong> 0.1.0 Beta<br>
+                <strong>Terms Effective Date:</strong> November 17, 2025<br>
+                <strong>Platform:</strong> iOS 16.0+</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-conditions.html">Terms & Conditions</a>
+                <a href="support.html">Support</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 UangRumah. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
