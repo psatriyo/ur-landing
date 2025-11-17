@@ -62,6 +62,18 @@
             text-decoration: none;
         }
 
+        .beta-badge {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            color: var(--white);
+            font-size: 0.65rem;
+            font-weight: 700;
+            padding: 0.25rem 0.6rem;
+            border-radius: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);
+        }
+
         .nav-links {
             display: flex;
             gap: 2rem;
@@ -382,6 +394,7 @@
             <a href="index.html" class="logo">
                 <span>💰</span>
                 <span>UangRumah</span>
+                <span class="beta-badge">Beta</span>
             </a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -407,7 +420,7 @@
                 <span class="contact-icon">📧</span>
                 <h3>Email Support</h3>
                 <p>Send us an email and we'll respond within 1-2 business days.</p>
-                <a href="mailto:support@pyudi.com" class="contact-link">support@pyudi.com</a>
+                <a href="mailto:support@uangrumah.com" class="contact-link">support@uangrumah.com</a>
             </div>
 
             <div class="contact-card">
@@ -422,60 +435,6 @@
                 <h3>Support Center</h3>
                 <p>Check our FAQ and troubleshooting guides for quick answers.</p>
                 <a href="support.html" class="contact-button">Visit Support</a>
-            </div>
-        </div>
-
-        <!-- Contact Form -->
-        <div class="form-section">
-            <h2 class="section-title">Send Us a Message</h2>
-            <p class="section-subtitle">Fill out the form below and we'll get back to you as soon as possible.</p>
-
-            <form action="mailto:support@pyudi.com" method="GET" enctype="text/plain">
-                <div class="form-group">
-                    <label for="name">Name *</label>
-                    <input type="text" id="name" name="name" required placeholder="Your full name">
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email *</label>
-                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
-                </div>
-
-                <div class="form-group">
-                    <label for="subject">Subject *</label>
-                    <select id="subject" name="subject" required>
-                        <option value="">Choose a topic...</option>
-                        <option value="Technical Support">Technical Support</option>
-                        <option value="Bug Report">Bug Report</option>
-                        <option value="Feature Request">Feature Request</option>
-                        <option value="Account Issue">Account Issue</option>
-                        <option value="Data/Sync Issue">Data/Sync Issue</option>
-                        <option value="Billing Question">Billing Question</option>
-                        <option value="General Inquiry">General Inquiry</option>
-                        <option value="Feedback">Feedback</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="app-version">App Version</label>
-                    <input type="text" id="app-version" name="app-version" placeholder="e.g., 0.1.0 Beta (found in Settings)">
-                </div>
-
-                <div class="form-group">
-                    <label for="ios-version">iOS Version</label>
-                    <input type="text" id="ios-version" name="ios-version" placeholder="e.g., iOS 17.2 (found in Settings > General > About)">
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Message *</label>
-                    <textarea id="message" name="body" required placeholder="Please describe your question or issue in detail. Include any error messages or steps to reproduce the problem."></textarea>
-                </div>
-
-                <button type="submit" class="form-button">Send Message</button>
-            </form>
-
-            <div class="highlight-box">
-                <p><strong>📝 Tip:</strong> For faster support, please include your app version, iOS version, and detailed steps to reproduce any issues you're experiencing.</p>
             </div>
         </div>
 
@@ -604,28 +563,5 @@
         </div>
     </footer>
 
-    <script>
-        // Form validation
-        document.querySelector('form').addEventListener('submit', function(e) {
-            const name = document.getElementById('name').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value.trim();
-
-            if (!name || !email || !subject || !message) {
-                e.preventDefault();
-                alert('Please fill in all required fields (marked with *)');
-                return false;
-            }
-
-            // Email validation
-            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailPattern.test(email)) {
-                e.preventDefault();
-                alert('Please enter a valid email address');
-                return false;
-            }
-        });
-    </script>
 </body>
 </html>
