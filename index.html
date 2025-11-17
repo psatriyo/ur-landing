@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="UangRumah - Aplikasi pelacak pengeluaran dan anggaran untuk iOS. Kelola keuangan rumah tangga Anda dengan mudah.">
-    <meta name="keywords" content="pengeluaran, anggaran, keuangan, iOS, iCloud, Indonesia, Rupiah">
-    <title>UangRumah - Kelola Keuangan Rumah Tangga dengan Mudah</title>
+    <meta name="description" content="UangRumah - Household expense tracker for Indonesian couples. Track expenses, manage budgets, and take control of your finances with simple, effective tracking.">
+    <meta name="keywords" content="pengeluaran, anggaran, keuangan, iOS, iCloud, Indonesia, Rupiah, expense tracker, budget, couples">
+    <title>UangRumah - Household Expense Tracker for Indonesian Couples</title>
 
     <style>
         * {
@@ -139,10 +139,6 @@
             box-shadow: var(--shadow-lg);
         }
 
-        .app-store-badge {
-            margin-top: 2rem;
-        }
-
         /* Container */
         .container {
             max-width: 1200px;
@@ -178,12 +174,24 @@
             background: var(--bg-light);
         }
 
+        .feature-category {
+            margin-bottom: 4rem;
+        }
+
+        .category-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
             max-width: 1200px;
-            margin: 0 auto;
+            margin: 0 auto 3rem;
         }
 
         .feature-card {
@@ -192,7 +200,6 @@
             border-radius: 16px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
             transition: transform 0.3s, box-shadow 0.3s;
-            text-align: center;
         }
 
         .feature-card:hover {
@@ -201,7 +208,7 @@
         }
 
         .feature-icon {
-            font-size: 3rem;
+            font-size: 2.5rem;
             margin-bottom: 1rem;
             display: block;
         }
@@ -215,6 +222,18 @@
         .feature-card p {
             color: var(--text-light);
             line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .feature-card ul {
+            margin-top: 0.75rem;
+            margin-left: 1.25rem;
+            color: var(--text-light);
+        }
+
+        .feature-card li {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
         }
 
         /* How It Works Section */
@@ -226,7 +245,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 3rem;
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 0 auto;
         }
 
@@ -260,59 +279,38 @@
             color: var(--text-light);
         }
 
-        /* Screenshots Section */
-        .screenshots {
+        /* Technical Specs Section */
+        .specs {
             background: var(--bg-light);
         }
 
-        .screenshots-container {
-            display: flex;
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 2rem;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            max-width: 1000px;
+            max-width: 900px;
             margin: 0 auto;
         }
 
-        .screenshot {
-            flex: 1;
-            min-width: 250px;
-            max-width: 300px;
+        .spec-item {
             background: var(--white);
-            border-radius: 30px;
-            padding: 1rem;
-            box-shadow: var(--shadow);
-            transition: transform 0.3s;
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
         }
 
-        .screenshot:hover {
-            transform: scale(1.05);
+        .spec-item h3 {
+            font-size: 1rem;
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
         }
 
-        .screenshot-placeholder {
-            aspect-ratio: 9/19.5;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--white);
-            font-size: 3rem;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .screenshot-placeholder::before {
-            content: '';
-            position: absolute;
-            top: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 60px;
-            height: 6px;
-            background: rgba(255, 255, 255, 0.3);
-            border-radius: 3px;
+        .spec-item p {
+            font-size: 1.25rem;
+            color: var(--primary-color);
+            font-weight: 700;
         }
 
         /* Download Section */
@@ -393,6 +391,10 @@
                 font-size: 2rem;
             }
 
+            .category-title {
+                font-size: 1.5rem;
+            }
+
             .nav-links {
                 display: none;
             }
@@ -405,8 +407,8 @@
                 grid-template-columns: 1fr;
             }
 
-            .screenshots-container {
-                flex-direction: column;
+            .specs-grid {
+                grid-template-columns: 1fr;
             }
 
             section {
@@ -440,9 +442,9 @@
                 <span>UangRumah</span>
             </div>
             <ul class="nav-links">
-                <li><a href="#features">Fitur</a></li>
-                <li><a href="#how-it-works">Cara Kerja</a></li>
-                <li><a href="#screenshots">Screenshots</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#specs">Requirements</a></li>
                 <li><a href="#download">Download</a></li>
             </ul>
         </nav>
@@ -451,118 +453,266 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Kelola Keuangan Rumah Tangga dengan Mudah</h1>
-            <p>Lacak pengeluaran, tetapkan anggaran, dan raih tujuan finansial Anda dengan UangRumah - aplikasi manajemen keuangan pribadi untuk iOS</p>
+            <h1>Household Expense Tracker for Indonesian Couples</h1>
+            <p>Take control of your finances with simple, effective expense tracking. Track daily expenses, manage budgets, monitor multiple payment methods, and gain insights into your financial habits with beautiful visualizations.</p>
             <a href="#download" class="cta-button">
                 <span>📱</span>
-                <span>Download Sekarang</span>
+                <span>Download Now</span>
             </a>
         </div>
     </section>
 
     <!-- Features Section -->
     <section id="features" class="features">
-        <h2 class="section-title">Fitur Unggulan</h2>
-        <p class="section-subtitle">Semua yang Anda butuhkan untuk mengelola keuangan rumah tangga dengan lebih baik</p>
+        <h2 class="section-title">Comprehensive Features</h2>
+        <p class="section-subtitle">Everything you need to manage your household finances effectively</p>
 
-        <div class="features-grid">
-            <div class="feature-card">
-                <span class="feature-icon">📊</span>
-                <h3>Pelacakan Pengeluaran</h3>
-                <p>Catat setiap pengeluaran dengan mudah dan cepat. Lihat ke mana uang Anda pergi dengan visualisasi yang jelas dan intuitif.</p>
+        <!-- Budget Management -->
+        <div class="feature-category">
+            <h3 class="category-title">💰 Budget Management</h3>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">📅</span>
+                    <h3>Monthly & Weekly Budgets</h3>
+                    <p>Set monthly spending limits with automatic daily allowance calculations. Configure weekly budgets for granular spending control.</p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">🔔</span>
+                    <h3>Smart Alerts</h3>
+                    <p>Get notified at configurable thresholds (50%, 75%, 90%, 100%) so you never overspend unexpectedly.</p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">📊</span>
+                    <h3>Budget Progress Tracking</h3>
+                    <p>Real-time monitoring with visual indicators showing your spending vs budget with color-coded status.</p>
+                </div>
             </div>
+        </div>
 
-            <div class="feature-card">
-                <span class="feature-icon">🔔</span>
-                <h3>Notifikasi Anggaran</h3>
-                <p>Dapatkan peringatan otomatis ketika pengeluaran mendekati atau melampaui anggaran yang telah Anda tetapkan.</p>
+        <!-- Expense Tracking -->
+        <div class="feature-category">
+            <h3 class="category-title">📝 Expense Tracking</h3>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">⚡</span>
+                    <h3>Quick Add</h3>
+                    <p>Easily log expenses with name, vendor, amount, category, and cost center. Simple and fast entry for busy couples.</p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">🔄</span>
+                    <h3>Recurring Expenses</h3>
+                    <p>Automatic tracking for subscriptions and regular bills with daily, weekly, monthly, or yearly frequencies.</p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">📜</span>
+                    <h3>Version History</h3>
+                    <p>Complete audit trail for all expense modifications. Never lose track of changes to your financial records.</p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">🔍</span>
+                    <h3>Search & Filter</h3>
+                    <p>Multi-field search with advanced filtering by date, amount, category, and cost center for quick access.</p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">🏪</span>
+                    <h3>Vendor Tracking</h3>
+                    <p>Smart vendor suggestions based on usage history make expense entry even faster.</p>
+                </div>
             </div>
+        </div>
 
-            <div class="feature-card">
-                <span class="feature-icon">☁️</span>
-                <h3>Sinkronisasi iCloud</h3>
-                <p>Data Anda aman dan tersinkronisasi secara otomatis di semua perangkat iOS Anda melalui iCloud.</p>
+        <!-- Dashboard & Analytics -->
+        <div class="feature-category">
+            <h3 class="category-title">📈 Dashboard & Analytics</h3>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">🥧</span>
+                    <h3>Category Breakdown</h3>
+                    <p>Visual pie charts showing spending distribution across categories with percentages and amounts.</p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">💳</span>
+                    <h3>Cost Center Reports</h3>
+                    <p>Track expenses by payment method - cash, credit cards, e-wallets, bank transfers. Perfect for couples managing joint and separate accounts.</p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">👁️</span>
+                    <h3>Privacy Mode</h3>
+                    <p>Toggle sensitive data visibility with dashboard blur and amount censoring for protection in public.</p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">🔄</span>
+                    <h3>Real-time Updates</h3>
+                    <p>Pull-to-refresh for instant data sync across all your devices via iCloud.</p>
+                </div>
             </div>
+        </div>
 
-            <div class="feature-card">
-                <span class="feature-icon">🇮🇩</span>
-                <h3>Dibuat untuk Indonesia</h3>
-                <p>Dukungan penuh untuk Rupiah (Rp), bahasa Indonesia, dan kebutuhan manajemen keuangan rumah tangga lokal.</p>
+        <!-- Reminders & Notifications -->
+        <div class="feature-category">
+            <h3 class="category-title">⏰ Reminders & Notifications</h3>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">📲</span>
+                    <h3>Expense Nudge</h3>
+                    <p>Daily reminders to log expenses with customizable frequencies: Daily, Every 2 Days, Weekdays Only, or Custom schedules.</p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">⚠️</span>
+                    <h3>Budget Alerts</h3>
+                    <p>Automatic notifications when approaching spending limits at your configured thresholds.</p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">📧</span>
+                    <h3>Monthly Summary</h3>
+                    <p>Receive monthly expense overview notifications to stay on top of your financial habits.</p>
+                </div>
             </div>
+        </div>
 
-            <div class="feature-card">
-                <span class="feature-icon">📈</span>
-                <h3>Laporan & Analisis</h3>
-                <p>Pahami pola pengeluaran Anda dengan laporan mendetail dan grafik yang mudah dipahami.</p>
+        <!-- Data Export -->
+        <div class="feature-category">
+            <h3 class="category-title">📤 Data Export</h3>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">📄</span>
+                    <h3>PDF Reports</h3>
+                    <p>Professional formatted reports with expense summaries and daily breakdowns for sharing or printing.</p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">📊</span>
+                    <h3>CSV Export</h3>
+                    <p>Export data for analysis in Excel, Numbers, or Google Sheets with full data compatibility.</p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">📆</span>
+                    <h3>Flexible Date Ranges</h3>
+                    <p>Export all time, current month, last month, or custom date ranges to fit your reporting needs.</p>
+                </div>
             </div>
+        </div>
 
-            <div class="feature-card">
-                <span class="feature-icon">🔒</span>
-                <h3>Aman & Privat</h3>
-                <p>Data keuangan Anda disimpan dengan aman. Privasi Anda adalah prioritas kami.</p>
+        <!-- Customization -->
+        <div class="feature-category">
+            <h3 class="category-title">⚙️ Customization</h3>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">🏷️</span>
+                    <h3>Custom Categories</h3>
+                    <p>Create custom expense categories with SF Symbol icons and color coding to match your spending patterns.</p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">💰</span>
+                    <h3>Cost Centers</h3>
+                    <p>Manage payment methods including bank accounts, credit cards, cash, and e-wallets with ease.</p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">🔒</span>
+                    <h3>Privacy Settings</h3>
+                    <p>Configure dashboard visibility defaults and protect your financial data with customizable privacy options.</p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">🇮🇩</span>
+                    <h3>Built for Indonesia</h3>
+                    <p>Full support for Rupiah (IDR) currency and designed specifically for Indonesian household expense management.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- How It Works Section -->
     <section id="how-it-works" class="how-it-works">
-        <h2 class="section-title">Cara Kerja</h2>
-        <p class="section-subtitle">Mulai mengelola keuangan Anda dalam 3 langkah mudah</p>
+        <h2 class="section-title">How It Works</h2>
+        <p class="section-subtitle">Start managing your household finances in simple steps</p>
 
         <div class="steps">
             <div class="step">
                 <div class="step-number">1</div>
-                <h3>Download & Install</h3>
-                <p>Unduh UangRumah dari App Store dan buat akun Anda dalam hitungan detik.</p>
+                <h3>Set Your Budget</h3>
+                <p>Configure monthly and weekly budgets with alert thresholds. Set up your preferred privacy settings and cost centers.</p>
             </div>
 
             <div class="step">
                 <div class="step-number">2</div>
-                <h3>Tetapkan Anggaran</h3>
-                <p>Atur anggaran bulanan untuk berbagai kategori pengeluaran sesuai kebutuhan Anda.</p>
+                <h3>Track Expenses</h3>
+                <p>Quick add daily expenses with vendor tracking, categories, and cost centers. Enable expense nudge reminders to never forget.</p>
             </div>
 
             <div class="step">
                 <div class="step-number">3</div>
-                <h3>Lacak & Hemat</h3>
-                <p>Catat pengeluaran harian dan pantau progress Anda menuju target finansial.</p>
+                <h3>Monitor & Analyze</h3>
+                <p>View dashboard insights with category breakdowns, cost center reports, and budget progress. Export reports when needed.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>Stay on Track</h3>
+                <p>Receive smart alerts when approaching budget limits. Review monthly summaries and adjust spending habits accordingly.</p>
             </div>
         </div>
     </section>
 
-    <!-- Screenshots Section -->
-    <section id="screenshots" class="screenshots">
-        <h2 class="section-title">Tampilan Aplikasi</h2>
-        <p class="section-subtitle">Antarmuka yang bersih, modern, dan mudah digunakan</p>
+    <!-- Technical Specs Section -->
+    <section id="specs" class="specs">
+        <h2 class="section-title">Requirements</h2>
+        <p class="section-subtitle">Technical specifications for UangRumah</p>
 
-        <div class="screenshots-container">
-            <div class="screenshot">
-                <div class="screenshot-placeholder">
-                    📊
-                </div>
+        <div class="specs-grid">
+            <div class="spec-item">
+                <h3>Platform</h3>
+                <p>iOS 16.0+</p>
             </div>
 
-            <div class="screenshot">
-                <div class="screenshot-placeholder">
-                    💰
-                </div>
+            <div class="spec-item">
+                <h3>Devices</h3>
+                <p>iPhone & iPad</p>
             </div>
 
-            <div class="screenshot">
-                <div class="screenshot-placeholder">
-                    📈
-                </div>
+            <div class="spec-item">
+                <h3>Technology</h3>
+                <p>SwiftUI</p>
+            </div>
+
+            <div class="spec-item">
+                <h3>Sync</h3>
+                <p>iCloud</p>
+            </div>
+
+            <div class="spec-item">
+                <h3>Currency</h3>
+                <p>IDR (Rupiah)</p>
+            </div>
+
+            <div class="spec-item">
+                <h3>Storage</h3>
+                <p>Local + Cloud</p>
             </div>
         </div>
     </section>
 
     <!-- Download CTA Section -->
     <section id="download" class="download-cta">
-        <h2>Siap Untuk Mengontrol Keuangan Anda?</h2>
-        <p>Bergabunglah dengan ribuan pengguna yang telah meningkatkan kesehatan finansial mereka</p>
+        <h2>Ready to Take Control of Your Finances?</h2>
+        <p>Join couples who have improved their financial health with UangRumah</p>
         <a href="https://apps.apple.com" class="cta-button">
             <span>🍎</span>
-            <span>Download di App Store</span>
+            <span>Download on the App Store</span>
         </a>
     </section>
 
@@ -570,10 +720,10 @@
     <footer>
         <div class="footer-content">
             <div class="footer-links">
-                <a href="#privacy">Kebijakan Privasi</a>
-                <a href="#terms">Syarat & Ketentuan</a>
-                <a href="#support">Dukungan</a>
-                <a href="#contact">Kontak</a>
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms & Conditions</a>
+                <a href="#support">Support</a>
+                <a href="#contact">Contact</a>
             </div>
             <div class="copyright">
                 <p>&copy; 2025 UangRumah. All rights reserved.</p>
@@ -611,7 +761,7 @@
         }, observerOptions);
 
         // Observe all feature cards and steps
-        document.querySelectorAll('.feature-card, .step, .screenshot').forEach(el => {
+        document.querySelectorAll('.feature-card, .step, .spec-item').forEach(el => {
             observer.observe(el);
         });
     </script>
