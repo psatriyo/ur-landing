@@ -391,6 +391,477 @@ const translations = {
             stillNeedHelpDesc: 'Our support team is here to assist you with any questions or issues.',
             contactSupportButton: 'Contact Support',
         },
+
+        // Privacy Policy Page
+        privacy: {
+            metaDescription: 'UangRumah Privacy Policy - Learn how we protect your financial data and respect your privacy.',
+            title: 'Privacy Policy - UangRumah',
+            heroTitle: 'Privacy Policy',
+            heroSubtitle: 'Your privacy is important to us. Learn how we collect, use, and protect your financial data.',
+            content: `<p class="last-updated"><strong>Last Updated:</strong> November 17, 2025</p>
+
+            <h2>1. Introduction</h2>
+            <p>Welcome to UangRumah. We are committed to protecting your privacy and ensuring the security of your financial data. This Privacy Policy explains how we collect, use, store, and protect your information when you use our iOS expense tracking application.</p>
+            <p>UangRumah is designed specifically for Indonesian couples to manage household expenses efficiently. We believe in transparency and want you to understand exactly how your data is handled.</p>
+
+            <h2>2. Information We Collect</h2>
+            <p>UangRumah collects and stores the following types of information locally on your device and optionally in your iCloud account:</p>
+
+            <h3>Financial Data</h3>
+            <ul>
+                <li><strong>Expense Records:</strong> Transaction details including expense name, vendor, amount, date, category, and cost center</li>
+                <li><strong>Budget Information:</strong> Your monthly and weekly budget limits and alert threshold preferences</li>
+                <li><strong>Categories:</strong> Custom expense categories you create, including names, icons, and color preferences</li>
+                <li><strong>Cost Centers:</strong> Payment method information including names and types (bank accounts, credit cards, cash, e-wallets)</li>
+                <li><strong>Recurring Expenses:</strong> Automated expense tracking data for subscriptions and regular bills</li>
+                <li><strong>Vendors:</strong> Names and details of merchants where you make purchases</li>
+            </ul>
+
+            <h3>Application Settings</h3>
+            <ul>
+                <li><strong>Preferences:</strong> Your app settings including privacy mode preferences, notification settings, and reminder schedules</li>
+                <li><strong>Usage Data:</strong> Information about how you use the app to improve functionality (stored locally only)</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p><strong>⚠️ Important:</strong> All data is stored locally on your device by default. No data is sent to external servers or third-party services unless you explicitly enable iCloud sync.</p>
+            </div>
+
+            <h2>3. iCloud Synchronization</h2>
+            <p>UangRumah offers optional iCloud synchronization to keep your data in sync across your Apple devices (iPhone and iPad).</p>
+
+            <h3>How iCloud Sync Works</h3>
+            <ul>
+                <li>When enabled, your expense data, budgets, categories, and cost centers are automatically backed up to your personal iCloud account</li>
+                <li>Data is encrypted during transmission and storage using Apple's security standards</li>
+                <li>Only you can access this data through devices signed in to your iCloud account</li>
+                <li>We do not have access to your iCloud data - it is controlled entirely by Apple and your iCloud security settings</li>
+                <li>You can disable iCloud sync at any time through iOS Settings</li>
+            </ul>
+
+            <h3>iCloud Privacy</h3>
+            <p>When using iCloud sync, your data is subject to Apple's Privacy Policy and iCloud terms. We recommend reviewing Apple's privacy practices at <a href="https://www.apple.com/legal/privacy/" class="contact-link" target="_blank">apple.com/legal/privacy</a>.</p>
+
+            <h2>4. How We Use Your Information</h2>
+            <p>Your data is used exclusively within the UangRumah app for the following purposes:</p>
+
+            <ul>
+                <li><strong>Expense Tracking:</strong> To record, display, and organize your financial transactions</li>
+                <li><strong>Budget Management:</strong> To calculate budget progress, daily allowances, and trigger spending alerts</li>
+                <li><strong>Analytics & Insights:</strong> To generate dashboard visualizations, category breakdowns, and spending reports</li>
+                <li><strong>Reminders:</strong> To send you notifications based on your configured preferences (expense nudges, budget alerts, monthly summaries)</li>
+                <li><strong>Data Export:</strong> To create PDF and CSV reports when you request them</li>
+                <li><strong>App Improvement:</strong> To understand feature usage and improve app functionality (locally only, no data transmission)</li>
+            </ul>
+
+            <h2>5. Data Sharing and Third Parties</h2>
+            <div class="highlight-box">
+                <p><strong>🔒 Zero Third-Party Sharing:</strong> We do not sell, rent, trade, or share your personal or financial data with any third parties. Period.</p>
+            </div>
+
+            <p>UangRumah operates with complete data privacy:</p>
+            <ul>
+                <li>No analytics services (Google Analytics, Firebase, etc.)</li>
+                <li>No advertising networks</li>
+                <li>No social media integration</li>
+                <li>No data brokers or marketing companies</li>
+                <li>No cloud servers except your personal iCloud (if you enable it)</li>
+            </ul>
+
+            <p>The only data transmission occurs when:</p>
+            <ul>
+                <li>You enable iCloud sync (data goes only to your iCloud account)</li>
+                <li>You export reports (data stays on your device or goes where you choose to share it)</li>
+            </ul>
+
+            <h2>6. Data Security</h2>
+            <p>We implement industry-standard security measures to protect your financial data:</p>
+
+            <h3>Technical Safeguards</h3>
+            <ul>
+                <li><strong>Local Storage:</strong> Data is stored in iOS secure containers protected by device encryption</li>
+                <li><strong>iCloud Encryption:</strong> When sync is enabled, data is encrypted in transit and at rest</li>
+                <li><strong>Privacy Mode:</strong> Built-in features to blur sensitive information and censor amounts when needed</li>
+                <li><strong>No Backend Servers:</strong> No vulnerable web servers or databases that could be hacked</li>
+                <li><strong>iOS Security:</strong> Leverages Apple's robust security infrastructure and regular security updates</li>
+            </ul>
+
+            <h3>Device Security Recommendations</h3>
+            <ul>
+                <li>Use a strong passcode or biometric authentication (Face ID/Touch ID) on your device</li>
+                <li>Keep your iOS software up to date</li>
+                <li>Enable two-factor authentication for your Apple ID/iCloud account</li>
+                <li>Don't jailbreak your device, as it compromises security</li>
+            </ul>
+
+            <h2>7. Your Data Control Rights</h2>
+            <p>You have complete control over your data in UangRumah:</p>
+
+            <h3>Access and Portability</h3>
+            <ul>
+                <li><strong>View All Data:</strong> Access all your expense records, budgets, and settings within the app</li>
+                <li><strong>Export Data:</strong> Export your financial data in PDF or CSV format at any time</li>
+                <li><strong>Search and Filter:</strong> Use advanced search features to find specific transactions</li>
+            </ul>
+
+            <h3>Modification and Deletion</h3>
+            <ul>
+                <li><strong>Edit Records:</strong> Modify any expense, budget, category, or cost center at any time</li>
+                <li><strong>Delete Data:</strong> Remove individual expenses or bulk delete records</li>
+                <li><strong>Version History:</strong> View and restore previous versions of edited expenses</li>
+                <li><strong>Complete Deletion:</strong> Uninstalling the app removes all local data from your device</li>
+            </ul>
+
+            <h3>iCloud Data Management</h3>
+            <ul>
+                <li>Disable iCloud sync in iOS Settings to stop cloud synchronization</li>
+                <li>Delete iCloud data through iOS Settings > [Your Name] > iCloud > Manage Storage > UangRumah</li>
+                <li>Data deletion from iCloud may take up to 30 days to complete across Apple's servers</li>
+            </ul>
+
+            <h2>8. Children's Privacy</h2>
+            <p>UangRumah is designed for adults managing household expenses. We do not knowingly collect information from children under 13 years of age. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately.</p>
+
+            <h2>9. Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors. We will notify you of any material changes through:</p>
+            <ul>
+                <li>In-app notifications when you update to a new version</li>
+                <li>Updates to this page with a revised "Last Updated" date</li>
+                <li>Email notification (if you have provided contact information for support)</li>
+            </ul>
+            <p>We encourage you to review this Privacy Policy periodically to stay informed about how we protect your information.</p>
+
+            <h2>10. International Users</h2>
+            <p>UangRumah is designed primarily for users in Indonesia and displays amounts in Indonesian Rupiah (IDR). However, the app can be used globally. Please note:</p>
+            <ul>
+                <li>All data processing occurs locally on your device or in your iCloud account</li>
+                <li>iCloud data storage location is determined by your Apple ID country/region settings</li>
+                <li>We comply with applicable data protection regulations including GDPR where applicable</li>
+            </ul>
+
+            <h2>11. Contact Us</h2>
+            <div class="contact-section">
+                <h3>Questions About Privacy?</h3>
+                <p>If you have questions, concerns, or requests regarding this Privacy Policy or how we handle your data, please contact us:</p>
+                <p>
+                    <strong>Email:</strong> <a href="mailto:support@uangrumah.com" class="contact-link">support@uangrumah.com</a><br>
+                    <strong>Website:</strong> <a href="https://uangrumah.com" class="contact-link" target="_blank">uangrumah.com</a>
+                </p>
+                <p>We will respond to privacy inquiries within 7 business days.</p>
+            </div>
+
+            <h2>12. Legal Compliance</h2>
+            <p>UangRumah is operated from Jakarta, Indonesia and complies with applicable Indonesian privacy laws and regulations. We are committed to:</p>
+            <ul>
+                <li>Transparency in data collection and usage</li>
+                <li>User consent and control over personal information</li>
+                <li>Security of financial data</li>
+                <li>Respect for user privacy rights</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p><strong>Current Version:</strong> 0.1.0 Beta<br>
+                <strong>Policy Effective Date:</strong> November 17, 2025</p>
+            </div>`
+        },
+
+        // Terms & Conditions Page
+        terms: {
+            metaDescription: 'UangRumah Terms and Conditions - Read the terms of use for our expense tracking app.',
+            title: 'Terms & Conditions - UangRumah',
+            heroTitle: 'Terms & Conditions',
+            heroSubtitle: 'Please read these terms carefully before using UangRumah.',
+            content: `<p class="last-updated"><strong>Last Updated:</strong> November 17, 2025</p>
+
+            <h2>1. Acceptance of Terms</h2>
+            <p>Welcome to UangRumah. By downloading, installing, or using our iOS expense tracking application ("App"), you agree to be bound by these Terms and Conditions ("Terms"). If you do not agree to these Terms, please do not use the App.</p>
+            <p>These Terms constitute a legally binding agreement between you ("User," "you," or "your") and UangRumah ("we," "us," or "our") regarding your use of the App.</p>
+
+            <div class="highlight-box">
+                <p><strong>Beta Version Notice:</strong> UangRumah is currently in version 0.1.0 Beta. As a beta product, some features may be incomplete, and you may experience bugs or unexpected behavior. We appreciate your patience and feedback as we continue to improve the App.</p>
+            </div>
+
+            <h2>2. Description of Service</h2>
+            <p>UangRumah is a household expense tracking application designed for Indonesian couples to manage their personal finances. The App provides the following features:</p>
+            <ul>
+                <li>Expense tracking and categorization</li>
+                <li>Budget management with monthly and weekly limits</li>
+                <li>Financial dashboard with visualizations and analytics</li>
+                <li>Multiple payment method (cost center) tracking</li>
+                <li>Data export in PDF and CSV formats</li>
+                <li>Optional iCloud synchronization across devices</li>
+                <li>Recurring expense management</li>
+                <li>Customizable reminders and notifications</li>
+            </ul>
+
+            <h2>3. User Eligibility</h2>
+            <p>To use UangRumah, you must:</p>
+            <ul>
+                <li>Be at least 18 years of age</li>
+                <li>Have the legal capacity to enter into binding agreements</li>
+                <li>Own or have authorized access to an iOS device running iOS 16.0 or later</li>
+                <li>Have a valid Apple ID for app installation</li>
+                <li>Comply with all applicable local, state, national, and international laws</li>
+            </ul>
+
+            <h2>4. User Responsibilities</h2>
+            <p>As a user of UangRumah, you agree to:</p>
+
+            <h3>Data Accuracy</h3>
+            <ul>
+                <li>Enter accurate and complete financial information</li>
+                <li>Regularly review and update your expense records</li>
+                <li>Maintain the security of your device and iCloud account</li>
+                <li>Take responsibility for all data entered into the App</li>
+            </ul>
+
+            <h3>Prohibited Uses</h3>
+            <p>You agree NOT to:</p>
+            <ul>
+                <li>Use the App for any illegal or unauthorized purpose</li>
+                <li>Attempt to reverse engineer, decompile, or disassemble the App</li>
+                <li>Remove, alter, or obscure any copyright, trademark, or proprietary notices</li>
+                <li>Use the App to track expenses for business accounting or tax preparation (unless you accept sole responsibility for accuracy)</li>
+                <li>Share your device or iCloud credentials with unauthorized persons</li>
+                <li>Attempt to gain unauthorized access to any portion of the App or related systems</li>
+                <li>Transmit viruses, malware, or any harmful code</li>
+                <li>Interfere with or disrupt the App's functionality</li>
+            </ul>
+
+            <h3>Personal Use Only</h3>
+            <p>UangRumah is licensed for personal, non-commercial use only. You may not use the App for business expense tracking, corporate accounting, or any commercial purpose without explicit written permission.</p>
+
+            <h2>5. Intellectual Property Rights</h2>
+            <p>All intellectual property rights in and to UangRumah, including but not limited to software code, design, user interface, graphics, text, and documentation, are owned by UangRumah or its licensors.</p>
+
+            <h3>Your License</h3>
+            <p>Subject to your compliance with these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to:</p>
+            <ul>
+                <li>Download and install the App on iOS devices you own or control</li>
+                <li>Use the App for personal expense tracking purposes</li>
+            </ul>
+
+            <h3>Restrictions</h3>
+            <p>You may not:</p>
+            <ul>
+                <li>Copy, modify, or create derivative works of the App</li>
+                <li>Rent, lease, lend, sell, sublicense, or distribute the App</li>
+                <li>Use the App's branding, logos, or trademarks without permission</li>
+            </ul>
+
+            <h2>6. Subscription and Payment Terms</h2>
+
+            <div class="highlight-box">
+                <p><strong>Current Status:</strong> UangRumah version 0.1.0 Beta is currently offered free of charge. Future versions may introduce optional premium features or subscriptions.</p>
+            </div>
+
+            <h3>Future Subscription Plans (If Implemented)</h3>
+            <p>Should we introduce paid features in the future:</p>
+            <ul>
+                <li>You will be notified in advance of any pricing or subscription changes</li>
+                <li>Subscriptions will be processed through Apple's App Store with their standard terms</li>
+                <li>Prices will be clearly displayed before purchase</li>
+                <li>Subscriptions will auto-renew unless cancelled at least 24 hours before the renewal date</li>
+                <li>Refunds will be handled according to Apple's App Store refund policy</li>
+                <li>You can manage or cancel subscriptions through your Apple ID account settings</li>
+            </ul>
+
+            <h2>7. Data Ownership and Privacy</h2>
+            <p>Your financial data belongs to you. We respect your privacy and data ownership rights:</p>
+
+            <h3>Your Data</h3>
+            <ul>
+                <li>You retain all ownership rights to the data you enter into UangRumah</li>
+                <li>You can export your data at any time in PDF or CSV format</li>
+                <li>You can delete your data at any time by removing expenses or uninstalling the App</li>
+                <li>We do not claim any ownership over your personal financial information</li>
+            </ul>
+
+            <h3>Privacy</h3>
+            <p>Your use of UangRumah is also governed by our Privacy Policy, which is incorporated into these Terms by reference. Please review our <a href="privacy-policy.html" class="contact-link">Privacy Policy</a> to understand how we collect, use, and protect your data.</p>
+
+            <h2>8. iCloud Synchronization</h2>
+            <p>UangRumah offers optional iCloud synchronization:</p>
+            <ul>
+                <li>iCloud sync is disabled by default and must be explicitly enabled by you</li>
+                <li>When enabled, your expense data is backed up to your personal iCloud account</li>
+                <li>You are responsible for managing your iCloud storage space</li>
+                <li>iCloud sync is subject to Apple's iCloud terms and conditions</li>
+                <li>We are not responsible for data loss due to iCloud service interruptions or account issues</li>
+                <li>You should maintain local backups of important financial data</li>
+            </ul>
+
+            <h2>9. Disclaimer of Warranties</h2>
+            <div class="warning-box">
+                <p><strong>⚠️ Important Legal Notice:</strong> Please read this section carefully as it limits our liability.</p>
+            </div>
+
+            <p>UangRumah is provided "AS IS" and "AS AVAILABLE" without warranties of any kind, either express or implied, including but not limited to:</p>
+
+            <ul>
+                <li><strong>Accuracy:</strong> We do not warrant that the App will accurately calculate budgets, expenses, or financial summaries. You are responsible for verifying all calculations.</li>
+                <li><strong>Availability:</strong> We do not guarantee that the App will be available at all times, uninterrupted, or error-free.</li>
+                <li><strong>Fitness for Purpose:</strong> We do not warrant that the App will meet your specific financial tracking needs.</li>
+                <li><strong>Data Loss:</strong> We do not guarantee against data loss. You should maintain backups of important financial records.</li>
+                <li><strong>Security:</strong> While we implement security measures, we cannot guarantee absolute security against unauthorized access.</li>
+                <li><strong>Compatibility:</strong> We do not warrant compatibility with all iOS devices or future iOS versions.</li>
+            </ul>
+
+            <h3>Beta Software Notice</h3>
+            <p>As beta software (version 0.1.0), UangRumah may contain bugs, errors, or incomplete features. Use at your own risk.</p>
+
+            <h2>10. Limitation of Liability</h2>
+            <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, UANGRUMAH AND ITS DEVELOPERS SHALL NOT BE LIABLE FOR:</p>
+
+            <ul>
+                <li><strong>Indirect Damages:</strong> Any indirect, incidental, special, consequential, or punitive damages</li>
+                <li><strong>Financial Losses:</strong> Any financial losses resulting from incorrect calculations, data loss, or app errors</li>
+                <li><strong>Data Loss:</strong> Loss of data due to device failure, iCloud issues, or app bugs</li>
+                <li><strong>Tax or Legal Issues:</strong> Any tax penalties, legal issues, or financial problems arising from use of the App</li>
+                <li><strong>Third-Party Services:</strong> Issues with Apple, iCloud, or other third-party services</li>
+                <li><strong>Downtime:</strong> Service interruptions, bugs, or unavailability</li>
+            </ul>
+
+            <p>IN NO EVENT SHALL OUR TOTAL LIABILITY EXCEED THE AMOUNT YOU PAID FOR THE APP IN THE PAST 12 MONTHS (CURRENTLY $0 FOR BETA VERSION).</p>
+
+            <h3>Financial Advice Disclaimer</h3>
+            <p>UangRumah is a personal finance tracking tool, NOT a financial advisor. We do not provide:</p>
+            <ul>
+                <li>Financial planning or investment advice</li>
+                <li>Tax preparation or accounting services</li>
+                <li>Legal or professional financial counseling</li>
+                <li>Business expense or corporate accounting features</li>
+            </ul>
+            <p>Consult qualified professionals for financial, tax, or legal advice.</p>
+
+            <h2>11. Indemnification</h2>
+            <p>You agree to indemnify, defend, and hold harmless UangRumah and its developers from any claims, damages, losses, liabilities, and expenses (including legal fees) arising from:</p>
+            <ul>
+                <li>Your use or misuse of the App</li>
+                <li>Your violation of these Terms</li>
+                <li>Your violation of any third-party rights</li>
+                <li>Inaccurate data you enter into the App</li>
+                <li>Financial decisions you make based on App data</li>
+            </ul>
+
+            <h2>12. Termination</h2>
+
+            <h3>Termination by You</h3>
+            <p>You may terminate your use of UangRumah at any time by:</p>
+            <ul>
+                <li>Uninstalling the App from your device(s)</li>
+                <li>Deleting your iCloud backup data (if applicable)</li>
+                <li>Ceasing to use the App</li>
+            </ul>
+
+            <h3>Termination by Us</h3>
+            <p>We reserve the right to:</p>
+            <ul>
+                <li>Discontinue the App at any time with or without notice</li>
+                <li>Modify or remove features in future updates</li>
+                <li>Terminate access for users who violate these Terms</li>
+            </ul>
+
+            <h3>Effect of Termination</h3>
+            <p>Upon termination:</p>
+            <ul>
+                <li>Your license to use the App immediately ends</li>
+                <li>You must delete the App from all devices</li>
+                <li>Sections of these Terms that by nature should survive (warranties, liability, etc.) will remain in effect</li>
+                <li>We are not obligated to provide refunds for any reason</li>
+            </ul>
+
+            <h2>13. Updates and Modifications</h2>
+
+            <h3>App Updates</h3>
+            <p>We may release updates to UangRumah from time to time that:</p>
+            <ul>
+                <li>Add new features or functionality</li>
+                <li>Fix bugs or improve performance</li>
+                <li>Modify or remove existing features</li>
+                <li>Change the user interface or design</li>
+            </ul>
+            <p>You are not obligated to install updates, but we recommend keeping the App updated for the best experience and security.</p>
+
+            <h3>Changes to Terms</h3>
+            <p>We reserve the right to modify these Terms at any time. When we make changes:</p>
+            <ul>
+                <li>We will update the "Last Updated" date at the top of this page</li>
+                <li>Material changes will be communicated through in-app notifications</li>
+                <li>Your continued use of the App after changes constitutes acceptance of the new Terms</li>
+                <li>If you do not agree to the changes, you must stop using the App</li>
+            </ul>
+
+            <h2>14. Geographic Restrictions</h2>
+            <p>UangRumah is designed primarily for use in Indonesia and displays currency in Indonesian Rupiah (IDR). While the App may function in other countries:</p>
+            <ul>
+                <li>Currency conversion is not supported (only IDR)</li>
+                <li>Some features may not be relevant outside Indonesia</li>
+                <li>We make no representations that the App is appropriate for use in other locations</li>
+                <li>You are responsible for compliance with local laws in your jurisdiction</li>
+            </ul>
+
+            <h2>15. Third-Party Services</h2>
+            <p>UangRumah integrates with the following third-party services:</p>
+
+            <h3>Apple Services</h3>
+            <ul>
+                <li><strong>App Store:</strong> App distribution and updates (subject to Apple's terms)</li>
+                <li><strong>iCloud:</strong> Optional data synchronization (subject to Apple's iCloud terms)</li>
+                <li><strong>iOS:</strong> Operating system platform (subject to Apple's iOS license)</li>
+            </ul>
+
+            <p>We are not responsible for the availability, functionality, or terms of third-party services. Your use of these services is subject to their respective terms and conditions.</p>
+
+            <h2>16. Export Compliance</h2>
+            <p>You agree to comply with all applicable export and import control laws and regulations. You shall not export or re-export the App to any prohibited country or person.</p>
+
+            <h2>17. Governing Law and Dispute Resolution</h2>
+
+            <h3>Governing Law</h3>
+            <p>These Terms are governed by the laws of Indonesia, without regard to conflict of law principles. Any disputes arising from these Terms or the App shall be subject to the exclusive jurisdiction of the courts of Jakarta, Indonesia.</p>
+
+            <h3>Dispute Resolution</h3>
+            <p>In the event of any dispute:</p>
+            <ol>
+                <li><strong>Informal Resolution:</strong> Contact us first at support@uangrumah.com to attempt to resolve the issue informally</li>
+                <li><strong>Mediation:</strong> If informal resolution fails, we agree to attempt mediation before litigation</li>
+                <li><strong>Arbitration/Litigation:</strong> If mediation fails, disputes will be resolved through arbitration or in courts of competent jurisdiction in Jakarta</li>
+            </ol>
+
+            <h2>18. Severability</h2>
+            <p>If any provision of these Terms is found to be invalid, illegal, or unenforceable, the remaining provisions shall continue in full force and effect.</p>
+
+            <h2>19. Entire Agreement</h2>
+            <p>These Terms, together with our Privacy Policy, constitute the entire agreement between you and UangRumah regarding the App and supersede all prior agreements, understandings, and representations.</p>
+
+            <h2>20. No Waiver</h2>
+            <p>Our failure to enforce any right or provision of these Terms shall not constitute a waiver of such right or provision. No waiver shall be effective unless made in writing and signed by an authorized representative.</p>
+
+            <h2>21. Assignment</h2>
+            <p>You may not assign or transfer these Terms or your rights under them without our prior written consent. We may assign these Terms to any successor or affiliate without restriction.</p>
+
+            <h2>22. Contact Information</h2>
+            <div class="contact-section">
+                <h3>Questions About These Terms?</h3>
+                <p>If you have questions or concerns regarding these Terms and Conditions, please contact us:</p>
+                <p>
+                    <strong>Email:</strong> <a href="mailto:support@uangrumah.com" class="contact-link">support@uangrumah.com</a><br>
+                    <strong>Website:</strong> <a href="https://uangrumah.com" class="contact-link" target="_blank">uangrumah.com</a><br>
+                    <strong>Location:</strong> Jakarta, Indonesia
+                </p>
+                <p>We will respond to inquiries within 7 business days.</p>
+            </div>
+
+            <h2>23. Acknowledgment</h2>
+            <p>BY DOWNLOADING, INSTALLING, OR USING UANGRUMAH, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY THESE TERMS AND CONDITIONS.</p>
+
+            <div class="highlight-box">
+                <p><strong>Current Version:</strong> 0.1.0 Beta<br>
+                <strong>Terms Effective Date:</strong> November 17, 2025<br>
+                <strong>Platform:</strong> iOS 16.0+</p>
+            </div>`
+        },
     },
 
     id: {
@@ -783,6 +1254,477 @@ const translations = {
             stillNeedHelpTitle: 'Masih Butuh Bantuan?',
             stillNeedHelpDesc: 'Tim dukungan kami di sini untuk membantu Anda dengan pertanyaan atau masalah apa pun.',
             contactSupportButton: 'Hubungi Dukungan',
+        },
+
+        // Privacy Policy Page
+        privacy: {
+            metaDescription: 'Kebijakan Privasi UangRumah - Pelajari bagaimana kami melindungi data keuangan Anda dan menghormati privasi Anda.',
+            title: 'Kebijakan Privasi - UangRumah',
+            heroTitle: 'Kebijakan Privasi',
+            heroSubtitle: 'Privasi Anda penting bagi kami. Pelajari bagaimana kami mengumpulkan, menggunakan, dan melindungi data keuangan Anda.',
+            content: `<p class="last-updated"><strong>Terakhir Diperbarui:</strong> 17 November 2025</p>
+
+            <h2>1. Pendahuluan</h2>
+            <p>Selamat datang di UangRumah. Kami berkomitmen untuk melindungi privasi Anda dan memastikan keamanan data keuangan Anda. Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, menyimpan, dan melindungi informasi Anda saat Anda menggunakan aplikasi pelacak pengeluaran iOS kami.</p>
+            <p>UangRumah dirancang khusus untuk pasangan Indonesia untuk mengelola pengeluaran rumah tangga secara efisien. Kami percaya pada transparansi dan ingin Anda memahami dengan tepat bagaimana data Anda ditangani.</p>
+
+            <h2>2. Informasi yang Kami Kumpulkan</h2>
+            <p>UangRumah mengumpulkan dan menyimpan jenis informasi berikut secara lokal di perangkat Anda dan secara opsional di akun iCloud Anda:</p>
+
+            <h3>Data Keuangan</h3>
+            <ul>
+                <li><strong>Catatan Pengeluaran:</strong> Detail transaksi termasuk nama pengeluaran, vendor, jumlah, tanggal, kategori, dan pusat biaya</li>
+                <li><strong>Informasi Anggaran:</strong> Batas anggaran bulanan dan mingguan Anda serta preferensi ambang peringatan</li>
+                <li><strong>Kategori:</strong> Kategori pengeluaran khusus yang Anda buat, termasuk nama, ikon, dan preferensi warna</li>
+                <li><strong>Pusat Biaya:</strong> Informasi metode pembayaran termasuk nama dan jenis (rekening bank, kartu kredit, tunai, e-wallet)</li>
+                <li><strong>Pengeluaran Berulang:</strong> Data pelacakan pengeluaran otomatis untuk langganan dan tagihan reguler</li>
+                <li><strong>Vendor:</strong> Nama dan detail merchant tempat Anda melakukan pembelian</li>
+            </ul>
+
+            <h3>Pengaturan Aplikasi</h3>
+            <ul>
+                <li><strong>Preferensi:</strong> Pengaturan aplikasi Anda termasuk preferensi mode privasi, pengaturan notifikasi, dan jadwal pengingat</li>
+                <li><strong>Data Penggunaan:</strong> Informasi tentang bagaimana Anda menggunakan aplikasi untuk meningkatkan fungsionalitas (disimpan secara lokal saja)</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p><strong>⚠️ Penting:</strong> Semua data disimpan secara lokal di perangkat Anda secara default. Tidak ada data yang dikirim ke server eksternal atau layanan pihak ketiga kecuali Anda secara eksplisit mengaktifkan sinkronisasi iCloud.</p>
+            </div>
+
+            <h2>3. Sinkronisasi iCloud</h2>
+            <p>UangRumah menawarkan sinkronisasi iCloud opsional untuk menjaga data Anda tetap sinkron di seluruh perangkat Apple Anda (iPhone dan iPad).</p>
+
+            <h3>Cara Kerja Sinkronisasi iCloud</h3>
+            <ul>
+                <li>Saat diaktifkan, data pengeluaran, anggaran, kategori, dan pusat biaya Anda secara otomatis dicadangkan ke akun iCloud pribadi Anda</li>
+                <li>Data dienkripsi selama transmisi dan penyimpanan menggunakan standar keamanan Apple</li>
+                <li>Hanya Anda yang dapat mengakses data ini melalui perangkat yang masuk ke akun iCloud Anda</li>
+                <li>Kami tidak memiliki akses ke data iCloud Anda - ini sepenuhnya dikontrol oleh Apple dan pengaturan keamanan iCloud Anda</li>
+                <li>Anda dapat menonaktifkan sinkronisasi iCloud kapan saja melalui Pengaturan iOS</li>
+            </ul>
+
+            <h3>Privasi iCloud</h3>
+            <p>Saat menggunakan sinkronisasi iCloud, data Anda tunduk pada Kebijakan Privasi Apple dan ketentuan iCloud. Kami merekomendasikan untuk meninjau praktik privasi Apple di <a href="https://www.apple.com/legal/privacy/" class="contact-link" target="_blank">apple.com/legal/privacy</a>.</p>
+
+            <h2>4. Bagaimana Kami Menggunakan Informasi Anda</h2>
+            <p>Data Anda digunakan secara eksklusif dalam aplikasi UangRumah untuk tujuan berikut:</p>
+
+            <ul>
+                <li><strong>Pelacakan Pengeluaran:</strong> Untuk mencatat, menampilkan, dan mengatur transaksi keuangan Anda</li>
+                <li><strong>Manajemen Anggaran:</strong> Untuk menghitung kemajuan anggaran, tunjangan harian, dan memicu peringatan pengeluaran</li>
+                <li><strong>Analitik & Wawasan:</strong> Untuk menghasilkan visualisasi dashboard, rincian kategori, dan laporan pengeluaran</li>
+                <li><strong>Pengingat:</strong> Untuk mengirimkan notifikasi berdasarkan preferensi yang Anda konfigurasi (pengingat pengeluaran, peringatan anggaran, ringkasan bulanan)</li>
+                <li><strong>Ekspor Data:</strong> Untuk membuat laporan PDF dan CSV saat Anda memintanya</li>
+                <li><strong>Peningkatan Aplikasi:</strong> Untuk memahami penggunaan fitur dan meningkatkan fungsionalitas aplikasi (hanya lokal, tanpa transmisi data)</li>
+            </ul>
+
+            <h2>5. Berbagi Data dan Pihak Ketiga</h2>
+            <div class="highlight-box">
+                <p><strong>🔒 Nol Berbagi Pihak Ketiga:</strong> Kami tidak menjual, menyewakan, memperdagangkan, atau membagikan data pribadi atau keuangan Anda kepada pihak ketiga mana pun. Titik.</p>
+            </div>
+
+            <p>UangRumah beroperasi dengan privasi data yang lengkap:</p>
+            <ul>
+                <li>Tidak ada layanan analitik (Google Analytics, Firebase, dll.)</li>
+                <li>Tidak ada jaringan periklanan</li>
+                <li>Tidak ada integrasi media sosial</li>
+                <li>Tidak ada broker data atau perusahaan pemasaran</li>
+                <li>Tidak ada server cloud kecuali iCloud pribadi Anda (jika Anda mengaktifkannya)</li>
+            </ul>
+
+            <p>Satu-satunya transmisi data terjadi saat:</p>
+            <ul>
+                <li>Anda mengaktifkan sinkronisasi iCloud (data hanya masuk ke akun iCloud Anda)</li>
+                <li>Anda mengekspor laporan (data tetap di perangkat Anda atau pergi ke tempat yang Anda pilih untuk membagikannya)</li>
+            </ul>
+
+            <h2>6. Keamanan Data</h2>
+            <p>Kami menerapkan langkah-langkah keamanan standar industri untuk melindungi data keuangan Anda:</p>
+
+            <h3>Perlindungan Teknis</h3>
+            <ul>
+                <li><strong>Penyimpanan Lokal:</strong> Data disimpan dalam kontainer aman iOS yang dilindungi oleh enkripsi perangkat</li>
+                <li><strong>Enkripsi iCloud:</strong> Saat sinkronisasi diaktifkan, data dienkripsi dalam transmisi dan saat disimpan</li>
+                <li><strong>Mode Privasi:</strong> Fitur bawaan untuk mengaburkan informasi sensitif dan menyensor jumlah saat diperlukan</li>
+                <li><strong>Tanpa Server Backend:</strong> Tidak ada server web atau database yang rentan yang bisa diretas</li>
+                <li><strong>Keamanan iOS:</strong> Memanfaatkan infrastruktur keamanan Apple yang kuat dan pembaruan keamanan reguler</li>
+            </ul>
+
+            <h3>Rekomendasi Keamanan Perangkat</h3>
+            <ul>
+                <li>Gunakan kode sandi yang kuat atau autentikasi biometrik (Face ID/Touch ID) pada perangkat Anda</li>
+                <li>Perbarui perangkat lunak iOS Anda secara teratur</li>
+                <li>Aktifkan autentikasi dua faktor untuk akun Apple ID/iCloud Anda</li>
+                <li>Jangan jailbreak perangkat Anda, karena ini mengkompromikan keamanan</li>
+            </ul>
+
+            <h2>7. Hak Kontrol Data Anda</h2>
+            <p>Anda memiliki kontrol penuh atas data Anda di UangRumah:</p>
+
+            <h3>Akses dan Portabilitas</h3>
+            <ul>
+                <li><strong>Lihat Semua Data:</strong> Akses semua catatan pengeluaran, anggaran, dan pengaturan Anda dalam aplikasi</li>
+                <li><strong>Ekspor Data:</strong> Ekspor data keuangan Anda dalam format PDF atau CSV kapan saja</li>
+                <li><strong>Cari dan Filter:</strong> Gunakan fitur pencarian lanjutan untuk menemukan transaksi tertentu</li>
+            </ul>
+
+            <h3>Modifikasi dan Penghapusan</h3>
+            <ul>
+                <li><strong>Edit Catatan:</strong> Modifikasi pengeluaran, anggaran, kategori, atau pusat biaya kapan saja</li>
+                <li><strong>Hapus Data:</strong> Hapus pengeluaran individu atau hapus catatan secara massal</li>
+                <li><strong>Riwayat Versi:</strong> Lihat dan pulihkan versi sebelumnya dari pengeluaran yang diedit</li>
+                <li><strong>Penghapusan Lengkap:</strong> Menghapus instalasi aplikasi menghapus semua data lokal dari perangkat Anda</li>
+            </ul>
+
+            <h3>Manajemen Data iCloud</h3>
+            <ul>
+                <li>Nonaktifkan sinkronisasi iCloud di Pengaturan iOS untuk menghentikan sinkronisasi cloud</li>
+                <li>Hapus data iCloud melalui Pengaturan iOS > [Nama Anda] > iCloud > Kelola Penyimpanan > UangRumah</li>
+                <li>Penghapusan data dari iCloud mungkin memakan waktu hingga 30 hari untuk selesai di seluruh server Apple</li>
+            </ul>
+
+            <h2>8. Privasi Anak-anak</h2>
+            <p>UangRumah dirancang untuk orang dewasa yang mengelola pengeluaran rumah tangga. Kami tidak dengan sengaja mengumpulkan informasi dari anak-anak di bawah usia 13 tahun. Jika Anda adalah orang tua atau wali dan percaya bahwa anak Anda telah memberikan informasi pribadi kepada kami, silakan hubungi kami segera.</p>
+
+            <h2>9. Perubahan pada Kebijakan Privasi Ini</h2>
+            <p>Kami dapat memperbarui Kebijakan Privasi ini dari waktu ke waktu untuk mencerminkan perubahan dalam praktik, teknologi, persyaratan hukum, atau faktor lainnya. Kami akan memberi tahu Anda tentang perubahan material melalui:</p>
+            <ul>
+                <li>Notifikasi dalam aplikasi saat Anda memperbarui ke versi baru</li>
+                <li>Pembaruan halaman ini dengan tanggal "Terakhir Diperbarui" yang direvisi</li>
+                <li>Notifikasi email (jika Anda telah memberikan informasi kontak untuk dukungan)</li>
+            </ul>
+            <p>Kami mendorong Anda untuk meninjau Kebijakan Privasi ini secara berkala untuk tetap terinformasi tentang bagaimana kami melindungi informasi Anda.</p>
+
+            <h2>10. Pengguna Internasional</h2>
+            <p>UangRumah dirancang terutama untuk pengguna di Indonesia dan menampilkan jumlah dalam Rupiah Indonesia (IDR). Namun, aplikasi dapat digunakan secara global. Harap dicatat:</p>
+            <ul>
+                <li>Semua pemrosesan data terjadi secara lokal di perangkat Anda atau di akun iCloud Anda</li>
+                <li>Lokasi penyimpanan data iCloud ditentukan oleh pengaturan negara/wilayah Apple ID Anda</li>
+                <li>Kami mematuhi peraturan perlindungan data yang berlaku termasuk GDPR yang berlaku</li>
+            </ul>
+
+            <h2>11. Hubungi Kami</h2>
+            <div class="contact-section">
+                <h3>Pertanyaan Tentang Privasi?</h3>
+                <p>Jika Anda memiliki pertanyaan, kekhawatiran, atau permintaan mengenai Kebijakan Privasi ini atau bagaimana kami menangani data Anda, silakan hubungi kami:</p>
+                <p>
+                    <strong>Email:</strong> <a href="mailto:support@uangrumah.com" class="contact-link">support@uangrumah.com</a><br>
+                    <strong>Website:</strong> <a href="https://uangrumah.com" class="contact-link" target="_blank">uangrumah.com</a>
+                </p>
+                <p>Kami akan menanggapi pertanyaan privasi dalam 7 hari kerja.</p>
+            </div>
+
+            <h2>12. Kepatuhan Hukum</h2>
+            <p>UangRumah dioperasikan dari Jakarta, Indonesia dan mematuhi hukum dan peraturan privasi Indonesia yang berlaku. Kami berkomitmen untuk:</p>
+            <ul>
+                <li>Transparansi dalam pengumpulan dan penggunaan data</li>
+                <li>Persetujuan dan kontrol pengguna atas informasi pribadi</li>
+                <li>Keamanan data keuangan</li>
+                <li>Menghormati hak privasi pengguna</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p><strong>Versi Saat Ini:</strong> 0.1.0 Beta<br>
+                <strong>Tanggal Efektif Kebijakan:</strong> 17 November 2025</p>
+            </div>`
+        },
+
+        // Terms & Conditions Page
+        terms: {
+            metaDescription: 'Syarat dan Ketentuan UangRumah - Baca syarat penggunaan untuk aplikasi pelacak pengeluaran kami.',
+            title: 'Syarat & Ketentuan - UangRumah',
+            heroTitle: 'Syarat & Ketentuan',
+            heroSubtitle: 'Harap baca syarat-syarat ini dengan cermat sebelum menggunakan UangRumah.',
+            content: `<p class="last-updated"><strong>Terakhir Diperbarui:</strong> 17 November 2025</p>
+
+            <h2>1. Penerimaan Syarat</h2>
+            <p>Selamat datang di UangRumah. Dengan mengunduh, menginstal, atau menggunakan aplikasi pelacakan pengeluaran iOS kami ("Aplikasi"), Anda setuju untuk terikat oleh Syarat dan Ketentuan ini ("Syarat"). Jika Anda tidak setuju dengan Syarat ini, harap jangan gunakan Aplikasi.</p>
+            <p>Syarat ini merupakan perjanjian yang mengikat secara hukum antara Anda ("Pengguna," "Anda," atau "milik Anda") dan UangRumah ("kami," "kita," atau "milik kami") mengenai penggunaan Aplikasi Anda.</p>
+
+            <div class="highlight-box">
+                <p><strong>Pemberitahuan Versi Beta:</strong> UangRumah saat ini dalam versi 0.1.0 Beta. Sebagai produk beta, beberapa fitur mungkin tidak lengkap, dan Anda mungkin mengalami bug atau perilaku yang tidak terduga. Kami menghargai kesabaran dan umpan balik Anda saat kami terus meningkatkan Aplikasi.</p>
+            </div>
+
+            <h2>2. Deskripsi Layanan</h2>
+            <p>UangRumah adalah aplikasi pelacakan pengeluaran rumah tangga yang dirancang untuk pasangan Indonesia untuk mengelola keuangan pribadi mereka. Aplikasi menyediakan fitur-fitur berikut:</p>
+            <ul>
+                <li>Pelacakan dan kategorisasi pengeluaran</li>
+                <li>Manajemen anggaran dengan batas bulanan dan mingguan</li>
+                <li>Dashboard keuangan dengan visualisasi dan analitik</li>
+                <li>Pelacakan berbagai metode pembayaran (pusat biaya)</li>
+                <li>Ekspor data dalam format PDF dan CSV</li>
+                <li>Sinkronisasi iCloud opsional di seluruh perangkat</li>
+                <li>Manajemen pengeluaran berulang</li>
+                <li>Pengingat dan notifikasi yang dapat disesuaikan</li>
+            </ul>
+
+            <h2>3. Kelayakan Pengguna</h2>
+            <p>Untuk menggunakan UangRumah, Anda harus:</p>
+            <ul>
+                <li>Berusia setidaknya 18 tahun</li>
+                <li>Memiliki kapasitas hukum untuk masuk ke dalam perjanjian yang mengikat</li>
+                <li>Memiliki atau memiliki akses resmi ke perangkat iOS yang menjalankan iOS 16.0 atau lebih baru</li>
+                <li>Memiliki Apple ID yang valid untuk instalasi aplikasi</li>
+                <li>Mematuhi semua hukum lokal, negara bagian, nasional, dan internasional yang berlaku</li>
+            </ul>
+
+            <h2>4. Tanggung Jawab Pengguna</h2>
+            <p>Sebagai pengguna UangRumah, Anda setuju untuk:</p>
+
+            <h3>Akurasi Data</h3>
+            <ul>
+                <li>Memasukkan informasi keuangan yang akurat dan lengkap</li>
+                <li>Secara teratur meninjau dan memperbarui catatan pengeluaran Anda</li>
+                <li>Menjaga keamanan perangkat dan akun iCloud Anda</li>
+                <li>Bertanggung jawab atas semua data yang dimasukkan ke dalam Aplikasi</li>
+            </ul>
+
+            <h3>Penggunaan Terlarang</h3>
+            <p>Anda setuju TIDAK untuk:</p>
+            <ul>
+                <li>Menggunakan Aplikasi untuk tujuan ilegal atau tidak sah</li>
+                <li>Mencoba merekayasa balik, mendekompilasi, atau membongkar Aplikasi</li>
+                <li>Menghapus, mengubah, atau mengaburkan pemberitahuan hak cipta, merek dagang, atau kepemilikan</li>
+                <li>Menggunakan Aplikasi untuk melacak pengeluaran untuk akuntansi bisnis atau persiapan pajak (kecuali Anda menerima tanggung jawab penuh atas akurasi)</li>
+                <li>Berbagi kredensial perangkat atau iCloud Anda dengan orang yang tidak berwenang</li>
+                <li>Mencoba mendapatkan akses tidak sah ke bagian mana pun dari Aplikasi atau sistem terkait</li>
+                <li>Mengirimkan virus, malware, atau kode berbahaya apa pun</li>
+                <li>Mengganggu atau mengganggu fungsionalitas Aplikasi</li>
+            </ul>
+
+            <h3>Penggunaan Pribadi Saja</h3>
+            <p>UangRumah dilisensikan hanya untuk penggunaan pribadi, non-komersial. Anda tidak boleh menggunakan Aplikasi untuk pelacakan pengeluaran bisnis, akuntansi perusahaan, atau tujuan komersial apa pun tanpa izin tertulis eksplisit.</p>
+
+            <h2>5. Hak Kekayaan Intelektual</h2>
+            <p>Semua hak kekayaan intelektual dalam dan untuk UangRumah, termasuk namun tidak terbatas pada kode perangkat lunak, desain, antarmuka pengguna, grafik, teks, dan dokumentasi, dimiliki oleh UangRumah atau pemberi lisensinya.</p>
+
+            <h3>Lisensi Anda</h3>
+            <p>Tergantung pada kepatuhan Anda terhadap Syarat ini, kami memberikan Anda lisensi terbatas, non-eksklusif, tidak dapat dipindahtangankan, dapat dibatalkan untuk:</p>
+            <ul>
+                <li>Mengunduh dan menginstal Aplikasi di perangkat iOS yang Anda miliki atau kontrol</li>
+                <li>Menggunakan Aplikasi untuk tujuan pelacakan pengeluaran pribadi</li>
+            </ul>
+
+            <h3>Pembatasan</h3>
+            <p>Anda tidak boleh:</p>
+            <ul>
+                <li>Menyalin, memodifikasi, atau membuat karya turunan dari Aplikasi</li>
+                <li>Menyewakan, menyewakan, meminjamkan, menjual, mensublisensikan, atau mendistribusikan Aplikasi</li>
+                <li>Menggunakan merek, logo, atau merek dagang Aplikasi tanpa izin</li>
+            </ul>
+
+            <h2>6. Syarat Langganan dan Pembayaran</h2>
+
+            <div class="highlight-box">
+                <p><strong>Status Saat Ini:</strong> UangRumah versi 0.1.0 Beta saat ini ditawarkan secara gratis. Versi masa depan mungkin memperkenalkan fitur premium opsional atau langganan.</p>
+            </div>
+
+            <h3>Rencana Langganan Masa Depan (Jika Diterapkan)</h3>
+            <p>Jika kami memperkenalkan fitur berbayar di masa mendatang:</p>
+            <ul>
+                <li>Anda akan diberi tahu sebelumnya tentang perubahan harga atau langganan</li>
+                <li>Langganan akan diproses melalui App Store Apple dengan ketentuan standar mereka</li>
+                <li>Harga akan ditampilkan dengan jelas sebelum pembelian</li>
+                <li>Langganan akan diperpanjang secara otomatis kecuali dibatalkan setidaknya 24 jam sebelum tanggal perpanjangan</li>
+                <li>Pengembalian dana akan ditangani sesuai dengan kebijakan pengembalian dana App Store Apple</li>
+                <li>Anda dapat mengelola atau membatalkan langganan melalui pengaturan akun Apple ID Anda</li>
+            </ul>
+
+            <h2>7. Kepemilikan dan Privasi Data</h2>
+            <p>Data keuangan Anda milik Anda. Kami menghormati hak privasi dan kepemilikan data Anda:</p>
+
+            <h3>Data Anda</h3>
+            <ul>
+                <li>Anda mempertahankan semua hak kepemilikan atas data yang Anda masukkan ke UangRumah</li>
+                <li>Anda dapat mengekspor data Anda kapan saja dalam format PDF atau CSV</li>
+                <li>Anda dapat menghapus data Anda kapan saja dengan menghapus pengeluaran atau menghapus instalasi Aplikasi</li>
+                <li>Kami tidak mengklaim kepemilikan apa pun atas informasi keuangan pribadi Anda</li>
+            </ul>
+
+            <h3>Privasi</h3>
+            <p>Penggunaan UangRumah Anda juga diatur oleh Kebijakan Privasi kami, yang digabungkan ke dalam Syarat ini dengan referensi. Harap tinjau <a href="privacy-policy.html" class="contact-link">Kebijakan Privasi</a> kami untuk memahami bagaimana kami mengumpulkan, menggunakan, dan melindungi data Anda.</p>
+
+            <h2>8. Sinkronisasi iCloud</h2>
+            <p>UangRumah menawarkan sinkronisasi iCloud opsional:</p>
+            <ul>
+                <li>Sinkronisasi iCloud dinonaktifkan secara default dan harus diaktifkan secara eksplisit oleh Anda</li>
+                <li>Saat diaktifkan, data pengeluaran Anda dicadangkan ke akun iCloud pribadi Anda</li>
+                <li>Anda bertanggung jawab untuk mengelola ruang penyimpanan iCloud Anda</li>
+                <li>Sinkronisasi iCloud tunduk pada syarat dan ketentuan iCloud Apple</li>
+                <li>Kami tidak bertanggung jawab atas kehilangan data karena gangguan layanan iCloud atau masalah akun</li>
+                <li>Anda harus menjaga cadangan lokal data keuangan penting</li>
+            </ul>
+
+            <h2>9. Penafian Jaminan</h2>
+            <div class="warning-box">
+                <p><strong>⚠️ Pemberitahuan Hukum Penting:</strong> Harap baca bagian ini dengan cermat karena ini membatasi tanggung jawab kami.</p>
+            </div>
+
+            <p>UangRumah disediakan "SEBAGAIMANA ADANYA" dan "SEBAGAIMANA TERSEDIA" tanpa jaminan apa pun, baik tersurat maupun tersirat, termasuk namun tidak terbatas pada:</p>
+
+            <ul>
+                <li><strong>Akurasi:</strong> Kami tidak menjamin bahwa Aplikasi akan secara akurat menghitung anggaran, pengeluaran, atau ringkasan keuangan. Anda bertanggung jawab untuk memverifikasi semua perhitungan.</li>
+                <li><strong>Ketersediaan:</strong> Kami tidak menjamin bahwa Aplikasi akan tersedia setiap saat, tanpa gangguan, atau bebas dari kesalahan.</li>
+                <li><strong>Kesesuaian untuk Tujuan:</strong> Kami tidak menjamin bahwa Aplikasi akan memenuhi kebutuhan pelacakan keuangan spesifik Anda.</li>
+                <li><strong>Kehilangan Data:</strong> Kami tidak menjamin terhadap kehilangan data. Anda harus menjaga cadangan catatan keuangan penting.</li>
+                <li><strong>Keamanan:</strong> Meskipun kami menerapkan langkah-langkah keamanan, kami tidak dapat menjamin keamanan absolut terhadap akses tidak sah.</li>
+                <li><strong>Kompatibilitas:</strong> Kami tidak menjamin kompatibilitas dengan semua perangkat iOS atau versi iOS masa depan.</li>
+            </ul>
+
+            <h3>Pemberitahuan Perangkat Lunak Beta</h3>
+            <p>Sebagai perangkat lunak beta (versi 0.1.0), UangRumah mungkin mengandung bug, kesalahan, atau fitur yang tidak lengkap. Gunakan dengan risiko Anda sendiri.</p>
+
+            <h2>10. Batasan Tanggung Jawab</h2>
+            <p>SEJAUH MAKSIMUM YANG DIIZINKAN OLEH HUKUM, UANGRUMAH DAN PENGEMBANGNYA TIDAK AKAN BERTANGGUNG JAWAB ATAS:</p>
+
+            <ul>
+                <li><strong>Kerusakan Tidak Langsung:</strong> Kerusakan tidak langsung, insidental, khusus, konsekuensial, atau punitif apa pun</li>
+                <li><strong>Kerugian Keuangan:</strong> Kerugian keuangan apa pun yang diakibatkan dari perhitungan yang salah, kehilangan data, atau kesalahan aplikasi</li>
+                <li><strong>Kehilangan Data:</strong> Kehilangan data karena kegagalan perangkat, masalah iCloud, atau bug aplikasi</li>
+                <li><strong>Masalah Pajak atau Hukum:</strong> Denda pajak, masalah hukum, atau masalah keuangan apa pun yang timbul dari penggunaan Aplikasi</li>
+                <li><strong>Layanan Pihak Ketiga:</strong> Masalah dengan Apple, iCloud, atau layanan pihak ketiga lainnya</li>
+                <li><strong>Downtime:</strong> Gangguan layanan, bug, atau ketidaktersediaan</li>
+            </ul>
+
+            <p>DALAM KEADAAN APAPUN TOTAL TANGGUNG JAWAB KAMI TIDAK AKAN MELEBIHI JUMLAH YANG ANDA BAYARKAN UNTUK APLIKASI DALAM 12 BULAN TERAKHIR (SAAT INI $0 UNTUK VERSI BETA).</p>
+
+            <h3>Penafian Saran Keuangan</h3>
+            <p>UangRumah adalah alat pelacakan keuangan pribadi, BUKAN penasihat keuangan. Kami tidak menyediakan:</p>
+            <ul>
+                <li>Perencanaan keuangan atau saran investasi</li>
+                <li>Persiapan pajak atau layanan akuntansi</li>
+                <li>Konseling keuangan hukum atau profesional</li>
+                <li>Fitur pengeluaran bisnis atau akuntansi perusahaan</li>
+            </ul>
+            <p>Konsultasikan dengan profesional yang berkualifikasi untuk saran keuangan, pajak, atau hukum.</p>
+
+            <h2>11. Ganti Rugi</h2>
+            <p>Anda setuju untuk mengganti rugi, membela, dan membebaskan UangRumah dan pengembangnya dari klaim, kerusakan, kerugian, kewajiban, dan biaya apa pun (termasuk biaya hukum) yang timbul dari:</p>
+            <ul>
+                <li>Penggunaan atau penyalahgunaan Aplikasi Anda</li>
+                <li>Pelanggaran Anda terhadap Syarat ini</li>
+                <li>Pelanggaran Anda terhadap hak pihak ketiga</li>
+                <li>Data yang tidak akurat yang Anda masukkan ke dalam Aplikasi</li>
+                <li>Keputusan keuangan yang Anda buat berdasarkan data Aplikasi</li>
+            </ul>
+
+            <h2>12. Penghentian</h2>
+
+            <h3>Penghentian oleh Anda</h3>
+            <p>Anda dapat menghentikan penggunaan UangRumah kapan saja dengan:</p>
+            <ul>
+                <li>Menghapus instalasi Aplikasi dari perangkat Anda</li>
+                <li>Menghapus data cadangan iCloud Anda (jika berlaku)</li>
+                <li>Berhenti menggunakan Aplikasi</li>
+            </ul>
+
+            <h3>Penghentian oleh Kami</h3>
+            <p>Kami berhak untuk:</p>
+            <ul>
+                <li>Menghentikan Aplikasi kapan saja dengan atau tanpa pemberitahuan</li>
+                <li>Memodifikasi atau menghapus fitur dalam pembaruan masa depan</li>
+                <li>Menghentikan akses untuk pengguna yang melanggar Syarat ini</li>
+            </ul>
+
+            <h3>Efek Penghentian</h3>
+            <p>Setelah penghentian:</p>
+            <ul>
+                <li>Lisensi Anda untuk menggunakan Aplikasi segera berakhir</li>
+                <li>Anda harus menghapus Aplikasi dari semua perangkat</li>
+                <li>Bagian dari Syarat ini yang secara alami harus bertahan (jaminan, tanggung jawab, dll.) akan tetap berlaku</li>
+                <li>Kami tidak berkewajiban untuk memberikan pengembalian dana untuk alasan apa pun</li>
+            </ul>
+
+            <h2>13. Pembaruan dan Modifikasi</h2>
+
+            <h3>Pembaruan Aplikasi</h3>
+            <p>Kami dapat merilis pembaruan untuk UangRumah dari waktu ke waktu yang:</p>
+            <ul>
+                <li>Menambahkan fitur atau fungsionalitas baru</li>
+                <li>Memperbaiki bug atau meningkatkan kinerja</li>
+                <li>Memodifikasi atau menghapus fitur yang ada</li>
+                <li>Mengubah antarmuka pengguna atau desain</li>
+            </ul>
+            <p>Anda tidak diwajibkan untuk menginstal pembaruan, tetapi kami merekomendasikan menjaga Aplikasi tetap diperbarui untuk pengalaman dan keamanan terbaik.</p>
+
+            <h3>Perubahan pada Syarat</h3>
+            <p>Kami berhak untuk memodifikasi Syarat ini kapan saja. Saat kami membuat perubahan:</p>
+            <ul>
+                <li>Kami akan memperbarui tanggal "Terakhir Diperbarui" di bagian atas halaman ini</li>
+                <li>Perubahan material akan dikomunikasikan melalui notifikasi dalam aplikasi</li>
+                <li>Penggunaan Aplikasi Anda yang berkelanjutan setelah perubahan merupakan penerimaan Syarat baru</li>
+                <li>Jika Anda tidak setuju dengan perubahan tersebut, Anda harus berhenti menggunakan Aplikasi</li>
+            </ul>
+
+            <h2>14. Pembatasan Geografis</h2>
+            <p>UangRumah dirancang terutama untuk penggunaan di Indonesia dan menampilkan mata uang dalam Rupiah Indonesia (IDR). Sementara Aplikasi mungkin berfungsi di negara lain:</p>
+            <ul>
+                <li>Konversi mata uang tidak didukung (hanya IDR)</li>
+                <li>Beberapa fitur mungkin tidak relevan di luar Indonesia</li>
+                <li>Kami tidak membuat representasi bahwa Aplikasi sesuai untuk digunakan di lokasi lain</li>
+                <li>Anda bertanggung jawab untuk kepatuhan dengan hukum lokal di yurisdiksi Anda</li>
+            </ul>
+
+            <h2>15. Layanan Pihak Ketiga</h2>
+            <p>UangRumah terintegrasi dengan layanan pihak ketiga berikut:</p>
+
+            <h3>Layanan Apple</h3>
+            <ul>
+                <li><strong>App Store:</strong> Distribusi dan pembaruan aplikasi (tunduk pada ketentuan Apple)</li>
+                <li><strong>iCloud:</strong> Sinkronisasi data opsional (tunduk pada ketentuan iCloud Apple)</li>
+                <li><strong>iOS:</strong> Platform sistem operasi (tunduk pada lisensi iOS Apple)</li>
+            </ul>
+
+            <p>Kami tidak bertanggung jawab atas ketersediaan, fungsionalitas, atau ketentuan layanan pihak ketiga. Penggunaan layanan ini Anda tunduk pada syarat dan ketentuan masing-masing.</p>
+
+            <h2>16. Kepatuhan Ekspor</h2>
+            <p>Anda setuju untuk mematuhi semua hukum dan peraturan kontrol ekspor dan impor yang berlaku. Anda tidak boleh mengekspor atau mengekspor ulang Aplikasi ke negara atau orang yang dilarang.</p>
+
+            <h2>17. Hukum yang Mengatur dan Penyelesaian Sengketa</h2>
+
+            <h3>Hukum yang Mengatur</h3>
+            <p>Syarat ini diatur oleh hukum Indonesia, tanpa memperhatikan prinsip konflik hukum. Setiap sengketa yang timbul dari Syarat ini atau Aplikasi akan tunduk pada yurisdiksi eksklusif pengadilan Jakarta, Indonesia.</p>
+
+            <h3>Penyelesaian Sengketa</h3>
+            <p>Dalam hal ada sengketa:</p>
+            <ol>
+                <li><strong>Penyelesaian Informal:</strong> Hubungi kami terlebih dahulu di support@uangrumah.com untuk mencoba menyelesaikan masalah secara informal</li>
+                <li><strong>Mediasi:</strong> Jika penyelesaian informal gagal, kami setuju untuk mencoba mediasi sebelum litigasi</li>
+                <li><strong>Arbitrase/Litigasi:</strong> Jika mediasi gagal, sengketa akan diselesaikan melalui arbitrase atau di pengadilan yang berwenang di Jakarta</li>
+            </ol>
+
+            <h2>18. Keterpisahan</h2>
+            <p>Jika ketentuan apa pun dari Syarat ini ditemukan tidak valid, ilegal, atau tidak dapat dilaksanakan, ketentuan yang tersisa akan terus berlaku penuh.</p>
+
+            <h2>19. Keseluruhan Perjanjian</h2>
+            <p>Syarat ini, bersama dengan Kebijakan Privasi kami, merupakan keseluruhan perjanjian antara Anda dan UangRumah mengenai Aplikasi dan menggantikan semua perjanjian, pemahaman, dan representasi sebelumnya.</p>
+
+            <h2>20. Tanpa Pengesampingan</h2>
+            <p>Kegagalan kami untuk menegakkan hak atau ketentuan apa pun dari Syarat ini tidak akan merupakan pengesampingan hak atau ketentuan tersebut. Tidak ada pengesampingan yang akan efektif kecuali dibuat secara tertulis dan ditandatangani oleh perwakilan yang berwenang.</p>
+
+            <h2>21. Penugasan</h2>
+            <p>Anda tidak dapat mengalihkan atau mentransfer Syarat ini atau hak Anda di bawahnya tanpa persetujuan tertulis sebelumnya dari kami. Kami dapat mengalihkan Syarat ini kepada penerus atau afiliasi mana pun tanpa pembatasan.</p>
+
+            <h2>22. Informasi Kontak</h2>
+            <div class="contact-section">
+                <h3>Pertanyaan Tentang Syarat Ini?</h3>
+                <p>Jika Anda memiliki pertanyaan atau kekhawatiran mengenai Syarat dan Ketentuan ini, silakan hubungi kami:</p>
+                <p>
+                    <strong>Email:</strong> <a href="mailto:support@uangrumah.com" class="contact-link">support@uangrumah.com</a><br>
+                    <strong>Website:</strong> <a href="https://uangrumah.com" class="contact-link" target="_blank">uangrumah.com</a><br>
+                    <strong>Lokasi:</strong> Jakarta, Indonesia
+                </p>
+                <p>Kami akan menanggapi pertanyaan dalam 7 hari kerja.</p>
+            </div>
+
+            <h2>23. Pengakuan</h2>
+            <p>DENGAN MENGUNDUH, MENGINSTAL, ATAU MENGGUNAKAN UANGRUMAH, ANDA MENGAKUI BAHWA ANDA TELAH MEMBACA, MEMAHAMI, DAN SETUJU UNTUK TERIKAT OLEH SYARAT DAN KETENTUAN INI.</p>
+
+            <div class="highlight-box">
+                <p><strong>Versi Saat Ini:</strong> 0.1.0 Beta<br>
+                <strong>Tanggal Efektif Syarat:</strong> 17 November 2025<br>
+                <strong>Platform:</strong> iOS 16.0+</p>
+            </div>`
         },
     }
 };
