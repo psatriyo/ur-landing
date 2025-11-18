@@ -84,6 +84,13 @@
 
     // Update language switcher UI to show active language
     function updateLanguageSwitcherState(lang) {
+        // Update select dropdown if exists
+        const languageSwitcher = document.getElementById('language-switcher');
+        if (languageSwitcher) {
+            languageSwitcher.value = lang;
+        }
+
+        // Fallback for any legacy button elements
         document.querySelectorAll('.lang-option').forEach(option => {
             const optionLang = option.getAttribute('data-lang');
             if (optionLang === lang) {
@@ -115,7 +122,15 @@
         // Apply translations on page load
         applyTranslations(currentLang);
 
-        // Add click handlers to language options
+        // Add change handler to main dropdown select
+        const languageSwitcher = document.getElementById('language-switcher');
+        if (languageSwitcher) {
+            languageSwitcher.addEventListener('change', function() {
+                switchLanguage(this.value);
+            });
+        }
+
+        // Add click handlers to legacy language options (if exists)
         document.querySelectorAll('.lang-option').forEach(option => {
             option.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -124,7 +139,7 @@
             });
         });
 
-        // Add change handler to mobile select
+        // Add change handler to mobile select if exists
         const mobileSelect = document.getElementById('mobile-lang-select');
         if (mobileSelect) {
             mobileSelect.addEventListener('change', function() {
