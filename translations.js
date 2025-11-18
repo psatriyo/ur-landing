@@ -1,5 +1,5 @@
 // UangRumah Translations
-const translations = {
+var translations = {
     en: {
         // Common
         common: {
