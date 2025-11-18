@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -443,207 +443,270 @@
         .animate-in {
             animation: fadeInUp 0.6s ease-out;
         }
+
+        /* Language Switcher */
+        .language-switcher {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--bg-light);
+            padding: 0.4rem 0.6rem;
+            border-radius: 50px;
+            border: 2px solid #e5e7eb;
+        }
+
+        .lang-option {
+            padding: 0.35rem 0.75rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            color: var(--text-light);
+            background: transparent;
+            border: none;
+        }
+
+        .lang-option:hover {
+            color: var(--primary-color);
+        }
+
+        .lang-option.active {
+            background: var(--primary-color);
+            color: var(--white);
+            box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        /* Mobile Language Switcher */
+        @media (max-width: 768px) {
+            .language-switcher {
+                padding: 0.3rem 0.5rem;
+                gap: 0.25rem;
+            }
+
+            .lang-option {
+                padding: 0.25rem 0.6rem;
+                font-size: 0.8rem;
+            }
+
+            .nav-right {
+                gap: 1rem;
+            }
+        }
     </style>
 </head>
-<body>
+<body data-page="home">
     <!-- Header -->
     <header>
         <nav>
             <div class="logo">
                 <span>💰</span>
                 <span>UangRumah</span>
-                <span class="beta-badge">Beta</span>
+                <span class="beta-badge" data-i18n="common.beta">Beta</span>
             </div>
-            <ul class="nav-links">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#how-it-works">How It Works</a></li>
-                <li><a href="#specs">Requirements</a></li>
-                <li><a href="#download">Download</a></li>
-            </ul>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#features" data-i18n="nav.features">Features</a></li>
+                    <li><a href="#how-it-works" data-i18n="nav.howItWorks">How It Works</a></li>
+                    <li><a href="#specs" data-i18n="nav.requirements">Requirements</a></li>
+                    <li><a href="#download" data-i18n="nav.download">Download</a></li>
+                </ul>
+                <div class="language-switcher">
+                    <button class="lang-option active" data-lang="en">EN</button>
+                    <button class="lang-option" data-lang="id">ID</button>
+                </div>
+            </div>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Household Expense Tracker for Indonesian Couples</h1>
-            <p>Take control of your finances with simple, effective expense tracking. Track daily expenses, manage budgets, monitor multiple payment methods, and gain insights into your financial habits with beautiful visualizations.</p>
+            <h1 data-i18n="home.heroTitle">Household Expense Tracker for Indonesian Couples</h1>
+            <p data-i18n="home.heroSubtitle">Take control of your finances with simple, effective expense tracking. Track daily expenses, manage budgets, monitor multiple payment methods, and gain insights into your financial habits with beautiful visualizations.</p>
             <a href="mailto:invite@uangrumah.com?subject=I'd%20love%20to%20join%20Uang%20Rumah%20Beta!&body=Hello,%20how%20do%20I%20join%20the%20Beta?" class="cta-button">
                 <span>📧</span>
-                <span>Ask Invitation</span>
+                <span data-i18n="home.ctaButton">Ask Invitation</span>
             </a>
         </div>
     </section>
 
     <!-- Features Section -->
     <section id="features" class="features">
-        <h2 class="section-title">Comprehensive Features</h2>
-        <p class="section-subtitle">Everything you need to manage your household finances effectively</p>
+        <h2 class="section-title" data-i18n="home.featuresTitle">Comprehensive Features</h2>
+        <p class="section-subtitle" data-i18n="home.featuresSubtitle">Everything you need to manage your household finances effectively</p>
 
         <!-- Budget Management -->
         <div class="feature-category">
-            <h3 class="category-title">💰 Budget Management</h3>
+            <h3 class="category-title"><span>💰</span> <span data-i18n="home.budgetManagementTitle">Budget Management</span></h3>
             <div class="features-grid">
                 <div class="feature-card">
                     <span class="feature-icon">📅</span>
-                    <h3>Monthly & Weekly Budgets</h3>
-                    <p>Set monthly spending limits with automatic daily allowance calculations. Configure weekly budgets for granular spending control.</p>
+                    <h3 data-i18n="home.monthlyWeeklyBudgets">Monthly & Weekly Budgets</h3>
+                    <p data-i18n="home.monthlyWeeklyBudgetsDesc">Set monthly spending limits with automatic daily allowance calculations. Configure weekly budgets for granular spending control.</p>
                 </div>
 
                 <div class="feature-card">
                     <span class="feature-icon">🔔</span>
-                    <h3>Smart Alerts</h3>
-                    <p>Get notified at configurable thresholds (50%, 75%, 90%, 100%) so you never overspend unexpectedly.</p>
+                    <h3 data-i18n="home.smartAlerts">Smart Alerts</h3>
+                    <p data-i18n="home.smartAlertsDesc">Get notified at configurable thresholds (50%, 75%, 90%, 100%) so you never overspend unexpectedly.</p>
                 </div>
 
                 <div class="feature-card">
                     <span class="feature-icon">📊</span>
-                    <h3>Budget Progress Tracking</h3>
-                    <p>Real-time monitoring with visual indicators showing your spending vs budget with color-coded status.</p>
+                    <h3 data-i18n="home.budgetProgressTracking">Budget Progress Tracking</h3>
+                    <p data-i18n="home.budgetProgressTrackingDesc">Real-time monitoring with visual indicators showing your spending vs budget with color-coded status.</p>
                 </div>
             </div>
         </div>
 
         <!-- Expense Tracking -->
         <div class="feature-category">
-            <h3 class="category-title">📝 Expense Tracking</h3>
+            <h3 class="category-title"><span>📝</span> <span data-i18n="home.expenseTrackingTitle">Expense Tracking</span></h3>
             <div class="features-grid">
                 <div class="feature-card">
                     <span class="feature-icon">⚡</span>
-                    <h3>Quick Add</h3>
-                    <p>Easily log expenses with name, vendor, amount, category, and cost center. Simple and fast entry for busy couples.</p>
+                    <h3 data-i18n="home.quickAdd">Quick Add</h3>
+                    <p data-i18n="home.quickAddDesc">Easily log expenses with name, vendor, amount, category, and cost center. Simple and fast entry for busy couples.</p>
                 </div>
 
                 <div class="feature-card">
                     <span class="feature-icon">🔄</span>
-                    <h3>Recurring Expenses</h3>
-                    <p>Automatic tracking for subscriptions and regular bills with daily, weekly, monthly, or yearly frequencies.</p>
+                    <h3 data-i18n="home.recurringExpenses">Recurring Expenses</h3>
+                    <p data-i18n="home.recurringExpensesDesc">Automatic tracking for subscriptions and regular bills with daily, weekly, monthly, or yearly frequencies.</p>
                 </div>
 
                 <div class="feature-card">
                     <span class="feature-icon">📜</span>
-                    <h3>Version History</h3>
-                    <p>Complete audit trail for all expense modifications. Never lose track of changes to your financial records.</p>
+                    <h3 data-i18n="home.versionHistory">Version History</h3>
+                    <p data-i18n="home.versionHistoryDesc">Complete audit trail for all expense modifications. Never lose track of changes to your financial records.</p>
                 </div>
 
                 <div class="feature-card">
                     <span class="feature-icon">🔍</span>
-                    <h3>Search & Filter</h3>
-                    <p>Multi-field search with advanced filtering by date, amount, category, and cost center for quick access.</p>
+                    <h3 data-i18n="home.searchFilter">Search & Filter</h3>
+                    <p data-i18n="home.searchFilterDesc">Multi-field search with advanced filtering by date, amount, category, and cost center for quick access.</p>
                 </div>
 
                 <div class="feature-card">
                     <span class="feature-icon">🏪</span>
-                    <h3>Vendor Tracking</h3>
-                    <p>Smart vendor suggestions based on usage history make expense entry even faster.</p>
+                    <h3 data-i18n="home.vendorTracking">Vendor Tracking</h3>
+                    <p data-i18n="home.vendorTrackingDesc">Smart vendor suggestions based on usage history make expense entry even faster.</p>
                 </div>
             </div>
         </div>
 
         <!-- Dashboard & Analytics -->
         <div class="feature-category">
-            <h3 class="category-title">📈 Dashboard & Analytics</h3>
+            <h3 class="category-title"><span>📈</span> <span data-i18n="home.dashboardAnalyticsTitle">Dashboard & Analytics</span></h3>
             <div class="features-grid">
                 <div class="feature-card">
                     <span class="feature-icon">🥧</span>
-                    <h3>Category Breakdown</h3>
-                    <p>Visual pie charts showing spending distribution across categories with percentages and amounts.</p>
+                    <h3 data-i18n="home.categoryBreakdown">Category Breakdown</h3>
+                    <p data-i18n="home.categoryBreakdownDesc">Visual pie charts showing spending distribution across categories with percentages and amounts.</p>
                 </div>
 
                 <div class="feature-card">
                     <span class="feature-icon">💳</span>
-                    <h3>Cost Center Reports</h3>
-                    <p>Track expenses by payment method - cash, credit cards, e-wallets, bank transfers. Perfect for couples managing joint and separate accounts.</p>
+                    <h3 data-i18n="home.costCenterReports">Cost Center Reports</h3>
+                    <p data-i18n="home.costCenterReportsDesc">Track expenses by payment method - cash, credit cards, e-wallets, bank transfers. Perfect for couples managing joint and separate accounts.</p>
                 </div>
 
                 <div class="feature-card">
                     <span class="feature-icon">👁️</span>
-                    <h3>Privacy Mode</h3>
-                    <p>Toggle sensitive data visibility with dashboard blur and amount censoring for protection in public.</p>
+                    <h3 data-i18n="home.privacyMode">Privacy Mode</h3>
+                    <p data-i18n="home.privacyModeDesc">Toggle sensitive data visibility with dashboard blur and amount censoring for protection in public.</p>
                 </div>
 
                 <div class="feature-card">
                     <span class="feature-icon">🔄</span>
-                    <h3>Real-time Updates</h3>
-                    <p>Pull-to-refresh for instant data sync across all your devices via iCloud.</p>
+                    <h3 data-i18n="home.realtimeUpdates">Real-time Updates</h3>
+                    <p data-i18n="home.realtimeUpdatesDesc">Pull-to-refresh for instant data sync across all your devices via iCloud.</p>
                 </div>
             </div>
         </div>
 
         <!-- Reminders & Notifications -->
         <div class="feature-category">
-            <h3 class="category-title">⏰ Reminders & Notifications</h3>
+            <h3 class="category-title"><span>⏰</span> <span data-i18n="home.remindersNotificationsTitle">Reminders & Notifications</span></h3>
             <div class="features-grid">
                 <div class="feature-card">
                     <span class="feature-icon">📲</span>
-                    <h3>Expense Nudge</h3>
-                    <p>Daily reminders to log expenses with customizable frequencies: Daily, Every 2 Days, Weekdays Only, or Custom schedules.</p>
+                    <h3 data-i18n="home.expenseNudge">Expense Nudge</h3>
+                    <p data-i18n="home.expenseNudgeDesc">Daily reminders to log expenses with customizable frequencies: Daily, Every 2 Days, Weekdays Only, or Custom schedules.</p>
                 </div>
 
                 <div class="feature-card">
                     <span class="feature-icon">⚠️</span>
-                    <h3>Budget Alerts</h3>
-                    <p>Automatic notifications when approaching spending limits at your configured thresholds.</p>
+                    <h3 data-i18n="home.budgetAlerts">Budget Alerts</h3>
+                    <p data-i18n="home.budgetAlertsDesc">Automatic notifications when approaching spending limits at your configured thresholds.</p>
                 </div>
 
                 <div class="feature-card">
                     <span class="feature-icon">📧</span>
-                    <h3>Monthly Summary</h3>
-                    <p>Receive monthly expense overview notifications to stay on top of your financial habits.</p>
+                    <h3 data-i18n="home.monthlySummary">Monthly Summary</h3>
+                    <p data-i18n="home.monthlySummaryDesc">Receive monthly expense overview notifications to stay on top of your financial habits.</p>
                 </div>
             </div>
         </div>
 
         <!-- Data Export -->
         <div class="feature-category">
-            <h3 class="category-title">📤 Data Export</h3>
+            <h3 class="category-title"><span>📤</span> <span data-i18n="home.dataExportTitle">Data Export</span></h3>
             <div class="features-grid">
                 <div class="feature-card">
                     <span class="feature-icon">📄</span>
-                    <h3>PDF Reports</h3>
-                    <p>Professional formatted reports with expense summaries and daily breakdowns for sharing or printing.</p>
+                    <h3 data-i18n="home.pdfReports">PDF Reports</h3>
+                    <p data-i18n="home.pdfReportsDesc">Professional formatted reports with expense summaries and daily breakdowns for sharing or printing.</p>
                 </div>
 
                 <div class="feature-card">
                     <span class="feature-icon">📊</span>
-                    <h3>CSV Export</h3>
-                    <p>Export data for analysis in Excel, Numbers, or Google Sheets with full data compatibility.</p>
+                    <h3 data-i18n="home.csvExport">CSV Export</h3>
+                    <p data-i18n="home.csvExportDesc">Export data for analysis in Excel, Numbers, or Google Sheets with full data compatibility.</p>
                 </div>
 
                 <div class="feature-card">
                     <span class="feature-icon">📆</span>
-                    <h3>Flexible Date Ranges</h3>
-                    <p>Export all time, current month, last month, or custom date ranges to fit your reporting needs.</p>
+                    <h3 data-i18n="home.flexibleDateRanges">Flexible Date Ranges</h3>
+                    <p data-i18n="home.flexibleDateRangesDesc">Export all time, current month, last month, or custom date ranges to fit your reporting needs.</p>
                 </div>
             </div>
         </div>
 
         <!-- Customization -->
         <div class="feature-category">
-            <h3 class="category-title">⚙️ Customization</h3>
+            <h3 class="category-title"><span>⚙️</span> <span data-i18n="home.customizationTitle">Customization</span></h3>
             <div class="features-grid">
                 <div class="feature-card">
                     <span class="feature-icon">🏷️</span>
-                    <h3>Custom Categories</h3>
-                    <p>Create custom expense categories with SF Symbol icons and color coding to match your spending patterns.</p>
+                    <h3 data-i18n="home.customCategories">Custom Categories</h3>
+                    <p data-i18n="home.customCategoriesDesc">Create custom expense categories with SF Symbol icons and color coding to match your spending patterns.</p>
                 </div>
 
                 <div class="feature-card">
                     <span class="feature-icon">💰</span>
-                    <h3>Cost Centers</h3>
-                    <p>Manage payment methods including bank accounts, credit cards, cash, and e-wallets with ease.</p>
+                    <h3 data-i18n="home.costCenters">Cost Centers</h3>
+                    <p data-i18n="home.costCentersDesc">Manage payment methods including bank accounts, credit cards, cash, and e-wallets with ease.</p>
                 </div>
 
                 <div class="feature-card">
                     <span class="feature-icon">🔒</span>
-                    <h3>Privacy Settings</h3>
-                    <p>Configure dashboard visibility defaults and protect your financial data with customizable privacy options.</p>
+                    <h3 data-i18n="home.privacySettings">Privacy Settings</h3>
+                    <p data-i18n="home.privacySettingsDesc">Configure dashboard visibility defaults and protect your financial data with customizable privacy options.</p>
                 </div>
 
                 <div class="feature-card">
                     <span class="feature-icon">🇮🇩</span>
-                    <h3>Built for Indonesia</h3>
-                    <p>Full support for Rupiah (IDR) currency and designed specifically for Indonesian household expense management.</p>
+                    <h3 data-i18n="home.builtForIndonesia">Built for Indonesia</h3>
+                    <p data-i18n="home.builtForIndonesiaDesc">Full support for Rupiah (IDR) currency and designed specifically for Indonesian household expense management.</p>
                 </div>
             </div>
         </div>
@@ -651,81 +714,81 @@
 
     <!-- How It Works Section -->
     <section id="how-it-works" class="how-it-works">
-        <h2 class="section-title">How It Works</h2>
-        <p class="section-subtitle">Start managing your household finances in simple steps</p>
+        <h2 class="section-title" data-i18n="home.howItWorksTitle">How It Works</h2>
+        <p class="section-subtitle" data-i18n="home.howItWorksSubtitle">Start managing your household finances in simple steps</p>
 
         <div class="steps">
             <div class="step">
                 <div class="step-number">1</div>
-                <h3>Set Your Budget</h3>
-                <p>Configure monthly and weekly budgets with alert thresholds. Set up your preferred privacy settings and cost centers.</p>
+                <h3 data-i18n="home.step1Title">Set Your Budget</h3>
+                <p data-i18n="home.step1Desc">Configure monthly and weekly budgets with alert thresholds. Set up your preferred privacy settings and cost centers.</p>
             </div>
 
             <div class="step">
                 <div class="step-number">2</div>
-                <h3>Track Expenses</h3>
-                <p>Quick add daily expenses with vendor tracking, categories, and cost centers. Enable expense nudge reminders to never forget.</p>
+                <h3 data-i18n="home.step2Title">Track Expenses</h3>
+                <p data-i18n="home.step2Desc">Quick add daily expenses with vendor tracking, categories, and cost centers. Enable expense nudge reminders to never forget.</p>
             </div>
 
             <div class="step">
                 <div class="step-number">3</div>
-                <h3>Monitor & Analyze</h3>
-                <p>View dashboard insights with category breakdowns, cost center reports, and budget progress. Export reports when needed.</p>
+                <h3 data-i18n="home.step3Title">Monitor & Analyze</h3>
+                <p data-i18n="home.step3Desc">View dashboard insights with category breakdowns, cost center reports, and budget progress. Export reports when needed.</p>
             </div>
 
             <div class="step">
                 <div class="step-number">4</div>
-                <h3>Stay on Track</h3>
-                <p>Receive smart alerts when approaching budget limits. Review monthly summaries and adjust spending habits accordingly.</p>
+                <h3 data-i18n="home.step4Title">Stay on Track</h3>
+                <p data-i18n="home.step4Desc">Receive smart alerts when approaching budget limits. Review monthly summaries and adjust spending habits accordingly.</p>
             </div>
         </div>
     </section>
 
     <!-- Technical Specs Section -->
     <section id="specs" class="specs">
-        <h2 class="section-title">Requirements</h2>
-        <p class="section-subtitle">Technical specifications for UangRumah</p>
+        <h2 class="section-title" data-i18n="home.requirementsTitle">Requirements</h2>
+        <p class="section-subtitle" data-i18n="home.requirementsSubtitle">Technical specifications for UangRumah</p>
 
         <div class="specs-grid">
             <div class="spec-item">
-                <h3>Platform</h3>
-                <p>iOS 16.0+</p>
+                <h3 data-i18n="home.platform">Platform</h3>
+                <p data-i18n="home.platformValue">iOS 16.0+</p>
             </div>
 
             <div class="spec-item">
-                <h3>Devices</h3>
-                <p>iPhone & iPad</p>
+                <h3 data-i18n="home.devices">Devices</h3>
+                <p data-i18n="home.devicesValue">iPhone & iPad</p>
             </div>
 
             <div class="spec-item">
-                <h3>Technology</h3>
-                <p>SwiftUI</p>
+                <h3 data-i18n="home.technology">Technology</h3>
+                <p data-i18n="home.technologyValue">SwiftUI</p>
             </div>
 
             <div class="spec-item">
-                <h3>Sync</h3>
-                <p>iCloud</p>
+                <h3 data-i18n="home.sync">Sync</h3>
+                <p data-i18n="home.syncValue">iCloud</p>
             </div>
 
             <div class="spec-item">
-                <h3>Currency</h3>
-                <p>IDR (Rupiah)</p>
+                <h3 data-i18n="home.currency">Currency</h3>
+                <p data-i18n="home.currencyValue">IDR (Rupiah)</p>
             </div>
 
             <div class="spec-item">
-                <h3>Storage</h3>
-                <p>Local + Cloud</p>
+                <h3 data-i18n="home.storage">Storage</h3>
+                <p data-i18n="home.storageValue">Local + Cloud</p>
             </div>
         </div>
     </section>
 
     <!-- Download CTA Section -->
     <section id="download" class="download-cta">
-        <h2>Ready to Take Control of Your Finances?</h2>
-        <p>Join couples who have improved their financial health with UangRumah</p>
+        <h2 data-i18n="home.downloadCtaTitle">Ready to Take Control of Your Finances?</h2>
+        <p data-i18n="home.downloadCtaSubtitle">Join couples who have improved their financial health with UangRumah</p>
         <a href="mailto:invite@uangrumah.com?subject=I'd%20love%20to%20join%20Uang%20Rumah%20Beta!&body=Hello,%20how%20do%20I%20join%20the%20Beta?" class="cta-button">
             <span>📧</span>
-            <span>Ask Invitation</span>
+            <span data-i18n="home.downloadCtaButton">Ask Invitation</span>
         </a>
     </section>
 
@@ -733,13 +796,13 @@
     <footer>
         <div class="footer-content">
             <div class="footer-links">
-                <a href="privacy-policy.html">Privacy Policy</a>
-                <a href="terms-conditions.html">Terms & Conditions</a>
-                <a href="support.html">Support</a>
-                <a href="contact.html">Contact</a>
+                <a href="privacy-policy.html" data-i18n="common.privacyPolicy">Privacy Policy</a>
+                <a href="terms-conditions.html" data-i18n="common.termsConditions">Terms & Conditions</a>
+                <a href="support.html" data-i18n="common.support">Support</a>
+                <a href="contact.html" data-i18n="common.contact">Contact</a>
             </div>
             <div class="copyright">
-                <p>&copy; 2025 UangRumah. All rights reserved.</p>
+                <p>&copy; 2025 UangRumah. <span data-i18n="common.allRightsReserved">All rights reserved</span>.</p>
             </div>
         </div>
     </footer>
@@ -778,5 +841,9 @@
             observer.observe(el);
         });
     </script>
+
+    <!-- i18n Support -->
+    <script src="translations.js"></script>
+    <script src="language-switcher.js"></script>
 </body>
 </html>
