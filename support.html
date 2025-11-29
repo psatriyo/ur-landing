@@ -15,15 +15,25 @@
         }
 
         :root {
-            --primary-color: #2563eb;
-            --primary-dark: #1e40af;
+            --primary-color: #6366f1;
+            --primary-dark: #4f46e5;
+            --primary-light: #818cf8;
             --secondary-color: #10b981;
+            --accent-color: #f59e0b;
             --text-dark: #1f2937;
             --text-light: #6b7280;
-            --bg-light: #f9fafb;
+            --text-muted: #9ca3af;
+            --bg-light: #f8fafc;
+            --bg-card: #ffffff;
             --white: #ffffff;
-            --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.15);
+            --border-color: #e5e7eb;
+            --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            --gradient-hero: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4338ca 100%);
+            --gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            --gradient-cta: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
         }
 
         body {
@@ -36,11 +46,15 @@
 
         /* Header */
         header {
-            background: var(--white);
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
             padding: 1rem 0;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-            position: sticky;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            position: fixed;
             top: 0;
+            left: 0;
+            right: 0;
             z-index: 1000;
         }
 
@@ -63,16 +77,26 @@
             text-decoration: none;
         }
 
+        .logo-icon {
+            width: 36px;
+            height: 36px;
+            background: var(--gradient-primary);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+        }
+
         .beta-badge {
             background: linear-gradient(135deg, #f59e0b, #d97706);
             color: var(--white);
-            font-size: 0.65rem;
+            font-size: 0.6rem;
             font-weight: 700;
-            padding: 0.25rem 0.6rem;
-            border-radius: 12px;
+            padding: 0.2rem 0.5rem;
+            border-radius: 10px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);
         }
 
         .nav-links {
@@ -85,6 +109,7 @@
             text-decoration: none;
             color: var(--text-dark);
             font-weight: 500;
+            font-size: 0.95rem;
             transition: color 0.3s;
         }
 
@@ -92,63 +117,111 @@
             color: var(--primary-color);
         }
 
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
         /* Hero Section */
         .page-hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: var(--gradient-hero);
             color: var(--white);
-            padding: 4rem 2rem;
+            padding: 8rem 2rem 4rem;
             text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         .page-hero h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             margin-bottom: 1rem;
             font-weight: 800;
+            letter-spacing: -0.02em;
         }
 
         .page-hero p {
-            font-size: 1.125rem;
-            opacity: 0.95;
-            max-width: 700px;
+            font-size: 1.25rem;
+            opacity: 0.9;
+            max-width: 600px;
             margin: 0 auto;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
         /* Content Section */
         .content {
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 0 auto;
             padding: 4rem 2rem;
         }
 
+        /* Support Grid */
         .support-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
             margin-bottom: 3rem;
         }
 
         .support-card {
-            background: var(--white);
+            background: var(--bg-card);
             padding: 2rem;
             border-radius: 16px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            box-shadow: var(--shadow);
             text-align: center;
             transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid var(--border-color);
         }
 
         .support-card:hover {
             transform: translateY(-5px);
-            box-shadow: var(--shadow);
+            box-shadow: var(--shadow-lg);
         }
 
         .support-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            display: block;
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin: 0 auto 1.25rem;
         }
 
         .support-card h3 {
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             color: var(--text-dark);
             margin-bottom: 0.75rem;
             font-weight: 700;
@@ -157,51 +230,125 @@
         .support-card p {
             color: var(--text-light);
             line-height: 1.6;
+            font-size: 0.95rem;
         }
 
-        .faq-section {
-            background: var(--white);
-            border-radius: 16px;
-            padding: 3rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            margin-bottom: 2rem;
+        /* Requirements Box */
+        .requirements-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-left: 4px solid var(--accent-color);
+            padding: 1.5rem 2rem;
+            margin-bottom: 3rem;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
         }
 
-        .section-title {
-            font-size: 2rem;
-            color: var(--text-dark);
-            margin-bottom: 2rem;
+        .requirements-icon {
+            font-size: 1.5rem;
+        }
+
+        .requirements-content h4 {
+            color: #92400e;
+            margin-bottom: 0.25rem;
             font-weight: 700;
-            text-align: center;
+            font-size: 1rem;
         }
 
+        .requirements-content p {
+            color: #78350f;
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        /* Section Cards */
+        .section-card {
+            background: var(--bg-card);
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .section-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--gradient-primary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .section-title-group h2 {
+            font-size: 1.5rem;
+            color: var(--text-dark);
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        .section-title-group p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* FAQ Section */
         .faq-item {
-            border-bottom: 1px solid #e5e7eb;
+            border-bottom: 1px solid var(--border-color);
             padding: 1.5rem 0;
         }
 
         .faq-item:last-child {
             border-bottom: none;
+            padding-bottom: 0;
         }
 
         .faq-question {
-            font-size: 1.125rem;
+            font-size: 1.1rem;
             font-weight: 600;
             color: var(--text-dark);
             margin-bottom: 0.75rem;
             display: flex;
             align-items: flex-start;
-            gap: 0.5rem;
+            gap: 0.75rem;
+        }
+
+        .faq-question .q-icon {
+            width: 24px;
+            height: 24px;
+            background: var(--gradient-primary);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 700;
+            flex-shrink: 0;
+            margin-top: 2px;
         }
 
         .faq-answer {
             color: var(--text-light);
             line-height: 1.8;
-            margin-left: 1.75rem;
+            margin-left: 2.25rem;
         }
 
-        .faq-answer ul {
-            margin: 0.5rem 0 0.5rem 1.5rem;
+        .faq-answer ul,
+        .faq-answer ol {
+            margin: 0.75rem 0 0.75rem 1.5rem;
         }
 
         .faq-answer li {
@@ -212,46 +359,51 @@
             color: var(--text-dark);
         }
 
-        .highlight-box {
-            background: #eff6ff;
-            border-left: 4px solid var(--primary-color);
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-            border-radius: 8px;
+        .faq-answer a {
+            color: var(--primary-color);
+            font-weight: 600;
+            text-decoration: none;
         }
 
-        .highlight-box p {
-            margin: 0;
-            color: var(--text-dark);
+        .faq-answer a:hover {
+            text-decoration: underline;
         }
 
-        .troubleshooting-section {
-            background: var(--white);
-            border-radius: 16px;
-            padding: 3rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            margin-bottom: 2rem;
-        }
-
+        /* Troubleshooting Section */
         .troubleshooting-item {
             margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .troubleshooting-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
         }
 
         .troubleshooting-item h3 {
-            font-size: 1.25rem;
+            font-size: 1.15rem;
             color: var(--text-dark);
             margin-bottom: 0.75rem;
-            font-weight: 600;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
         }
 
-        .troubleshooting-item p {
+        .troubleshooting-item h3 span:first-child {
+            font-size: 1.25rem;
+        }
+
+        .troubleshooting-item > p {
             color: var(--text-light);
             line-height: 1.8;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.75rem;
         }
 
         .troubleshooting-item ol {
-            margin: 0.5rem 0 0.5rem 1.5rem;
+            margin: 0.75rem 0 0.75rem 1.5rem;
             color: var(--text-light);
         }
 
@@ -260,25 +412,55 @@
             line-height: 1.8;
         }
 
+        /* Highlight Box */
+        .highlight-box {
+            background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%);
+            border-left: 4px solid var(--primary-color);
+            padding: 1.25rem 1.5rem;
+            margin-top: 1.5rem;
+            border-radius: 8px;
+        }
+
+        .highlight-box p {
+            margin: 0;
+            color: var(--text-dark);
+            font-size: 0.95rem;
+        }
+
+        /* Contact CTA */
         .contact-cta {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: var(--gradient-cta);
             color: var(--white);
             padding: 3rem;
-            border-radius: 16px;
+            border-radius: 20px;
             text-align: center;
-            box-shadow: var(--shadow);
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
         }
 
         .contact-cta h2 {
             font-size: 1.75rem;
-            margin-bottom: 1rem;
+            margin-bottom: 0.75rem;
             font-weight: 700;
+            position: relative;
         }
 
         .contact-cta p {
-            font-size: 1.125rem;
+            font-size: 1.1rem;
             margin-bottom: 1.5rem;
-            opacity: 0.95;
+            opacity: 0.9;
+            position: relative;
         }
 
         .contact-button {
@@ -289,9 +471,10 @@
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             transition: transform 0.3s, box-shadow 0.3s;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            position: relative;
         }
 
         .contact-button:hover {
@@ -299,31 +482,11 @@
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
         }
 
-        .requirements-box {
-            background: #fef3c7;
-            border-left: 4px solid #f59e0b;
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-            border-radius: 8px;
-        }
-
-        .requirements-box h4 {
-            color: #92400e;
-            margin-bottom: 0.5rem;
-            font-weight: 600;
-        }
-
-        .requirements-box p {
-            margin: 0;
-            color: #92400e;
-        }
-
         /* Footer */
         footer {
-            background: var(--text-dark);
+            background: var(--gradient-hero);
             color: var(--white);
-            padding: 3rem 2rem 2rem;
-            text-align: center;
+            padding: 4rem 2rem 2rem;
             margin-top: 4rem;
         }
 
@@ -332,32 +495,96 @@
             margin: 0 auto;
         }
 
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin-bottom: 2rem;
-            flex-wrap: wrap;
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
         }
 
-        .footer-links a {
+        .footer-brand p {
+            opacity: 0.8;
+            margin-top: 1rem;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .footer-column h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+
+        .footer-column a {
+            display: block;
             color: var(--white);
             text-decoration: none;
-            opacity: 0.8;
+            opacity: 0.7;
+            margin-bottom: 0.75rem;
+            font-size: 0.95rem;
             transition: opacity 0.3s;
         }
 
-        .footer-links a:hover {
+        .footer-column a:hover {
             opacity: 1;
         }
 
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
         .copyright {
-            opacity: 0.6;
+            opacity: 0.7;
             font-size: 0.9rem;
         }
 
+        /* Language Switcher */
+        .language-switcher {
+            padding: 0.5rem 0.875rem;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+            background: var(--white);
+            font-weight: 500;
+            font-size: 0.875rem;
+            color: var(--text-dark);
+            cursor: pointer;
+            transition: all 0.3s;
+            appearance: none;
+            background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%236b7280%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C/polyline%3E%3C/svg%3E');
+            background-repeat: no-repeat;
+            background-position: right 0.5rem center;
+            background-size: 1em;
+            padding-right: 2rem;
+        }
+
+        .language-switcher:hover {
+            border-color: var(--primary-color);
+        }
+
+        .language-switcher:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+        }
+
         /* Mobile Responsiveness */
+        @media (max-width: 1024px) {
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+            }
+        }
+
         @media (max-width: 768px) {
+            .page-hero {
+                padding: 7rem 1.5rem 3rem;
+            }
+
             .page-hero h1 {
                 font-size: 2rem;
             }
@@ -370,78 +597,41 @@
                 padding: 2rem 1rem;
             }
 
-            .faq-section, .troubleshooting-section {
-                padding: 2rem 1.5rem;
-            }
-
-            .section-title {
-                font-size: 1.5rem;
-            }
-
             .support-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .section-card {
+                padding: 1.5rem;
+            }
+
+            .section-header {
+                flex-direction: column;
+                text-align: center;
             }
 
             .nav-links {
                 display: none;
             }
 
-            .footer-links {
+            .footer-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .footer-bottom {
                 flex-direction: column;
                 gap: 1rem;
+                text-align: center;
             }
 
             .contact-cta {
                 padding: 2rem 1.5rem;
             }
-        }
 
-        /* Language Switcher */
-        .language-switcher {
-            padding: 0.4rem 0.75rem;
-            border-radius: 50px;
-            border: 2px solid #e5e7eb;
-            background: var(--bg-light);
-            font-weight: 600;
-            font-size: 0.85rem;
-            color: var(--text-light);
-            cursor: pointer;
-            transition: all 0.3s;
-            appearance: none;
-            background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C/polyline%3E%3C/svg%3E');
-            background-repeat: no-repeat;
-            background-position: right 0.5rem center;
-            background-size: 1.2em;
-            padding-right: 2rem;
-        }
-
-        .language-switcher:hover {
-            border-color: var(--primary-color);
-            color: var(--primary-color);
-        }
-
-        .language-switcher:focus {
-            outline: none;
-            border-color: var(--primary-color);
-            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
-        }
-
-        .nav-right {
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-        }
-
-        /* Mobile Language Switcher */
-        @media (max-width: 768px) {
-            .language-switcher {
-                padding: 0.35rem 0.6rem;
-                font-size: 0.8rem;
-                padding-right: 1.8rem;
-            }
-
-            .nav-right {
-                gap: 1rem;
+            .requirements-box {
+                flex-direction: column;
+                text-align: center;
             }
         }
     </style>
@@ -451,7 +641,7 @@
     <header>
         <nav>
             <a href="index.html" class="logo">
-                <span>💰</span>
+                <span class="logo-icon">💰</span>
                 <span>UangRumah</span>
                 <span class="beta-badge" data-i18n="common.beta">Beta</span>
             </a>
@@ -473,8 +663,14 @@
 
     <!-- Page Hero -->
     <section class="page-hero">
-        <h1 data-i18n="support.heroTitle">Support Center</h1>
-        <p data-i18n="support.heroSubtitle">Find answers to common questions and get help with UangRumah.</p>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>📚</span>
+                <span data-i18n="support.heroBadge">Help Center</span>
+            </div>
+            <h1 data-i18n="support.heroTitle">Support Center</h1>
+            <p data-i18n="support.heroSubtitle">Find answers to common questions and get help with UangRumah.</p>
+        </div>
     </section>
 
     <!-- Main Content -->
@@ -482,17 +678,17 @@
         <!-- Quick Links -->
         <div class="support-grid">
             <div class="support-card">
-                <span class="support-icon">📖</span>
+                <div class="support-icon">📖</div>
                 <h3 data-i18n="support.gettingStartedTitle">Getting Started</h3>
                 <p data-i18n="support.gettingStartedDesc">Learn the basics of setting up budgets, adding expenses, and navigating the app.</p>
             </div>
             <div class="support-card">
-                <span class="support-icon">🔧</span>
+                <div class="support-icon">🔧</div>
                 <h3 data-i18n="support.troubleshootingTitle">Troubleshooting</h3>
                 <p data-i18n="support.troubleshootingDesc">Solve common issues with syncing, notifications, and data management.</p>
             </div>
             <div class="support-card">
-                <span class="support-icon">💬</span>
+                <div class="support-icon">💬</div>
                 <h3 data-i18n="support.contactUsTitle">Contact Us</h3>
                 <p data-i18n="support.contactUsDesc">Can't find what you're looking for? Reach out to our support team.</p>
             </div>
@@ -500,295 +696,331 @@
 
         <!-- System Requirements -->
         <div class="requirements-box">
-            <h4><span>⚙️</span> <span data-i18n="support.systemRequirements">System Requirements</span></h4>
-            <p data-i18n="support.systemRequirementsValue"><strong>Platform:</strong> iOS 16.0 or later | <strong>Devices:</strong> iPhone & iPad | <strong>Version:</strong> 0.1.0 Beta | <strong>Storage:</strong> iCloud (optional)</p>
+            <span class="requirements-icon">⚙️</span>
+            <div class="requirements-content">
+                <h4 data-i18n="support.systemRequirements">System Requirements</h4>
+                <p data-i18n="support.systemRequirementsValue"><strong>Platform:</strong> iOS 16.0 or later | <strong>Devices:</strong> iPhone & iPad | <strong>Version:</strong> 0.1.0 Beta | <strong>Storage:</strong> iCloud (optional)</p>
+            </div>
         </div>
 
         <!-- FAQ Section -->
-        <div class="faq-section">
-            <h2 class="section-title" data-i18n="support.faqSectionTitle">Frequently Asked Questions</h2>
+        <div class="section-card" id="faq">
+            <div class="section-header">
+                <div class="section-icon">❓</div>
+                <div class="section-title-group">
+                    <h2 data-i18n="support.faqSectionTitle">Frequently Asked Questions</h2>
+                    <p data-i18n="support.faqSectionSubtitle">Quick answers to common questions</p>
+                </div>
+            </div>
 
             <div class="faq-item">
                 <div class="faq-question">
-                    <span>❓</span>
-                    <strong>How do I get started with UangRumah?</strong>
+                    <span class="q-icon">Q</span>
+                    <span data-i18n="support.faq1Question">How do I get started with UangRumah?</span>
                 </div>
                 <div class="faq-answer">
-                    <p>Getting started is easy:</p>
+                    <p data-i18n="support.faq1Answer">Getting started is easy:</p>
                     <ol>
-                        <li>Download UangRumah from the App Store</li>
-                        <li>Set up your monthly and weekly budgets in Settings</li>
-                        <li>Create custom categories and cost centers for your spending</li>
-                        <li>Start adding expenses by tapping the "+" button</li>
-                        <li>Enable expense nudge reminders to stay on track</li>
+                        <li data-i18n="support.faq1Step1">Download UangRumah from the App Store</li>
+                        <li data-i18n="support.faq1Step2">Set up your monthly and weekly budgets in Settings</li>
+                        <li data-i18n="support.faq1Step3">Create custom categories and cost centers for your spending</li>
+                        <li data-i18n="support.faq1Step4">Start adding expenses by tapping the "+" button</li>
+                        <li data-i18n="support.faq1Step5">Enable expense nudge reminders to stay on track</li>
                     </ol>
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question">
-                    <span>❓</span>
-                    <strong>How does iCloud sync work?</strong>
+                    <span class="q-icon">Q</span>
+                    <span data-i18n="support.faq2Question">How does iCloud sync work?</span>
                 </div>
                 <div class="faq-answer">
-                    <p>iCloud sync keeps your data synchronized across all your Apple devices:</p>
+                    <p data-i18n="support.faq2Answer">iCloud sync keeps your data synchronized across all your Apple devices:</p>
                     <ul>
-                        <li>Enable iCloud sync in iOS Settings > [Your Name] > iCloud</li>
-                        <li>Make sure UangRumah has iCloud access enabled</li>
-                        <li>Your expense data will automatically sync between iPhone and iPad</li>
-                        <li>Changes made on one device appear on others within minutes</li>
-                        <li>Requires active internet connection for syncing</li>
+                        <li data-i18n="support.faq2Point1">Enable iCloud sync in iOS Settings > [Your Name] > iCloud</li>
+                        <li data-i18n="support.faq2Point2">Make sure UangRumah has iCloud access enabled</li>
+                        <li data-i18n="support.faq2Point3">Your expense data will automatically sync between iPhone and iPad</li>
+                        <li data-i18n="support.faq2Point4">Changes made on one device appear on others within minutes</li>
+                        <li data-i18n="support.faq2Point5">Requires active internet connection for syncing</li>
                     </ul>
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question">
-                    <span>❓</span>
-                    <strong>Can I export my expense data?</strong>
+                    <span class="q-icon">Q</span>
+                    <span data-i18n="support.faq3Question">Can I export my expense data?</span>
                 </div>
                 <div class="faq-answer">
-                    <p>Yes! UangRumah supports data export in two formats:</p>
+                    <p data-i18n="support.faq3Answer">Yes! UangRumah supports data export in two formats:</p>
                     <ul>
-                        <li><strong>PDF Reports:</strong> Professional formatted reports with expense summaries and daily breakdowns</li>
-                        <li><strong>CSV Files:</strong> Spreadsheet-compatible format for Excel, Numbers, or Google Sheets</li>
+                        <li><strong data-i18n="support.faq3Format1">PDF Reports:</strong> <span data-i18n="support.faq3Format1Desc">Professional formatted reports with expense summaries and daily breakdowns</span></li>
+                        <li><strong data-i18n="support.faq3Format2">CSV Files:</strong> <span data-i18n="support.faq3Format2Desc">Spreadsheet-compatible format for Excel, Numbers, or Google Sheets</span></li>
                     </ul>
-                    <p>To export: Go to Settings > Export Data > Choose format and date range > Share or save the file.</p>
+                    <p data-i18n="support.faq3HowTo">To export: Go to Settings > Export Data > Choose format and date range > Share or save the file.</p>
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question">
-                    <span>❓</span>
-                    <strong>How do budget alerts work?</strong>
+                    <span class="q-icon">Q</span>
+                    <span data-i18n="support.faq4Question">How do budget alerts work?</span>
                 </div>
                 <div class="faq-answer">
-                    <p>Budget alerts help you stay within your spending limits:</p>
+                    <p data-i18n="support.faq4Answer">Budget alerts help you stay within your spending limits:</p>
                     <ul>
-                        <li>Set monthly and weekly budgets in Settings</li>
-                        <li>Configure alert thresholds (50%, 75%, 90%, 100%)</li>
-                        <li>Receive notifications when you reach each threshold</li>
-                        <li>Alerts are calculated in real-time as you add expenses</li>
-                        <li>Make sure notifications are enabled in iOS Settings</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>❓</span>
-                    <strong>What are cost centers and how do I use them?</strong>
-                </div>
-                <div class="faq-answer">
-                    <p>Cost centers help you track which payment method you used for each expense:</p>
-                    <ul>
-                        <li>Create cost centers for bank accounts, credit cards, cash, e-wallets, etc.</li>
-                        <li>Assign a cost center when adding each expense</li>
-                        <li>View spending breakdown by cost center in the dashboard</li>
-                        <li>Perfect for couples managing both joint and separate accounts</li>
+                        <li data-i18n="support.faq4Point1">Set monthly and weekly budgets in Settings</li>
+                        <li data-i18n="support.faq4Point2">Configure alert thresholds (50%, 75%, 90%, 100%)</li>
+                        <li data-i18n="support.faq4Point3">Receive notifications when you reach each threshold</li>
+                        <li data-i18n="support.faq4Point4">Alerts are calculated in real-time as you add expenses</li>
+                        <li data-i18n="support.faq4Point5">Make sure notifications are enabled in iOS Settings</li>
                     </ul>
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question">
-                    <span>❓</span>
-                    <strong>Can I track recurring expenses like subscriptions?</strong>
+                    <span class="q-icon">Q</span>
+                    <span data-i18n="support.faq5Question">What are cost centers and how do I use them?</span>
                 </div>
                 <div class="faq-answer">
-                    <p>Yes! UangRumah supports automatic recurring expense tracking:</p>
+                    <p data-i18n="support.faq5Answer">Cost centers help you track which payment method you used for each expense:</p>
                     <ul>
-                        <li>Add an expense and mark it as "Recurring"</li>
-                        <li>Choose frequency: Daily, Weekly, Monthly, or Yearly</li>
-                        <li>Set start and optional end dates</li>
-                        <li>The app will automatically track these expenses going forward</li>
-                        <li>Perfect for subscriptions, bills, and regular payments</li>
+                        <li data-i18n="support.faq5Point1">Create cost centers for bank accounts, credit cards, cash, e-wallets, etc.</li>
+                        <li data-i18n="support.faq5Point2">Assign a cost center when adding each expense</li>
+                        <li data-i18n="support.faq5Point3">View spending breakdown by cost center in the dashboard</li>
+                        <li data-i18n="support.faq5Point4">Perfect for couples managing both joint and separate accounts</li>
                     </ul>
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question">
-                    <span>❓</span>
-                    <strong>What is Privacy Mode?</strong>
+                    <span class="q-icon">Q</span>
+                    <span data-i18n="support.faq6Question">Can I track recurring expenses like subscriptions?</span>
                 </div>
                 <div class="faq-answer">
-                    <p>Privacy Mode helps protect your financial information in public:</p>
+                    <p data-i18n="support.faq6Answer">Yes! UangRumah supports automatic recurring expense tracking:</p>
                     <ul>
-                        <li><strong>Dashboard Blur:</strong> Blurs sensitive information on the main screen</li>
-                        <li><strong>Amount Censoring:</strong> Hides specific amounts with asterisks</li>
-                        <li>Toggle on/off quickly from the dashboard</li>
-                        <li>Set default privacy mode in Settings</li>
+                        <li data-i18n="support.faq6Point1">Add an expense and mark it as "Recurring"</li>
+                        <li data-i18n="support.faq6Point2">Choose frequency: Daily, Weekly, Monthly, or Yearly</li>
+                        <li data-i18n="support.faq6Point3">Set start and optional end dates</li>
+                        <li data-i18n="support.faq6Point4">The app will automatically track these expenses going forward</li>
+                        <li data-i18n="support.faq6Point5">Perfect for subscriptions, bills, and regular payments</li>
                     </ul>
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question">
-                    <span>❓</span>
-                    <strong>Is my financial data secure?</strong>
+                    <span class="q-icon">Q</span>
+                    <span data-i18n="support.faq7Question">What is Privacy Mode?</span>
                 </div>
                 <div class="faq-answer">
-                    <p>Yes, we take security seriously:</p>
+                    <p data-i18n="support.faq7Answer">Privacy Mode helps protect your financial information in public:</p>
                     <ul>
-                        <li>All data is stored locally on your device by default</li>
-                        <li>No data is sent to external servers (except your personal iCloud if enabled)</li>
-                        <li>Data is encrypted during iCloud sync</li>
-                        <li>We never share your data with third parties</li>
-                        <li>Use device passcode or Face ID/Touch ID for additional security</li>
-                    </ul>
-                    <p>Read our <a href="privacy-policy.html" style="color: var(--primary-color); font-weight: 600;">Privacy Policy</a> for complete details.</p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>❓</span>
-                    <strong>Does UangRumah work offline?</strong>
-                </div>
-                <div class="faq-answer">
-                    <p>Yes! UangRumah works fully offline:</p>
-                    <ul>
-                        <li>Add, edit, and delete expenses without internet</li>
-                        <li>View all dashboard features and reports</li>
-                        <li>All data is stored locally on your device</li>
-                        <li>Internet only needed for iCloud sync (if enabled)</li>
+                        <li><strong data-i18n="support.faq7Feature1">Dashboard Blur:</strong> <span data-i18n="support.faq7Feature1Desc">Blurs sensitive information on the main screen</span></li>
+                        <li><strong data-i18n="support.faq7Feature2">Amount Censoring:</strong> <span data-i18n="support.faq7Feature2Desc">Hides specific amounts with asterisks</span></li>
+                        <li data-i18n="support.faq7Feature3">Toggle on/off quickly from the dashboard</li>
+                        <li data-i18n="support.faq7Feature4">Set default privacy mode in Settings</li>
                     </ul>
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question">
-                    <span>❓</span>
-                    <strong>Is UangRumah free?</strong>
+                    <span class="q-icon">Q</span>
+                    <span data-i18n="support.faq8Question">Is my financial data secure?</span>
                 </div>
                 <div class="faq-answer">
-                    <p>Currently, UangRumah version 0.1.0 Beta is completely free to use with all features included. Future versions may introduce optional premium features, but we will always maintain a robust free tier.</p>
+                    <p data-i18n="support.faq8Answer">Yes, we take security seriously:</p>
+                    <ul>
+                        <li data-i18n="support.faq8Point1">All data is stored locally on your device by default</li>
+                        <li data-i18n="support.faq8Point2">No data is sent to external servers (except your personal iCloud if enabled)</li>
+                        <li data-i18n="support.faq8Point3">Data is encrypted during iCloud sync</li>
+                        <li data-i18n="support.faq8Point4">We never share your data with third parties</li>
+                        <li data-i18n="support.faq8Point5">Use device passcode or Face ID/Touch ID for additional security</li>
+                    </ul>
+                    <p><span data-i18n="support.faq8ReadMore">Read our</span> <a href="privacy-policy.html" data-i18n="common.privacyPolicy">Privacy Policy</a> <span data-i18n="support.faq8ForDetails">for complete details.</span></p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span class="q-icon">Q</span>
+                    <span data-i18n="support.faq9Question">Does UangRumah work offline?</span>
+                </div>
+                <div class="faq-answer">
+                    <p data-i18n="support.faq9Answer">Yes! UangRumah works fully offline:</p>
+                    <ul>
+                        <li data-i18n="support.faq9Point1">Add, edit, and delete expenses without internet</li>
+                        <li data-i18n="support.faq9Point2">View all dashboard features and reports</li>
+                        <li data-i18n="support.faq9Point3">All data is stored locally on your device</li>
+                        <li data-i18n="support.faq9Point4">Internet only needed for iCloud sync (if enabled)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span class="q-icon">Q</span>
+                    <span data-i18n="support.faq10Question">Is UangRumah free?</span>
+                </div>
+                <div class="faq-answer">
+                    <p data-i18n="support.faq10Answer">Currently, UangRumah version 0.1.0 Beta is completely free to use with all features included. Future versions may introduce optional premium features, but we will always maintain a robust free tier.</p>
                 </div>
             </div>
         </div>
 
         <!-- Troubleshooting Section -->
-        <div class="troubleshooting-section">
-            <h2 class="section-title">Troubleshooting Guide</h2>
+        <div class="section-card" id="troubleshooting">
+            <div class="section-header">
+                <div class="section-icon">🔧</div>
+                <div class="section-title-group">
+                    <h2 data-i18n="support.troubleshootingSectionTitle">Troubleshooting Guide</h2>
+                    <p data-i18n="support.troubleshootingSectionSubtitle">Step-by-step solutions for common issues</p>
+                </div>
+            </div>
 
             <div class="troubleshooting-item">
-                <h3>🔄 iCloud Sync Not Working</h3>
-                <p>If your data isn't syncing between devices, try these steps:</p>
+                <h3><span>🔄</span> <span data-i18n="support.trouble1Title">iCloud Sync Not Working</span></h3>
+                <p data-i18n="support.trouble1Desc">If your data isn't syncing between devices, try these steps:</p>
                 <ol>
-                    <li>Verify you're signed in to the same iCloud account on all devices</li>
-                    <li>Check iOS Settings > [Your Name] > iCloud and ensure UangRumah is enabled</li>
-                    <li>Make sure you have an active internet connection</li>
-                    <li>Check available iCloud storage (Settings > [Your Name] > iCloud > Manage Storage)</li>
-                    <li>Force close and reopen the app on both devices</li>
-                    <li>Try toggling iCloud sync off and on again</li>
-                    <li>Restart your device</li>
+                    <li data-i18n="support.trouble1Step1">Verify you're signed in to the same iCloud account on all devices</li>
+                    <li data-i18n="support.trouble1Step2">Check iOS Settings > [Your Name] > iCloud and ensure UangRumah is enabled</li>
+                    <li data-i18n="support.trouble1Step3">Make sure you have an active internet connection</li>
+                    <li data-i18n="support.trouble1Step4">Check available iCloud storage (Settings > [Your Name] > iCloud > Manage Storage)</li>
+                    <li data-i18n="support.trouble1Step5">Force close and reopen the app on both devices</li>
+                    <li data-i18n="support.trouble1Step6">Try toggling iCloud sync off and on again</li>
+                    <li data-i18n="support.trouble1Step7">Restart your device</li>
                 </ol>
             </div>
 
             <div class="troubleshooting-item">
-                <h3>🔔 Notifications Not Appearing</h3>
-                <p>If you're not receiving budget alerts or expense nudges:</p>
+                <h3><span>🔔</span> <span data-i18n="support.trouble2Title">Notifications Not Appearing</span></h3>
+                <p data-i18n="support.trouble2Desc">If you're not receiving budget alerts or expense nudges:</p>
                 <ol>
-                    <li>Go to iOS Settings > Notifications > UangRumah</li>
-                    <li>Ensure "Allow Notifications" is enabled</li>
-                    <li>Check that alert styles are configured (Lock Screen, Notification Center, Banners)</li>
-                    <li>Verify notification settings within the UangRumah app (Settings > Notifications)</li>
-                    <li>Make sure Do Not Disturb / Focus mode isn't blocking notifications</li>
-                    <li>Check that you've set up budget thresholds or reminder schedules</li>
+                    <li data-i18n="support.trouble2Step1">Go to iOS Settings > Notifications > UangRumah</li>
+                    <li data-i18n="support.trouble2Step2">Ensure "Allow Notifications" is enabled</li>
+                    <li data-i18n="support.trouble2Step3">Check that alert styles are configured (Lock Screen, Notification Center, Banners)</li>
+                    <li data-i18n="support.trouble2Step4">Verify notification settings within the UangRumah app (Settings > Notifications)</li>
+                    <li data-i18n="support.trouble2Step5">Make sure Do Not Disturb / Focus mode isn't blocking notifications</li>
+                    <li data-i18n="support.trouble2Step6">Check that you've set up budget thresholds or reminder schedules</li>
                 </ol>
             </div>
 
             <div class="troubleshooting-item">
-                <h3>📊 Dashboard Data Not Updating</h3>
-                <p>If your dashboard shows outdated information:</p>
+                <h3><span>📊</span> <span data-i18n="support.trouble3Title">Dashboard Data Not Updating</span></h3>
+                <p data-i18n="support.trouble3Desc">If your dashboard shows outdated information:</p>
                 <ol>
-                    <li>Pull down on the dashboard to refresh manually</li>
-                    <li>Close and reopen the app completely</li>
-                    <li>Check if expenses were added to the correct date</li>
-                    <li>Verify your budget period settings (monthly vs weekly)</li>
-                    <li>If using iCloud sync, wait a few minutes for synchronization</li>
+                    <li data-i18n="support.trouble3Step1">Pull down on the dashboard to refresh manually</li>
+                    <li data-i18n="support.trouble3Step2">Close and reopen the app completely</li>
+                    <li data-i18n="support.trouble3Step3">Check if expenses were added to the correct date</li>
+                    <li data-i18n="support.trouble3Step4">Verify your budget period settings (monthly vs weekly)</li>
+                    <li data-i18n="support.trouble3Step5">If using iCloud sync, wait a few minutes for synchronization</li>
                 </ol>
             </div>
 
             <div class="troubleshooting-item">
-                <h3>💾 Data Not Saving</h3>
-                <p>If your expenses or changes aren't being saved:</p>
+                <h3><span>💾</span> <span data-i18n="support.trouble4Title">Data Not Saving</span></h3>
+                <p data-i18n="support.trouble4Desc">If your expenses or changes aren't being saved:</p>
                 <ol>
-                    <li>Make sure all required fields are filled in when adding expenses</li>
-                    <li>Check available device storage (Settings > General > iPhone Storage)</li>
-                    <li>Ensure the app has necessary permissions in iOS Settings</li>
-                    <li>Update to the latest version of UangRumah from the App Store</li>
-                    <li>Restart the app and try again</li>
-                    <li>If problem persists, export your data and contact support</li>
+                    <li data-i18n="support.trouble4Step1">Make sure all required fields are filled in when adding expenses</li>
+                    <li data-i18n="support.trouble4Step2">Check available device storage (Settings > General > iPhone Storage)</li>
+                    <li data-i18n="support.trouble4Step3">Ensure the app has necessary permissions in iOS Settings</li>
+                    <li data-i18n="support.trouble4Step4">Update to the latest version of UangRumah from the App Store</li>
+                    <li data-i18n="support.trouble4Step5">Restart the app and try again</li>
+                    <li data-i18n="support.trouble4Step6">If problem persists, export your data and contact support</li>
                 </ol>
             </div>
 
             <div class="troubleshooting-item">
-                <h3>📱 App Crashes or Freezes</h3>
-                <p>If UangRumah is unstable or crashing:</p>
+                <h3><span>📱</span> <span data-i18n="support.trouble5Title">App Crashes or Freezes</span></h3>
+                <p data-i18n="support.trouble5Desc">If UangRumah is unstable or crashing:</p>
                 <ol>
-                    <li>Force close the app and reopen it</li>
-                    <li>Restart your iPhone or iPad</li>
-                    <li>Update to the latest iOS version (Settings > General > Software Update)</li>
-                    <li>Update UangRumah to the latest version from the App Store</li>
-                    <li>Free up device storage if running low</li>
-                    <li>If crashes persist, export your data and reinstall the app</li>
-                    <li>Report the issue to our support team with crash details</li>
+                    <li data-i18n="support.trouble5Step1">Force close the app and reopen it</li>
+                    <li data-i18n="support.trouble5Step2">Restart your iPhone or iPad</li>
+                    <li data-i18n="support.trouble5Step3">Update to the latest iOS version (Settings > General > Software Update)</li>
+                    <li data-i18n="support.trouble5Step4">Update UangRumah to the latest version from the App Store</li>
+                    <li data-i18n="support.trouble5Step5">Free up device storage if running low</li>
+                    <li data-i18n="support.trouble5Step6">If crashes persist, export your data and reinstall the app</li>
+                    <li data-i18n="support.trouble5Step7">Report the issue to our support team with crash details</li>
                 </ol>
             </div>
 
             <div class="troubleshooting-item">
-                <h3>🔍 Missing Expenses</h3>
-                <p>If you can't find expenses you previously added:</p>
+                <h3><span>🔍</span> <span data-i18n="support.trouble6Title">Missing Expenses</span></h3>
+                <p data-i18n="support.trouble6Desc">If you can't find expenses you previously added:</p>
                 <ol>
-                    <li>Use the search function to find specific expenses</li>
-                    <li>Check date filters - expenses may be outside your current view</li>
-                    <li>Look in the expense history or version history</li>
-                    <li>If using iCloud sync, check on another device</li>
-                    <li>Pull to refresh the expense list</li>
-                    <li>Review if expenses were accidentally deleted (check recently deleted if available)</li>
+                    <li data-i18n="support.trouble6Step1">Use the search function to find specific expenses</li>
+                    <li data-i18n="support.trouble6Step2">Check date filters - expenses may be outside your current view</li>
+                    <li data-i18n="support.trouble6Step3">Look in the expense history or version history</li>
+                    <li data-i18n="support.trouble6Step4">If using iCloud sync, check on another device</li>
+                    <li data-i18n="support.trouble6Step5">Pull to refresh the expense list</li>
+                    <li data-i18n="support.trouble6Step6">Review if expenses were accidentally deleted (check recently deleted if available)</li>
                 </ol>
             </div>
 
             <div class="troubleshooting-item">
-                <h3>📤 Export Problems</h3>
-                <p>If you're having issues exporting data:</p>
+                <h3><span>📤</span> <span data-i18n="support.trouble7Title">Export Problems</span></h3>
+                <p data-i18n="support.trouble7Desc">If you're having issues exporting data:</p>
                 <ol>
-                    <li>Ensure you have expenses in the selected date range</li>
-                    <li>Check available device storage for PDF/CSV generation</li>
-                    <li>Try a smaller date range if exporting large amounts of data</li>
-                    <li>Make sure you have apps that can handle PDF or CSV files</li>
-                    <li>Try a different export format (PDF vs CSV)</li>
-                    <li>Update the app to the latest version</li>
+                    <li data-i18n="support.trouble7Step1">Ensure you have expenses in the selected date range</li>
+                    <li data-i18n="support.trouble7Step2">Check available device storage for PDF/CSV generation</li>
+                    <li data-i18n="support.trouble7Step3">Try a smaller date range if exporting large amounts of data</li>
+                    <li data-i18n="support.trouble7Step4">Make sure you have apps that can handle PDF or CSV files</li>
+                    <li data-i18n="support.trouble7Step5">Try a different export format (PDF vs CSV)</li>
+                    <li data-i18n="support.trouble7Step6">Update the app to the latest version</li>
                 </ol>
             </div>
 
             <div class="highlight-box">
-                <p><strong>💡 Beta Version Notice:</strong> UangRumah is currently in beta (v0.1.0). Some bugs and issues are expected. Your feedback helps us improve! Please report any problems to support@uangrumah.com.</p>
+                <p><strong>💡 <span data-i18n="support.betaNoticeTitle">Beta Version Notice:</span></strong> <span data-i18n="support.betaNoticeDesc">UangRumah is currently in beta (v0.1.0). Some bugs and issues are expected. Your feedback helps us improve! Please report any problems to support@uangrumah.com.</span></p>
             </div>
         </div>
 
         <!-- Contact CTA -->
         <div class="contact-cta">
-            <h2>Still Need Help?</h2>
-            <p>Our support team is here to assist you with any questions or issues.</p>
-            <a href="contact.html" class="contact-button">Contact Support</a>
+            <h2 data-i18n="support.ctaTitle">Still Need Help?</h2>
+            <p data-i18n="support.ctaSubtitle">Our support team is here to assist you with any questions or issues.</p>
+            <a href="contact.html" class="contact-button" data-i18n="support.ctaButton">Contact Support</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <div class="footer-links">
-                <a href="index.html" data-i18n="common.home">Home</a>
-                <a href="privacy-policy.html" data-i18n="common.privacyPolicy">Privacy Policy</a>
-                <a href="terms-conditions.html" data-i18n="common.termsConditions">Terms & Conditions</a>
-                <a href="support.html" data-i18n="common.support">Support</a>
-                <a href="contact.html" data-i18n="common.contact">Contact</a>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo" style="color: white;">
+                        <span class="logo-icon">💰</span>
+                        <span>UangRumah</span>
+                    </a>
+                    <p data-i18n="footer.description">Simple expense tracking for Indonesian households. Take control of your finances with ease.</p>
+                </div>
+                <div class="footer-column">
+                    <h4 data-i18n="footer.product">Product</h4>
+                    <a href="index.html#features" data-i18n="footer.features">Features</a>
+                    <a href="index.html#how-it-works" data-i18n="footer.howItWorks">How It Works</a>
+                    <a href="index.html#download" data-i18n="footer.download">Download</a>
+                </div>
+                <div class="footer-column">
+                    <h4 data-i18n="footer.support">Support</h4>
+                    <a href="support.html" data-i18n="footer.helpCenter">Help Center</a>
+                    <a href="contact.html" data-i18n="footer.contactUs">Contact Us</a>
+                    <a href="support.html#faq" data-i18n="footer.faq">FAQ</a>
+                </div>
+                <div class="footer-column">
+                    <h4 data-i18n="footer.legal">Legal</h4>
+                    <a href="privacy-policy.html" data-i18n="common.privacyPolicy">Privacy Policy</a>
+                    <a href="terms-conditions.html" data-i18n="common.termsConditions">Terms & Conditions</a>
+                </div>
             </div>
-            <div class="copyright">
-                <p>&copy; 2025 UangRumah. <span data-i18n="common.allRightsReserved">All rights reserved</span>.</p>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2025 UangRumah. <span data-i18n="common.allRightsReserved">All rights reserved</span>.</p>
+                </div>
             </div>
         </div>
     </footer>

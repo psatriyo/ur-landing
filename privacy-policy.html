@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="UangRumah Privacy Policy - Learn how we protect your financial data and respect your privacy." data-i18n="privacy.metaDescription">
+    <meta name="description" content="UangRumah Privacy Policy - Learn how we protect your financial data and respect your privacy with our privacy-first approach." data-i18n="privacy.metaDescription">
     <title data-i18n="privacy.title">Privacy Policy - UangRumah</title>
     <link rel="stylesheet" href="styles/common.css">
 
@@ -15,19 +15,25 @@
         }
 
         :root {
-            --primary-color: #2563eb;
-            --primary-dark: #1e40af;
+            --primary-color: #6366f1;
+            --primary-dark: #4f46e5;
+            --primary-light: #818cf8;
             --secondary-color: #10b981;
-            --text-dark: #1f2937;
-            --text-light: #6b7280;
-            --bg-light: #f9fafb;
+            --accent-color: #f59e0b;
+            --text-dark: #1e293b;
+            --text-medium: #475569;
+            --text-light: #64748b;
+            --bg-light: #f8fafc;
+            --bg-dark: #0f172a;
             --white: #ffffff;
-            --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.15);
+            --shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 25px 60px rgba(0, 0, 0, 0.12);
+            --gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
+            --gradient-hero: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             color: var(--text-dark);
             overflow-x: hidden;
@@ -36,16 +42,20 @@
 
         /* Header */
         header {
-            background: var(--white);
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
             padding: 1rem 0;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-            position: sticky;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            position: fixed;
             top: 0;
+            left: 0;
+            right: 0;
             z-index: 1000;
         }
 
         nav {
-            max-width: 1200px;
+            max-width: 1280px;
             margin: 0 auto;
             padding: 0 2rem;
             display: flex;
@@ -63,28 +73,41 @@
             text-decoration: none;
         }
 
+        .logo-icon {
+            width: 36px;
+            height: 36px;
+            background: var(--gradient-primary);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.875rem;
+            color: white;
+            font-weight: 700;
+        }
+
         .beta-badge {
             background: linear-gradient(135deg, #f59e0b, #d97706);
             color: var(--white);
-            font-size: 0.65rem;
+            font-size: 0.6rem;
             font-weight: 700;
-            padding: 0.25rem 0.6rem;
-            border-radius: 12px;
+            padding: 0.2rem 0.5rem;
+            border-radius: 20px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);
         }
 
         .nav-links {
             display: flex;
-            gap: 2rem;
+            gap: 2.5rem;
             list-style: none;
         }
 
         .nav-links a {
             text-decoration: none;
-            color: var(--text-dark);
+            color: var(--text-medium);
             font-weight: 500;
+            font-size: 0.95rem;
             transition: color 0.3s;
         }
 
@@ -92,25 +115,64 @@
             color: var(--primary-color);
         }
 
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
         /* Hero Section */
         .page-hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: var(--gradient-hero);
             color: var(--white);
-            padding: 4rem 2rem;
+            padding: 8rem 2rem 4rem;
             text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 20% 50%, rgba(99, 102, 241, 0.15) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+        }
+
+        .page-hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         .page-hero h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             margin-bottom: 1rem;
             font-weight: 800;
+            letter-spacing: -0.02em;
         }
 
         .page-hero p {
-            font-size: 1.125rem;
-            opacity: 0.95;
-            max-width: 700px;
-            margin: 0 auto;
+            font-size: 1.25rem;
+            opacity: 0.9;
+            color: #cbd5e1;
+            max-width: 600px;
+            margin: 0 auto 1.5rem;
+        }
+
+        .last-updated-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
         }
 
         /* Content Section */
@@ -120,54 +182,109 @@
             padding: 4rem 2rem;
         }
 
-        .content-card {
-            background: var(--white);
-            border-radius: 16px;
-            padding: 3rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            margin-bottom: 2rem;
+        /* Key Points Section */
+        .key-points {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 3rem;
         }
 
-        .last-updated {
-            color: var(--text-light);
+        .key-point-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+            border: 1px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .key-point-card:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+            border-color: rgba(99, 102, 241, 0.1);
+        }
+
+        .key-point-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #ede9fe, #ddd6fe);
+        }
+
+        .key-point-card h3 {
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .key-point-card p {
             font-size: 0.9rem;
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* Content Card */
+        .content-card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: var(--shadow);
             margin-bottom: 2rem;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid #e5e7eb;
         }
 
         .content h2 {
-            font-size: 1.75rem;
+            font-size: 1.5rem;
             color: var(--text-dark);
-            margin: 2rem 0 1rem 0;
+            margin: 2.5rem 0 1rem 0;
             font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
         }
 
         .content h2:first-child {
             margin-top: 0;
         }
 
+        .content h2 .section-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            background: var(--gradient-primary);
+        }
+
         .content h3 {
-            font-size: 1.25rem;
+            font-size: 1.125rem;
             color: var(--text-dark);
             margin: 1.5rem 0 0.75rem 0;
             font-weight: 600;
         }
 
         .content p {
-            color: var(--text-light);
+            color: var(--text-medium);
             margin-bottom: 1rem;
             line-height: 1.8;
         }
 
         .content ul, .content ol {
-            margin: 1rem 0 1rem 2rem;
-            color: var(--text-light);
+            margin: 1rem 0 1rem 1.5rem;
+            color: var(--text-medium);
         }
 
         .content li {
-            margin-bottom: 0.5rem;
-            line-height: 1.8;
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
         }
 
         .content strong {
@@ -176,21 +293,27 @@
         }
 
         .highlight-box {
-            background: #eff6ff;
+            background: linear-gradient(135deg, #eff6ff, #dbeafe);
             border-left: 4px solid var(--primary-color);
             padding: 1.5rem;
             margin: 1.5rem 0;
-            border-radius: 8px;
+            border-radius: 12px;
+        }
+
+        .highlight-box.success {
+            background: linear-gradient(135deg, #ecfdf5, #d1fae5);
+            border-left-color: var(--secondary-color);
         }
 
         .highlight-box p {
             margin: 0;
+            font-weight: 500;
         }
 
         .contact-section {
             background: var(--bg-light);
             padding: 2rem;
-            border-radius: 12px;
+            border-radius: 16px;
             margin-top: 2rem;
             text-align: center;
         }
@@ -198,10 +321,6 @@
         .contact-section h3 {
             color: var(--text-dark);
             margin: 0 0 1rem 0;
-        }
-
-        .contact-section p {
-            margin-bottom: 1rem;
         }
 
         .contact-link {
@@ -218,15 +337,14 @@
 
         /* Footer */
         footer {
-            background: var(--text-dark);
+            background: var(--bg-dark);
             color: var(--white);
             padding: 3rem 2rem 2rem;
             text-align: center;
-            margin-top: 4rem;
         }
 
         .footer-content {
-            max-width: 1200px;
+            max-width: 1280px;
             margin: 0 auto;
         }
 
@@ -250,12 +368,38 @@
         }
 
         .copyright {
-            opacity: 0.6;
-            font-size: 0.9rem;
+            color: #64748b;
+            font-size: 0.875rem;
+        }
+
+        /* Language Switcher */
+        .language-switcher {
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            background: var(--white);
+            font-weight: 500;
+            font-size: 0.875rem;
+            color: var(--text-medium);
+            cursor: pointer;
+            transition: all 0.3s;
+            appearance: none;
+            background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%2364748b%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C/polyline%3E%3C/svg%3E');
+            background-repeat: no-repeat;
+            background-position: right 0.75rem center;
+            padding-right: 2.25rem;
+        }
+
+        .language-switcher:hover {
+            border-color: var(--primary-color);
         }
 
         /* Mobile Responsiveness */
         @media (max-width: 768px) {
+            .page-hero {
+                padding: 7rem 1.5rem 3rem;
+            }
+
             .page-hero h1 {
                 font-size: 2rem;
             }
@@ -272,12 +416,16 @@
                 padding: 2rem 1.5rem;
             }
 
+            .key-points {
+                grid-template-columns: 1fr;
+            }
+
             .content h2 {
-                font-size: 1.5rem;
+                font-size: 1.25rem;
             }
 
             .content h3 {
-                font-size: 1.125rem;
+                font-size: 1rem;
             }
 
             .nav-links {
@@ -290,12 +438,21 @@
             }
         }
 
-        /* Language Switcher */
-        .language-switcher {padding: 0.4rem 0.75rem; border-radius: 50px; border: 2px solid #e5e7eb; background: var(--bg-light); font-weight: 600; font-size: 0.85rem; color: var(--text-light); cursor: pointer; transition: all 0.3s; appearance: none; background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C/polyline%3E%3C/svg%3E'); background-repeat: no-repeat; background-position: right 0.5rem center; background-size: 1.2em; padding-right: 2rem;}
-        .language-switcher:hover {border-color: var(--primary-color); color: var(--primary-color);}
-        .language-switcher:focus {outline: none; border-color: var(--primary-color); box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);}
-        .nav-right {display: flex; align-items: center; gap: 2rem;}
-        @media (max-width: 768px) {.language-switcher {padding: 0.35rem 0.6rem; font-size: 0.8rem; padding-right: 1.8rem;} .nav-right {gap: 1rem;}}
+        /* Mobile menu button */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-dark);
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+        }
     </style>
 </head>
 <body data-page="privacy">
@@ -303,15 +460,14 @@
     <header>
         <nav>
             <a href="index.html" class="logo">
-                <span>💰</span>
+                <div class="logo-icon">Rp</div>
                 <span>UangRumah</span>
                 <span class="beta-badge" data-i18n="common.beta">Beta</span>
             </a>
             <div class="nav-right">
                 <ul class="nav-links">
                     <li><a href="index.html" data-i18n="common.home">Home</a></li>
-                    <li><a href="privacy-policy.html" data-i18n="common.privacy">Privacy</a></li>
-                    <li><a href="terms-conditions.html" data-i18n="common.terms">Terms</a></li>
+                    <li><a href="index.html#features" data-i18n="nav.features">Features</a></li>
                     <li><a href="support.html" data-i18n="common.support">Support</a></li>
                     <li><a href="contact.html" data-i18n="common.contact">Contact</a></li>
                 </ul>
@@ -319,183 +475,118 @@
                     <option value="en">English</option>
                     <option value="id">Indonesian</option>
                 </select>
+                <button class="mobile-menu-btn" aria-label="Menu">&#9776;</button>
             </div>
         </nav>
     </header>
 
     <!-- Page Hero -->
     <section class="page-hero">
-        <h1 data-i18n="privacy.heroTitle">Privacy Policy</h1>
-        <p data-i18n="privacy.heroSubtitle">Your privacy is important to us. Learn how we collect, use, and protect your financial data.</p>
+        <div class="page-hero-content">
+            <h1 data-i18n="privacy.heroTitle">Privacy Policy</h1>
+            <p data-i18n="privacy.heroSubtitle">Your privacy matters. Learn how we protect your data with our privacy-first approach.</p>
+            <div class="last-updated-badge">
+                <span data-i18n="privacy.lastUpdated">Last Updated</span>: November 29, 2025
+            </div>
+        </div>
     </section>
 
     <!-- Main Content -->
     <section class="content">
-        <div class="content-card" data-i18n-html="privacy.content">
-            <p class="last-updated"><strong>Last Updated:</strong> November 17, 2025</p>
-
-            <h2>1. Introduction</h2>
-            <p>Welcome to UangRumah. We are committed to protecting your privacy and ensuring the security of your financial data. This Privacy Policy explains how we collect, use, store, and protect your information when you use our iOS expense tracking application.</p>
-            <p>UangRumah is designed specifically for Indonesian couples to manage household expenses efficiently. We believe in transparency and want you to understand exactly how your data is handled.</p>
-
-            <h2>2. Information We Collect</h2>
-            <p>UangRumah collects and stores the following types of information locally on your device and optionally in your iCloud account:</p>
-
-            <h3>Financial Data</h3>
-            <ul>
-                <li><strong>Expense Records:</strong> Transaction details including expense name, vendor, amount, date, category, and cost center</li>
-                <li><strong>Budget Information:</strong> Your monthly and weekly budget limits and alert threshold preferences</li>
-                <li><strong>Categories:</strong> Custom expense categories you create, including names, icons, and color preferences</li>
-                <li><strong>Cost Centers:</strong> Payment method information including names and types (bank accounts, credit cards, cash, e-wallets)</li>
-                <li><strong>Recurring Expenses:</strong> Automated expense tracking data for subscriptions and regular bills</li>
-                <li><strong>Vendors:</strong> Names and details of merchants where you make purchases</li>
-            </ul>
-
-            <h3>Application Settings</h3>
-            <ul>
-                <li><strong>Preferences:</strong> Your app settings including privacy mode preferences, notification settings, and reminder schedules</li>
-                <li><strong>Usage Data:</strong> Information about how you use the app to improve functionality (stored locally only)</li>
-            </ul>
-
-            <div class="highlight-box">
-                <p><strong>⚠️ Important:</strong> All data is stored locally on your device by default. No data is sent to external servers or third-party services unless you explicitly enable iCloud sync.</p>
+        <!-- Key Privacy Points -->
+        <div class="key-points">
+            <div class="key-point-card">
+                <div class="key-point-icon">&#128190;</div>
+                <h3 data-i18n="privacy.keyPoint1Title">Local-First Storage</h3>
+                <p data-i18n="privacy.keyPoint1Desc">All your financial data is stored locally on your device by default. No external servers, no cloud databases we control.</p>
             </div>
-
-            <h2>3. iCloud Synchronization</h2>
-            <p>UangRumah offers optional iCloud synchronization to keep your data in sync across your Apple devices (iPhone and iPad).</p>
-
-            <h3>How iCloud Sync Works</h3>
-            <ul>
-                <li>When enabled, your expense data, budgets, categories, and cost centers are automatically backed up to your personal iCloud account</li>
-                <li>Data is encrypted during transmission and storage using Apple's security standards</li>
-                <li>Only you can access this data through devices signed in to your iCloud account</li>
-                <li>We do not have access to your iCloud data - it is controlled entirely by Apple and your iCloud security settings</li>
-                <li>You can disable iCloud sync at any time through iOS Settings</li>
-            </ul>
-
-            <h3>iCloud Privacy</h3>
-            <p>When using iCloud sync, your data is subject to Apple's Privacy Policy and iCloud terms. We recommend reviewing Apple's privacy practices at <a href="https://www.apple.com/legal/privacy/" class="contact-link" target="_blank">apple.com/legal/privacy</a>.</p>
-
-            <h2>4. How We Use Your Information</h2>
-            <p>Your data is used exclusively within the UangRumah app for the following purposes:</p>
-
-            <ul>
-                <li><strong>Expense Tracking:</strong> To record, display, and organize your financial transactions</li>
-                <li><strong>Budget Management:</strong> To calculate budget progress, daily allowances, and trigger spending alerts</li>
-                <li><strong>Analytics & Insights:</strong> To generate dashboard visualizations, category breakdowns, and spending reports</li>
-                <li><strong>Reminders:</strong> To send you notifications based on your configured preferences (expense nudges, budget alerts, monthly summaries)</li>
-                <li><strong>Data Export:</strong> To create PDF and CSV reports when you request them</li>
-                <li><strong>App Improvement:</strong> To understand feature usage and improve app functionality (locally only, no data transmission)</li>
-            </ul>
-
-            <h2>5. Data Sharing and Third Parties</h2>
-            <div class="highlight-box">
-                <p><strong>🔒 Zero Third-Party Sharing:</strong> We do not sell, rent, trade, or share your personal or financial data with any third parties. Period.</p>
+            <div class="key-point-card">
+                <div class="key-point-icon">&#128683;</div>
+                <h3 data-i18n="privacy.keyPoint2Title">Zero Data Collection</h3>
+                <p data-i18n="privacy.keyPoint2Desc">We don't collect analytics, usage data, or any personal information. No tracking pixels, no third-party SDKs.</p>
             </div>
+            <div class="key-point-card">
+                <div class="key-point-icon">&#9729;&#65039;</div>
+                <h3 data-i18n="privacy.keyPoint3Title">Optional iCloud Sync</h3>
+                <p data-i18n="privacy.keyPoint3Desc">If you enable iCloud sync, data goes to your personal iCloud account - controlled by Apple and your Apple ID, not us.</p>
+            </div>
+            <div class="key-point-card">
+                <div class="key-point-icon">&#128683;</div>
+                <h3 data-i18n="privacy.keyPoint4Title">No Ads, No Selling</h3>
+                <p data-i18n="privacy.keyPoint4Desc">We will never show ads or sell your data. Your financial information is never monetized.</p>
+            </div>
+        </div>
 
-            <p>UangRumah operates with complete data privacy:</p>
+        <div class="content-card">
+            <h2><span class="section-icon">&#128274;</span> <span data-i18n="privacy.section1Title">Our Privacy Commitment</span></h2>
+            <p data-i18n="privacy.section1Content">UangRumah is built with privacy at its core. We believe your financial data belongs to you - and only you. Unlike most apps, we don't collect, track, or sell your personal information.</p>
+
+            <h2><span class="section-icon">&#128190;</span> <span data-i18n="privacy.dataStoredTitle">Data Stored on Your Device</span></h2>
+            <p data-i18n="privacy.dataStoredIntro">UangRumah stores the following information locally on your device:</p>
             <ul>
-                <li>No analytics services (Google Analytics, Firebase, etc.)</li>
-                <li>No advertising networks</li>
-                <li>No social media integration</li>
-                <li>No data brokers or marketing companies</li>
-                <li>No cloud servers except your personal iCloud (if you enable it)</li>
+                <li data-i18n="privacy.dataStored1">Expense records (name, amount, vendor, date, category, cost center)</li>
+                <li data-i18n="privacy.dataStored2">Budget settings and alert thresholds</li>
+                <li data-i18n="privacy.dataStored3">Custom categories and cost centers you create</li>
+                <li data-i18n="privacy.dataStored4">Vendor history for suggestions</li>
+                <li data-i18n="privacy.dataStored5">App preferences and settings</li>
+                <li data-i18n="privacy.dataStored6">Recurring expense configurations</li>
             </ul>
 
-            <p>The only data transmission occurs when:</p>
+            <h2><span class="section-icon">&#9729;&#65039;</span> <span data-i18n="privacy.icloudTitle">iCloud Synchronization</span></h2>
+            <p data-i18n="privacy.icloudContent">When you enable iCloud sync, your expense data is backed up to your personal iCloud account. This allows you to access your data across multiple Apple devices. Important points:</p>
             <ul>
-                <li>You enable iCloud sync (data goes only to your iCloud account)</li>
-                <li>You export reports (data stays on your device or goes where you choose to share it)</li>
+                <li data-i18n="privacy.icloud1">iCloud sync is disabled by default - you must explicitly enable it</li>
+                <li data-i18n="privacy.icloud2">Data is encrypted in transit and at rest by Apple</li>
+                <li data-i18n="privacy.icloud3">We have no access to your iCloud data</li>
+                <li data-i18n="privacy.icloud4">Your data is subject to Apple's Privacy Policy</li>
+                <li data-i18n="privacy.icloud5">You can disable sync or delete iCloud data anytime through iOS Settings</li>
             </ul>
 
-            <h2>6. Data Security</h2>
-            <p>We implement industry-standard security measures to protect your financial data:</p>
-
-            <h3>Technical Safeguards</h3>
+            <h2><span class="section-icon">&#128683;</span> <span data-i18n="privacy.neverTitle">What We Never Do</span></h2>
+            <div class="highlight-box success">
+                <p><strong>Zero Third-Party Sharing:</strong> We do not sell, rent, trade, or share your personal or financial data with any third parties.</p>
+            </div>
             <ul>
-                <li><strong>Local Storage:</strong> Data is stored in iOS secure containers protected by device encryption</li>
-                <li><strong>iCloud Encryption:</strong> When sync is enabled, data is encrypted in transit and at rest</li>
-                <li><strong>Privacy Mode:</strong> Built-in features to blur sensitive information and censor amounts when needed</li>
-                <li><strong>No Backend Servers:</strong> No vulnerable web servers or databases that could be hacked</li>
-                <li><strong>iOS Security:</strong> Leverages Apple's robust security infrastructure and regular security updates</li>
+                <li data-i18n="privacy.never1">Collect personal identification information</li>
+                <li data-i18n="privacy.never2">Track your location or behavior</li>
+                <li data-i18n="privacy.never3">Use analytics services (Google Analytics, Firebase, etc.)</li>
+                <li data-i18n="privacy.never4">Include advertising SDKs or networks</li>
+                <li data-i18n="privacy.never5">Sell or share data with third parties</li>
+                <li data-i18n="privacy.never6">Send data to our servers (we don't have any)</li>
             </ul>
 
-            <h3>Device Security Recommendations</h3>
+            <h2><span class="section-icon">&#128272;</span> <span data-i18n="privacy.rightsTitle">Your Data Rights</span></h2>
+            <p data-i18n="privacy.rightsIntro">You have complete control over your data:</p>
             <ul>
-                <li>Use a strong passcode or biometric authentication (Face ID/Touch ID) on your device</li>
-                <li>Keep your iOS software up to date</li>
-                <li>Enable two-factor authentication for your Apple ID/iCloud account</li>
-                <li>Don't jailbreak your device, as it compromises security</li>
+                <li data-i18n="privacy.rights1">Access: View all your data within the app anytime</li>
+                <li data-i18n="privacy.rights2">Export: Download your data in PDF or CSV format</li>
+                <li data-i18n="privacy.rights3">Modify: Edit or update any record at any time</li>
+                <li data-i18n="privacy.rights4">Delete: Remove individual items or all data</li>
+                <li data-i18n="privacy.rights5">Portability: Take your data with you through exports</li>
             </ul>
 
-            <h2>7. Your Data Control Rights</h2>
-            <p>You have complete control over your data in UangRumah:</p>
-
-            <h3>Access and Portability</h3>
+            <h2><span class="section-icon">&#128274;</span> <span data-i18n="privacy.securityTitle">Security Measures</span></h2>
+            <p data-i18n="privacy.securityIntro">We take multiple steps to keep your data secure:</p>
             <ul>
-                <li><strong>View All Data:</strong> Access all your expense records, budgets, and settings within the app</li>
-                <li><strong>Export Data:</strong> Export your financial data in PDF or CSV format at any time</li>
-                <li><strong>Search and Filter:</strong> Use advanced search features to find specific transactions</li>
+                <li data-i18n="privacy.security1">iOS secure containers protect local storage</li>
+                <li data-i18n="privacy.security2">iCloud encryption for synced data</li>
+                <li data-i18n="privacy.security3">Privacy Mode to hide sensitive information in public</li>
+                <li data-i18n="privacy.security4">No vulnerable backend servers to hack</li>
+                <li data-i18n="privacy.security5">Regular updates to address security concerns</li>
             </ul>
 
-            <h3>Modification and Deletion</h3>
-            <ul>
-                <li><strong>Edit Records:</strong> Modify any expense, budget, category, or cost center at any time</li>
-                <li><strong>Delete Data:</strong> Remove individual expenses or bulk delete records</li>
-                <li><strong>Version History:</strong> View and restore previous versions of edited expenses</li>
-                <li><strong>Complete Deletion:</strong> Uninstalling the app removes all local data from your device</li>
-            </ul>
-
-            <h3>iCloud Data Management</h3>
-            <ul>
-                <li>Disable iCloud sync in iOS Settings to stop cloud synchronization</li>
-                <li>Delete iCloud data through iOS Settings > [Your Name] > iCloud > Manage Storage > UangRumah</li>
-                <li>Data deletion from iCloud may take up to 30 days to complete across Apple's servers</li>
-            </ul>
-
-            <h2>8. Children's Privacy</h2>
-            <p>UangRumah is designed for adults managing household expenses. We do not knowingly collect information from children under 13 years of age. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately.</p>
-
-            <h2>9. Changes to This Privacy Policy</h2>
-            <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors. We will notify you of any material changes through:</p>
-            <ul>
-                <li>In-app notifications when you update to a new version</li>
-                <li>Updates to this page with a revised "Last Updated" date</li>
-                <li>Email notification (if you have provided contact information for support)</li>
-            </ul>
-            <p>We encourage you to review this Privacy Policy periodically to stay informed about how we protect your information.</p>
-
-            <h2>10. International Users</h2>
-            <p>UangRumah is designed primarily for users in Indonesia and displays amounts in Indonesian Rupiah (IDR). However, the app can be used globally. Please note:</p>
-            <ul>
-                <li>All data processing occurs locally on your device or in your iCloud account</li>
-                <li>iCloud data storage location is determined by your Apple ID country/region settings</li>
-                <li>We comply with applicable data protection regulations including GDPR where applicable</li>
-            </ul>
-
-            <h2>11. Contact Us</h2>
             <div class="contact-section">
-                <h3>Questions About Privacy?</h3>
-                <p>If you have questions, concerns, or requests regarding this Privacy Policy or how we handle your data, please contact us:</p>
+                <h3 data-i18n="privacy.contactTitle">Questions About Privacy?</h3>
+                <p data-i18n="privacy.contactContent">If you have any questions about our privacy practices, please contact us at support@uangrumah.com. We respond within 7 business days.</p>
                 <p>
                     <strong>Email:</strong> <a href="mailto:support@uangrumah.com" class="contact-link">support@uangrumah.com</a><br>
                     <strong>Website:</strong> <a href="https://uangrumah.com" class="contact-link" target="_blank">uangrumah.com</a>
                 </p>
-                <p>We will respond to privacy inquiries within 7 business days.</p>
             </div>
 
-            <h2>12. Legal Compliance</h2>
-            <p>UangRumah is operated from Jakarta, Indonesia and complies with applicable Indonesian privacy laws and regulations. We are committed to:</p>
-            <ul>
-                <li>Transparency in data collection and usage</li>
-                <li>User consent and control over personal information</li>
-                <li>Security of financial data</li>
-                <li>Respect for user privacy rights</li>
-            </ul>
-
             <div class="highlight-box">
-                <p><strong>Current Version:</strong> 0.1.0 Beta<br>
-                <strong>Policy Effective Date:</strong> November 17, 2025</p>
+                <p><strong><span data-i18n="privacy.effectiveDate">Effective Date</span>:</strong> November 29, 2025<br>
+                <strong><span data-i18n="privacy.version">App Version</span>:</strong> 0.1.0 Beta</p>
             </div>
         </div>
     </section>

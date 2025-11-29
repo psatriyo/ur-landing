@@ -27,39 +27,100 @@ translations.en = {
 
     // Home Page
     home: {
-        metaDescription: 'UangRumah - Household expense tracker for Indonesian couples. Track expenses, manage budgets, and take control of your finances with simple, effective tracking.',
-        title: 'UangRumah - Household Expense Tracker for Indonesian Couples',
-        heroTitle: 'Household Expense Tracker for Indonesian Couples',
-        heroSubtitle: 'Take control of your finances with simple, effective expense tracking. Track daily expenses, manage budgets, monitor multiple payment methods, and gain insights into your financial habits with beautiful visualizations.',
-        ctaButton: 'Ask Invitation',
+        metaDescription: 'UangRumah - The privacy-focused expense tracker for Indonesian households. Track expenses, manage budgets, sync across devices with iCloud. Works offline, supports 158+ currencies.',
+        title: 'UangRumah - Smart Expense Tracker for Indonesian Households',
 
-        // Features Section
-        featuresTitle: 'Comprehensive Features',
-        featuresSubtitle: 'Everything you need to manage your household finances effectively',
+        // Hero Section
+        heroBadge: 'Now available for iOS',
+        heroTitle: 'Smart Expense Tracking for <span>Indonesian Households</span>',
+        heroSubtitle: 'Take control of your family finances with privacy-first expense tracking. Works offline, syncs seamlessly, and supports 158+ currencies. Built specifically for Indonesian households.',
+        ctaButton: 'Request Beta Access',
+        ctaSecondary: 'Explore Features',
+        mockupBudget: 'November Budget',
+
+        // Trust Badges
+        trustPrivacy: 'Privacy First',
+        trustPrivacyDesc: 'Your data stays on device',
+        trustOffline: 'Works Offline',
+        trustOfflineDesc: 'No internet required',
+        trustSync: 'iCloud Sync',
+        trustSyncDesc: 'Secure cloud backup',
+        trustCurrencies: '158+ Currencies',
+        trustCurrenciesDesc: 'Global support',
+
+        // Key Features Section
+        featuresLabel: 'Core Features',
+        featuresTitle: 'Everything You Need to Manage Household Finances',
+        featuresSubtitle: 'Powerful tools designed for Indonesian families to track expenses, manage budgets, and achieve financial goals together.',
+
+        // Key Feature Cards
+        featureMultiBook: 'Multi-Book Ledger',
+        featureMultiBookDesc: 'Organize finances with multiple books for different purposes - household, personal, savings, or projects.',
+        featureBudget: 'Smart Budgeting',
+        featureBudgetDesc: 'Set monthly and weekly budgets with intelligent alerts at customizable thresholds to prevent overspending.',
+        featureBatchEntry: 'Batch Entry Mode',
+        featureBatchEntryDesc: 'Add multiple expenses at once. Perfect for entering receipts or catching up on missed days.',
+        featureAnalytics: 'Visual Analytics',
+        featureAnalyticsDesc: 'Beautiful charts and reports show where your money goes. Export to PDF or CSV anytime.',
+        featurePrivacyMode: 'Privacy Mode',
+        featurePrivacyModeDesc: 'Hide sensitive amounts and blur the dashboard when in public. Your finances stay private.',
+        featureRecurring: 'Recurring Expenses',
+        featureRecurringDesc: 'Automate tracking for subscriptions and bills. Never forget a recurring payment again.',
 
         // Budget Management
         budgetManagementTitle: 'Budget Management',
         monthlyWeeklyBudgets: 'Monthly & Weekly Budgets',
-        monthlyWeeklyBudgetsDesc: 'Set monthly spending limits with automatic daily allowance calculations. Configure weekly budgets for granular spending control.',
-        smartAlerts: 'Smart Alerts',
-        smartAlertsDesc: 'Get notified at configurable thresholds (50%, 75%, 90%, 100%) so you never overspend unexpectedly.',
-        budgetProgressTracking: 'Budget Progress Tracking',
-        budgetProgressTrackingDesc: 'Real-time monitoring with visual indicators showing your spending vs budget with color-coded status.',
+        monthlyWeeklyBudgetsDesc: 'Set spending limits with automatic daily allowance calculations. Track both monthly totals and weekly spending patterns.',
+        smartAlerts: 'Smart Budget Alerts',
+        smartAlertsDesc: 'Get notified at customizable thresholds (50%, 75%, 90%, 100%). Adjust warnings to match your spending style.',
+        budgetProgressTracking: 'Progress Tracking',
+        budgetProgressTrackingDesc: 'Real-time visual indicators show spending vs budget with color-coded status. Know exactly where you stand.',
 
         // Expense Tracking
         expenseTrackingTitle: 'Expense Tracking',
         quickAdd: 'Quick Add',
-        quickAddDesc: 'Easily log expenses with name, vendor, amount, category, and cost center. Simple and fast entry for busy couples.',
+        quickAddDesc: 'Log expenses in seconds with smart suggestions. Capture name, vendor, amount, category, and cost center effortlessly.',
         recurringExpenses: 'Recurring Expenses',
-        recurringExpensesDesc: 'Automatic tracking for subscriptions and regular bills with daily, weekly, monthly, or yearly frequencies.',
+        recurringExpensesDesc: 'Set up automatic tracking for subscriptions and regular bills with daily, weekly, monthly, or yearly frequencies.',
         versionHistory: 'Version History',
-        versionHistoryDesc: 'Complete audit trail for all expense modifications. Never lose track of changes to your financial records.',
+        versionHistoryDesc: 'Complete audit trail for all modifications. Review and restore previous versions of any expense record.',
         searchFilter: 'Search & Filter',
-        searchFilterDesc: 'Multi-field search with advanced filtering by date, amount, category, and cost center for quick access.',
+        searchFilterDesc: 'Find any expense instantly with multi-field search. Filter by date, amount, category, vendor, or cost center.',
         vendorTracking: 'Vendor Tracking',
-        vendorTrackingDesc: 'Smart vendor suggestions based on usage history make expense entry even faster.',
+        vendorTrackingDesc: 'Smart vendor suggestions based on your history. Track spending by merchant to spot patterns.',
+        weekNavigation: 'Week Navigation',
+        weekNavigationDesc: 'Navigate expenses by week with intuitive controls. Perfect for weekly budget tracking and review.',
 
-        // Dashboard & Analytics
+        // Organization & Management
+        organizationTitle: 'Organization & Management',
+        customCategories: 'Custom Categories',
+        customCategoriesDesc: 'Create unlimited expense categories with SF Symbol icons and custom colors to match your lifestyle.',
+        costCenters: 'Cost Centers',
+        costCentersDesc: 'Track spending by payment method - cash, credit cards, e-wallets, bank transfers. Perfect for joint accounts.',
+        currencySelection: '158+ Currencies',
+        currencySelectionDesc: 'Support for global currencies with proper formatting. Track expenses in any currency you need.',
+
+        // Data & Sync
+        dataSyncTitle: 'Data & Sync',
+        icloudSync: 'iCloud Sync',
+        icloudSyncDesc: 'Seamlessly sync your data across all Apple devices. Your expenses, budgets, and settings follow you everywhere.',
+        backupRestore: 'Backup & Restore',
+        backupRestoreDesc: 'Secure your financial data with easy backup and restore. Never lose your expense history.',
+        pdfReports: 'PDF Reports',
+        pdfReportsDesc: 'Generate professional expense reports with summaries and daily breakdowns. Share or print anytime.',
+        csvExport: 'CSV Export',
+        csvExportDesc: 'Export your data for analysis in Excel, Numbers, or Google Sheets with full data compatibility.',
+
+        // Privacy & Security
+        privacySecurityTitle: 'Privacy & Security',
+        offlineFirst: 'Offline First',
+        offlineFirstDesc: 'All features work without internet. Your data is stored locally on device - no external servers required.',
+        privacyModeFeature: 'Privacy Mode',
+        privacyModeFeatureDesc: 'Blur sensitive data and hide amounts when in public. Toggle visibility with a single tap.',
+        noTracking: 'Zero Tracking',
+        noTrackingDesc: 'No analytics, no ads, no data collection. Your financial information stays completely private.',
+
+        // Legacy features (keeping for backwards compatibility)
         dashboardAnalyticsTitle: 'Dashboard & Analytics',
         categoryBreakdown: 'Category Breakdown',
         categoryBreakdownDesc: 'Visual pie charts showing spending distribution across categories with percentages and amounts.',
@@ -69,8 +130,6 @@ translations.en = {
         privacyModeDesc: 'Toggle sensitive data visibility with dashboard blur and amount censoring for protection in public.',
         realtimeUpdates: 'Real-time Updates',
         realtimeUpdatesDesc: 'Pull-to-refresh for instant data sync across all your devices via iCloud.',
-
-        // Reminders & Notifications
         remindersNotificationsTitle: 'Reminders & Notifications',
         expenseNudge: 'Expense Nudge',
         expenseNudgeDesc: 'Daily reminders to log expenses with customizable frequencies: Daily, Every 2 Days, Weekdays Only, or Custom schedules.',
@@ -78,42 +137,32 @@ translations.en = {
         budgetAlertsDesc: 'Automatic notifications when approaching spending limits at your configured thresholds.',
         monthlySummary: 'Monthly Summary',
         monthlySummaryDesc: 'Receive monthly expense overview notifications to stay on top of your financial habits.',
-
-        // Data Export
         dataExportTitle: 'Data Export',
-        pdfReports: 'PDF Reports',
-        pdfReportsDesc: 'Professional formatted reports with expense summaries and daily breakdowns for sharing or printing.',
-        csvExport: 'CSV Export',
-        csvExportDesc: 'Export data for analysis in Excel, Numbers, or Google Sheets with full data compatibility.',
         flexibleDateRanges: 'Flexible Date Ranges',
         flexibleDateRangesDesc: 'Export all time, current month, last month, or custom date ranges to fit your reporting needs.',
-
-        // Customization
         customizationTitle: 'Customization',
-        customCategories: 'Custom Categories',
-        customCategoriesDesc: 'Create custom expense categories with SF Symbol icons and color coding to match your spending patterns.',
-        costCenters: 'Cost Centers',
-        costCentersDesc: 'Manage payment methods including bank accounts, credit cards, cash, and e-wallets with ease.',
         privacySettings: 'Privacy Settings',
         privacySettingsDesc: 'Configure dashboard visibility defaults and protect your financial data with customizable privacy options.',
         builtForIndonesia: 'Built for Indonesia',
         builtForIndonesiaDesc: 'Full support for Rupiah (IDR) currency and designed specifically for Indonesian household expense management.',
 
         // How It Works
-        howItWorksTitle: 'How It Works',
-        howItWorksSubtitle: 'Start managing your household finances in simple steps',
-        step1Title: 'Set Your Budget',
-        step1Desc: 'Configure monthly and weekly budgets with alert thresholds. Set up your preferred privacy settings and cost centers.',
-        step2Title: 'Track Expenses',
-        step2Desc: 'Quick add daily expenses with vendor tracking, categories, and cost centers. Enable expense nudge reminders to never forget.',
-        step3Title: 'Monitor & Analyze',
-        step3Desc: 'View dashboard insights with category breakdowns, cost center reports, and budget progress. Export reports when needed.',
-        step4Title: 'Stay on Track',
-        step4Desc: 'Receive smart alerts when approaching budget limits. Review monthly summaries and adjust spending habits accordingly.',
+        howItWorksLabel: 'Getting Started',
+        howItWorksTitle: 'Start Managing Your Finances in Minutes',
+        howItWorksSubtitle: 'Simple onboarding gets you up and running quickly. No complex setup required.',
+        step1Title: 'Download & Setup',
+        step1Desc: 'Install UangRumah and complete the guided onboarding. Set up your first book and configure your preferences.',
+        step2Title: 'Set Your Budget',
+        step2Desc: 'Configure monthly and weekly limits. Create categories and cost centers that match your spending habits.',
+        step3Title: 'Track Expenses',
+        step3Desc: 'Add expenses as you spend. Use quick add, batch entry, or set up recurring payments for automation.',
+        step4Title: 'Reach Your Goals',
+        step4Desc: 'Monitor your progress with visual dashboards. Get alerts before overspending and adjust as needed.',
 
-        // Requirements
-        requirementsTitle: 'Requirements',
-        requirementsSubtitle: 'Technical specifications for UangRumah',
+        // Technical Specifications
+        specsLabel: 'Technical Details',
+        requirementsTitle: 'Requirements & Specifications',
+        requirementsSubtitle: 'Built with modern iOS technology for the best experience.',
         platform: 'Platform',
         platformValue: 'iOS 16.0+',
         devices: 'Devices',
@@ -122,21 +171,31 @@ translations.en = {
         technologyValue: 'SwiftUI',
         sync: 'Sync',
         syncValue: 'iCloud',
-        currency: 'Currency',
-        currencyValue: 'IDR (Rupiah)',
+        currencies: 'Currencies',
+        currenciesValue: '158+',
         storage: 'Storage',
         storageValue: 'Local + Cloud',
+        currency: 'Currency',
+        currencyValue: 'IDR (Rupiah)',
 
-        // Download CTA
-        downloadCtaTitle: 'Ready to Take Control of Your Finances?',
-        downloadCtaSubtitle: 'Join couples who have improved their financial health with UangRumah',
-        downloadCtaButton: 'Ask Invitation',
+        // CTA Section
+        downloadCtaTitle: 'Ready to Take Control of Your Household Finances?',
+        downloadCtaSubtitle: 'Join families who are achieving their financial goals with UangRumah.',
+        downloadCtaButton: 'Request Beta Access',
+
+        // Footer
+        footerDesc: 'Privacy-focused expense tracking for Indonesian households. Your finances, your control.',
+        footerProduct: 'Product',
+        footerSupport: 'Support',
+        footerLegal: 'Legal',
+        footerMadeWith: 'Made with care in Jakarta, Indonesia',
     },
 
     // Contact Page
     contact: {
         metaDescription: 'Contact UangRumah - Get in touch with our support team for help with the expense tracker app.',
         title: 'Contact Us - UangRumah',
+        heroBadge: 'Get in Touch',
         heroTitle: 'Contact Us',
         heroSubtitle: 'Have questions or need help? We\'re here to assist you.',
 
@@ -151,6 +210,7 @@ translations.en = {
         visitSupport: 'Visit Support',
 
         supportInfoTitle: 'Support Information',
+        supportInfoSubtitle: 'How to reach us and what to expect',
         location: 'Location',
         locationValue: 'Jakarta, Indonesia',
         responseTime: 'Response Time',
@@ -160,10 +220,12 @@ translations.en = {
         languages: 'Languages',
         languagesValue: 'English & Indonesian',
 
+        betaProgramTitle: 'Beta Program:',
+        betaProgramDesc: 'UangRumah is currently in beta (v0.1.0). We highly value your feedback and bug reports to help us improve the app. Thank you for being an early adopter!',
         betaProgramNote: 'Beta Program: UangRumah is currently in beta (v0.1.0). We highly value your feedback and bug reports to help us improve the app. Thank you for being an early adopter!',
 
         beforeContactTitle: 'Before You Contact Us',
-        beforeContactSubtitle: 'You might find answers faster by checking these resources first:',
+        beforeContactSubtitle: 'You might find answers faster by checking these resources first',
 
         faqTitle: 'Frequently Asked Questions',
         faqDesc: 'Find answers to common questions about budgets, expenses, sync, and more.',
@@ -177,18 +239,30 @@ translations.en = {
         privacySecurityDesc: 'Learn how we protect your data and respect your privacy.',
 
         whatToIncludeTitle: 'What to Include in Your Support Request',
-        whatToIncludeSubtitle: 'Help us help you faster by including this information:',
+        whatToIncludeSubtitle: 'Help us help you faster by including this information',
 
         deviceInfoTitle: 'Device Information',
+        deviceInfo1: 'iPhone or iPad model',
+        deviceInfo2: 'iOS version number',
+        deviceInfo3: 'Available storage space',
         deviceInfoDesc: '• iPhone or iPad model<br>• iOS version number<br>• Available storage space',
 
         appDetailsTitle: 'App Details',
+        appDetails1: 'UangRumah version',
+        appDetails2: 'When the issue started',
+        appDetails3: 'Frequency of the problem',
         appDetailsDesc: '• UangRumah version<br>• When the issue started<br>• Frequency of the problem',
 
         problemDescTitle: 'Problem Description',
+        problemDesc1: 'What you were trying to do',
+        problemDesc2: 'What happened instead',
+        problemDesc3: 'Any error messages',
         problemDescDesc: '• What you were trying to do<br>• What happened instead<br>• Any error messages',
 
         stepsToReproduceTitle: 'Steps to Reproduce',
+        stepsToReproduce1: 'Step-by-step actions',
+        stepsToReproduce2: 'Screenshots (if applicable)',
+        stepsToReproduce3: 'How to recreate the issue',
         stepsToReproduceDesc: '• Step-by-step actions<br>• Screenshots (if applicable)<br>• How to recreate the issue',
     },
 
@@ -196,6 +270,7 @@ translations.en = {
     support: {
         metaDescription: 'UangRumah Support - Get help with common issues and troubleshooting for the expense tracker app.',
         title: 'Support - UangRumah',
+        heroBadge: 'Help Center',
         heroTitle: 'Support Center',
         heroSubtitle: 'Find answers to common questions and get help with UangRumah.',
 
@@ -209,9 +284,162 @@ translations.en = {
         contactUsDesc: 'Can\'t find what you\'re looking for? Reach out to our support team.',
 
         systemRequirements: 'System Requirements',
-        systemRequirementsValue: 'Platform: iOS 16.0 or later | Devices: iPhone & iPad | Version: 0.1.0 Beta | Storage: iCloud (optional)',
+        systemRequirementsValue: '<strong>Platform:</strong> iOS 16.0 or later | <strong>Devices:</strong> iPhone & iPad | <strong>Version:</strong> 0.1.0 Beta | <strong>Storage:</strong> iCloud (optional)',
 
         faqSectionTitle: 'Frequently Asked Questions',
+        faqSectionSubtitle: 'Quick answers to common questions',
+
+        // FAQ Individual Keys
+        faq1Question: 'How do I get started with UangRumah?',
+        faq1Answer: 'Getting started is easy:',
+        faq1Step1: 'Download UangRumah from the App Store',
+        faq1Step2: 'Set up your monthly and weekly budgets in Settings',
+        faq1Step3: 'Create custom categories and cost centers for your spending',
+        faq1Step4: 'Start adding expenses by tapping the "+" button',
+        faq1Step5: 'Enable expense nudge reminders to stay on track',
+
+        faq2Question: 'How does iCloud sync work?',
+        faq2Answer: 'iCloud sync keeps your data synchronized across all your Apple devices:',
+        faq2Point1: 'Enable iCloud sync in iOS Settings > [Your Name] > iCloud',
+        faq2Point2: 'Make sure UangRumah has iCloud access enabled',
+        faq2Point3: 'Your expense data will automatically sync between iPhone and iPad',
+        faq2Point4: 'Changes made on one device appear on others within minutes',
+        faq2Point5: 'Requires active internet connection for syncing',
+
+        faq3Question: 'Can I export my expense data?',
+        faq3Answer: 'Yes! UangRumah supports data export in two formats:',
+        faq3Format1: 'PDF Reports:',
+        faq3Format1Desc: 'Professional formatted reports with expense summaries and daily breakdowns',
+        faq3Format2: 'CSV Files:',
+        faq3Format2Desc: 'Spreadsheet-compatible format for Excel, Numbers, or Google Sheets',
+        faq3HowTo: 'To export: Go to Settings > Export Data > Choose format and date range > Share or save the file.',
+
+        faq4Question: 'How do budget alerts work?',
+        faq4Answer: 'Budget alerts help you stay within your spending limits:',
+        faq4Point1: 'Set monthly and weekly budgets in Settings',
+        faq4Point2: 'Configure alert thresholds (50%, 75%, 90%, 100%)',
+        faq4Point3: 'Receive notifications when you reach each threshold',
+        faq4Point4: 'Alerts are calculated in real-time as you add expenses',
+        faq4Point5: 'Make sure notifications are enabled in iOS Settings',
+
+        faq5Question: 'What are cost centers and how do I use them?',
+        faq5Answer: 'Cost centers help you track which payment method you used for each expense:',
+        faq5Point1: 'Create cost centers for bank accounts, credit cards, cash, e-wallets, etc.',
+        faq5Point2: 'Assign a cost center when adding each expense',
+        faq5Point3: 'View spending breakdown by cost center in the dashboard',
+        faq5Point4: 'Perfect for couples managing both joint and separate accounts',
+
+        faq6Question: 'Can I track recurring expenses like subscriptions?',
+        faq6Answer: 'Yes! UangRumah supports automatic recurring expense tracking:',
+        faq6Point1: 'Add an expense and mark it as "Recurring"',
+        faq6Point2: 'Choose frequency: Daily, Weekly, Monthly, or Yearly',
+        faq6Point3: 'Set start and optional end dates',
+        faq6Point4: 'The app will automatically track these expenses going forward',
+        faq6Point5: 'Perfect for subscriptions, bills, and regular payments',
+
+        faq7Question: 'What is Privacy Mode?',
+        faq7Answer: 'Privacy Mode helps protect your financial information in public:',
+        faq7Feature1: 'Dashboard Blur:',
+        faq7Feature1Desc: 'Blurs sensitive information on the main screen',
+        faq7Feature2: 'Amount Censoring:',
+        faq7Feature2Desc: 'Hides specific amounts with asterisks',
+        faq7Feature3: 'Toggle on/off quickly from the dashboard',
+        faq7Feature4: 'Set default privacy mode in Settings',
+
+        faq8Question: 'Is my financial data secure?',
+        faq8Answer: 'Yes, we take security seriously:',
+        faq8Point1: 'All data is stored locally on your device by default',
+        faq8Point2: 'No data is sent to external servers (except your personal iCloud if enabled)',
+        faq8Point3: 'Data is encrypted during iCloud sync',
+        faq8Point4: 'We never share your data with third parties',
+        faq8Point5: 'Use device passcode or Face ID/Touch ID for additional security',
+        faq8ReadMore: 'Read our',
+        faq8ForDetails: 'for complete details.',
+
+        faq9Question: 'Does UangRumah work offline?',
+        faq9Answer: 'Yes! UangRumah works fully offline:',
+        faq9Point1: 'Add, edit, and delete expenses without internet',
+        faq9Point2: 'View all dashboard features and reports',
+        faq9Point3: 'All data is stored locally on your device',
+        faq9Point4: 'Internet only needed for iCloud sync (if enabled)',
+
+        faq10Question: 'Is UangRumah free?',
+        faq10Answer: 'Currently, UangRumah version 0.1.0 Beta is completely free to use with all features included. Future versions may introduce optional premium features, but we will always maintain a robust free tier.',
+
+        troubleshootingSectionTitle: 'Troubleshooting Guide',
+        troubleshootingSectionSubtitle: 'Step-by-step solutions for common issues',
+
+        // Troubleshooting Individual Keys
+        trouble1Title: 'iCloud Sync Not Working',
+        trouble1Desc: 'If your data isn\'t syncing between devices, try these steps:',
+        trouble1Step1: 'Verify you\'re signed in to the same iCloud account on all devices',
+        trouble1Step2: 'Check iOS Settings > [Your Name] > iCloud and ensure UangRumah is enabled',
+        trouble1Step3: 'Make sure you have an active internet connection',
+        trouble1Step4: 'Check available iCloud storage (Settings > [Your Name] > iCloud > Manage Storage)',
+        trouble1Step5: 'Force close and reopen the app on both devices',
+        trouble1Step6: 'Try toggling iCloud sync off and on again',
+        trouble1Step7: 'Restart your device',
+
+        trouble2Title: 'Notifications Not Appearing',
+        trouble2Desc: 'If you\'re not receiving budget alerts or expense nudges:',
+        trouble2Step1: 'Go to iOS Settings > Notifications > UangRumah',
+        trouble2Step2: 'Ensure "Allow Notifications" is enabled',
+        trouble2Step3: 'Check that alert styles are configured (Lock Screen, Notification Center, Banners)',
+        trouble2Step4: 'Verify notification settings within the UangRumah app (Settings > Notifications)',
+        trouble2Step5: 'Make sure Do Not Disturb / Focus mode isn\'t blocking notifications',
+        trouble2Step6: 'Check that you\'ve set up budget thresholds or reminder schedules',
+
+        trouble3Title: 'Dashboard Data Not Updating',
+        trouble3Desc: 'If your dashboard shows outdated information:',
+        trouble3Step1: 'Pull down on the dashboard to refresh manually',
+        trouble3Step2: 'Close and reopen the app completely',
+        trouble3Step3: 'Check if expenses were added to the correct date',
+        trouble3Step4: 'Verify your budget period settings (monthly vs weekly)',
+        trouble3Step5: 'If using iCloud sync, wait a few minutes for synchronization',
+
+        trouble4Title: 'Data Not Saving',
+        trouble4Desc: 'If your expenses or changes aren\'t being saved:',
+        trouble4Step1: 'Make sure all required fields are filled in when adding expenses',
+        trouble4Step2: 'Check available device storage (Settings > General > iPhone Storage)',
+        trouble4Step3: 'Ensure the app has necessary permissions in iOS Settings',
+        trouble4Step4: 'Update to the latest version of UangRumah from the App Store',
+        trouble4Step5: 'Restart the app and try again',
+        trouble4Step6: 'If problem persists, export your data and contact support',
+
+        trouble5Title: 'App Crashes or Freezes',
+        trouble5Desc: 'If UangRumah is unstable or crashing:',
+        trouble5Step1: 'Force close the app and reopen it',
+        trouble5Step2: 'Restart your iPhone or iPad',
+        trouble5Step3: 'Update to the latest iOS version (Settings > General > Software Update)',
+        trouble5Step4: 'Update UangRumah to the latest version from the App Store',
+        trouble5Step5: 'Free up device storage if running low',
+        trouble5Step6: 'If crashes persist, export your data and reinstall the app',
+        trouble5Step7: 'Report the issue to our support team with crash details',
+
+        trouble6Title: 'Missing Expenses',
+        trouble6Desc: 'If you can\'t find expenses you previously added:',
+        trouble6Step1: 'Use the search function to find specific expenses',
+        trouble6Step2: 'Check date filters - expenses may be outside your current view',
+        trouble6Step3: 'Look in the expense history or version history',
+        trouble6Step4: 'If using iCloud sync, check on another device',
+        trouble6Step5: 'Pull to refresh the expense list',
+        trouble6Step6: 'Review if expenses were accidentally deleted (check recently deleted if available)',
+
+        trouble7Title: 'Export Problems',
+        trouble7Desc: 'If you\'re having issues exporting data:',
+        trouble7Step1: 'Ensure you have expenses in the selected date range',
+        trouble7Step2: 'Check available device storage for PDF/CSV generation',
+        trouble7Step3: 'Try a smaller date range if exporting large amounts of data',
+        trouble7Step4: 'Make sure you have apps that can handle PDF or CSV files',
+        trouble7Step5: 'Try a different export format (PDF vs CSV)',
+        trouble7Step6: 'Update the app to the latest version',
+
+        betaNoticeTitle: 'Beta Version Notice:',
+        betaNoticeDesc: 'UangRumah is currently in beta (v0.1.0). Some bugs and issues are expected. Your feedback helps us improve! Please report any problems to support@uangrumah.com.',
+
+        ctaTitle: 'Still Need Help?',
+        ctaSubtitle: 'Our support team is here to assist you with any questions or issues.',
+        ctaButton: 'Contact Support',
 
         // FAQ Items
         faq1Q: 'How do I get started with UangRumah?',
@@ -396,172 +624,77 @@ translations.en = {
         metaDescription: 'UangRumah Privacy Policy - Learn how we protect your financial data and respect your privacy.',
         title: 'Privacy Policy - UangRumah',
         heroTitle: 'Privacy Policy',
-        heroSubtitle: 'Your privacy is important to us. Learn how we collect, use, and protect your financial data.',
-        content: `<p class="last-updated"><strong>Last Updated:</strong> November 17, 2025</p>
+        heroSubtitle: 'Your privacy matters. Learn how we protect your data with our privacy-first approach.',
+        lastUpdated: 'Last Updated',
 
-        <h2>1. Introduction</h2>
-        <p>Welcome to UangRumah. We are committed to protecting your privacy and ensuring the security of your financial data. This Privacy Policy explains how we collect, use, store, and protect your information when you use our iOS expense tracking application.</p>
-        <p>UangRumah is designed specifically for Indonesian couples to manage household expenses efficiently. We believe in transparency and want you to understand exactly how your data is handled.</p>
+        // Section 1: Introduction
+        section1Title: 'Our Privacy Commitment',
+        section1Content: 'UangRumah is built with privacy at its core. We believe your financial data belongs to you - and only you. Unlike most apps, we don\'t collect, track, or sell your personal information.',
 
-        <h2>2. Information We Collect</h2>
-        <p>UangRumah collects and stores the following types of information locally on your device and optionally in your iCloud account:</p>
+        // Key Privacy Points
+        keyPointsTitle: 'Key Privacy Principles',
+        keyPoint1Title: 'Local-First Storage',
+        keyPoint1Desc: 'All your financial data is stored locally on your device by default. No external servers, no cloud databases we control.',
+        keyPoint2Title: 'Zero Data Collection',
+        keyPoint2Desc: 'We don\'t collect analytics, usage data, or any personal information. No tracking pixels, no third-party SDKs.',
+        keyPoint3Title: 'Optional iCloud Sync',
+        keyPoint3Desc: 'If you enable iCloud sync, data goes to your personal iCloud account - controlled by Apple and your Apple ID, not us.',
+        keyPoint4Title: 'No Ads, No Selling',
+        keyPoint4Desc: 'We will never show ads or sell your data. Your financial information is never monetized.',
 
-        <h3>Financial Data</h3>
-        <ul>
-            <li><strong>Expense Records:</strong> Transaction details including expense name, vendor, amount, date, category, and cost center</li>
-            <li><strong>Budget Information:</strong> Your monthly and weekly budget limits and alert threshold preferences</li>
-            <li><strong>Categories:</strong> Custom expense categories you create, including names, icons, and color preferences</li>
-            <li><strong>Cost Centers:</strong> Payment method information including names and types (bank accounts, credit cards, cash, e-wallets)</li>
-            <li><strong>Recurring Expenses:</strong> Automated expense tracking data for subscriptions and regular bills</li>
-            <li><strong>Vendors:</strong> Names and details of merchants where you make purchases</li>
-        </ul>
+        // Data We Store
+        dataStoredTitle: 'Data Stored on Your Device',
+        dataStoredIntro: 'UangRumah stores the following information locally on your device:',
+        dataStored1: 'Expense records (name, amount, vendor, date, category, cost center)',
+        dataStored2: 'Budget settings and alert thresholds',
+        dataStored3: 'Custom categories and cost centers you create',
+        dataStored4: 'Vendor history for suggestions',
+        dataStored5: 'App preferences and settings',
+        dataStored6: 'Recurring expense configurations',
 
-        <h3>Application Settings</h3>
-        <ul>
-            <li><strong>Preferences:</strong> Your app settings including privacy mode preferences, notification settings, and reminder schedules</li>
-            <li><strong>Usage Data:</strong> Information about how you use the app to improve functionality (stored locally only)</li>
-        </ul>
+        // iCloud Section
+        icloudTitle: 'iCloud Synchronization',
+        icloudContent: 'When you enable iCloud sync, your expense data is backed up to your personal iCloud account. This allows you to access your data across multiple Apple devices. Important points:',
+        icloud1: 'iCloud sync is disabled by default - you must explicitly enable it',
+        icloud2: 'Data is encrypted in transit and at rest by Apple',
+        icloud3: 'We have no access to your iCloud data',
+        icloud4: 'Your data is subject to Apple\'s Privacy Policy',
+        icloud5: 'You can disable sync or delete iCloud data anytime through iOS Settings',
 
-        <div class="highlight-box">
-            <p><strong>⚠️ Important:</strong> All data is stored locally on your device by default. No data is sent to external servers or third-party services unless you explicitly enable iCloud sync.</p>
-        </div>
+        // What We Don't Do
+        neverTitle: 'What We Never Do',
+        never1: 'Collect personal identification information',
+        never2: 'Track your location or behavior',
+        never3: 'Use analytics services (Google Analytics, Firebase, etc.)',
+        never4: 'Include advertising SDKs or networks',
+        never5: 'Sell or share data with third parties',
+        never6: 'Send data to our servers (we don\'t have any)',
 
-        <h2>3. iCloud Synchronization</h2>
-        <p>UangRumah offers optional iCloud synchronization to keep your data in sync across your Apple devices (iPhone and iPad).</p>
+        // Your Rights
+        rightsTitle: 'Your Data Rights',
+        rightsIntro: 'You have complete control over your data:',
+        rights1: 'Access: View all your data within the app anytime',
+        rights2: 'Export: Download your data in PDF or CSV format',
+        rights3: 'Modify: Edit or update any record at any time',
+        rights4: 'Delete: Remove individual items or all data',
+        rights5: 'Portability: Take your data with you through exports',
 
-        <h3>How iCloud Sync Works</h3>
-        <ul>
-            <li>When enabled, your expense data, budgets, categories, and cost centers are automatically backed up to your personal iCloud account</li>
-            <li>Data is encrypted during transmission and storage using Apple's security standards</li>
-            <li>Only you can access this data through devices signed in to your iCloud account</li>
-            <li>We do not have access to your iCloud data - it is controlled entirely by Apple and your iCloud security settings</li>
-            <li>You can disable iCloud sync at any time through iOS Settings</li>
-        </ul>
+        // Security
+        securityTitle: 'Security Measures',
+        securityIntro: 'We take multiple steps to keep your data secure:',
+        security1: 'iOS secure containers protect local storage',
+        security2: 'iCloud encryption for synced data',
+        security3: 'Privacy Mode to hide sensitive information in public',
+        security4: 'No vulnerable backend servers to hack',
+        security5: 'Regular updates to address security concerns',
 
-        <h3>iCloud Privacy</h3>
-        <p>When using iCloud sync, your data is subject to Apple's Privacy Policy and iCloud terms. We recommend reviewing Apple's privacy practices at <a href="https://www.apple.com/legal/privacy/" class="contact-link" target="_blank">apple.com/legal/privacy</a>.</p>
+        // Contact
+        contactTitle: 'Questions About Privacy?',
+        contactContent: 'If you have any questions about our privacy practices, please contact us at support@uangrumah.com. We respond within 7 business days.',
 
-        <h2>4. How We Use Your Information</h2>
-        <p>Your data is used exclusively within the UangRumah app for the following purposes:</p>
-
-        <ul>
-            <li><strong>Expense Tracking:</strong> To record, display, and organize your financial transactions</li>
-            <li><strong>Budget Management:</strong> To calculate budget progress, daily allowances, and trigger spending alerts</li>
-            <li><strong>Analytics & Insights:</strong> To generate dashboard visualizations, category breakdowns, and spending reports</li>
-            <li><strong>Reminders:</strong> To send you notifications based on your configured preferences (expense nudges, budget alerts, monthly summaries)</li>
-            <li><strong>Data Export:</strong> To create PDF and CSV reports when you request them</li>
-            <li><strong>App Improvement:</strong> To understand feature usage and improve app functionality (locally only, no data transmission)</li>
-        </ul>
-
-        <h2>5. Data Sharing and Third Parties</h2>
-        <div class="highlight-box">
-            <p><strong>🔒 Zero Third-Party Sharing:</strong> We do not sell, rent, trade, or share your personal or financial data with any third parties. Period.</p>
-        </div>
-
-        <p>UangRumah operates with complete data privacy:</p>
-        <ul>
-            <li>No analytics services (Google Analytics, Firebase, etc.)</li>
-            <li>No advertising networks</li>
-            <li>No social media integration</li>
-            <li>No data brokers or marketing companies</li>
-            <li>No cloud servers except your personal iCloud (if you enable it)</li>
-        </ul>
-
-        <p>The only data transmission occurs when:</p>
-        <ul>
-            <li>You enable iCloud sync (data goes only to your iCloud account)</li>
-            <li>You export reports (data stays on your device or goes where you choose to share it)</li>
-        </ul>
-
-        <h2>6. Data Security</h2>
-        <p>We implement industry-standard security measures to protect your financial data:</p>
-
-        <h3>Technical Safeguards</h3>
-        <ul>
-            <li><strong>Local Storage:</strong> Data is stored in iOS secure containers protected by device encryption</li>
-            <li><strong>iCloud Encryption:</strong> When sync is enabled, data is encrypted in transit and at rest</li>
-            <li><strong>Privacy Mode:</strong> Built-in features to blur sensitive information and censor amounts when needed</li>
-            <li><strong>No Backend Servers:</strong> No vulnerable web servers or databases that could be hacked</li>
-            <li><strong>iOS Security:</strong> Leverages Apple's robust security infrastructure and regular security updates</li>
-        </ul>
-
-        <h3>Device Security Recommendations</h3>
-        <ul>
-            <li>Use a strong passcode or biometric authentication (Face ID/Touch ID) on your device</li>
-            <li>Keep your iOS software up to date</li>
-            <li>Enable two-factor authentication for your Apple ID/iCloud account</li>
-            <li>Don't jailbreak your device, as it compromises security</li>
-        </ul>
-
-        <h2>7. Your Data Control Rights</h2>
-        <p>You have complete control over your data in UangRumah:</p>
-
-        <h3>Access and Portability</h3>
-        <ul>
-            <li><strong>View All Data:</strong> Access all your expense records, budgets, and settings within the app</li>
-            <li><strong>Export Data:</strong> Export your financial data in PDF or CSV format at any time</li>
-            <li><strong>Search and Filter:</strong> Use advanced search features to find specific transactions</li>
-        </ul>
-
-        <h3>Modification and Deletion</h3>
-        <ul>
-            <li><strong>Edit Records:</strong> Modify any expense, budget, category, or cost center at any time</li>
-            <li><strong>Delete Data:</strong> Remove individual expenses or bulk delete records</li>
-            <li><strong>Version History:</strong> View and restore previous versions of edited expenses</li>
-            <li><strong>Complete Deletion:</strong> Uninstalling the app removes all local data from your device</li>
-        </ul>
-
-        <h3>iCloud Data Management</h3>
-        <ul>
-            <li>Disable iCloud sync in iOS Settings to stop cloud synchronization</li>
-            <li>Delete iCloud data through iOS Settings > [Your Name] > iCloud > Manage Storage > UangRumah</li>
-            <li>Data deletion from iCloud may take up to 30 days to complete across Apple's servers</li>
-        </ul>
-
-        <h2>8. Children's Privacy</h2>
-        <p>UangRumah is designed for adults managing household expenses. We do not knowingly collect information from children under 13 years of age. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately.</p>
-
-        <h2>9. Changes to This Privacy Policy</h2>
-        <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors. We will notify you of any material changes through:</p>
-        <ul>
-            <li>In-app notifications when you update to a new version</li>
-            <li>Updates to this page with a revised "Last Updated" date</li>
-            <li>Email notification (if you have provided contact information for support)</li>
-        </ul>
-        <p>We encourage you to review this Privacy Policy periodically to stay informed about how we protect your information.</p>
-
-        <h2>10. International Users</h2>
-        <p>UangRumah is designed primarily for users in Indonesia and displays amounts in Indonesian Rupiah (IDR). However, the app can be used globally. Please note:</p>
-        <ul>
-            <li>All data processing occurs locally on your device or in your iCloud account</li>
-            <li>iCloud data storage location is determined by your Apple ID country/region settings</li>
-            <li>We comply with applicable data protection regulations including GDPR where applicable</li>
-        </ul>
-
-        <h2>11. Contact Us</h2>
-        <div class="contact-section">
-            <h3>Questions About Privacy?</h3>
-            <p>If you have questions, concerns, or requests regarding this Privacy Policy or how we handle your data, please contact us:</p>
-            <p>
-                <strong>Email:</strong> <a href="mailto:support@uangrumah.com" class="contact-link">support@uangrumah.com</a><br>
-                <strong>Website:</strong> <a href="https://uangrumah.com" class="contact-link" target="_blank">uangrumah.com</a>
-            </p>
-            <p>We will respond to privacy inquiries within 7 business days.</p>
-        </div>
-
-        <h2>12. Legal Compliance</h2>
-        <p>UangRumah is operated from Jakarta, Indonesia and complies with applicable Indonesian privacy laws and regulations. We are committed to:</p>
-        <ul>
-            <li>Transparency in data collection and usage</li>
-            <li>User consent and control over personal information</li>
-            <li>Security of financial data</li>
-            <li>Respect for user privacy rights</li>
-        </ul>
-
-        <div class="highlight-box">
-            <p><strong>Current Version:</strong> 0.1.0 Beta<br>
-            <strong>Policy Effective Date:</strong> November 17, 2025</p>
-        </div>`
+        // Footer
+        effectiveDate: 'Effective Date',
+        version: 'App Version',
     },
 
     // Terms & Conditions Page
@@ -569,296 +702,82 @@ translations.en = {
         metaDescription: 'UangRumah Terms and Conditions - Read the terms of use for our expense tracking app.',
         title: 'Terms & Conditions - UangRumah',
         heroTitle: 'Terms & Conditions',
-        heroSubtitle: 'Please read these terms carefully before using UangRumah.',
-        content: `<p class="last-updated"><strong>Last Updated:</strong> November 17, 2025</p>
+        heroSubtitle: 'Please review these terms before using UangRumah.',
+        lastUpdated: 'Last Updated',
 
-        <h2>1. Acceptance of Terms</h2>
-        <p>Welcome to UangRumah. By downloading, installing, or using our iOS expense tracking application ("App"), you agree to be bound by these Terms and Conditions ("Terms"). If you do not agree to these Terms, please do not use the App.</p>
-        <p>These Terms constitute a legally binding agreement between you ("User," "you," or "your") and UangRumah ("we," "us," or "our") regarding your use of the App.</p>
+        // Acceptance
+        acceptanceTitle: 'Agreement to Terms',
+        acceptanceContent: 'By downloading, installing, or using UangRumah, you agree to these Terms and Conditions. If you do not agree, please do not use the app.',
 
-        <div class="highlight-box">
-            <p><strong>Beta Version Notice:</strong> UangRumah is currently in version 0.1.0 Beta. As a beta product, some features may be incomplete, and you may experience bugs or unexpected behavior. We appreciate your patience and feedback as we continue to improve the App.</p>
-        </div>
+        // Beta Notice
+        betaNoticeTitle: 'Beta Version Notice',
+        betaNoticeContent: 'UangRumah is currently in beta (v0.1.0). As beta software, it may contain bugs or incomplete features. We appreciate your patience and feedback as we improve the app.',
 
-        <h2>2. Description of Service</h2>
-        <p>UangRumah is a household expense tracking application designed for Indonesian couples to manage their personal finances. The App provides the following features:</p>
-        <ul>
-            <li>Expense tracking and categorization</li>
-            <li>Budget management with monthly and weekly limits</li>
-            <li>Financial dashboard with visualizations and analytics</li>
-            <li>Multiple payment method (cost center) tracking</li>
-            <li>Data export in PDF and CSV formats</li>
-            <li>Optional iCloud synchronization across devices</li>
-            <li>Recurring expense management</li>
-            <li>Customizable reminders and notifications</li>
-        </ul>
+        // Description
+        descriptionTitle: 'About UangRumah',
+        descriptionContent: 'UangRumah is a privacy-focused household expense tracking application for iOS. Features include expense tracking, budget management, multi-book ledger system, data export, iCloud synchronization, and more.',
 
-        <h2>3. User Eligibility</h2>
-        <p>To use UangRumah, you must:</p>
-        <ul>
-            <li>Be at least 18 years of age</li>
-            <li>Have the legal capacity to enter into binding agreements</li>
-            <li>Own or have authorized access to an iOS device running iOS 16.0 or later</li>
-            <li>Have a valid Apple ID for app installation</li>
-            <li>Comply with all applicable local, state, national, and international laws</li>
-        </ul>
+        // Eligibility
+        eligibilityTitle: 'Who Can Use UangRumah',
+        eligibilityIntro: 'To use UangRumah, you must:',
+        eligibility1: 'Be at least 18 years of age',
+        eligibility2: 'Own or control an iOS device with iOS 16.0 or later',
+        eligibility3: 'Have a valid Apple ID',
+        eligibility4: 'Comply with all applicable laws',
 
-        <h2>4. User Responsibilities</h2>
-        <p>As a user of UangRumah, you agree to:</p>
+        // License
+        licenseTitle: 'Your License',
+        licenseContent: 'We grant you a limited, non-exclusive, non-transferable license to download, install, and use UangRumah for personal, non-commercial expense tracking purposes.',
 
-        <h3>Data Accuracy</h3>
-        <ul>
-            <li>Enter accurate and complete financial information</li>
-            <li>Regularly review and update your expense records</li>
-            <li>Maintain the security of your device and iCloud account</li>
-            <li>Take responsibility for all data entered into the App</li>
-        </ul>
+        // Restrictions
+        restrictionsTitle: 'Restrictions',
+        restrictionsIntro: 'You may not:',
+        restrictions1: 'Reverse engineer or decompile the app',
+        restrictions2: 'Use the app for commercial accounting or tax preparation',
+        restrictions3: 'Copy, modify, or create derivative works',
+        restrictions4: 'Rent, sell, or redistribute the app',
+        restrictions5: 'Use the app for illegal purposes',
 
-        <h3>Prohibited Uses</h3>
-        <p>You agree NOT to:</p>
-        <ul>
-            <li>Use the App for any illegal or unauthorized purpose</li>
-            <li>Attempt to reverse engineer, decompile, or disassemble the App</li>
-            <li>Remove, alter, or obscure any copyright, trademark, or proprietary notices</li>
-            <li>Use the App to track expenses for business accounting or tax preparation (unless you accept sole responsibility for accuracy)</li>
-            <li>Share your device or iCloud credentials with unauthorized persons</li>
-            <li>Attempt to gain unauthorized access to any portion of the App or related systems</li>
-            <li>Transmit viruses, malware, or any harmful code</li>
-            <li>Interfere with or disrupt the App's functionality</li>
-        </ul>
+        // User Responsibilities
+        responsibilitiesTitle: 'Your Responsibilities',
+        responsibilitiesIntro: 'As a user, you agree to:',
+        responsibilities1: 'Enter accurate financial information',
+        responsibilities2: 'Maintain the security of your device',
+        responsibilities3: 'Keep backups of important data',
+        responsibilities4: 'Verify all calculations independently',
+        responsibilities5: 'Use the app in compliance with laws',
 
-        <h3>Personal Use Only</h3>
-        <p>UangRumah is licensed for personal, non-commercial use only. You may not use the App for business expense tracking, corporate accounting, or any commercial purpose without explicit written permission.</p>
+        // Data Ownership
+        dataTitle: 'Your Data',
+        dataContent: 'You retain full ownership of all data you enter into UangRumah. We do not claim any rights to your financial information. You can export or delete your data at any time.',
 
-        <h2>5. Intellectual Property Rights</h2>
-        <p>All intellectual property rights in and to UangRumah, including but not limited to software code, design, user interface, graphics, text, and documentation, are owned by UangRumah or its licensors.</p>
+        // Disclaimer
+        disclaimerTitle: 'Important Disclaimers',
+        disclaimerContent: 'UangRumah is provided "as is" without warranties. We do not guarantee accuracy of calculations, continuous availability, or fitness for any particular purpose. The app is not a substitute for professional financial, tax, or legal advice.',
 
-        <h3>Your License</h3>
-        <p>Subject to your compliance with these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to:</p>
-        <ul>
-            <li>Download and install the App on iOS devices you own or control</li>
-            <li>Use the App for personal expense tracking purposes</li>
-        </ul>
+        // Limitation
+        limitationTitle: 'Limitation of Liability',
+        limitationContent: 'We are not liable for any financial losses, data loss, or damages arising from your use of UangRumah. Our total liability is limited to the amount you paid for the app (currently free for beta).',
 
-        <h3>Restrictions</h3>
-        <p>You may not:</p>
-        <ul>
-            <li>Copy, modify, or create derivative works of the App</li>
-            <li>Rent, lease, lend, sell, sublicense, or distribute the App</li>
-            <li>Use the App's branding, logos, or trademarks without permission</li>
-        </ul>
+        // Termination
+        terminationTitle: 'Termination',
+        terminationContent: 'You may stop using UangRumah at any time by uninstalling the app. We reserve the right to discontinue the app or modify features with or without notice.',
 
-        <h2>6. Subscription and Payment Terms</h2>
+        // Changes
+        changesTitle: 'Changes to Terms',
+        changesContent: 'We may update these terms from time to time. Continued use of the app after changes constitutes acceptance of the new terms. We will notify you of significant changes through the app.',
 
-        <div class="highlight-box">
-            <p><strong>Current Status:</strong> UangRumah version 0.1.0 Beta is currently offered free of charge. Future versions may introduce optional premium features or subscriptions.</p>
-        </div>
+        // Governing Law
+        governingTitle: 'Governing Law',
+        governingContent: 'These terms are governed by the laws of Indonesia. Any disputes shall be resolved in the courts of Jakarta, Indonesia.',
 
-        <h3>Future Subscription Plans (If Implemented)</h3>
-        <p>Should we introduce paid features in the future:</p>
-        <ul>
-            <li>You will be notified in advance of any pricing or subscription changes</li>
-            <li>Subscriptions will be processed through Apple's App Store with their standard terms</li>
-            <li>Prices will be clearly displayed before purchase</li>
-            <li>Subscriptions will auto-renew unless cancelled at least 24 hours before the renewal date</li>
-            <li>Refunds will be handled according to Apple's App Store refund policy</li>
-            <li>You can manage or cancel subscriptions through your Apple ID account settings</li>
-        </ul>
+        // Contact
+        contactTitle: 'Questions?',
+        contactContent: 'If you have questions about these terms, contact us at support@uangrumah.com.',
 
-        <h2>7. Data Ownership and Privacy</h2>
-        <p>Your financial data belongs to you. We respect your privacy and data ownership rights:</p>
-
-        <h3>Your Data</h3>
-        <ul>
-            <li>You retain all ownership rights to the data you enter into UangRumah</li>
-            <li>You can export your data at any time in PDF or CSV format</li>
-            <li>You can delete your data at any time by removing expenses or uninstalling the App</li>
-            <li>We do not claim any ownership over your personal financial information</li>
-        </ul>
-
-        <h3>Privacy</h3>
-        <p>Your use of UangRumah is also governed by our Privacy Policy, which is incorporated into these Terms by reference. Please review our <a href="privacy-policy.html" class="contact-link">Privacy Policy</a> to understand how we collect, use, and protect your data.</p>
-
-        <h2>8. iCloud Synchronization</h2>
-        <p>UangRumah offers optional iCloud synchronization:</p>
-        <ul>
-            <li>iCloud sync is disabled by default and must be explicitly enabled by you</li>
-            <li>When enabled, your expense data is backed up to your personal iCloud account</li>
-            <li>You are responsible for managing your iCloud storage space</li>
-            <li>iCloud sync is subject to Apple's iCloud terms and conditions</li>
-            <li>We are not responsible for data loss due to iCloud service interruptions or account issues</li>
-            <li>You should maintain local backups of important financial data</li>
-        </ul>
-
-        <h2>9. Disclaimer of Warranties</h2>
-        <div class="warning-box">
-            <p><strong>⚠️ Important Legal Notice:</strong> Please read this section carefully as it limits our liability.</p>
-        </div>
-
-        <p>UangRumah is provided "AS IS" and "AS AVAILABLE" without warranties of any kind, either express or implied, including but not limited to:</p>
-
-        <ul>
-            <li><strong>Accuracy:</strong> We do not warrant that the App will accurately calculate budgets, expenses, or financial summaries. You are responsible for verifying all calculations.</li>
-            <li><strong>Availability:</strong> We do not guarantee that the App will be available at all times, uninterrupted, or error-free.</li>
-            <li><strong>Fitness for Purpose:</strong> We do not warrant that the App will meet your specific financial tracking needs.</li>
-            <li><strong>Data Loss:</strong> We do not guarantee against data loss. You should maintain backups of important financial records.</li>
-            <li><strong>Security:</strong> While we implement security measures, we cannot guarantee absolute security against unauthorized access.</li>
-            <li><strong>Compatibility:</strong> We do not warrant compatibility with all iOS devices or future iOS versions.</li>
-        </ul>
-
-        <h3>Beta Software Notice</h3>
-        <p>As beta software (version 0.1.0), UangRumah may contain bugs, errors, or incomplete features. Use at your own risk.</p>
-
-        <h2>10. Limitation of Liability</h2>
-        <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, UANGRUMAH AND ITS DEVELOPERS SHALL NOT BE LIABLE FOR:</p>
-
-        <ul>
-            <li><strong>Indirect Damages:</strong> Any indirect, incidental, special, consequential, or punitive damages</li>
-            <li><strong>Financial Losses:</strong> Any financial losses resulting from incorrect calculations, data loss, or app errors</li>
-            <li><strong>Data Loss:</strong> Loss of data due to device failure, iCloud issues, or app bugs</li>
-            <li><strong>Tax or Legal Issues:</strong> Any tax penalties, legal issues, or financial problems arising from use of the App</li>
-            <li><strong>Third-Party Services:</strong> Issues with Apple, iCloud, or other third-party services</li>
-            <li><strong>Downtime:</strong> Service interruptions, bugs, or unavailability</li>
-        </ul>
-
-        <p>IN NO EVENT SHALL OUR TOTAL LIABILITY EXCEED THE AMOUNT YOU PAID FOR THE APP IN THE PAST 12 MONTHS (CURRENTLY $0 FOR BETA VERSION).</p>
-
-        <h3>Financial Advice Disclaimer</h3>
-        <p>UangRumah is a personal finance tracking tool, NOT a financial advisor. We do not provide:</p>
-        <ul>
-            <li>Financial planning or investment advice</li>
-            <li>Tax preparation or accounting services</li>
-            <li>Legal or professional financial counseling</li>
-            <li>Business expense or corporate accounting features</li>
-        </ul>
-        <p>Consult qualified professionals for financial, tax, or legal advice.</p>
-
-        <h2>11. Indemnification</h2>
-        <p>You agree to indemnify, defend, and hold harmless UangRumah and its developers from any claims, damages, losses, liabilities, and expenses (including legal fees) arising from:</p>
-        <ul>
-            <li>Your use or misuse of the App</li>
-            <li>Your violation of these Terms</li>
-            <li>Your violation of any third-party rights</li>
-            <li>Inaccurate data you enter into the App</li>
-            <li>Financial decisions you make based on App data</li>
-        </ul>
-
-        <h2>12. Termination</h2>
-
-        <h3>Termination by You</h3>
-        <p>You may terminate your use of UangRumah at any time by:</p>
-        <ul>
-            <li>Uninstalling the App from your device(s)</li>
-            <li>Deleting your iCloud backup data (if applicable)</li>
-            <li>Ceasing to use the App</li>
-        </ul>
-
-        <h3>Termination by Us</h3>
-        <p>We reserve the right to:</p>
-        <ul>
-            <li>Discontinue the App at any time with or without notice</li>
-            <li>Modify or remove features in future updates</li>
-            <li>Terminate access for users who violate these Terms</li>
-        </ul>
-
-        <h3>Effect of Termination</h3>
-        <p>Upon termination:</p>
-        <ul>
-            <li>Your license to use the App immediately ends</li>
-            <li>You must delete the App from all devices</li>
-            <li>Sections of these Terms that by nature should survive (warranties, liability, etc.) will remain in effect</li>
-            <li>We are not obligated to provide refunds for any reason</li>
-        </ul>
-
-        <h2>13. Updates and Modifications</h2>
-
-        <h3>App Updates</h3>
-        <p>We may release updates to UangRumah from time to time that:</p>
-        <ul>
-            <li>Add new features or functionality</li>
-            <li>Fix bugs or improve performance</li>
-            <li>Modify or remove existing features</li>
-            <li>Change the user interface or design</li>
-        </ul>
-        <p>You are not obligated to install updates, but we recommend keeping the App updated for the best experience and security.</p>
-
-        <h3>Changes to Terms</h3>
-        <p>We reserve the right to modify these Terms at any time. When we make changes:</p>
-        <ul>
-            <li>We will update the "Last Updated" date at the top of this page</li>
-            <li>Material changes will be communicated through in-app notifications</li>
-            <li>Your continued use of the App after changes constitutes acceptance of the new Terms</li>
-            <li>If you do not agree to the changes, you must stop using the App</li>
-        </ul>
-
-        <h2>14. Geographic Restrictions</h2>
-        <p>UangRumah is designed primarily for use in Indonesia and displays currency in Indonesian Rupiah (IDR). While the App may function in other countries:</p>
-        <ul>
-            <li>Currency conversion is not supported (only IDR)</li>
-            <li>Some features may not be relevant outside Indonesia</li>
-            <li>We make no representations that the App is appropriate for use in other locations</li>
-            <li>You are responsible for compliance with local laws in your jurisdiction</li>
-        </ul>
-
-        <h2>15. Third-Party Services</h2>
-        <p>UangRumah integrates with the following third-party services:</p>
-
-        <h3>Apple Services</h3>
-        <ul>
-            <li><strong>App Store:</strong> App distribution and updates (subject to Apple's terms)</li>
-            <li><strong>iCloud:</strong> Optional data synchronization (subject to Apple's iCloud terms)</li>
-            <li><strong>iOS:</strong> Operating system platform (subject to Apple's iOS license)</li>
-        </ul>
-
-        <p>We are not responsible for the availability, functionality, or terms of third-party services. Your use of these services is subject to their respective terms and conditions.</p>
-
-        <h2>16. Export Compliance</h2>
-        <p>You agree to comply with all applicable export and import control laws and regulations. You shall not export or re-export the App to any prohibited country or person.</p>
-
-        <h2>17. Governing Law and Dispute Resolution</h2>
-
-        <h3>Governing Law</h3>
-        <p>These Terms are governed by the laws of Indonesia, without regard to conflict of law principles. Any disputes arising from these Terms or the App shall be subject to the exclusive jurisdiction of the courts of Jakarta, Indonesia.</p>
-
-        <h3>Dispute Resolution</h3>
-        <p>In the event of any dispute:</p>
-        <ol>
-            <li><strong>Informal Resolution:</strong> Contact us first at support@uangrumah.com to attempt to resolve the issue informally</li>
-            <li><strong>Mediation:</strong> If informal resolution fails, we agree to attempt mediation before litigation</li>
-            <li><strong>Arbitration/Litigation:</strong> If mediation fails, disputes will be resolved through arbitration or in courts of competent jurisdiction in Jakarta</li>
-        </ol>
-
-        <h2>18. Severability</h2>
-        <p>If any provision of these Terms is found to be invalid, illegal, or unenforceable, the remaining provisions shall continue in full force and effect.</p>
-
-        <h2>19. Entire Agreement</h2>
-        <p>These Terms, together with our Privacy Policy, constitute the entire agreement between you and UangRumah regarding the App and supersede all prior agreements, understandings, and representations.</p>
-
-        <h2>20. No Waiver</h2>
-        <p>Our failure to enforce any right or provision of these Terms shall not constitute a waiver of such right or provision. No waiver shall be effective unless made in writing and signed by an authorized representative.</p>
-
-        <h2>21. Assignment</h2>
-        <p>You may not assign or transfer these Terms or your rights under them without our prior written consent. We may assign these Terms to any successor or affiliate without restriction.</p>
-
-        <h2>22. Contact Information</h2>
-        <div class="contact-section">
-            <h3>Questions About These Terms?</h3>
-            <p>If you have questions or concerns regarding these Terms and Conditions, please contact us:</p>
-            <p>
-                <strong>Email:</strong> <a href="mailto:support@uangrumah.com" class="contact-link">support@uangrumah.com</a><br>
-                <strong>Website:</strong> <a href="https://uangrumah.com" class="contact-link" target="_blank">uangrumah.com</a><br>
-                <strong>Location:</strong> Jakarta, Indonesia
-            </p>
-            <p>We will respond to inquiries within 7 business days.</p>
-        </div>
-
-        <h2>23. Acknowledgment</h2>
-        <p>BY DOWNLOADING, INSTALLING, OR USING UANGRUMAH, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY THESE TERMS AND CONDITIONS.</p>
-
-        <div class="highlight-box">
-            <p><strong>Current Version:</strong> 0.1.0 Beta<br>
-            <strong>Terms Effective Date:</strong> November 17, 2025<br>
-            <strong>Platform:</strong> iOS 16.0+</p>
-        </div>`
+        // Footer
+        effectiveDate: 'Effective Date',
+        version: 'App Version',
+        acknowledgment: 'By using UangRumah, you acknowledge that you have read, understood, and agree to these Terms and Conditions.',
     },
 };
