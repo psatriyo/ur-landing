@@ -31,7 +31,7 @@ translations.id = {
         title: 'UangRumah - Pelacak Pengeluaran Cerdas untuk Keluarga Indonesia',
 
         // Hero Section
-        heroBadge: 'Sekarang tersedia untuk iOS',
+        heroBadge: 'Tersedia untuk iOS & macOS',
         heroTitle: 'Pelacakan Pengeluaran Cerdas untuk <span>Keluarga Indonesia</span>',
         heroSubtitle: 'Kendalikan keuangan keluarga Anda dengan pelacakan pengeluaran berbasis privasi. Bekerja offline, sinkronisasi mulus, dan mendukung 158+ mata uang. Dibuat khusus untuk keluarga Indonesia.',
         ctaButton: 'Minta Akses Beta',
@@ -103,7 +103,7 @@ translations.id = {
         // Data & Sync
         dataSyncTitle: 'Data & Sinkronisasi',
         icloudSync: 'Sinkronisasi iCloud',
-        icloudSyncDesc: 'Sinkronkan data Anda dengan mulus di semua perangkat Apple. Pengeluaran, anggaran, dan pengaturan mengikuti Anda ke mana-mana.',
+        icloudSyncDesc: 'Sinkronkan data Anda dengan mulus di iOS, iPadOS, dan macOS. Pengeluaran, anggaran, dan pengaturan mengikuti Anda ke mana-mana.',
         backupRestore: 'Cadangan & Pulihkan',
         backupRestoreDesc: 'Amankan data keuangan Anda dengan pencadangan dan pemulihan mudah. Jangan pernah kehilangan riwayat pengeluaran.',
         pdfReports: 'Laporan PDF',
@@ -164,9 +164,9 @@ translations.id = {
         requirementsTitle: 'Persyaratan & Spesifikasi',
         requirementsSubtitle: 'Dibangun dengan teknologi iOS modern untuk pengalaman terbaik.',
         platform: 'Platform',
-        platformValue: 'iOS 16.0+',
+        platformValue: 'iOS 16.0+ / macOS 13.0+',
         devices: 'Perangkat',
-        devicesValue: 'iPhone & iPad',
+        devicesValue: 'iPhone, iPad & Mac',
         technology: 'Teknologi',
         technologyValue: 'SwiftUI',
         sync: 'Sinkronisasi',
@@ -174,7 +174,7 @@ translations.id = {
         currencies: 'Mata Uang',
         currenciesValue: '158+',
         storage: 'Penyimpanan',
-        storageValue: 'Lokal + Cloud',
+        storageValue: 'Lokal + iCloud',
         currency: 'Mata Uang',
         currencyValue: 'IDR (Rupiah)',
 
@@ -189,6 +189,7 @@ translations.id = {
         footerSupport: 'Dukungan',
         footerLegal: 'Hukum',
         footerMadeWith: 'Dibuat dengan penuh perhatian di Jakarta, Indonesia',
+        footerAppleDisclaimer: 'iCloud adalah layanan yang disediakan oleh Apple Inc. Apple, logo Apple, iPhone, iPad, Mac, dan macOS adalah merek dagang dari Apple Inc.',
     },
 
     // Contact Page
@@ -284,7 +285,7 @@ translations.id = {
         contactUsDesc: 'Tidak menemukan apa yang Anda cari? Hubungi tim dukungan kami.',
 
         systemRequirements: 'Persyaratan Sistem',
-        systemRequirementsValue: '<strong>Platform:</strong> iOS 16.0 atau lebih baru | <strong>Perangkat:</strong> iPhone & iPad | <strong>Versi:</strong> 0.1.0 Beta | <strong>Penyimpanan:</strong> iCloud (opsional)',
+        systemRequirementsValue: '<strong>Platform:</strong> iOS 16.0+ / macOS 13.0+ | <strong>Perangkat:</strong> iPhone, iPad & Mac | <strong>Versi:</strong> 0.1.0 Beta | <strong>Penyimpanan:</strong> iCloud (opsional)',
 
         faqSectionTitle: 'Pertanyaan yang Sering Diajukan',
         faqSectionSubtitle: 'Jawaban cepat untuk pertanyaan umum',
@@ -302,7 +303,7 @@ translations.id = {
         faq2Answer: 'Sinkronisasi iCloud menjaga data Anda tetap tersinkronisasi di semua perangkat Apple Anda:',
         faq2Point1: 'Aktifkan sinkronisasi iCloud di Pengaturan iOS > [Nama Anda] > iCloud',
         faq2Point2: 'Pastikan UangRumah memiliki akses iCloud yang diaktifkan',
-        faq2Point3: 'Data pengeluaran Anda akan secara otomatis disinkronkan antara iPhone dan iPad',
+        faq2Point3: 'Data pengeluaran Anda akan secara otomatis disinkronkan antara iPhone, iPad, dan Mac',
         faq2Point4: 'Perubahan yang dilakukan pada satu perangkat muncul di perangkat lain dalam beberapa menit',
         faq2Point5: 'Memerlukan koneksi internet aktif untuk sinkronisasi',
 
@@ -409,7 +410,7 @@ translations.id = {
         trouble5Title: 'Aplikasi Crash atau Freeze',
         trouble5Desc: 'Jika UangRumah tidak stabil atau crash:',
         trouble5Step1: 'Tutup paksa aplikasi dan buka kembali',
-        trouble5Step2: 'Restart iPhone atau iPad Anda',
+        trouble5Step2: 'Restart iPhone, iPad, atau Mac Anda',
         trouble5Step3: 'Perbarui ke versi iOS terbaru (Pengaturan > Umum > Pembaruan Perangkat Lunak)',
         trouble5Step4: 'Perbarui UangRumah ke versi terbaru dari App Store',
         trouble5Step5: 'Bebaskan penyimpanan perangkat jika hampir habis',
@@ -457,7 +458,7 @@ translations.id = {
         faq2Points: [
             'Aktifkan sinkronisasi iCloud di Pengaturan iOS > [Nama Anda] > iCloud',
             'Pastikan UangRumah memiliki akses iCloud yang diaktifkan',
-            'Data pengeluaran Anda akan secara otomatis disinkronkan antara iPhone dan iPad',
+            'Data pengeluaran Anda akan secara otomatis disinkronkan antara iPhone, iPad, dan Mac',
             'Perubahan yang dilakukan pada satu perangkat muncul di perangkat lain dalam beberapa menit',
             'Memerlukan koneksi internet aktif untuk sinkronisasi'
         ],
@@ -582,7 +583,7 @@ translations.id = {
         trouble5Desc: 'Jika UangRumah tidak stabil atau crash:',
         trouble5Steps: [
             'Tutup paksa aplikasi dan buka kembali',
-            'Restart iPhone atau iPad Anda',
+            'Restart iPhone, iPad, atau Mac Anda',
             'Perbarui ke versi iOS terbaru (Pengaturan > Umum > Pembaruan Perangkat Lunak)',
             'Perbarui UangRumah ke versi terbaru dari App Store',
             'Bebaskan penyimpanan perangkat jika hampir habis',
