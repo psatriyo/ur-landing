@@ -31,7 +31,7 @@ translations.en = {
         title: 'UangRumah - Smart Expense Tracker for Indonesian Households',
 
         // Hero Section
-        heroBadge: 'Now available for iOS',
+        heroBadge: 'Available for iOS & macOS',
         heroTitle: 'Smart Expense Tracking for <span>Indonesian Households</span>',
         heroSubtitle: 'Take control of your family finances with privacy-first expense tracking. Works offline, syncs seamlessly, and supports 158+ currencies. Built specifically for Indonesian households.',
         ctaButton: 'Request Beta Access',
@@ -103,7 +103,7 @@ translations.en = {
         // Data & Sync
         dataSyncTitle: 'Data & Sync',
         icloudSync: 'iCloud Sync',
-        icloudSyncDesc: 'Seamlessly sync your data across all Apple devices. Your expenses, budgets, and settings follow you everywhere.',
+        icloudSyncDesc: 'Seamlessly sync your data across iOS, iPadOS, and macOS. Your expenses, budgets, and settings follow you everywhere.',
         backupRestore: 'Backup & Restore',
         backupRestoreDesc: 'Secure your financial data with easy backup and restore. Never lose your expense history.',
         pdfReports: 'PDF Reports',
@@ -164,9 +164,9 @@ translations.en = {
         requirementsTitle: 'Requirements & Specifications',
         requirementsSubtitle: 'Built with modern iOS technology for the best experience.',
         platform: 'Platform',
-        platformValue: 'iOS 16.0+',
+        platformValue: 'iOS 16.0+ / macOS 13.0+',
         devices: 'Devices',
-        devicesValue: 'iPhone & iPad',
+        devicesValue: 'iPhone, iPad & Mac',
         technology: 'Technology',
         technologyValue: 'SwiftUI',
         sync: 'Sync',
@@ -174,7 +174,7 @@ translations.en = {
         currencies: 'Currencies',
         currenciesValue: '158+',
         storage: 'Storage',
-        storageValue: 'Local + Cloud',
+        storageValue: 'Local + iCloud',
         currency: 'Currency',
         currencyValue: 'IDR (Rupiah)',
 
@@ -189,6 +189,7 @@ translations.en = {
         footerSupport: 'Support',
         footerLegal: 'Legal',
         footerMadeWith: 'Made with care in Jakarta, Indonesia',
+        footerAppleDisclaimer: 'iCloud is a service provided by Apple Inc. Apple, the Apple logo, iPhone, iPad, Mac, and macOS are trademarks of Apple Inc.',
     },
 
     // Contact Page
@@ -284,7 +285,7 @@ translations.en = {
         contactUsDesc: 'Can\'t find what you\'re looking for? Reach out to our support team.',
 
         systemRequirements: 'System Requirements',
-        systemRequirementsValue: '<strong>Platform:</strong> iOS 16.0 or later | <strong>Devices:</strong> iPhone & iPad | <strong>Version:</strong> 0.1.0 Beta | <strong>Storage:</strong> iCloud (optional)',
+        systemRequirementsValue: '<strong>Platform:</strong> iOS 16.0+ / macOS 13.0+ | <strong>Devices:</strong> iPhone, iPad & Mac | <strong>Version:</strong> 0.1.0 Beta | <strong>Storage:</strong> iCloud (optional)',
 
         faqSectionTitle: 'Frequently Asked Questions',
         faqSectionSubtitle: 'Quick answers to common questions',
@@ -302,7 +303,7 @@ translations.en = {
         faq2Answer: 'iCloud sync keeps your data synchronized across all your Apple devices:',
         faq2Point1: 'Enable iCloud sync in iOS Settings > [Your Name] > iCloud',
         faq2Point2: 'Make sure UangRumah has iCloud access enabled',
-        faq2Point3: 'Your expense data will automatically sync between iPhone and iPad',
+        faq2Point3: 'Your expense data will automatically sync between iPhone, iPad, and Mac',
         faq2Point4: 'Changes made on one device appear on others within minutes',
         faq2Point5: 'Requires active internet connection for syncing',
 
@@ -409,7 +410,7 @@ translations.en = {
         trouble5Title: 'App Crashes or Freezes',
         trouble5Desc: 'If UangRumah is unstable or crashing:',
         trouble5Step1: 'Force close the app and reopen it',
-        trouble5Step2: 'Restart your iPhone or iPad',
+        trouble5Step2: 'Restart your iPhone, iPad, or Mac',
         trouble5Step3: 'Update to the latest iOS version (Settings > General > Software Update)',
         trouble5Step4: 'Update UangRumah to the latest version from the App Store',
         trouble5Step5: 'Free up device storage if running low',
@@ -457,7 +458,7 @@ translations.en = {
         faq2Points: [
             'Enable iCloud sync in iOS Settings > [Your Name] > iCloud',
             'Make sure UangRumah has iCloud access enabled',
-            'Your expense data will automatically sync between iPhone and iPad',
+            'Your expense data will automatically sync between iPhone, iPad, and Mac',
             'Changes made on one device appear on others within minutes',
             'Requires active internet connection for syncing'
         ],
@@ -582,7 +583,7 @@ translations.en = {
         trouble5Desc: 'If UangRumah is unstable or crashing:',
         trouble5Steps: [
             'Force close the app and reopen it',
-            'Restart your iPhone or iPad',
+            'Restart your iPhone, iPad, or Mac',
             'Update to the latest iOS version (Settings > General > Software Update)',
             'Update UangRumah to the latest version from the App Store',
             'Free up device storage if running low',
