@@ -15,21 +15,22 @@
         }
 
         :root {
-            --primary-color: #6366f1;
-            --primary-dark: #4f46e5;
-            --primary-light: #818cf8;
-            --secondary-color: #10b981;
-            --accent-color: #f59e0b;
+            --primary-dark: #0D7377;
+            --primary-color: #14A3A3;
+            --primary-light: #7FC8C8;
+            --accent-light: #A8D8D8;
+            --secondary-color: #0D7377;
+            --accent-color: #14A3A3;
             --text-dark: #1e293b;
             --text-medium: #475569;
             --text-light: #64748b;
-            --bg-light: #f8fafc;
-            --bg-dark: #0f172a;
+            --bg-light: #f0fafa;
+            --bg-dark: #0D7377;
             --white: #ffffff;
-            --shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-            --shadow-lg: 0 25px 60px rgba(0, 0, 0, 0.12);
-            --gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
-            --gradient-hero: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+            --shadow: 0 10px 40px rgba(13, 115, 119, 0.08);
+            --shadow-lg: 0 25px 60px rgba(13, 115, 119, 0.12);
+            --gradient-primary: linear-gradient(135deg, #0D7377 0%, #14A3A3 50%, #7FC8C8 100%);
+            --gradient-hero: radial-gradient(ellipse at bottom center, #A8D8D8 0%, #14A3A3 50%, #0D7377 100%);
         }
 
         body {
@@ -87,7 +88,7 @@
         }
 
         .beta-badge {
-            background: linear-gradient(135deg, #f59e0b, #d97706);
+            background: linear-gradient(135deg, #14A3A3, #0D7377);
             color: var(--white);
             font-size: 0.6rem;
             font-weight: 700;
@@ -138,8 +139,8 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: radial-gradient(circle at 20% 50%, rgba(99, 102, 241, 0.15) 0%, transparent 50%),
-                        radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+            background: radial-gradient(circle at 20% 50%, rgba(168, 216, 216, 0.15) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(127, 200, 200, 0.1) 0%, transparent 50%);
         }
 
         .page-hero-content {
@@ -202,7 +203,7 @@
         .key-point-card:hover {
             transform: translateY(-3px);
             box-shadow: var(--shadow-lg);
-            border-color: rgba(99, 102, 241, 0.1);
+            border-color: rgba(20, 163, 163, 0.1);
         }
 
         .key-point-icon {
@@ -214,7 +215,7 @@
             justify-content: center;
             font-size: 1.5rem;
             margin-bottom: 1rem;
-            background: linear-gradient(135deg, #ede9fe, #ddd6fe);
+            background: linear-gradient(135deg, #E0F2F2, #C8E8E8);
         }
 
         .key-point-card h3 {
@@ -293,7 +294,7 @@
         }
 
         .highlight-box {
-            background: linear-gradient(135deg, #eff6ff, #dbeafe);
+            background: linear-gradient(135deg, #E0F2F2, #C8E8E8);
             border-left: 4px solid var(--primary-color);
             padding: 1.5rem;
             margin: 1.5rem 0;
@@ -301,7 +302,7 @@
         }
 
         .highlight-box.success {
-            background: linear-gradient(135deg, #ecfdf5, #d1fae5);
+            background: linear-gradient(135deg, #D0ECEC, #B8E2E2);
             border-left-color: var(--secondary-color);
         }
 

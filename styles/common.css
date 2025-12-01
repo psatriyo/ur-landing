@@ -9,15 +9,17 @@
 }
 
 :root {
-    --primary-color: #2563eb;
-    --primary-dark: #1e40af;
-    --secondary-color: #10b981;
+    --primary-dark: #0D7377;
+    --primary-color: #14A3A3;
+    --primary-light: #7FC8C8;
+    --accent-light: #A8D8D8;
+    --secondary-color: #0D7377;
     --text-dark: #1f2937;
     --text-light: #6b7280;
-    --bg-light: #f9fafb;
+    --bg-light: #f0fafa;
     --white: #ffffff;
-    --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.15);
+    --shadow: 0 10px 30px rgba(13, 115, 119, 0.1);
+    --shadow-lg: 0 20px 60px rgba(13, 115, 119, 0.15);
 }
 
 body {
@@ -57,7 +59,7 @@ nav {
 }
 
 .beta-badge {
-    background: linear-gradient(135deg, #f59e0b, #d97706);
+    background: linear-gradient(135deg, #14A3A3, #0D7377);
     color: var(--white);
     font-size: 0.65rem;
     font-weight: 700;
@@ -65,7 +67,7 @@ nav {
     border-radius: 12px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);
+    box-shadow: 0 2px 8px rgba(20, 163, 163, 0.3);
 }
 
 .nav-links {
@@ -155,7 +157,7 @@ footer {
 .language-switcher:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    box-shadow: 0 0 0 3px rgba(20, 163, 163, 0.1);
 }
 
 /* Mobile Responsiveness - Common */
