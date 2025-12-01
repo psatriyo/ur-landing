@@ -16,21 +16,22 @@
         }
 
         :root {
-            --primary-color: #6366f1;
-            --primary-dark: #4f46e5;
-            --primary-light: #818cf8;
-            --secondary-color: #10b981;
-            --accent-color: #f59e0b;
+            --primary-dark: #0D7377;
+            --primary-color: #14A3A3;
+            --primary-light: #7FC8C8;
+            --accent-light: #A8D8D8;
+            --secondary-color: #0D7377;
+            --accent-color: #14A3A3;
             --text-dark: #1e293b;
             --text-medium: #475569;
             --text-light: #64748b;
-            --bg-light: #f8fafc;
-            --bg-dark: #0f172a;
+            --bg-light: #f0fafa;
+            --bg-dark: #0D7377;
             --white: #ffffff;
-            --shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-            --shadow-lg: 0 25px 60px rgba(0, 0, 0, 0.12);
-            --gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
-            --gradient-hero: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+            --shadow: 0 10px 40px rgba(13, 115, 119, 0.08);
+            --shadow-lg: 0 25px 60px rgba(13, 115, 119, 0.12);
+            --gradient-primary: linear-gradient(135deg, #0D7377 0%, #14A3A3 50%, #7FC8C8 100%);
+            --gradient-hero: radial-gradient(ellipse at bottom center, #A8D8D8 0%, #14A3A3 50%, #0D7377 100%);
         }
 
         body {
@@ -88,7 +89,7 @@
         }
 
         .beta-badge {
-            background: linear-gradient(135deg, #f59e0b, #d97706);
+            background: linear-gradient(135deg, #14A3A3, #0D7377);
             color: var(--white);
             font-size: 0.6rem;
             font-weight: 700;
@@ -138,9 +139,9 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: radial-gradient(circle at 20% 50%, rgba(99, 102, 241, 0.15) 0%, transparent 50%),
-                        radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
-                        radial-gradient(circle at 40% 80%, rgba(168, 85, 247, 0.1) 0%, transparent 50%);
+            background: radial-gradient(circle at 20% 50%, rgba(168, 216, 216, 0.15) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(127, 200, 200, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 40% 80%, rgba(20, 163, 163, 0.1) 0%, transparent 50%);
         }
 
         .hero-container {
@@ -174,7 +175,7 @@
         .hero-badge-dot {
             width: 8px;
             height: 8px;
-            background: #10b981;
+            background: #7FC8C8;
             border-radius: 50%;
             animation: pulse 2s infinite;
         }
@@ -193,7 +194,7 @@
         }
 
         .hero h1 span {
-            background: linear-gradient(135deg, #818cf8, #c084fc);
+            background: linear-gradient(135deg, #7FC8C8, #A8D8D8);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -256,16 +257,16 @@
             position: relative;
             width: 300px;
             height: 600px;
-            background: linear-gradient(135deg, #1e293b, #334155);
+            background: linear-gradient(135deg, #0D7377, #14A3A3);
             border-radius: 40px;
             padding: 12px;
-            box-shadow: 0 50px 100px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 50px 100px rgba(13, 115, 119, 0.4);
         }
 
         .phone-screen {
             width: 100%;
             height: 100%;
-            background: linear-gradient(180deg, #f8fafc, #e2e8f0);
+            background: linear-gradient(180deg, #f0fafa, #e0f2f2);
             border-radius: 32px;
             overflow: hidden;
             display: flex;
@@ -394,7 +395,7 @@
 
         .section-label {
             display: inline-block;
-            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1));
+            background: linear-gradient(135deg, rgba(20, 163, 163, 0.1), rgba(127, 200, 200, 0.1));
             color: var(--primary-color);
             padding: 0.5rem 1rem;
             border-radius: 50px;
@@ -435,7 +436,7 @@
         .key-feature-card:hover {
             transform: translateY(-5px);
             box-shadow: var(--shadow-lg);
-            border-color: rgba(99, 102, 241, 0.1);
+            border-color: rgba(20, 163, 163, 0.1);
         }
 
         .key-feature-icon {
@@ -449,12 +450,12 @@
             margin-bottom: 1.5rem;
         }
 
-        .key-feature-icon.purple { background: linear-gradient(135deg, #ede9fe, #ddd6fe); }
-        .key-feature-icon.green { background: linear-gradient(135deg, #d1fae5, #a7f3d0); }
-        .key-feature-icon.blue { background: linear-gradient(135deg, #dbeafe, #bfdbfe); }
-        .key-feature-icon.orange { background: linear-gradient(135deg, #ffedd5, #fed7aa); }
-        .key-feature-icon.pink { background: linear-gradient(135deg, #fce7f3, #fbcfe8); }
-        .key-feature-icon.cyan { background: linear-gradient(135deg, #cffafe, #a5f3fc); }
+        .key-feature-icon.purple { background: linear-gradient(135deg, #E0F2F2, #B8E0E0); }
+        .key-feature-icon.green { background: linear-gradient(135deg, #C8E8E8, #A8D8D8); }
+        .key-feature-icon.blue { background: linear-gradient(135deg, #D0ECEC, #B0DEDE); }
+        .key-feature-icon.orange { background: linear-gradient(135deg, #D8F0F0, #B8E2E2); }
+        .key-feature-icon.pink { background: linear-gradient(135deg, #E8F4F4, #C8E6E6); }
+        .key-feature-icon.cyan { background: linear-gradient(135deg, #C0E5E5, #A0D5D5); }
 
         .key-feature-card h3 {
             font-size: 1.25rem;
@@ -668,7 +669,7 @@
             background: var(--gradient-primary);
             padding: 4rem 3rem;
             border-radius: 24px;
-            box-shadow: 0 20px 60px rgba(99, 102, 241, 0.3);
+            box-shadow: 0 20px 60px rgba(13, 115, 119, 0.3);
         }
 
         .cta-container h2 {
@@ -782,7 +783,7 @@
         .language-switcher:focus {
             outline: none;
             border-color: var(--primary-color);
-            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+            box-shadow: 0 0 0 3px rgba(20, 163, 163, 0.1);
         }
 
         /* Mobile Responsiveness */
