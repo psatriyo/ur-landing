@@ -608,9 +608,36 @@
                     <option value="en">English</option>
                     <option value="id">Indonesian</option>
                 </select>
+                <button class="mobile-menu-btn" aria-label="Menu">&#9776;</button>
             </div>
         </nav>
     </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+
+    <!-- Mobile Menu Drawer -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <a href="index.html" class="logo">
+                <img src="assets/images/icon.png" alt="UangRumah Logo" class="logo-icon">
+                <span>UangRumah</span>
+            </a>
+            <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close menu">&times;</button>
+        </div>
+        <nav class="mobile-menu-nav">
+            <ul>
+                <li><a href="index.html" data-i18n="common.home">Home</a></li>
+                <li><a href="privacy-policy.html" data-i18n="common.privacy">Privacy</a></li>
+                <li><a href="terms-conditions.html" data-i18n="common.terms">Terms</a></li>
+                <li><a href="support.html" data-i18n="common.support">Support</a></li>
+                <li><a href="contact.html" data-i18n="common.contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-footer">
+            <a href="mailto:support@uangrumah.com" class="mobile-menu-cta" data-i18n="contact.emailSupportTitle">Email Support</a>
+        </div>
+    </div>
 
     <!-- Page Hero -->
     <section class="page-hero">
@@ -834,6 +861,34 @@
             </div>
         </div>
     </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+        const mobileMenuClose = document.getElementById('mobile-menu-close');
+
+        function openMobileMenu() {
+            mobileMenu.classList.add('active');
+            mobileMenuOverlay.classList.add('active');
+            document.body.classList.add('menu-open');
+        }
+
+        function closeMobileMenu() {
+            mobileMenu.classList.remove('active');
+            mobileMenuOverlay.classList.remove('active');
+            document.body.classList.remove('menu-open');
+        }
+
+        if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', openMobileMenu);
+        if (mobileMenuClose) mobileMenuClose.addEventListener('click', closeMobileMenu);
+        if (mobileMenuOverlay) mobileMenuOverlay.addEventListener('click', closeMobileMenu);
+
+        document.querySelectorAll('.mobile-menu-nav a').forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
+        });
+    </script>
 
     <!-- i18n Support -->
     <script src="translations/index.js"></script>
