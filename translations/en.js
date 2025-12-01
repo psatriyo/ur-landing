@@ -2,7 +2,6 @@
 translations.en = {
     // Common
     common: {
-        beta: 'Beta',
         home: 'Home',
         features: 'Features',
         howItWorks: 'How It Works',

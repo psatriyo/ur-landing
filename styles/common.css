@@ -58,18 +58,6 @@ nav {
     text-decoration: none;
 }
 
-.beta-badge {
-    background: linear-gradient(135deg, #14A3A3, #0D7377);
-    color: var(--white);
-    font-size: 0.65rem;
-    font-weight: 700;
-    padding: 0.25rem 0.6rem;
-    border-radius: 12px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    box-shadow: 0 2px 8px rgba(20, 163, 163, 0.3);
-}
-
 .nav-links {
     display: flex;
     gap: 2rem;
@@ -339,10 +327,5 @@ body.menu-open {
     .logo-icon {
         width: 28px;
         height: 28px;
-    }
-
-    .beta-badge {
-        font-size: 0.55rem;
-        padding: 0.15rem 0.4rem;
     }
 }
