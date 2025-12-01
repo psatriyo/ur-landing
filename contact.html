@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact UangRumah - Get in touch with our support team for help with the expense tracker app.">
-    <title>Contact Us - UangRumah</title>
+    <meta name="description" content="Contact UangRumah - Get in touch with our support team for help with the expense tracker app." data-i18n="contact.metaDescription">
+    <title data-i18n="contact.title">Contact Us - UangRumah</title>
     <link rel="stylesheet" href="styles/common.css">
 
     <!-- Favicon -->
@@ -20,574 +20,8 @@
     <meta name="theme-color" content="#0D7377">
     <meta name="msapplication-TileColor" content="#0D7377">
     <meta name="msapplication-TileImage" content="assets/images/icon.png">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --primary-dark: #0D7377;
-            --primary-color: #14A3A3;
-            --primary-light: #7FC8C8;
-            --accent-light: #A8D8D8;
-            --secondary-color: #0D7377;
-            --accent-color: #14A3A3;
-            --text-dark: #1f2937;
-            --text-light: #6b7280;
-            --text-muted: #9ca3af;
-            --bg-light: #f0fafa;
-            --bg-card: #ffffff;
-            --white: #ffffff;
-            --border-color: #e5e7eb;
-            --shadow-sm: 0 1px 2px rgba(13, 115, 119, 0.05);
-            --shadow: 0 4px 6px -1px rgba(13, 115, 119, 0.1), 0 2px 4px -1px rgba(13, 115, 119, 0.06);
-            --shadow-lg: 0 10px 15px -3px rgba(13, 115, 119, 0.1), 0 4px 6px -2px rgba(13, 115, 119, 0.05);
-            --shadow-xl: 0 20px 25px -5px rgba(13, 115, 119, 0.1), 0 10px 10px -5px rgba(13, 115, 119, 0.04);
-            --gradient-hero: radial-gradient(ellipse at bottom center, #A8D8D8 0%, #14A3A3 50%, #0D7377 100%);
-            --gradient-primary: linear-gradient(135deg, #0D7377 0%, #14A3A3 50%, #7FC8C8 100%);
-            --gradient-cta: linear-gradient(135deg, #0D7377 0%, #14A3A3 100%);
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: var(--text-dark);
-            overflow-x: hidden;
-            background: var(--bg-light);
-        }
-
-        /* Header */
-        header {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            padding: 1rem 0;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-        }
-
-        nav {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            text-decoration: none;
-        }
-
-        .logo-icon {
-            width: 36px;
-            height: 36px;
-            border-radius: 10px;
-            object-fit: contain;
-        }
-
-        .beta-badge {
-            background: linear-gradient(135deg, #14A3A3, #0D7377);
-            color: var(--white);
-            font-size: 0.6rem;
-            font-weight: 700;
-            padding: 0.2rem 0.5rem;
-            border-radius: 10px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: var(--text-dark);
-            font-weight: 500;
-            font-size: 0.95rem;
-            transition: color 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: var(--primary-color);
-        }
-
-        .nav-right {
-            display: flex;
-            align-items: center;
-            gap: 1.5rem;
-        }
-
-        /* Hero Section */
-        .page-hero {
-            background: var(--gradient-hero);
-            color: var(--white);
-            padding: 8rem 2rem 4rem;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .page-hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-            opacity: 0.5;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 1;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .page-hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            font-weight: 800;
-            letter-spacing: -0.02em;
-        }
-
-        .page-hero p {
-            font-size: 1.25rem;
-            opacity: 0.9;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .hero-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            padding: 0.5rem 1rem;
-            border-radius: 50px;
-            font-size: 0.9rem;
-            margin-bottom: 1.5rem;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        /* Content Section */
-        .content {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-        }
-
-        /* Contact Grid */
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1.5rem;
-            margin-bottom: 3rem;
-        }
-
-        .contact-card {
-            background: var(--bg-card);
-            padding: 2rem;
-            border-radius: 16px;
-            box-shadow: var(--shadow);
-            text-align: center;
-            transition: transform 0.3s, box-shadow 0.3s;
-            border: 1px solid var(--border-color);
-        }
-
-        .contact-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-lg);
-        }
-
-        .contact-icon {
-            width: 64px;
-            height: 64px;
-            background: linear-gradient(135deg, #E0F2F2 0%, #C8E8E8 100%);
-            border-radius: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
-            margin: 0 auto 1.25rem;
-        }
-
-        .contact-card h3 {
-            font-size: 1.2rem;
-            color: var(--text-dark);
-            margin-bottom: 0.75rem;
-            font-weight: 700;
-        }
-
-        .contact-card p {
-            color: var(--text-light);
-            line-height: 1.6;
-            font-size: 0.95rem;
-            margin-bottom: 1rem;
-        }
-
-        .contact-link {
-            color: var(--primary-color);
-            font-weight: 600;
-            text-decoration: none;
-            transition: color 0.3s;
-            word-break: break-word;
-        }
-
-        .contact-link:hover {
-            color: var(--primary-dark);
-            text-decoration: underline;
-        }
-
-        .contact-button {
-            display: inline-block;
-            background: var(--gradient-primary);
-            color: var(--white);
-            padding: 0.75rem 1.5rem;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.95rem;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .contact-button:hover {
-            transform: translateY(-2px);
-            box-shadow: var(--shadow);
-        }
-
-        /* Section Cards */
-        .section-card {
-            background: var(--bg-card);
-            border-radius: 20px;
-            padding: 2.5rem;
-            box-shadow: var(--shadow);
-            margin-bottom: 2rem;
-            border: 1px solid var(--border-color);
-        }
-
-        .section-header {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin-bottom: 2rem;
-            padding-bottom: 1.5rem;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .section-icon {
-            width: 48px;
-            height: 48px;
-            background: var(--gradient-primary);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-        }
-
-        .section-title-group h2 {
-            font-size: 1.5rem;
-            color: var(--text-dark);
-            font-weight: 700;
-            margin-bottom: 0.25rem;
-        }
-
-        .section-title-group p {
-            color: var(--text-light);
-            font-size: 0.95rem;
-        }
-
-        /* Info Grid */
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 1.25rem;
-        }
-
-        .info-item {
-            padding: 1.25rem;
-            background: var(--bg-light);
-            border-radius: 12px;
-            border: 1px solid var(--border-color);
-        }
-
-        .info-item-header {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .info-item-header span {
-            font-size: 1.25rem;
-        }
-
-        .info-item h4 {
-            font-size: 0.85rem;
-            color: var(--text-light);
-            font-weight: 600;
-        }
-
-        .info-item p {
-            font-size: 1rem;
-            color: var(--text-dark);
-            font-weight: 600;
-        }
-
-        /* Highlight Box */
-        .highlight-box {
-            background: linear-gradient(135deg, #E0F2F2 0%, #C8E8E8 100%);
-            border-left: 4px solid var(--primary-color);
-            padding: 1.25rem 1.5rem;
-            margin-top: 1.5rem;
-            border-radius: 8px;
-        }
-
-        .highlight-box p {
-            margin: 0;
-            color: var(--text-dark);
-            font-size: 0.95rem;
-        }
-
-        /* Request Cards */
-        .request-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1.5rem;
-        }
-
-        .request-card {
-            background: var(--bg-light);
-            padding: 1.5rem;
-            border-radius: 12px;
-            border: 1px solid var(--border-color);
-        }
-
-        .request-card-header {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            margin-bottom: 0.75rem;
-        }
-
-        .request-card-icon {
-            width: 40px;
-            height: 40px;
-            background: var(--gradient-primary);
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.25rem;
-        }
-
-        .request-card h3 {
-            font-size: 1.1rem;
-            color: var(--text-dark);
-            font-weight: 700;
-        }
-
-        .request-card ul {
-            list-style: none;
-            color: var(--text-light);
-            font-size: 0.95rem;
-        }
-
-        .request-card li {
-            margin-bottom: 0.5rem;
-            padding-left: 1.25rem;
-            position: relative;
-        }
-
-        .request-card li::before {
-            content: '•';
-            position: absolute;
-            left: 0;
-            color: var(--primary-color);
-            font-weight: bold;
-        }
-
-        /* Footer */
-        footer {
-            background: var(--gradient-hero);
-            color: var(--white);
-            padding: 4rem 2rem 2rem;
-            margin-top: 4rem;
-        }
-
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr;
-            gap: 3rem;
-            margin-bottom: 3rem;
-        }
-
-        .footer-brand p {
-            opacity: 1;
-            color: #d1d5db;
-            margin-top: 1rem;
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
-
-        .footer-column h4 {
-            font-size: 1rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            opacity: 1;
-            color: #d1d5db;
-        }
-
-        .footer-column a {
-            display: block;
-            color: var(--white);
-            text-decoration: none;
-            opacity: 0.7;
-            margin-bottom: 0.75rem;
-            font-size: 0.95rem;
-            transition: opacity 0.3s;
-        }
-
-        .footer-column a:hover {
-            opacity: 1;
-        }
-
-        .footer-bottom {
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            padding-top: 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .copyright {
-            opacity: 1;
-            color: #a1a1aa;
-            font-size: 0.9rem;
-        }
-
-        /* Language Switcher */
-        .language-switcher {
-            padding: 0.5rem 0.875rem;
-            border-radius: 10px;
-            border: 1px solid var(--border-color);
-            background: var(--white);
-            font-weight: 500;
-            font-size: 0.875rem;
-            color: var(--text-dark);
-            cursor: pointer;
-            transition: all 0.3s;
-            appearance: none;
-            background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%236b7280%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C/polyline%3E%3C/svg%3E');
-            background-repeat: no-repeat;
-            background-position: right 0.5rem center;
-            background-size: 1em;
-            padding-right: 2rem;
-        }
-
-        .language-switcher:hover {
-            border-color: var(--primary-color);
-        }
-
-        .language-switcher:focus {
-            outline: none;
-            border-color: var(--primary-color);
-            box-shadow: 0 0 0 3px rgba(20, 163, 163, 0.1);
-        }
-
-        /* Mobile Responsiveness */
-        @media (max-width: 1024px) {
-            .footer-grid {
-                grid-template-columns: 1fr 1fr;
-                gap: 2rem;
-            }
-
-            .info-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 768px) {
-            .page-hero {
-                padding: 7rem 1.5rem 3rem;
-            }
-
-            .page-hero h1 {
-                font-size: 2rem;
-            }
-
-            .page-hero p {
-                font-size: 1rem;
-            }
-
-            .content {
-                padding: 2rem 1rem;
-            }
-
-            .contact-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .section-card {
-                padding: 1.5rem;
-            }
-
-            .section-header {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .info-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .request-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .nav-links {
-                display: none;
-            }
-
-            .footer-grid {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-
-            .footer-bottom {
-                flex-direction: column;
-                gap: 1rem;
-                text-align: center;
-            }
-        }
-    </style>
 </head>
-<body data-page="contact">
+<body data-page="contact" class="bg-light">
     <!-- Header -->
     <header>
         <nav>
@@ -598,8 +32,7 @@
             <div class="nav-right">
                 <ul class="nav-links">
                     <li><a href="index.html" data-i18n="common.home">Home</a></li>
-                    <li><a href="privacy-policy.html" data-i18n="common.privacy">Privacy</a></li>
-                    <li><a href="terms-conditions.html" data-i18n="common.terms">Terms</a></li>
+                    <li><a href="index.html#features" data-i18n="nav.features">Features</a></li>
                     <li><a href="support.html" data-i18n="common.support">Support</a></li>
                     <li><a href="contact.html" data-i18n="common.contact">Contact</a></li>
                 </ul>
@@ -642,7 +75,7 @@
     <section class="page-hero">
         <div class="hero-content">
             <div class="hero-badge">
-                <span>💬</span>
+                <span>&#128172;</span>
                 <span data-i18n="contact.heroBadge">Get in Touch</span>
             </div>
             <h1 data-i18n="contact.heroTitle">Contact Us</h1>
@@ -655,21 +88,21 @@
         <!-- Quick Contact Cards -->
         <div class="contact-grid">
             <div class="contact-card">
-                <div class="contact-icon">📧</div>
+                <div class="contact-icon">&#128231;</div>
                 <h3 data-i18n="contact.emailSupportTitle">Email Support</h3>
                 <p data-i18n="contact.emailSupportDesc">Send us an email and we'll respond within 1-2 business days.</p>
                 <a href="mailto:support@uangrumah.com" class="contact-link">support@uangrumah.com</a>
             </div>
 
             <div class="contact-card">
-                <div class="contact-icon">🌐</div>
+                <div class="contact-icon">&#127760;</div>
                 <h3 data-i18n="contact.websiteTitle">Website</h3>
                 <p data-i18n="contact.websiteDesc">Visit our website for more information and updates.</p>
                 <a href="https://uangrumah.com" class="contact-link" target="_blank">uangrumah.com</a>
             </div>
 
             <div class="contact-card">
-                <div class="contact-icon">💬</div>
+                <div class="contact-icon">&#128172;</div>
                 <h3 data-i18n="contact.supportCenterTitle">Support Center</h3>
                 <p data-i18n="contact.supportCenterDesc">Check our FAQ and troubleshooting guides for quick answers.</p>
                 <a href="support.html" class="contact-button" data-i18n="contact.visitSupport">Visit Support</a>
@@ -679,7 +112,7 @@
         <!-- Support Information -->
         <div class="section-card">
             <div class="section-header">
-                <div class="section-icon">📋</div>
+                <div class="section-icon">&#128203;</div>
                 <div class="section-title-group">
                     <h2 data-i18n="contact.supportInfoTitle">Support Information</h2>
                     <p data-i18n="contact.supportInfoSubtitle">How to reach us and what to expect</p>
@@ -689,7 +122,7 @@
             <div class="info-grid">
                 <div class="info-item">
                     <div class="info-item-header">
-                        <span>📍</span>
+                        <span>&#128205;</span>
                         <h4 data-i18n="contact.location">Location</h4>
                     </div>
                     <p data-i18n="contact.locationValue">Jakarta, Indonesia</p>
@@ -697,7 +130,7 @@
 
                 <div class="info-item">
                     <div class="info-item-header">
-                        <span>⏰</span>
+                        <span>&#9200;</span>
                         <h4 data-i18n="contact.responseTime">Response Time</h4>
                     </div>
                     <p data-i18n="contact.responseTimeValue">1-2 Business Days</p>
@@ -705,7 +138,7 @@
 
                 <div class="info-item">
                     <div class="info-item-header">
-                        <span>💼</span>
+                        <span>&#128188;</span>
                         <h4 data-i18n="contact.businessHours">Business Hours</h4>
                     </div>
                     <p data-i18n="contact.businessHoursValue">Mon-Fri, 9AM-5PM WIB</p>
@@ -713,7 +146,7 @@
 
                 <div class="info-item">
                     <div class="info-item-header">
-                        <span>🌍</span>
+                        <span>&#127757;</span>
                         <h4 data-i18n="contact.languages">Languages</h4>
                     </div>
                     <p data-i18n="contact.languagesValue">English & Indonesian</p>
@@ -721,14 +154,14 @@
             </div>
 
             <div class="highlight-box">
-                <p><strong>🚀 <span data-i18n="contact.betaProgramTitle">Beta Program:</span></strong> <span data-i18n="contact.betaProgramDesc">UangRumah is currently in beta (v0.1.0). We highly value your feedback and bug reports to help us improve the app. Thank you for being an early adopter!</span></p>
+                <p><strong>&#128640; <span data-i18n="contact.betaProgramTitle">Beta Program:</span></strong> <span data-i18n="contact.betaProgramDesc">UangRumah is currently in beta (v0.1.0). We highly value your feedback and bug reports to help us improve the app. Thank you for being an early adopter!</span></p>
             </div>
         </div>
 
         <!-- Before You Contact Us -->
         <div class="section-card">
             <div class="section-header">
-                <div class="section-icon">❓</div>
+                <div class="section-icon">&#10067;</div>
                 <div class="section-title-group">
                     <h2 data-i18n="contact.beforeContactTitle">Before You Contact Us</h2>
                     <p data-i18n="contact.beforeContactSubtitle">You might find answers faster by checking these resources first</p>
@@ -737,21 +170,21 @@
 
             <div class="contact-grid">
                 <div class="contact-card">
-                    <div class="contact-icon">❓</div>
+                    <div class="contact-icon">&#10067;</div>
                     <h3 data-i18n="contact.faqTitle">Frequently Asked Questions</h3>
                     <p data-i18n="contact.faqDesc">Find answers to common questions about budgets, expenses, sync, and more.</p>
                     <a href="support.html#faq" class="contact-button" data-i18n="contact.viewFaq">View FAQ</a>
                 </div>
 
                 <div class="contact-card">
-                    <div class="contact-icon">🔧</div>
+                    <div class="contact-icon">&#128295;</div>
                     <h3 data-i18n="contact.troubleshootingTitle">Troubleshooting Guide</h3>
                     <p data-i18n="contact.troubleshootingDesc">Step-by-step solutions for common technical issues and problems.</p>
                     <a href="support.html#troubleshooting" class="contact-button" data-i18n="contact.getHelp">Get Help</a>
                 </div>
 
                 <div class="contact-card">
-                    <div class="contact-icon">🔒</div>
+                    <div class="contact-icon">&#128274;</div>
                     <h3 data-i18n="contact.privacySecurityTitle">Privacy & Security</h3>
                     <p data-i18n="contact.privacySecurityDesc">Learn how we protect your data and respect your privacy.</p>
                     <a href="privacy-policy.html" class="contact-button" data-i18n="common.privacyPolicy">Privacy Policy</a>
@@ -762,7 +195,7 @@
         <!-- What to Include -->
         <div class="section-card">
             <div class="section-header">
-                <div class="section-icon">📝</div>
+                <div class="section-icon">&#128221;</div>
                 <div class="section-title-group">
                     <h2 data-i18n="contact.whatToIncludeTitle">What to Include in Your Support Request</h2>
                     <p data-i18n="contact.whatToIncludeSubtitle">Help us help you faster by including this information</p>
@@ -772,7 +205,7 @@
             <div class="request-grid">
                 <div class="request-card">
                     <div class="request-card-header">
-                        <div class="request-card-icon">📱</div>
+                        <div class="request-card-icon">&#128241;</div>
                         <h3 data-i18n="contact.deviceInfoTitle">Device Information</h3>
                     </div>
                     <ul>
@@ -784,7 +217,7 @@
 
                 <div class="request-card">
                     <div class="request-card-header">
-                        <div class="request-card-icon">🔢</div>
+                        <div class="request-card-icon">&#128290;</div>
                         <h3 data-i18n="contact.appDetailsTitle">App Details</h3>
                     </div>
                     <ul>
@@ -796,7 +229,7 @@
 
                 <div class="request-card">
                     <div class="request-card-header">
-                        <div class="request-card-icon">📋</div>
+                        <div class="request-card-icon">&#128203;</div>
                         <h3 data-i18n="contact.problemDescTitle">Problem Description</h3>
                     </div>
                     <ul>
@@ -808,7 +241,7 @@
 
                 <div class="request-card">
                     <div class="request-card-header">
-                        <div class="request-card-icon">🔄</div>
+                        <div class="request-card-icon">&#128260;</div>
                         <h3 data-i18n="contact.stepsToReproduceTitle">Steps to Reproduce</h3>
                     </div>
                     <ul>
@@ -823,73 +256,54 @@
 
     <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <div class="footer-grid">
+        <div class="footer-container">
+            <div class="footer-top">
                 <div class="footer-brand">
                     <a href="index.html" class="logo" style="color: white;">
                         <img src="assets/images/icon.png" alt="UangRumah Logo" class="logo-icon">
                         <span>UangRumah</span>
                     </a>
-                    <p data-i18n="footer.description">Simple expense tracking for Indonesian households. Take control of your finances with ease.</p>
+                    <p data-i18n="home.footerDesc">Your partner for achieving 2026 financial goals. Privacy-first expense tracking for Indonesian households.</p>
                 </div>
+
                 <div class="footer-column">
-                    <h4 data-i18n="footer.product">Product</h4>
-                    <a href="index.html#features" data-i18n="footer.features">Features</a>
-                    <a href="index.html#how-it-works" data-i18n="footer.howItWorks">How It Works</a>
-                    <a href="index.html#download" data-i18n="footer.download">Download</a>
+                    <h4 data-i18n="home.footerProduct">Product</h4>
+                    <ul>
+                        <li><a href="index.html#features" data-i18n="nav.features">Features</a></li>
+                        <li><a href="index.html#how-it-works" data-i18n="nav.howItWorks">How It Works</a></li>
+                        <li><a href="index.html#specs" data-i18n="nav.requirements">Requirements</a></li>
+                    </ul>
                 </div>
+
                 <div class="footer-column">
-                    <h4 data-i18n="footer.support">Support</h4>
-                    <a href="support.html" data-i18n="footer.helpCenter">Help Center</a>
-                    <a href="contact.html" data-i18n="footer.contactUs">Contact Us</a>
-                    <a href="support.html#faq" data-i18n="footer.faq">FAQ</a>
+                    <h4 data-i18n="home.footerSupport">Support</h4>
+                    <ul>
+                        <li><a href="support.html" data-i18n="common.support">Help Center</a></li>
+                        <li><a href="contact.html" data-i18n="common.contact">Contact Us</a></li>
+                    </ul>
                 </div>
+
                 <div class="footer-column">
-                    <h4 data-i18n="footer.legal">Legal</h4>
-                    <a href="privacy-policy.html" data-i18n="common.privacyPolicy">Privacy Policy</a>
-                    <a href="terms-conditions.html" data-i18n="common.termsConditions">Terms & Conditions</a>
+                    <h4 data-i18n="home.footerLegal">Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html" data-i18n="common.privacyPolicy">Privacy Policy</a></li>
+                        <li><a href="terms-conditions.html" data-i18n="common.termsConditions">Terms & Conditions</a></li>
+                    </ul>
                 </div>
             </div>
+
             <div class="footer-bottom">
-                <div class="copyright">
-                    <p>&copy; 2025 UangRumah. <span data-i18n="common.allRightsReserved">All rights reserved</span>.</p>
-                </div>
+                <p>&copy; 2025 UangRumah. <span data-i18n="common.allRightsReserved">All rights reserved</span>.</p>
+                <p data-i18n="home.footerMadeWith">Made with care in Jakarta, Indonesia</p>
             </div>
-            <div class="footer-disclaimer" style="border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 1.5rem; margin-top: 1.5rem;">
-                <p style="color: #a1a1aa; font-size: 0.75rem; text-align: center;" data-i18n="home.footerAppleDisclaimer">iCloud is a service provided by Apple Inc. Apple, the Apple logo, iPhone, iPad, Mac, and macOS are trademarks of Apple Inc.</p>
+            <div class="footer-disclaimer">
+                <p data-i18n="home.footerAppleDisclaimer">iCloud is a service provided by Apple Inc. Apple, the Apple logo, iPhone, iPad, Mac, and macOS are trademarks of Apple Inc.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Mobile Menu Script -->
-    <script>
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
-        const mobileMenuClose = document.getElementById('mobile-menu-close');
-
-        function openMobileMenu() {
-            mobileMenu.classList.add('active');
-            mobileMenuOverlay.classList.add('active');
-            document.body.classList.add('menu-open');
-        }
-
-        function closeMobileMenu() {
-            mobileMenu.classList.remove('active');
-            mobileMenuOverlay.classList.remove('active');
-            document.body.classList.remove('menu-open');
-        }
-
-        if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', openMobileMenu);
-        if (mobileMenuClose) mobileMenuClose.addEventListener('click', closeMobileMenu);
-        if (mobileMenuOverlay) mobileMenuOverlay.addEventListener('click', closeMobileMenu);
-
-        document.querySelectorAll('.mobile-menu-nav a').forEach(link => {
-            link.addEventListener('click', closeMobileMenu);
-        });
-    </script>
-
-    <!-- i18n Support -->
+    <!-- Scripts -->
+    <script src="scripts/common.js"></script>
     <script src="translations/index.js"></script>
     <script src="translations/en.js"></script>
     <script src="translations/id.js"></script>

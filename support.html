@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="UangRumah Support - Get help with common issues and troubleshooting for the expense tracker app.">
-    <title>Support - UangRumah</title>
+    <meta name="description" content="UangRumah Support - Get help with common issues and troubleshooting for the expense tracker app." data-i18n="support.metaDescription">
+    <title data-i18n="support.title">Support - UangRumah</title>
     <link rel="stylesheet" href="styles/common.css">
 
     <!-- Favicon -->
@@ -20,637 +20,8 @@
     <meta name="theme-color" content="#0D7377">
     <meta name="msapplication-TileColor" content="#0D7377">
     <meta name="msapplication-TileImage" content="assets/images/icon.png">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --primary-dark: #0D7377;
-            --primary-color: #14A3A3;
-            --primary-light: #7FC8C8;
-            --accent-light: #A8D8D8;
-            --secondary-color: #0D7377;
-            --accent-color: #14A3A3;
-            --text-dark: #1f2937;
-            --text-light: #6b7280;
-            --text-muted: #9ca3af;
-            --bg-light: #f0fafa;
-            --bg-card: #ffffff;
-            --white: #ffffff;
-            --border-color: #e5e7eb;
-            --shadow-sm: 0 1px 2px rgba(13, 115, 119, 0.05);
-            --shadow: 0 4px 6px -1px rgba(13, 115, 119, 0.1), 0 2px 4px -1px rgba(13, 115, 119, 0.06);
-            --shadow-lg: 0 10px 15px -3px rgba(13, 115, 119, 0.1), 0 4px 6px -2px rgba(13, 115, 119, 0.05);
-            --shadow-xl: 0 20px 25px -5px rgba(13, 115, 119, 0.1), 0 10px 10px -5px rgba(13, 115, 119, 0.04);
-            --gradient-hero: radial-gradient(ellipse at bottom center, #A8D8D8 0%, #14A3A3 50%, #0D7377 100%);
-            --gradient-primary: linear-gradient(135deg, #0D7377 0%, #14A3A3 50%, #7FC8C8 100%);
-            --gradient-cta: linear-gradient(135deg, #0D7377 0%, #14A3A3 100%);
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: var(--text-dark);
-            overflow-x: hidden;
-            background: var(--bg-light);
-        }
-
-        /* Header */
-        header {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            padding: 1rem 0;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-        }
-
-        nav {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            text-decoration: none;
-        }
-
-        .logo-icon {
-            width: 36px;
-            height: 36px;
-            border-radius: 10px;
-            object-fit: contain;
-        }
-
-        .beta-badge {
-            background: linear-gradient(135deg, #14A3A3, #0D7377);
-            color: var(--white);
-            font-size: 0.6rem;
-            font-weight: 700;
-            padding: 0.2rem 0.5rem;
-            border-radius: 10px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: var(--text-dark);
-            font-weight: 500;
-            font-size: 0.95rem;
-            transition: color 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: var(--primary-color);
-        }
-
-        .nav-right {
-            display: flex;
-            align-items: center;
-            gap: 1.5rem;
-        }
-
-        /* Hero Section */
-        .page-hero {
-            background: var(--gradient-hero);
-            color: var(--white);
-            padding: 8rem 2rem 4rem;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .page-hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-            opacity: 0.5;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 1;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .page-hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            font-weight: 800;
-            letter-spacing: -0.02em;
-        }
-
-        .page-hero p {
-            font-size: 1.25rem;
-            opacity: 0.9;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .hero-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            padding: 0.5rem 1rem;
-            border-radius: 50px;
-            font-size: 0.9rem;
-            margin-bottom: 1.5rem;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        /* Content Section */
-        .content {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-        }
-
-        /* Support Grid */
-        .support-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1.5rem;
-            margin-bottom: 3rem;
-        }
-
-        .support-card {
-            background: var(--bg-card);
-            padding: 2rem;
-            border-radius: 16px;
-            box-shadow: var(--shadow);
-            text-align: center;
-            transition: transform 0.3s, box-shadow 0.3s;
-            border: 1px solid var(--border-color);
-        }
-
-        .support-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-lg);
-        }
-
-        .support-icon {
-            width: 64px;
-            height: 64px;
-            background: linear-gradient(135deg, #E0F2F2 0%, #C8E8E8 100%);
-            border-radius: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
-            margin: 0 auto 1.25rem;
-        }
-
-        .support-card h3 {
-            font-size: 1.2rem;
-            color: var(--text-dark);
-            margin-bottom: 0.75rem;
-            font-weight: 700;
-        }
-
-        .support-card p {
-            color: var(--text-light);
-            line-height: 1.6;
-            font-size: 0.95rem;
-        }
-
-        /* Requirements Box */
-        .requirements-box {
-            background: linear-gradient(135deg, #E0F2F2 0%, #C8E8E8 100%);
-            border-left: 4px solid var(--accent-color);
-            padding: 1.5rem 2rem;
-            margin-bottom: 3rem;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .requirements-icon {
-            font-size: 1.5rem;
-        }
-
-        .requirements-content h4 {
-            color: #0D7377;
-            margin-bottom: 0.25rem;
-            font-weight: 700;
-            font-size: 1rem;
-        }
-
-        .requirements-content p {
-            color: #0D7377;
-            margin: 0;
-            font-size: 0.95rem;
-        }
-
-        /* Section Cards */
-        .section-card {
-            background: var(--bg-card);
-            border-radius: 20px;
-            padding: 2.5rem;
-            box-shadow: var(--shadow);
-            margin-bottom: 2rem;
-            border: 1px solid var(--border-color);
-        }
-
-        .section-header {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin-bottom: 2rem;
-            padding-bottom: 1.5rem;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .section-icon {
-            width: 48px;
-            height: 48px;
-            background: var(--gradient-primary);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-        }
-
-        .section-title-group h2 {
-            font-size: 1.5rem;
-            color: var(--text-dark);
-            font-weight: 700;
-            margin-bottom: 0.25rem;
-        }
-
-        .section-title-group p {
-            color: var(--text-light);
-            font-size: 0.95rem;
-        }
-
-        /* FAQ Section */
-        .faq-item {
-            border-bottom: 1px solid var(--border-color);
-            padding: 1.5rem 0;
-        }
-
-        .faq-item:last-child {
-            border-bottom: none;
-            padding-bottom: 0;
-        }
-
-        .faq-question {
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: var(--text-dark);
-            margin-bottom: 0.75rem;
-            display: flex;
-            align-items: flex-start;
-            gap: 0.75rem;
-        }
-
-        .faq-question .q-icon {
-            width: 24px;
-            height: 24px;
-            background: var(--gradient-primary);
-            border-radius: 6px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 0.75rem;
-            font-weight: 700;
-            flex-shrink: 0;
-            margin-top: 2px;
-        }
-
-        .faq-answer {
-            color: var(--text-light);
-            line-height: 1.8;
-            margin-left: 2.25rem;
-        }
-
-        .faq-answer ul,
-        .faq-answer ol {
-            margin: 0.75rem 0 0.75rem 1.5rem;
-        }
-
-        .faq-answer li {
-            margin-bottom: 0.5rem;
-        }
-
-        .faq-answer strong {
-            color: var(--text-dark);
-        }
-
-        .faq-answer a {
-            color: var(--primary-color);
-            font-weight: 600;
-            text-decoration: none;
-        }
-
-        .faq-answer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Troubleshooting Section */
-        .troubleshooting-item {
-            margin-bottom: 2rem;
-            padding-bottom: 2rem;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .troubleshooting-item:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
-
-        .troubleshooting-item h3 {
-            font-size: 1.15rem;
-            color: var(--text-dark);
-            margin-bottom: 0.75rem;
-            font-weight: 700;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
-
-        .troubleshooting-item h3 span:first-child {
-            font-size: 1.25rem;
-        }
-
-        .troubleshooting-item > p {
-            color: var(--text-light);
-            line-height: 1.8;
-            margin-bottom: 0.75rem;
-        }
-
-        .troubleshooting-item ol {
-            margin: 0.75rem 0 0.75rem 1.5rem;
-            color: var(--text-light);
-        }
-
-        .troubleshooting-item li {
-            margin-bottom: 0.5rem;
-            line-height: 1.8;
-        }
-
-        /* Highlight Box */
-        .highlight-box {
-            background: linear-gradient(135deg, #E0F2F2 0%, #C8E8E8 100%);
-            border-left: 4px solid var(--primary-color);
-            padding: 1.25rem 1.5rem;
-            margin-top: 1.5rem;
-            border-radius: 8px;
-        }
-
-        .highlight-box p {
-            margin: 0;
-            color: var(--text-dark);
-            font-size: 0.95rem;
-        }
-
-        /* Contact CTA */
-        .contact-cta {
-            background: var(--gradient-cta);
-            color: var(--white);
-            padding: 3rem;
-            border-radius: 20px;
-            text-align: center;
-            box-shadow: var(--shadow-lg);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .contact-cta::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-        }
-
-        .contact-cta h2 {
-            font-size: 1.75rem;
-            margin-bottom: 0.75rem;
-            font-weight: 700;
-            position: relative;
-        }
-
-        .contact-cta p {
-            font-size: 1.1rem;
-            margin-bottom: 1.5rem;
-            opacity: 0.9;
-            position: relative;
-        }
-
-        .contact-button {
-            display: inline-block;
-            background: var(--white);
-            color: var(--primary-color);
-            padding: 1rem 2.5rem;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.05rem;
-            transition: transform 0.3s, box-shadow 0.3s;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            position: relative;
-        }
-
-        .contact-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-        }
-
-        /* Footer */
-        footer {
-            background: var(--gradient-hero);
-            color: var(--white);
-            padding: 4rem 2rem 2rem;
-            margin-top: 4rem;
-        }
-
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr;
-            gap: 3rem;
-            margin-bottom: 3rem;
-        }
-
-        .footer-brand p {
-            opacity: 1;
-            color: #d1d5db;
-            margin-top: 1rem;
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
-
-        .footer-column h4 {
-            font-size: 1rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            opacity: 1;
-            color: #d1d5db;
-        }
-
-        .footer-column a {
-            display: block;
-            color: var(--white);
-            text-decoration: none;
-            opacity: 0.7;
-            margin-bottom: 0.75rem;
-            font-size: 0.95rem;
-            transition: opacity 0.3s;
-        }
-
-        .footer-column a:hover {
-            opacity: 1;
-        }
-
-        .footer-bottom {
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            padding-top: 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .copyright {
-            opacity: 1;
-            color: #a1a1aa;
-            font-size: 0.9rem;
-        }
-
-        /* Language Switcher */
-        .language-switcher {
-            padding: 0.5rem 0.875rem;
-            border-radius: 10px;
-            border: 1px solid var(--border-color);
-            background: var(--white);
-            font-weight: 500;
-            font-size: 0.875rem;
-            color: var(--text-dark);
-            cursor: pointer;
-            transition: all 0.3s;
-            appearance: none;
-            background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%236b7280%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C/polyline%3E%3C/svg%3E');
-            background-repeat: no-repeat;
-            background-position: right 0.5rem center;
-            background-size: 1em;
-            padding-right: 2rem;
-        }
-
-        .language-switcher:hover {
-            border-color: var(--primary-color);
-        }
-
-        .language-switcher:focus {
-            outline: none;
-            border-color: var(--primary-color);
-            box-shadow: 0 0 0 3px rgba(20, 163, 163, 0.1);
-        }
-
-        /* Mobile Responsiveness */
-        @media (max-width: 1024px) {
-            .footer-grid {
-                grid-template-columns: 1fr 1fr;
-                gap: 2rem;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .page-hero {
-                padding: 7rem 1.5rem 3rem;
-            }
-
-            .page-hero h1 {
-                font-size: 2rem;
-            }
-
-            .page-hero p {
-                font-size: 1rem;
-            }
-
-            .content {
-                padding: 2rem 1rem;
-            }
-
-            .support-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .section-card {
-                padding: 1.5rem;
-            }
-
-            .section-header {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .nav-links {
-                display: none;
-            }
-
-            .footer-grid {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-
-            .footer-bottom {
-                flex-direction: column;
-                gap: 1rem;
-                text-align: center;
-            }
-
-            .contact-cta {
-                padding: 2rem 1.5rem;
-            }
-
-            .requirements-box {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
-    </style>
 </head>
-<body data-page="support">
+<body data-page="support" class="bg-light">
     <!-- Header -->
     <header>
         <nav>
@@ -661,8 +32,7 @@
             <div class="nav-right">
                 <ul class="nav-links">
                     <li><a href="index.html" data-i18n="common.home">Home</a></li>
-                    <li><a href="privacy-policy.html" data-i18n="common.privacy">Privacy</a></li>
-                    <li><a href="terms-conditions.html" data-i18n="common.terms">Terms</a></li>
+                    <li><a href="index.html#features" data-i18n="nav.features">Features</a></li>
                     <li><a href="support.html" data-i18n="common.support">Support</a></li>
                     <li><a href="contact.html" data-i18n="common.contact">Contact</a></li>
                 </ul>
@@ -705,7 +75,7 @@
     <section class="page-hero">
         <div class="hero-content">
             <div class="hero-badge">
-                <span>📚</span>
+                <span>&#128218;</span>
                 <span data-i18n="support.heroBadge">Help Center</span>
             </div>
             <h1 data-i18n="support.heroTitle">Support Center</h1>
@@ -718,17 +88,17 @@
         <!-- Quick Links -->
         <div class="support-grid">
             <div class="support-card">
-                <div class="support-icon">📖</div>
+                <div class="support-icon">&#128214;</div>
                 <h3 data-i18n="support.gettingStartedTitle">Getting Started</h3>
                 <p data-i18n="support.gettingStartedDesc">Learn the basics of setting up budgets, adding expenses, and navigating the app.</p>
             </div>
             <div class="support-card">
-                <div class="support-icon">🔧</div>
+                <div class="support-icon">&#128295;</div>
                 <h3 data-i18n="support.troubleshootingTitle">Troubleshooting</h3>
                 <p data-i18n="support.troubleshootingDesc">Solve common issues with syncing, notifications, and data management.</p>
             </div>
             <div class="support-card">
-                <div class="support-icon">💬</div>
+                <div class="support-icon">&#128172;</div>
                 <h3 data-i18n="support.contactUsTitle">Contact Us</h3>
                 <p data-i18n="support.contactUsDesc">Can't find what you're looking for? Reach out to our support team.</p>
             </div>
@@ -736,7 +106,7 @@
 
         <!-- System Requirements -->
         <div class="requirements-box">
-            <span class="requirements-icon">⚙️</span>
+            <span class="requirements-icon">&#9881;&#65039;</span>
             <div class="requirements-content">
                 <h4 data-i18n="support.systemRequirements">System Requirements</h4>
                 <p data-i18n="support.systemRequirementsValue"><strong>Platform:</strong> iOS 16.0 or later | <strong>Devices:</strong> iPhone & iPad | <strong>Version:</strong> 0.1.0 Beta | <strong>Storage:</strong> iCloud (optional)</p>
@@ -746,7 +116,7 @@
         <!-- FAQ Section -->
         <div class="section-card" id="faq">
             <div class="section-header">
-                <div class="section-icon">❓</div>
+                <div class="section-icon">&#10067;</div>
                 <div class="section-title-group">
                     <h2 data-i18n="support.faqSectionTitle">Frequently Asked Questions</h2>
                     <p data-i18n="support.faqSectionSubtitle">Quick answers to common questions</p>
@@ -916,7 +286,7 @@
         <!-- Troubleshooting Section -->
         <div class="section-card" id="troubleshooting">
             <div class="section-header">
-                <div class="section-icon">🔧</div>
+                <div class="section-icon">&#128295;</div>
                 <div class="section-title-group">
                     <h2 data-i18n="support.troubleshootingSectionTitle">Troubleshooting Guide</h2>
                     <p data-i18n="support.troubleshootingSectionSubtitle">Step-by-step solutions for common issues</p>
@@ -924,7 +294,7 @@
             </div>
 
             <div class="troubleshooting-item">
-                <h3><span>🔄</span> <span data-i18n="support.trouble1Title">iCloud Sync Not Working</span></h3>
+                <h3><span>&#128260;</span> <span data-i18n="support.trouble1Title">iCloud Sync Not Working</span></h3>
                 <p data-i18n="support.trouble1Desc">If your data isn't syncing between devices, try these steps:</p>
                 <ol>
                     <li data-i18n="support.trouble1Step1">Verify you're signed in to the same iCloud account on all devices</li>
@@ -938,7 +308,7 @@
             </div>
 
             <div class="troubleshooting-item">
-                <h3><span>🔔</span> <span data-i18n="support.trouble2Title">Notifications Not Appearing</span></h3>
+                <h3><span>&#128276;</span> <span data-i18n="support.trouble2Title">Notifications Not Appearing</span></h3>
                 <p data-i18n="support.trouble2Desc">If you're not receiving budget alerts or expense nudges:</p>
                 <ol>
                     <li data-i18n="support.trouble2Step1">Go to iOS Settings > Notifications > UangRumah</li>
@@ -951,7 +321,7 @@
             </div>
 
             <div class="troubleshooting-item">
-                <h3><span>📊</span> <span data-i18n="support.trouble3Title">Dashboard Data Not Updating</span></h3>
+                <h3><span>&#128202;</span> <span data-i18n="support.trouble3Title">Dashboard Data Not Updating</span></h3>
                 <p data-i18n="support.trouble3Desc">If your dashboard shows outdated information:</p>
                 <ol>
                     <li data-i18n="support.trouble3Step1">Pull down on the dashboard to refresh manually</li>
@@ -963,7 +333,7 @@
             </div>
 
             <div class="troubleshooting-item">
-                <h3><span>💾</span> <span data-i18n="support.trouble4Title">Data Not Saving</span></h3>
+                <h3><span>&#128190;</span> <span data-i18n="support.trouble4Title">Data Not Saving</span></h3>
                 <p data-i18n="support.trouble4Desc">If your expenses or changes aren't being saved:</p>
                 <ol>
                     <li data-i18n="support.trouble4Step1">Make sure all required fields are filled in when adding expenses</li>
@@ -976,7 +346,7 @@
             </div>
 
             <div class="troubleshooting-item">
-                <h3><span>📱</span> <span data-i18n="support.trouble5Title">App Crashes or Freezes</span></h3>
+                <h3><span>&#128241;</span> <span data-i18n="support.trouble5Title">App Crashes or Freezes</span></h3>
                 <p data-i18n="support.trouble5Desc">If UangRumah is unstable or crashing:</p>
                 <ol>
                     <li data-i18n="support.trouble5Step1">Force close the app and reopen it</li>
@@ -990,7 +360,7 @@
             </div>
 
             <div class="troubleshooting-item">
-                <h3><span>🔍</span> <span data-i18n="support.trouble6Title">Missing Expenses</span></h3>
+                <h3><span>&#128269;</span> <span data-i18n="support.trouble6Title">Missing Expenses</span></h3>
                 <p data-i18n="support.trouble6Desc">If you can't find expenses you previously added:</p>
                 <ol>
                     <li data-i18n="support.trouble6Step1">Use the search function to find specific expenses</li>
@@ -1003,7 +373,7 @@
             </div>
 
             <div class="troubleshooting-item">
-                <h3><span>📤</span> <span data-i18n="support.trouble7Title">Export Problems</span></h3>
+                <h3><span>&#128228;</span> <span data-i18n="support.trouble7Title">Export Problems</span></h3>
                 <p data-i18n="support.trouble7Desc">If you're having issues exporting data:</p>
                 <ol>
                     <li data-i18n="support.trouble7Step1">Ensure you have expenses in the selected date range</li>
@@ -1016,7 +386,7 @@
             </div>
 
             <div class="highlight-box">
-                <p><strong>💡 <span data-i18n="support.betaNoticeTitle">Beta Version Notice:</span></strong> <span data-i18n="support.betaNoticeDesc">UangRumah is currently in beta (v0.1.0). Some bugs and issues are expected. Your feedback helps us improve! Please report any problems to support@uangrumah.com.</span></p>
+                <p><strong>&#128161; <span data-i18n="support.betaNoticeTitle">Beta Version Notice:</span></strong> <span data-i18n="support.betaNoticeDesc">UangRumah is currently in beta (v0.1.0). Some bugs and issues are expected. Your feedback helps us improve! Please report any problems to support@uangrumah.com.</span></p>
             </div>
         </div>
 
@@ -1030,73 +400,54 @@
 
     <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <div class="footer-grid">
+        <div class="footer-container">
+            <div class="footer-top">
                 <div class="footer-brand">
                     <a href="index.html" class="logo" style="color: white;">
                         <img src="assets/images/icon.png" alt="UangRumah Logo" class="logo-icon">
                         <span>UangRumah</span>
                     </a>
-                    <p data-i18n="footer.description">Simple expense tracking for Indonesian households. Take control of your finances with ease.</p>
+                    <p data-i18n="home.footerDesc">Your partner for achieving 2026 financial goals. Privacy-first expense tracking for Indonesian households.</p>
                 </div>
+
                 <div class="footer-column">
-                    <h4 data-i18n="footer.product">Product</h4>
-                    <a href="index.html#features" data-i18n="footer.features">Features</a>
-                    <a href="index.html#how-it-works" data-i18n="footer.howItWorks">How It Works</a>
-                    <a href="index.html#download" data-i18n="footer.download">Download</a>
+                    <h4 data-i18n="home.footerProduct">Product</h4>
+                    <ul>
+                        <li><a href="index.html#features" data-i18n="nav.features">Features</a></li>
+                        <li><a href="index.html#how-it-works" data-i18n="nav.howItWorks">How It Works</a></li>
+                        <li><a href="index.html#specs" data-i18n="nav.requirements">Requirements</a></li>
+                    </ul>
                 </div>
+
                 <div class="footer-column">
-                    <h4 data-i18n="footer.support">Support</h4>
-                    <a href="support.html" data-i18n="footer.helpCenter">Help Center</a>
-                    <a href="contact.html" data-i18n="footer.contactUs">Contact Us</a>
-                    <a href="support.html#faq" data-i18n="footer.faq">FAQ</a>
+                    <h4 data-i18n="home.footerSupport">Support</h4>
+                    <ul>
+                        <li><a href="support.html" data-i18n="common.support">Help Center</a></li>
+                        <li><a href="contact.html" data-i18n="common.contact">Contact Us</a></li>
+                    </ul>
                 </div>
+
                 <div class="footer-column">
-                    <h4 data-i18n="footer.legal">Legal</h4>
-                    <a href="privacy-policy.html" data-i18n="common.privacyPolicy">Privacy Policy</a>
-                    <a href="terms-conditions.html" data-i18n="common.termsConditions">Terms & Conditions</a>
+                    <h4 data-i18n="home.footerLegal">Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html" data-i18n="common.privacyPolicy">Privacy Policy</a></li>
+                        <li><a href="terms-conditions.html" data-i18n="common.termsConditions">Terms & Conditions</a></li>
+                    </ul>
                 </div>
             </div>
+
             <div class="footer-bottom">
-                <div class="copyright">
-                    <p>&copy; 2025 UangRumah. <span data-i18n="common.allRightsReserved">All rights reserved</span>.</p>
-                </div>
+                <p>&copy; 2025 UangRumah. <span data-i18n="common.allRightsReserved">All rights reserved</span>.</p>
+                <p data-i18n="home.footerMadeWith">Made with care in Jakarta, Indonesia</p>
             </div>
-            <div class="footer-disclaimer" style="border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 1.5rem; margin-top: 1.5rem;">
-                <p style="color: #a1a1aa; font-size: 0.75rem; text-align: center;" data-i18n="home.footerAppleDisclaimer">iCloud is a service provided by Apple Inc. Apple, the Apple logo, iPhone, iPad, Mac, and macOS are trademarks of Apple Inc.</p>
+            <div class="footer-disclaimer">
+                <p data-i18n="home.footerAppleDisclaimer">iCloud is a service provided by Apple Inc. Apple, the Apple logo, iPhone, iPad, Mac, and macOS are trademarks of Apple Inc.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Mobile Menu Script -->
-    <script>
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
-        const mobileMenuClose = document.getElementById('mobile-menu-close');
-
-        function openMobileMenu() {
-            mobileMenu.classList.add('active');
-            mobileMenuOverlay.classList.add('active');
-            document.body.classList.add('menu-open');
-        }
-
-        function closeMobileMenu() {
-            mobileMenu.classList.remove('active');
-            mobileMenuOverlay.classList.remove('active');
-            document.body.classList.remove('menu-open');
-        }
-
-        if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', openMobileMenu);
-        if (mobileMenuClose) mobileMenuClose.addEventListener('click', closeMobileMenu);
-        if (mobileMenuOverlay) mobileMenuOverlay.addEventListener('click', closeMobileMenu);
-
-        document.querySelectorAll('.mobile-menu-nav a').forEach(link => {
-            link.addEventListener('click', closeMobileMenu);
-        });
-    </script>
-
-    <!-- i18n Support -->
+    <!-- Scripts -->
+    <script src="scripts/common.js"></script>
     <script src="translations/index.js"></script>
     <script src="translations/en.js"></script>
     <script src="translations/id.js"></script>
