@@ -8,6 +8,20 @@
     <title>UangRumah - Smart Expense Tracker for Indonesian Households</title>
     <link rel="stylesheet" href="styles/common.css">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/icon.png">
+    <link rel="shortcut icon" type="image/png" href="assets/images/icon.png">
+
+    <!-- PWA/Mobile App Icons -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="assets/images/icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="UangRumah">
+    <meta name="theme-color" content="#0D7377">
+    <meta name="msapplication-TileColor" content="#0D7377">
+    <meta name="msapplication-TileImage" content="assets/images/icon.png">
+
     <style>
         * {
             margin: 0;
@@ -78,14 +92,8 @@
         .logo-icon {
             width: 36px;
             height: 36px;
-            background: var(--gradient-primary);
             border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.875rem;
-            color: white;
-            font-weight: 700;
+            object-fit: contain;
         }
 
         .beta-badge {
@@ -912,7 +920,7 @@
     <header>
         <nav>
             <a href="index.html" class="logo">
-                <div class="logo-icon">Rp</div>
+                <img src="assets/images/icon.png" alt="UangRumah Logo" class="logo-icon">
                 <span>UangRumah</span>
                 <span class="beta-badge" data-i18n="common.beta">Beta</span>
             </a>
@@ -1383,7 +1391,7 @@
             <div class="footer-top">
                 <div class="footer-brand">
                     <a href="index.html" class="logo" style="color: white;">
-                        <div class="logo-icon">Rp</div>
+                        <img src="assets/images/icon.png" alt="UangRumah Logo" class="logo-icon">
                         <span>UangRumah</span>
                     </a>
                     <p data-i18n="home.footerDesc">Privacy-focused expense tracking for Indonesian households. Your finances, your control.</p>
