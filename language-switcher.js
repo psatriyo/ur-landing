@@ -3,7 +3,7 @@
     'use strict';
 
     // Default language
-    const DEFAULT_LANG = 'en';
+    const DEFAULT_LANG = 'id';
     const STORAGE_KEY = 'uangrumah_language';
 
     // Get current language from localStorage or default
