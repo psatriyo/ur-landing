@@ -344,43 +344,6 @@
             text-decoration: underline;
         }
 
-        /* Footer */
-        footer {
-            background: var(--bg-dark);
-            color: var(--white);
-            padding: 3rem 2rem 2rem;
-            text-align: center;
-        }
-
-        .footer-content {
-            max-width: 1280px;
-            margin: 0 auto;
-        }
-
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin-bottom: 2rem;
-            flex-wrap: wrap;
-        }
-
-        .footer-links a {
-            color: var(--white);
-            text-decoration: none;
-            opacity: 0.8;
-            transition: opacity 0.3s;
-        }
-
-        .footer-links a:hover {
-            opacity: 1;
-        }
-
-        .copyright {
-            color: #a1a1aa;
-            font-size: 0.875rem;
-        }
-
         /* Language Switcher */
         .language-switcher {
             padding: 0.5rem 1rem;
@@ -439,11 +402,6 @@
 
             .nav-links {
                 display: none;
-            }
-
-            .footer-links {
-                flex-direction: column;
-                gap: 1rem;
             }
         }
 
@@ -627,16 +585,48 @@
 
     <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <div class="footer-links">
-                <a href="index.html" data-i18n="common.home">Home</a>
-                <a href="privacy-policy.html" data-i18n="common.privacyPolicy">Privacy Policy</a>
-                <a href="terms-conditions.html" data-i18n="common.termsConditions">Terms & Conditions</a>
-                <a href="support.html" data-i18n="common.support">Support</a>
-                <a href="contact.html" data-i18n="common.contact">Contact</a>
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo" style="color: white;">
+                        <img src="assets/images/icon.png" alt="UangRumah Logo" class="logo-icon">
+                        <span>UangRumah</span>
+                    </a>
+                    <p data-i18n="home.footerDesc">Your partner for achieving 2026 financial goals. Privacy-first expense tracking for Indonesian households.</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4 data-i18n="home.footerProduct">Product</h4>
+                    <ul>
+                        <li><a href="index.html#features" data-i18n="nav.features">Features</a></li>
+                        <li><a href="index.html#how-it-works" data-i18n="nav.howItWorks">How It Works</a></li>
+                        <li><a href="index.html#specs" data-i18n="nav.requirements">Requirements</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 data-i18n="home.footerSupport">Support</h4>
+                    <ul>
+                        <li><a href="support.html" data-i18n="common.support">Help Center</a></li>
+                        <li><a href="contact.html" data-i18n="common.contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 data-i18n="home.footerLegal">Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html" data-i18n="common.privacyPolicy">Privacy Policy</a></li>
+                        <li><a href="terms-conditions.html" data-i18n="common.termsConditions">Terms & Conditions</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="copyright">
+
+            <div class="footer-bottom">
                 <p>&copy; 2025 UangRumah. <span data-i18n="common.allRightsReserved">All rights reserved</span>.</p>
+                <p data-i18n="home.footerMadeWith">Made with care in Jakarta, Indonesia</p>
+            </div>
+            <div class="footer-disclaimer">
+                <p data-i18n="home.footerAppleDisclaimer">iCloud is a service provided by Apple Inc. Apple, the Apple logo, iPhone, iPad, Mac, and macOS are trademarks of Apple Inc.</p>
             </div>
         </div>
     </footer>
