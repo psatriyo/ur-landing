@@ -2,7 +2,6 @@
 translations.id = {
     // Common
     common: {
-        beta: 'Beta',
         home: 'Beranda',
         features: 'Fitur',
         howItWorks: 'Cara Pakai',
