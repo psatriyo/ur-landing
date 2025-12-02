@@ -26,7 +26,7 @@ translations.id = {
 
     // Home Page
     home: {
-        metaDescription: 'UangRumah - Aplikasi pencatat keuangan rumah tangga yang menjaga privasi Anda. Catat pengeluaran, atur anggaran, sinkron lewat iCloud. Bisa offline, dukung 158+ mata uang.',
+        metaDescription: 'UangRumah - Aplikasi pencatat keuangan rumah tangga yang menjaga privasi Anda. Catat pengeluaran, atur anggaran, sinkron lewat iCloud. Bisa offline, 150+ mata uang tersedia.',
         title: 'UangRumah - Pencatat Keuangan Cerdas untuk Keluarga Indonesia',
 
         // Hero Section
@@ -44,8 +44,8 @@ translations.id = {
         trustOfflineDesc: 'Catat pengeluaran di mana saja',
         trustSync: 'Sinkron iCloud',
         trustSyncDesc: 'Data selalu ada di genggaman',
-        trustCurrencies: '158+ Mata Uang',
-        trustCurrenciesDesc: 'Siap temani liburan ke luar negeri',
+        trustCurrencies: '150+ Mata Uang',
+        trustCurrenciesDesc: 'Pilih mata uang sesuai kebutuhan',
 
         // Key Features Section
         featuresLabel: 'Senjata Finansial 2026',
@@ -96,8 +96,8 @@ translations.id = {
         customCategoriesDesc: 'Buat kategori sesuai prioritas 2026. Dana liburan, renovasi rumah, pendidikan anak - Anda yang atur.',
         costCenters: 'Sumber Dana',
         costCentersDesc: 'Lacak dari mana uang 2026 dikeluarkan - tunai, kartu, e-wallet. Cocok untuk mengatur strategi pembayaran.',
-        currencySelection: '158+ Mata Uang',
-        currencySelectionDesc: 'Ada rencana liburan ke luar negeri? Catat pengeluaran mata uang asing bersamaan dengan Rupiah.',
+        currencySelection: '150+ Mata Uang',
+        currencySelectionDesc: 'Pilih satu mata uang dari 150+ pilihan, termasuk mata uang utama dunia dan Rupiah Indonesia.',
 
         // Data & Sync
         dataSyncTitle: 'Amankan Data Keuangan 2026',
@@ -171,7 +171,7 @@ translations.id = {
         sync: 'Sinkronisasi',
         syncValue: 'iCloud',
         currencies: 'Mata Uang',
-        currenciesValue: '158+',
+        currenciesValue: '150+',
         storage: 'Penyimpanan',
         storageValue: 'Lokal + iCloud',
         currency: 'Mata Uang',
