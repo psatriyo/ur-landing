@@ -26,7 +26,7 @@ translations.en = {
 
     // Home Page
     home: {
-        metaDescription: 'UangRumah - The privacy-focused expense tracker for Indonesian households. Track expenses, manage budgets, sync across devices with iCloud. Works offline, supports 158+ currencies.',
+        metaDescription: 'UangRumah - The privacy-focused expense tracker for Indonesian households. Track expenses, manage budgets, sync across devices with iCloud. Works offline, supports 150+ currencies.',
         title: 'UangRumah - Smart Expense Tracker for Indonesian Households',
 
         // Hero Section
@@ -44,7 +44,7 @@ translations.en = {
         trustOfflineDesc: 'Track expenses anywhere, anytime',
         trustSync: 'iCloud Sync',
         trustSyncDesc: 'Your goals follow you everywhere',
-        trustCurrencies: '158+ Currencies',
+        trustCurrencies: '150+ Currencies',
         trustCurrenciesDesc: 'For all your 2026 travel goals',
 
         // Key Features Section
@@ -96,7 +96,7 @@ translations.en = {
         customCategoriesDesc: 'Create categories that match your 2026 priorities. Vacation fund, home renovation, kids\' education - you decide.',
         costCenters: 'Cost Centers',
         costCentersDesc: 'Track where your 2026 money flows - cash, cards, e-wallets. Perfect for optimizing payment strategies.',
-        currencySelection: '158+ Currencies',
+        currencySelection: '150+ Currencies',
         currencySelectionDesc: 'Planning a 2026 trip abroad? Track foreign expenses alongside Rupiah with proper currency support.',
 
         // Data & Sync
@@ -171,7 +171,7 @@ translations.en = {
         sync: 'Sync',
         syncValue: 'iCloud',
         currencies: 'Currencies',
-        currenciesValue: '158+',
+        currenciesValue: '150+',
         storage: 'Storage',
         storageValue: 'Local + iCloud',
         currency: 'Currency',
