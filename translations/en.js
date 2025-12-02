@@ -33,7 +33,7 @@ translations.en = {
         heroBadge: 'Start 2026 Strong',
         heroTitle: 'Achieve Your <span>2026 Financial Goals</span>',
         heroSubtitle: 'Make this the year you finally take control of your household finances. Track every expense, stay on budget, and build the financial habits that will carry you through 2026 and beyond.',
-        ctaButton: 'Request Beta Access',
+        ctaButton: 'Get the App',
         ctaSecondary: 'Explore Features',
         mockupBudget: 'January 2026 Budget',
 
