@@ -284,7 +284,7 @@ translations.id = {
         contactUsDesc: 'Tidak menemukan yang dicari? Langsung hubungi tim dukungan kami.',
 
         systemRequirements: 'Kebutuhan Sistem',
-        systemRequirementsValue: '<strong>Platform:</strong> iOS 16.0+ / macOS 13.0+ | <strong>Perangkat:</strong> iPhone, iPad & Mac | <strong>Versi:</strong> 0.1.0 Beta | <strong>Penyimpanan:</strong> iCloud (opsional)',
+        systemRequirementsValue: '<strong>Platform:</strong> iOS 16.0+ / macOS 13.0+ | <strong>Perangkat:</strong> iPhone, iPad & Mac | <strong>Penyimpanan:</strong> iCloud (opsional)',
 
         faqSectionTitle: 'Pertanyaan yang Sering Diajukan',
         faqSectionSubtitle: 'Jawaban cepat untuk pertanyaan umum',
@@ -364,7 +364,7 @@ translations.id = {
         faq9Point4: 'Internet hanya perlu untuk sinkron iCloud (jika diaktifkan)',
 
         faq10Question: 'Apakah UangRumah gratis?',
-        faq10Answer: 'Saat ini, UangRumah versi 0.1.0 Beta sepenuhnya gratis dengan semua fitur lengkap. Di masa depan mungkin ada fitur premium opsional, tapi kami akan selalu menyediakan versi gratis yang lengkap.',
+        faq10Answer: 'Ya! UangRumah sepenuhnya gratis dengan semua fitur lengkap. Di masa depan mungkin ada fitur premium opsional, tapi kami akan selalu menyediakan versi gratis yang lengkap.',
 
         troubleshootingSectionTitle: 'Panduan Solusi Masalah',
         troubleshootingSectionSubtitle: 'Langkah-langkah praktis untuk masalah umum',
@@ -529,7 +529,7 @@ translations.id = {
         ],
 
         faq10Q: 'Apakah UangRumah gratis?',
-        faq10A: 'Saat ini, UangRumah versi 0.1.0 Beta sepenuhnya gratis dengan semua fitur lengkap. Di masa depan mungkin ada fitur premium opsional, tapi kami akan selalu menyediakan versi gratis yang lengkap.',
+        faq10A: 'Ya! UangRumah sepenuhnya gratis dengan semua fitur lengkap. Di masa depan mungkin ada fitur premium opsional, tapi kami akan selalu menyediakan versi gratis yang lengkap.',
 
         troubleshootingSectionTitle: 'Panduan Solusi Masalah',
 
