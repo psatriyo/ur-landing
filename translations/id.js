@@ -33,7 +33,7 @@ translations.id = {
         heroBadge: 'Resolusi Keuangan 2026',
         heroTitle: 'Wujudkan <span>Target Keuangan 2026</span> Anda',
         heroSubtitle: 'Tahun ini, saatnya kendalikan keuangan rumah tangga dengan serius. Catat setiap pengeluaran, jaga anggaran tetap terkendali, dan bangun kebiasaan finansial yang akan mengubah masa depan keluarga Anda.',
-        ctaButton: 'Daftar Akses Beta',
+        ctaButton: 'Dapatkan Aplikasi',
         ctaSecondary: 'Lihat Fitur',
         mockupBudget: 'Anggaran Januari 2026',
 
