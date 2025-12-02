@@ -284,7 +284,7 @@ translations.en = {
         contactUsDesc: 'Can\'t find what you\'re looking for? Reach out to our support team.',
 
         systemRequirements: 'System Requirements',
-        systemRequirementsValue: '<strong>Platform:</strong> iOS 16.0+ / macOS 13.0+ | <strong>Devices:</strong> iPhone, iPad & Mac | <strong>Version:</strong> 0.1.0 Beta | <strong>Storage:</strong> iCloud (optional)',
+        systemRequirementsValue: '<strong>Platform:</strong> iOS 16.0+ / macOS 13.0+ | <strong>Devices:</strong> iPhone, iPad & Mac | <strong>Storage:</strong> iCloud (optional)',
 
         faqSectionTitle: 'Frequently Asked Questions',
         faqSectionSubtitle: 'Quick answers to common questions',
@@ -364,7 +364,7 @@ translations.en = {
         faq9Point4: 'Internet only needed for iCloud sync (if enabled)',
 
         faq10Question: 'Is UangRumah free?',
-        faq10Answer: 'Currently, UangRumah version 0.1.0 Beta is completely free to use with all features included. Future versions may introduce optional premium features, but we will always maintain a robust free tier.',
+        faq10Answer: 'Yes! UangRumah is completely free to use with all features included. Future versions may introduce optional premium features, but we will always maintain a robust free tier.',
 
         troubleshootingSectionTitle: 'Troubleshooting Guide',
         troubleshootingSectionSubtitle: 'Step-by-step solutions for common issues',
@@ -529,7 +529,7 @@ translations.en = {
         ],
 
         faq10Q: 'Is UangRumah free?',
-        faq10A: 'Currently, UangRumah version 0.1.0 Beta is completely free to use with all features included. Future versions may introduce optional premium features, but we will always maintain a robust free tier.',
+        faq10A: 'Yes! UangRumah is completely free to use with all features included. Future versions may introduce optional premium features, but we will always maintain a robust free tier.',
 
         troubleshootingSectionTitle: 'Troubleshooting Guide',
 
