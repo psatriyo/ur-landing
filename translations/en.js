@@ -109,6 +109,10 @@ translations.en = {
         pdfReportsDesc: 'Generate quarterly 2026 reports to review with your family. See your progress in beautiful summaries.',
         csvExport: 'CSV Export',
         csvExportDesc: 'Analyze your 2026 spending in Excel or Sheets. Create custom reports and deeper insights.',
+        localStorage: 'Local Storage',
+        localStorageDesc: 'Your 2026 financial data lives on your device by default. No account required - you\'re in complete control.',
+        faceIdTouchId: 'Face ID / Touch ID',
+        faceIdTouchIdDesc: 'Add an extra layer of protection to your 2026 budget. Only you can access your financial data with biometric security.',
 
         // Privacy & Security
         privacySecurityTitle: 'Protect Your 2026 Goals',

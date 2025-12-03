@@ -109,6 +109,10 @@ translations.id = {
         pdfReportsDesc: 'Cetak laporan kuartalan untuk evaluasi bersama keluarga. Lihat progres dalam tampilan yang rapi.',
         csvExport: 'Ekspor CSV',
         csvExportDesc: 'Analisis pengeluaran 2026 di Excel atau Sheets. Buat laporan custom sesuai kebutuhan.',
+        localStorage: 'Penyimpanan Lokal',
+        localStorageDesc: 'Data keuangan 2026 tersimpan di perangkat Anda secara default. Tanpa perlu akun - Anda yang pegang kendali penuh.',
+        faceIdTouchId: 'Face ID / Touch ID',
+        faceIdTouchIdDesc: 'Tambah lapisan keamanan ekstra untuk anggaran 2026. Hanya Anda yang bisa akses data keuangan dengan keamanan biometrik.',
 
         // Privacy & Security
         privacySecurityTitle: 'Lindungi Target Finansial 2026',
