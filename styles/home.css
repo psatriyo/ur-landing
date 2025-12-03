@@ -216,7 +216,7 @@
     justify-content: center;
     align-items: center;
     gap: 4rem;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .trust-item {
@@ -596,6 +596,23 @@
 
 .animate-in {
     animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* -----------------------------------------------------------------------------
+   Responsive - Trust Badges (1100px)
+   Ensures 4-across -> 2x2 transition without awkward 3-1 layout
+   ----------------------------------------------------------------------------- */
+@media (max-width: 1100px) {
+    .trust-container {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        justify-content: center;
+        gap: 2rem 3rem;
+    }
+
+    .trust-item {
+        justify-content: center;
+    }
 }
 
 /* -----------------------------------------------------------------------------
