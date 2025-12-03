@@ -111,8 +111,8 @@ translations.en = {
         csvExportDesc: 'Analyze your 2026 spending in Excel or Sheets. Create custom reports and deeper insights.',
         localStorage: 'Local Storage',
         localStorageDesc: 'Your 2026 financial data lives on your device by default. No account required - you\'re in complete control.',
-        faceIdTouchId: 'Face ID / Touch ID',
-        faceIdTouchIdDesc: 'Add an extra layer of protection to your 2026 budget. Only you can access your financial data with biometric security.',
+        dataOwnership: 'Data Ownership',
+        dataOwnershipDesc: 'Your 2026 financial data belongs to you - always. Export or delete everything anytime. We never claim rights to your information.',
 
         // Privacy & Security
         privacySecurityTitle: 'Protect Your 2026 Goals',
