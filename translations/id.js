@@ -224,9 +224,9 @@ translations.id = {
         languages: 'Bahasa',
         languagesValue: 'Indonesia & Inggris',
 
-        betaProgramTitle: 'Info Beta:',
-        betaProgramDesc: 'UangRumah masih dalam tahap beta (v0.1.0). Masukan dan laporan bug Anda sangat berharga untuk pengembangan aplikasi. Terima kasih sudah menjadi pengguna awal!',
-        betaProgramNote: 'Info Beta: UangRumah masih dalam tahap beta (v0.1.0). Masukan dan laporan bug Anda sangat berharga untuk pengembangan aplikasi. Terima kasih sudah menjadi pengguna awal!',
+        feedbackTitle: 'Masukan Anda Penting:',
+        feedbackDesc: 'UangRumah sudah tersedia di App Store. Masukan dan saran Anda sangat berharga untuk pengembangan aplikasi. Terima kasih sudah memilih UangRumah!',
+        feedbackNote: 'Masukan Anda Penting: UangRumah sudah tersedia di App Store. Masukan dan saran Anda sangat berharga untuk pengembangan aplikasi. Terima kasih sudah memilih UangRumah!',
 
         beforeContactTitle: 'Sebelum Menghubungi Kami',
         beforeContactSubtitle: 'Coba cek sumber-sumber ini dulu untuk jawaban yang lebih cepat',
@@ -438,8 +438,8 @@ translations.id = {
         trouble7Step5: 'Coba format ekspor berbeda (PDF vs CSV)',
         trouble7Step6: 'Update aplikasi ke versi terbaru',
 
-        betaNoticeTitle: 'Info Versi Beta:',
-        betaNoticeDesc: 'UangRumah masih dalam tahap beta (v0.1.0). Beberapa bug mungkin ditemui. Masukan Anda membantu kami berkembang! Silakan laporkan masalah ke support@uangrumah.com.',
+        feedbackNoticeTitle: 'Kami Menghargai Masukan Anda:',
+        feedbackNoticeDesc: 'UangRumah sudah tersedia di App Store. Masukan Anda membantu kami berkembang! Silakan laporkan masalah atau saran ke support@uangrumah.com.',
 
         ctaTitle: 'Masih Perlu Bantuan?',
         ctaSubtitle: 'Tim dukungan kami siap membantu Anda dengan pertanyaan atau masalah apa pun.',
@@ -616,7 +616,7 @@ translations.id = {
             'Update aplikasi ke versi terbaru'
         ],
 
-        betaNotice: 'Info Versi Beta: UangRumah masih dalam tahap beta (v0.1.0). Beberapa bug mungkin ditemui. Masukan Anda membantu kami berkembang! Silakan laporkan masalah ke support@uangrumah.com.',
+        feedbackNotice: 'Kami Menghargai Masukan Anda: UangRumah sudah tersedia di App Store. Masukan Anda membantu kami berkembang! Silakan laporkan masalah atau saran ke support@uangrumah.com.',
 
         stillNeedHelpTitle: 'Masih Perlu Bantuan?',
         stillNeedHelpDesc: 'Tim dukungan kami siap membantu Anda dengan pertanyaan atau masalah apa pun.',
@@ -713,9 +713,9 @@ translations.id = {
         acceptanceTitle: 'Persetujuan Ketentuan',
         acceptanceContent: 'Dengan mengunduh, menginstall, atau menggunakan UangRumah, Anda menyetujui Syarat dan Ketentuan ini. Kalau tidak setuju, mohon jangan gunakan aplikasi ini.',
 
-        // Beta Notice
-        betaNoticeTitle: 'Info Versi Beta',
-        betaNoticeContent: 'UangRumah masih dalam tahap beta (v0.1.0). Sebagai software beta, mungkin masih ada bug atau fitur yang belum lengkap. Kami menghargai kesabaran dan masukan Anda selama kami mengembangkan aplikasi.',
+        // App Store Notice
+        appStoreNoticeTitle: 'Tersedia Sekarang',
+        appStoreNoticeContent: 'UangRumah sudah tersedia di App Store. Kami terus memperbaiki aplikasi berdasarkan masukan Anda. Terima kasih sudah memilih UangRumah!',
 
         // Description
         descriptionTitle: 'Tentang UangRumah',
@@ -761,7 +761,7 @@ translations.id = {
 
         // Limitation
         limitationTitle: 'Batasan Tanggung Jawab',
-        limitationContent: 'Kami tidak bertanggung jawab atas kerugian finansial, kehilangan data, atau kerusakan yang timbul dari penggunaan UangRumah. Total tanggung jawab kami terbatas pada jumlah yang Anda bayarkan untuk aplikasi (saat ini gratis untuk beta).',
+        limitationContent: 'Kami tidak bertanggung jawab atas kerugian finansial, kehilangan data, atau kerusakan yang timbul dari penggunaan UangRumah. Total tanggung jawab kami terbatas pada jumlah yang Anda bayarkan untuk aplikasi.',
 
         // Termination
         terminationTitle: 'Penghentian',
