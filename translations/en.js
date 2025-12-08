@@ -224,9 +224,9 @@ translations.en = {
         languages: 'Languages',
         languagesValue: 'English & Indonesian',
 
-        betaProgramTitle: 'Beta Program:',
-        betaProgramDesc: 'UangRumah is currently in beta (v0.1.0). We highly value your feedback and bug reports to help us improve the app. Thank you for being an early adopter!',
-        betaProgramNote: 'Beta Program: UangRumah is currently in beta (v0.1.0). We highly value your feedback and bug reports to help us improve the app. Thank you for being an early adopter!',
+        feedbackTitle: 'Your Feedback Matters:',
+        feedbackDesc: 'UangRumah is now available on the App Store. We highly value your feedback and suggestions to help us continue improving the app. Thank you for choosing UangRumah!',
+        feedbackNote: 'Your Feedback Matters: UangRumah is now available on the App Store. We highly value your feedback and suggestions to help us continue improving the app. Thank you for choosing UangRumah!',
 
         beforeContactTitle: 'Before You Contact Us',
         beforeContactSubtitle: 'You might find answers faster by checking these resources first',
@@ -438,8 +438,8 @@ translations.en = {
         trouble7Step5: 'Try a different export format (PDF vs CSV)',
         trouble7Step6: 'Update the app to the latest version',
 
-        betaNoticeTitle: 'Beta Version Notice:',
-        betaNoticeDesc: 'UangRumah is currently in beta (v0.1.0). Some bugs and issues are expected. Your feedback helps us improve! Please report any problems to support@uangrumah.com.',
+        feedbackNoticeTitle: 'We Value Your Feedback:',
+        feedbackNoticeDesc: 'UangRumah is now available on the App Store. Your feedback helps us improve! Please report any issues or suggestions to support@uangrumah.com.',
 
         ctaTitle: 'Still Need Help?',
         ctaSubtitle: 'Our support team is here to assist you with any questions or issues.',
@@ -616,7 +616,7 @@ translations.en = {
             'Update the app to the latest version'
         ],
 
-        betaNotice: 'Beta Version Notice: UangRumah is currently in beta (v0.1.0). Some bugs and issues are expected. Your feedback helps us improve! Please report any problems to support@uangrumah.com.',
+        feedbackNotice: 'We Value Your Feedback: UangRumah is now available on the App Store. Your feedback helps us improve! Please report any issues or suggestions to support@uangrumah.com.',
 
         stillNeedHelpTitle: 'Still Need Help?',
         stillNeedHelpDesc: 'Our support team is here to assist you with any questions or issues.',
@@ -713,9 +713,9 @@ translations.en = {
         acceptanceTitle: 'Agreement to Terms',
         acceptanceContent: 'By downloading, installing, or using UangRumah, you agree to these Terms and Conditions. If you do not agree, please do not use the app.',
 
-        // Beta Notice
-        betaNoticeTitle: 'Beta Version Notice',
-        betaNoticeContent: 'UangRumah is currently in beta (v0.1.0). As beta software, it may contain bugs or incomplete features. We appreciate your patience and feedback as we improve the app.',
+        // App Store Notice
+        appStoreNoticeTitle: 'Available Now',
+        appStoreNoticeContent: 'UangRumah is available on the App Store. We continuously improve the app based on your feedback. Thank you for choosing UangRumah!',
 
         // Description
         descriptionTitle: 'About UangRumah',
@@ -761,7 +761,7 @@ translations.en = {
 
         // Limitation
         limitationTitle: 'Limitation of Liability',
-        limitationContent: 'We are not liable for any financial losses, data loss, or damages arising from your use of UangRumah. Our total liability is limited to the amount you paid for the app (currently free for beta).',
+        limitationContent: 'We are not liable for any financial losses, data loss, or damages arising from your use of UangRumah. Our total liability is limited to the amount you paid for the app.',
 
         // Termination
         terminationTitle: 'Termination',

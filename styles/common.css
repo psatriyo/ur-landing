@@ -105,7 +105,7 @@ nav {
     object-fit: contain;
 }
 
-.beta-badge {
+.version-badge {
     background: linear-gradient(135deg, #14A3A3, #0D7377);
     color: var(--white);
     font-size: 0.6rem;
@@ -1375,7 +1375,7 @@ footer {
         min-height: 32px;
     }
 
-    .beta-badge {
+    .version-badge {
         font-size: 0.55rem;
         padding: 0.15rem 0.4rem;
     }

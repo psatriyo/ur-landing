@@ -224,9 +224,9 @@ translations.ms = {
         languages: 'Bahasa',
         languagesValue: 'English, Bahasa Indonesia & Bahasa Melayu',
 
-        betaProgramTitle: 'Program Beta:',
-        betaProgramDesc: 'UangRumah kini dalam beta (v0.1.0). Kami sangat menghargai maklum balas dan laporan pepijat anda untuk membantu kami memperbaiki aplikasi. Terima kasih kerana menjadi pengguna awal!',
-        betaProgramNote: 'Program Beta: UangRumah kini dalam beta (v0.1.0). Kami sangat menghargai maklum balas dan laporan pepijat anda untuk membantu kami memperbaiki aplikasi. Terima kasih kerana menjadi pengguna awal!',
+        feedbackTitle: 'Maklum Balas Anda Penting:',
+        feedbackDesc: 'UangRumah kini tersedia di App Store. Kami sangat menghargai maklum balas dan cadangan anda untuk membantu kami terus memperbaiki aplikasi. Terima kasih kerana memilih UangRumah!',
+        feedbackNote: 'Maklum Balas Anda Penting: UangRumah kini tersedia di App Store. Kami sangat menghargai maklum balas dan cadangan anda untuk membantu kami terus memperbaiki aplikasi. Terima kasih kerana memilih UangRumah!',
 
         beforeContactTitle: 'Sebelum Anda Menghubungi Kami',
         beforeContactSubtitle: 'Anda mungkin mendapat jawapan lebih pantas dengan menyemak sumber-sumber ini terlebih dahulu',
@@ -438,8 +438,8 @@ translations.ms = {
         trouble7Step5: 'Cuba format eksport yang berbeza (PDF vs CSV)',
         trouble7Step6: 'Kemas kini aplikasi ke versi terkini',
 
-        betaNoticeTitle: 'Notis Versi Beta:',
-        betaNoticeDesc: 'UangRumah kini dalam beta (v0.1.0). Sesetengah pepijat dan isu dijangkakan. Maklum balas anda membantu kami memperbaiki! Sila laporkan sebarang masalah ke support@uangrumah.com.',
+        feedbackNoticeTitle: 'Kami Menghargai Maklum Balas Anda:',
+        feedbackNoticeDesc: 'UangRumah kini tersedia di App Store. Maklum balas anda membantu kami memperbaiki! Sila laporkan sebarang isu atau cadangan ke support@uangrumah.com.',
 
         ctaTitle: 'Masih Perlukan Bantuan?',
         ctaSubtitle: 'Pasukan sokongan kami di sini untuk membantu anda dengan sebarang soalan atau isu.',
@@ -616,7 +616,7 @@ translations.ms = {
             'Kemas kini aplikasi ke versi terkini'
         ],
 
-        betaNotice: 'Notis Versi Beta: UangRumah kini dalam beta (v0.1.0). Sesetengah pepijat dan isu dijangkakan. Maklum balas anda membantu kami memperbaiki! Sila laporkan sebarang masalah ke support@uangrumah.com.',
+        feedbackNotice: 'Kami Menghargai Maklum Balas Anda: UangRumah kini tersedia di App Store. Maklum balas anda membantu kami memperbaiki! Sila laporkan sebarang isu atau cadangan ke support@uangrumah.com.',
 
         stillNeedHelpTitle: 'Masih Perlukan Bantuan?',
         stillNeedHelpDesc: 'Pasukan sokongan kami di sini untuk membantu anda dengan sebarang soalan atau isu.',
@@ -713,9 +713,9 @@ translations.ms = {
         acceptanceTitle: 'Persetujuan kepada Terma',
         acceptanceContent: 'Dengan memuat turun, memasang, atau menggunakan UangRumah, anda bersetuju dengan Terma dan Syarat ini. Jika anda tidak bersetuju, sila jangan gunakan aplikasi ini.',
 
-        // Beta Notice
-        betaNoticeTitle: 'Notis Versi Beta',
-        betaNoticeContent: 'UangRumah kini dalam beta (v0.1.0). Sebagai perisian beta, ia mungkin mengandungi pepijat atau ciri yang tidak lengkap. Kami menghargai kesabaran dan maklum balas anda semasa kami memperbaiki aplikasi.',
+        // App Store Notice
+        appStoreNoticeTitle: 'Kini Tersedia',
+        appStoreNoticeContent: 'UangRumah kini tersedia di App Store. Kami sentiasa memperbaiki aplikasi berdasarkan maklum balas anda. Terima kasih kerana memilih UangRumah!',
 
         // Description
         descriptionTitle: 'Tentang UangRumah',
@@ -761,7 +761,7 @@ translations.ms = {
 
         // Limitation
         limitationTitle: 'Had Liabiliti',
-        limitationContent: 'Kami tidak bertanggungjawab ke atas sebarang kerugian kewangan, kehilangan data, atau kerosakan yang timbul daripada penggunaan UangRumah anda. Jumlah liabiliti kami adalah terhad kepada jumlah yang anda bayar untuk aplikasi (kini percuma untuk beta).',
+        limitationContent: 'Kami tidak bertanggungjawab ke atas sebarang kerugian kewangan, kehilangan data, atau kerosakan yang timbul daripada penggunaan UangRumah anda. Jumlah liabiliti kami adalah terhad kepada jumlah yang anda bayar untuk aplikasi.',
 
         // Termination
         terminationTitle: 'Penamatan',
