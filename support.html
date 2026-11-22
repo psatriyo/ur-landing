@@ -1,455 +1,228 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="UangRumah Support - Get help with common issues and troubleshooting for the expense tracker app." data-i18n="support.metaDescription">
-    <title data-i18n="support.title">Support - UangRumah</title>
-    <link rel="stylesheet" href="styles/common.css">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/images/icon.png">
-    <link rel="shortcut icon" type="image/png" href="assets/images/icon.png">
-
-    <!-- PWA/Mobile App Icons -->
-    <link rel="manifest" href="manifest.json">
-    <link rel="apple-touch-icon" href="assets/images/icon.png">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="UangRumah">
-    <meta name="theme-color" content="#0D7377">
-    <meta name="msapplication-TileColor" content="#0D7377">
-    <meta name="msapplication-TileImage" content="assets/images/icon.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title data-i18n="help.meta.title">Help Center — UangRumah</title>
+<meta name="description" content="Answers to common questions about UangRumah: getting started, budgets, books, export, backup, iCloud sync, privacy and troubleshooting." data-i18n-attr="content:help.meta.description">
+<link rel="canonical" href="https://uangrumah.com/support.html">
+<meta name="theme-color" content="#fffdf8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d1513" media="(prefers-color-scheme: dark)">
+<meta name="apple-itunes-app" content="app-id=6755369467">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UangRumah">
+<meta property="og:title" content="Help Center — UangRumah" data-i18n-attr="content:help.meta.title">
+<meta property="og:description" content="Answers to common questions about UangRumah: getting started, budgets, books, export, backup, iCloud sync, privacy and troubleshooting." data-i18n-attr="content:help.meta.description">
+<meta property="og:url" content="https://uangrumah.com/support.html">
+<meta property="og:image" content="https://uangrumah.com/assets/images/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="UangRumah, a simple and private expense tracker for iPhone and iPad">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:locale:alternate" content="ms_MY">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="styles/main.css">
+<script>
+(function(){var d=document.documentElement,l=null,s;d.classList.add('js');
+try{s=localStorage.getItem('uangrumah_theme');if(s==='dark'||s==='light')d.setAttribute('data-theme',s);}catch(e){}
+try{l=new URLSearchParams(location.search).get('lang')||localStorage.getItem('uangrumah_language');}catch(e){}
+if(['en','id','ms'].indexOf(l)<0){l='en';var n=navigator.languages||[navigator.language||''];
+for(var i=0;i<n.length;i++){var c=String(n[i]).toLowerCase().slice(0,2);if(c==='id'||c==='in'){l='id';break;}if(c==='ms'){l='ms';break;}if(c==='en'){break;}}}
+d.setAttribute('data-lang',l);if(l!=='en'){d.lang=l;d.classList.add('i18n-pending');setTimeout(function(){d.classList.remove('i18n-pending');},1500);}})();
+</script>
 </head>
-<body data-page="support" class="bg-light">
-    <!-- Header -->
-    <header>
-        <nav>
-            <a href="index.html" class="logo">
-                <img src="assets/images/icon.png" alt="UangRumah Logo" class="logo-icon">
-                <span>UangRumah</span>
-            </a>
-            <div class="nav-right">
-                <ul class="nav-links">
-                    <li><a href="index.html" data-i18n="common.home">Home</a></li>
-                    <li><a href="index.html#features" data-i18n="nav.features">Features</a></li>
-                    <li><a href="support.html" data-i18n="common.support">Support</a></li>
-                    <li><a href="contact.html" data-i18n="common.contact">Contact</a></li>
-                </ul>
-                <select class="language-switcher" id="language-switcher" title="Select Language">
-                    <option value="en">English</option>
-                    <option value="id">Indonesian</option>
-                    <option value="ms">Bahasa Melayu</option>
-                </select>
-                <button class="mobile-menu-btn" aria-label="Menu">&#9776;</button>
-            </div>
-        </nav>
-    </header>
+<body>
+<a class="skip-link" href="#main" data-i18n="common.skip">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html"><img src="assets/images/logo-96.png" alt="" width="36" height="36"><span>UangRumah</span></a>
+    <nav class="nav-main" aria-label="Main" data-i18n-attr="aria-label:common.mainNav">
+      <ul class="nav-links">
+        <li><a href="index.html#features" data-i18n="common.nav.features">Features</a></li>
+        <li><a href="index.html#privacy" data-i18n="common.nav.privacy">Privacy</a></li>
+        <li><a href="index.html#how-it-works" data-i18n="common.nav.howItWorks">How it works</a></li>
+        <li><a href="support.html" data-i18n="common.nav.help" aria-current="page">Help</a></li>
+        <li><a href="contact.html" data-i18n="common.nav.contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-tools">
+      <div class="lang-switch" role="group" aria-label="Language" data-i18n-attr="aria-label:common.language"><button type="button" data-set-lang="en" lang="en" aria-pressed="true" title="English">EN</button><button type="button" data-set-lang="id" lang="id" aria-pressed="false" title="Bahasa Indonesia">ID</button><button type="button" data-set-lang="ms" lang="ms" aria-pressed="false" title="Bahasa Melayu">MS</button></div>
+      <button type="button" class="icon-btn theme-toggle" data-theme-toggle aria-label="Switch light or dark theme" data-i18n-attr="aria-label:common.theme"><svg class="icon i-sun" aria-hidden="true"><use href="assets/icons.svg#i-sun"/></svg><svg class="icon i-moon" aria-hidden="true"><use href="assets/icons.svg#i-moon"/></svg></button>
+      <a class="btn btn-primary btn-sm" href="https://apps.apple.com/app/id6755369467" data-i18n="common.cta.getApp">Get the app</a>
+      <button type="button" class="icon-btn menu-btn" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu" data-i18n-attr="aria-label:common.menu"><svg class="icon i-open" aria-hidden="true"><use href="assets/icons.svg#i-menu"/></svg><svg class="icon i-close" aria-hidden="true" style="display:none"><use href="assets/icons.svg#i-x"/></svg></button>
+    </div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobile-menu" inert>
+  <nav aria-label="Main" data-i18n-attr="aria-label:common.mainNav">
+    <ul>
+      <li><a href="index.html#features"><span data-i18n="common.nav.features">Features</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow-right"/></svg></a></li>
+      <li><a href="index.html#privacy"><span data-i18n="common.nav.privacy">Privacy</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow-right"/></svg></a></li>
+      <li><a href="index.html#how-it-works"><span data-i18n="common.nav.howItWorks">How it works</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow-right"/></svg></a></li>
+      <li><a href="support.html"><span data-i18n="common.nav.help">Help</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow-right"/></svg></a></li>
+      <li><a href="contact.html"><span data-i18n="common.nav.contact">Contact</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow-right"/></svg></a></li>
+    </ul>
+  </nav>
+  <div class="row"><span class="muted" data-i18n="common.language">Language</span><div class="lang-switch" role="group" aria-label="Language" data-i18n-attr="aria-label:common.language"><button type="button" data-set-lang="en" lang="en" aria-pressed="true" title="English">EN</button><button type="button" data-set-lang="id" lang="id" aria-pressed="false" title="Bahasa Indonesia">ID</button><button type="button" data-set-lang="ms" lang="ms" aria-pressed="false" title="Bahasa Melayu">MS</button></div></div>
+  <a class="appstore-btn" href="https://apps.apple.com/app/id6755369467" aria-label="Download UangRumah on the App Store" data-i18n-attr="aria-label:common.cta.appStoreLabel"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-apple"/></svg><span><small data-i18n="common.cta.downloadOn">Download on the</small><strong data-i18n="common.cta.appStore">App Store</strong></span></a>
+</div>
+<main id="main">
+<section class="page-hero">
+  <div class="container">
+    <span class="badge"><span class="badge-dot"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-help"/></svg></span><span data-i18n="help.badge">Help Center</span></span>
+    <h1 data-i18n="help.title">How can we help?</h1>
+    <p class="lead" data-i18n="help.lead">Answers to common questions, plus step-by-step fixes for sync, notifications and more.</p>
+    <div class="search-box" role="search">
+      <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-search"/></svg>
+      <label class="sr-only" for="faq-search" data-i18n="help.searchLabel">Search the Help Center</label>
+      <input id="faq-search" type="search" autocomplete="off" placeholder="Search, e.g. &quot;backup&quot; or &quot;budget alert&quot;" data-i18n-attr="placeholder:help.searchPlaceholder">
+    </div>
+  </div>
+</section>
 
-    <!-- Mobile Menu Overlay -->
-    <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+<section class="section section--tight" style="padding-top:8px">
+  <div class="container">
+    <div class="topic-grid">
+      <a class="topic-card" href="#getting-started"><span class="pillar-icon tone-teal"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-sparkle"/></svg></span><span><strong data-i18n="help.topics.start">Getting started</strong><span data-i18n="help.topics.startSub">Books, setup and basics</span></span></a>
+      <a class="topic-card" href="#expenses-budgets"><span class="pillar-icon tone-gold"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-wallet"/></svg></span><span><strong data-i18n="help.topics.budgets">Expenses &amp; budgets</strong><span data-i18n="help.topics.budgetsSub">Adding, alerts, recurring</span></span></a>
+      <a class="topic-card" href="#books-data"><span class="pillar-icon tone-sage"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-book"/></svg></span><span><strong data-i18n="help.topics.data">Books &amp; your data</strong><span data-i18n="help.topics.dataSub">Export, backup, settings</span></span></a>
+      <a class="topic-card" href="#sync-privacy"><span class="pillar-icon tone-teal"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-cloud"/></svg></span><span><strong data-i18n="help.topics.sync">Sync &amp; privacy</strong><span data-i18n="help.topics.syncSub">iCloud and who sees what</span></span></a>
+      <a class="topic-card" href="#troubleshooting"><span class="pillar-icon tone-coral"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-wrench"/></svg></span><span><strong data-i18n="help.topics.trouble">Troubleshooting</strong><span data-i18n="help.topics.troubleSub">Fixes for common problems</span></span></a>
+      <a class="topic-card" href="contact.html"><span class="pillar-icon tone-gold"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-mail"/></svg></span><span><strong data-i18n="help.topics.contact">Contact us</strong><span data-i18n="help.topics.contactSub">We reply in 1–2 business days</span></span></a>
+    </div>
+  </div>
+</section>
 
-    <!-- Mobile Menu Drawer -->
-    <div class="mobile-menu" id="mobile-menu">
-        <div class="mobile-menu-header">
-            <a href="index.html" class="logo">
-                <img src="assets/images/icon.png" alt="UangRumah Logo" class="logo-icon">
-                <span>UangRumah</span>
-            </a>
-            <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close menu">&times;</button>
-        </div>
-        <nav class="mobile-menu-nav">
-            <ul>
-                <li><a href="index.html" data-i18n="common.home">Home</a></li>
-                <li><a href="privacy-policy.html" data-i18n="common.privacy">Privacy</a></li>
-                <li><a href="terms-conditions.html" data-i18n="common.terms">Terms</a></li>
-                <li><a href="support.html" data-i18n="common.support">Support</a></li>
-                <li><a href="contact.html" data-i18n="common.contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="mobile-menu-footer">
-            <a href="mailto:support@uangrumah.com" class="mobile-menu-cta" data-i18n="contact.emailSupportTitle">Email Support</a>
-        </div>
+<section class="section" style="padding-top:24px" data-faq>
+  <div class="container">
+    <p id="faq-empty" class="search-empty" data-i18n="help.noResults" role="status">No answers match your search. Try another word, or email us and we'll help.</p>
+
+    <div class="faq-group" id="getting-started">
+      <div class="faq-group-head"><span class="pillar-icon tone-teal"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-sparkle"/></svg></span><h2 data-i18n="help.g1.title">Getting started</h2></div>
+      <div class="faq-list">
+        <details class="faq-item" id="faq-get-started"><summary><span data-i18n="help.g1.q1">How do I get started?</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-chevron-down"/></svg></summary><div class="faq-body" data-i18n-html="help.g1.a1"><ol><li>Download UangRumah from the App Store.</li><li>Open the app and follow the short introduction. Your first book is created for you.</li><li>Set a monthly or weekly budget in <strong>Settings → Budget</strong>.</li><li>Check your categories and cost centers (payment methods) in <strong>Settings</strong>.</li><li>Tap <strong>+</strong> on the <strong>Manage</strong> tab to add your first expense.</li><li>Optional: turn on <strong>Expense Nudge</strong> in <strong>Settings → Preferences</strong> for a daily reminder.</li></ol></div></details>
+        <details class="faq-item" id="faq-book"><summary><span data-i18n="help.g1.q2">What is a book?</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-chevron-down"/></svg></summary><div class="faq-body" data-i18n-html="help.g1.a2"><p>A book is a separate ledger with its own expenses, budget, categories, cost centers and vendors. Most people use one book for the household. Add a second for a side business or a big project. You can have up to 2 books and switch between them from the book icon at the top of the screen.</p></div></details>
+        <details class="faq-item" id="faq-free"><summary><span data-i18n="help.g1.q3">Is UangRumah free?</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-chevron-down"/></svg></summary><div class="faq-body" data-i18n-html="help.g1.a3"><p>Yes. All features are free, with no ads and no in-app purchases.</p></div></details>
+        <details class="faq-item" id="faq-devices"><summary><span data-i18n="help.g1.q4">Which devices are supported?</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-chevron-down"/></svg></summary><div class="faq-body" data-i18n-html="help.g1.a4"><p>iPhone and iPad with iOS or iPadOS 16 or later. There's no Android version at the moment.</p></div></details>
+      </div>
     </div>
 
-    <!-- Page Hero -->
-    <section class="page-hero">
-        <div class="hero-content">
-            <div class="hero-badge">
-                <span>&#128218;</span>
-                <span data-i18n="support.heroBadge">Help Center</span>
-            </div>
-            <h1 data-i18n="support.heroTitle">Support Center</h1>
-            <p data-i18n="support.heroSubtitle">Find answers to common questions and get help with UangRumah.</p>
-        </div>
-    </section>
+    <div class="faq-group" id="expenses-budgets">
+      <div class="faq-group-head"><span class="pillar-icon tone-gold"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-wallet"/></svg></span><h2 data-i18n="help.g2.title">Expenses &amp; budgets</h2></div>
+      <div class="faq-list">
+        <details class="faq-item" id="faq-add-expense"><summary><span data-i18n="help.g2.q1">How do I add an expense?</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-chevron-down"/></svg></summary><div class="faq-body" data-i18n-html="help.g2.a1"><p>Go to the <strong>Manage</strong> tab and tap <strong>+</strong>. Enter a name and amount. Everything else is optional: vendor, category, cost center, date and notes. Tap <strong>Add Expense</strong> to save.</p><p>To edit or delete, tap an expense or swipe left on it.</p></div></details>
+        <details class="faq-item" id="faq-batch"><summary><span data-i18n="help.g2.q2">What is Batch Entry Mode?</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-chevron-down"/></svg></summary><div class="faq-body" data-i18n-html="help.g2.a2"><p>Batch Entry Mode lets you add several expenses without closing the form. After each save the form clears and keeps the date you picked, so entering a stack of receipts is quick. Turn it on in the Add Expense form.</p></div></details>
+        <details class="faq-item" id="faq-recurring"><summary><span data-i18n="help.g2.q3">How do recurring expenses work?</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-chevron-down"/></svg></summary><div class="faq-body" data-i18n-html="help.g2.a3"><p>When adding an expense, turn on <strong>Recurring Expense</strong> and choose how often it repeats: daily, weekly, every 2 weeks, monthly, quarterly or yearly. You can add an end date. When a payment is due, UangRumah adds it for you the next time you open the app.</p></div></details>
+        <details class="faq-item" id="faq-alerts"><summary><span data-i18n="help.g2.q4">How do budget alerts work?</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-chevron-down"/></svg></summary><div class="faq-body" data-i18n-html="help.g2.a4"><p>Set a budget in <strong>Settings → Budget</strong> and choose when to be alerted: at 50%, 75%, 90% or 100%. UangRumah compares what you've spent this month with what your budget allows up to today, and sends a notification when you reach that level.</p><p>Make sure notifications for UangRumah are allowed in iOS Settings.</p></div></details>
+        <details class="faq-item" id="faq-daily"><summary><span data-i18n="help.g2.q5">What does the daily figure on the Dashboard mean?</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-chevron-down"/></svg></summary><div class="faq-body" data-i18n-html="help.g2.a5"><p>It's the budget you have left divided by the days left in the month (or week). If you spend less than this each day, you'll finish within budget. The status shows <strong>On Track</strong>, <strong>Watch Out</strong> or <strong>Over Budget</strong> by comparing how much you've spent with how much of the month has passed.</p></div></details>
+        <details class="faq-item" id="faq-cost-centers"><summary><span data-i18n="help.g2.q6">What are cost centers?</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-chevron-down"/></svg></summary><div class="faq-body" data-i18n-html="help.g2.a6"><p>Cost centers are the ways you pay: cash, a bank account, a credit card or an e-wallet. Pick one when you add an expense, and the Dashboard shows your spending by payment method. Each book can have up to 3 cost centers. Manage them in <strong>Settings → Cost Centers</strong>.</p></div></details>
+        <details class="faq-item" id="faq-nudge"><summary><span data-i18n="help.g2.q7">What is Expense Nudge?</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-chevron-down"/></svg></summary><div class="faq-body" data-i18n-html="help.g2.a7"><p>A friendly reminder to log your spending. Choose the time and the days (every day, weekdays or days you pick) in <strong>Settings → Preferences → Expense Nudge</strong>.</p></div></details>
+        <details class="faq-item" id="faq-history"><summary><span data-i18n="help.g2.q8">Can I see what changed in an expense?</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-chevron-down"/></svg></summary><div class="faq-body" data-i18n-html="help.g2.a8"><p>Yes. UangRumah keeps an edit history for every expense. Open the expense to see earlier versions, with changes highlighted.</p></div></details>
+      </div>
+    </div>
 
-    <!-- Main Content -->
-    <section class="content">
-        <!-- Quick Links -->
-        <div class="support-grid">
-            <div class="support-card">
-                <div class="support-icon">&#128214;</div>
-                <h3 data-i18n="support.gettingStartedTitle">Getting Started</h3>
-                <p data-i18n="support.gettingStartedDesc">Learn the basics of setting up budgets, adding expenses, and navigating the app.</p>
-            </div>
-            <div class="support-card">
-                <div class="support-icon">&#128295;</div>
-                <h3 data-i18n="support.troubleshootingTitle">Troubleshooting</h3>
-                <p data-i18n="support.troubleshootingDesc">Solve common issues with syncing, notifications, and data management.</p>
-            </div>
-            <div class="support-card">
-                <div class="support-icon">&#128172;</div>
-                <h3 data-i18n="support.contactUsTitle">Contact Us</h3>
-                <p data-i18n="support.contactUsDesc">Can't find what you're looking for? Reach out to our support team.</p>
-            </div>
-        </div>
+    <div class="faq-group" id="books-data">
+      <div class="faq-group-head"><span class="pillar-icon tone-sage"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-book"/></svg></span><h2 data-i18n="help.g3.title">Books &amp; your data</h2></div>
+      <div class="faq-list">
+        <details class="faq-item" id="faq-books-limit"><summary><span data-i18n="help.g3.q1">How many books can I create?</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-chevron-down"/></svg></summary><div class="faq-body" data-i18n-html="help.g3.a1"><p>Up to 2 books. Book names can be up to 9 characters long so they fit neatly at the top of the screen. Manage books in <strong>Settings → Books</strong>.</p></div></details>
+        <details class="faq-item" id="faq-export"><summary><span data-i18n="help.g3.q2">How do I export my expenses?</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-chevron-down"/></svg></summary><div class="faq-body" data-i18n-html="help.g3.a2"><p>On the <strong>Manage</strong> tab, tap the export icon, or go to <strong>Settings → Create Report</strong>. Choose <strong>PDF</strong> for a formatted report or <strong>CSV</strong> for spreadsheets, pick a date range (this week, this month, this year or custom), then save or share the file.</p></div></details>
+        <details class="faq-item" id="faq-backup"><summary><span data-i18n="help.g3.q3">How do I back up and restore?</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-chevron-down"/></svg></summary><div class="faq-body" data-i18n-html="help.g3.a3"><p>Go to <strong>Settings → Backup &amp; Restore</strong>. <strong>Export Backup</strong> saves a backup file of the current book that you can keep in Files or share. <strong>Import Backup</strong> restores a backup file as a <strong>new book</strong>, so your existing data is never overwritten.</p></div></details>
+        <details class="faq-item" id="faq-currency-language"><summary><span data-i18n="help.g3.q4">How do I change the currency or language?</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-chevron-down"/></svg></summary><div class="faq-body" data-i18n-html="help.g3.a4"><p>Go to <strong>Settings → Preferences</strong>. You can choose English, Bahasa Indonesia or Bahasa Melayu, and any of more than 150 currencies. The currency applies across the whole app. You can also choose light, dark or system appearance there.</p></div></details>
+        <details class="faq-item" id="faq-delete-book"><summary><span data-i18n="help.g3.q5">How do I delete a book?</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-chevron-down"/></svg></summary><div class="faq-body" data-i18n-html="help.g3.a5"><p>Go to <strong>Settings → Books</strong> and swipe left on the book. You'll be asked to confirm twice, because deleting a book permanently removes all of its expenses, budgets, categories and cost centers, on every device that syncs with it. Export a backup first if you might need the data later.</p></div></details>
+      </div>
+    </div>
 
-        <!-- System Requirements -->
-        <div class="requirements-box">
-            <span class="requirements-icon">&#9881;&#65039;</span>
-            <div class="requirements-content">
-                <h4 data-i18n="support.systemRequirements">System Requirements</h4>
-                <p data-i18n-html="support.systemRequirementsValue"><strong>Platform:</strong> iOS 16.0+ / macOS 13.0+ | <strong>Devices:</strong> iPhone, iPad & Mac | <strong>Storage:</strong> iCloud (optional)</p>
-            </div>
-        </div>
+    <div class="faq-group" id="sync-privacy">
+      <div class="faq-group-head"><span class="pillar-icon tone-teal"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-cloud"/></svg></span><h2 data-i18n="help.g4.title">Sync &amp; privacy</h2></div>
+      <div class="faq-list">
+        <details class="faq-item" id="faq-icloud"><summary><span data-i18n="help.g4.q1">How does iCloud sync work?</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-chevron-down"/></svg></summary><div class="faq-body" data-i18n-html="help.g4.a1"><p>If you're signed in to iCloud, UangRumah syncs automatically between your iPhone and iPad through your private iCloud account, using Apple's CloudKit. There's no switch to turn on inside the app. Use the same Apple ID on each device. You can check the sync status in <strong>Settings → iCloud Sync</strong>.</p><p>App preferences such as language, currency and reminders are saved on each device and don't sync.</p></div></details>
+        <details class="faq-item" id="faq-no-icloud"><summary><span data-i18n="help.g4.q2">Can I use UangRumah without iCloud?</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-chevron-down"/></svg></summary><div class="faq-body" data-i18n-html="help.g4.a2"><p>Yes. If you're not signed in to iCloud, or you turn off iCloud for UangRumah in iOS Settings, your data stays only on that device. In that case, export a backup regularly from <strong>Settings → Backup &amp; Restore</strong>, because deleting the app would delete your data.</p></div></details>
+        <details class="faq-item" id="faq-family"><summary><span data-i18n="help.g4.q3">Can my family see my expenses?</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-chevron-down"/></svg></summary><div class="faq-body" data-i18n-html="help.g4.a3"><p>Only people who use your Apple ID on a device can see your synced data. Sharing a book between different Apple IDs isn't supported yet. To share numbers with someone, send them a PDF report or a CSV export.</p></div></details>
+        <details class="faq-item" id="faq-who-sees"><summary><span data-i18n="help.g4.q4">Can the UangRumah team see my data?</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-chevron-down"/></svg></summary><div class="faq-body" data-i18n-html="help.g4.a4"><p>No. We don't run servers, there's no account, and the app contains no analytics or advertising code. Your data stays on your devices and in your private iCloud account, which we can't access. Read the <a href="privacy-policy.html">Privacy Policy</a> for details.</p></div></details>
+        <details class="faq-item" id="faq-hide-numbers"><summary><span data-i18n="help.g4.q5">What is Hide Numbers?</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-chevron-down"/></svg></summary><div class="faq-body" data-i18n-html="help.g4.a5"><p>Hide Numbers blurs amounts on your screen, which is useful in public. Tap the eye icon on the Dashboard to hide or show amounts, or set the default in <strong>Settings → Preferences</strong>.</p></div></details>
+      </div>
+    </div>
 
-        <!-- FAQ Section -->
-        <div class="section-card" id="faq">
-            <div class="section-header">
-                <div class="section-icon">&#10067;</div>
-                <div class="section-title-group">
-                    <h2 data-i18n="support.faqSectionTitle">Frequently Asked Questions</h2>
-                    <p data-i18n="support.faqSectionSubtitle">Quick answers to common questions</p>
-                </div>
-            </div>
+    <div class="faq-group" id="troubleshooting">
+      <div class="faq-group-head"><span class="pillar-icon tone-coral"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-wrench"/></svg></span><h2 data-i18n="help.g5.title">Troubleshooting</h2></div>
+      <div class="faq-list">
+        <details class="faq-item" id="fix-sync"><summary><span data-i18n="help.g5.t1">My data isn't syncing between devices</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-chevron-down"/></svg></summary><div class="faq-body" data-i18n-html="help.g5.t1Body"><ol><li>Check that each device is signed in to the <strong>same Apple ID</strong>.</li><li>In iOS Settings, tap your name → <strong>iCloud</strong> and make sure UangRumah is allowed to use iCloud.</li><li>Make sure both devices are online, and that your iCloud storage isn't full.</li><li>Open UangRumah on both devices and wait a few minutes. The first sync after installing can take longer.</li><li>Check <strong>Settings → iCloud Sync</strong> in UangRumah for the current status.</li><li>Still stuck? Restart both devices, then contact us.</li></ol></div></details>
+        <details class="faq-item" id="fix-no-book"><summary><span data-i18n="help.g5.t2">I see "no book" after installing on a new device</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-chevron-down"/></svg></summary><div class="faq-body" data-i18n-html="help.g5.t2Body"><p>When you install UangRumah on another device, your books download from iCloud in the background. This can take a few minutes, especially with a lot of data.</p><ol><li>Stay connected to the internet and keep the app open for a few minutes.</li><li>Check that you're signed in to the same Apple ID as your other device.</li><li>If you don't use iCloud, create a new book, or restore one from a backup file.</li></ol></div></details>
+        <details class="faq-item" id="fix-notifications"><summary><span data-i18n="help.g5.t3">I'm not getting notifications</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-chevron-down"/></svg></summary><div class="faq-body" data-i18n-html="help.g5.t3Body"><ol><li>Open iOS <strong>Settings → Notifications → UangRumah</strong> and turn on <strong>Allow Notifications</strong>.</li><li>In UangRumah, check <strong>Settings → Preferences</strong> to make sure notifications and Expense Nudge are on.</li><li>Budget alerts need a budget: set one in <strong>Settings → Budget</strong>.</li><li>Check that a Focus mode isn't silencing UangRumah.</li></ol></div></details>
+        <details class="faq-item" id="fix-dashboard"><summary><span data-i18n="help.g5.t4">The Dashboard numbers look wrong</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-chevron-down"/></svg></summary><div class="faq-body" data-i18n-html="help.g5.t4Body"><ol><li>Check you're looking at the right book (book icon at the top).</li><li>Check the date on recent expenses, since only expenses in the current month or week count.</li><li>Check your week start day (Sunday or Monday) in the budget settings.</li><li>If you just added expenses on another device, give iCloud a moment to sync.</li></ol></div></details>
+        <details class="faq-item" id="fix-crash"><summary><span data-i18n="help.g5.t5">The app crashes or won't open</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-chevron-down"/></svg></summary><div class="faq-body" data-i18n-html="help.g5.t5Body"><ol><li>Update UangRumah to the latest version from the App Store.</li><li>Update iOS or iPadOS, then restart your device.</li><li>Make sure your device has some free storage.</li><li>Email us with your device model, iOS version and what happened just before the crash.</li></ol><p><strong>Before reinstalling:</strong> if you don't use iCloud, deleting the app also deletes your data. Export a backup first if you can.</p></div></details>
+      </div>
+    </div>
 
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span class="q-icon">Q</span>
-                    <span data-i18n="support.faq1Question">How do I get started with UangRumah?</span>
-                </div>
-                <div class="faq-answer">
-                    <p data-i18n="support.faq1Answer">Getting started is easy:</p>
-                    <ol>
-                        <li data-i18n="support.faq1Step1">Download UangRumah from the App Store</li>
-                        <li data-i18n="support.faq1Step2">Set up your monthly and weekly budgets in Settings</li>
-                        <li data-i18n="support.faq1Step3">Create custom categories and cost centers for your spending</li>
-                        <li data-i18n="support.faq1Step4">Start adding expenses by tapping the "+" button</li>
-                        <li data-i18n="support.faq1Step5">Enable expense nudge reminders to stay on track</li>
-                    </ol>
-                </div>
-            </div>
+    <div class="faq-list" style="margin-top:48px">
+      <div class="callout"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-devices"/></svg><div><h3 style="margin-bottom:4px" data-i18n="help.req.title">System requirements</h3><p data-i18n-html="help.req.body"><strong>iPhone or iPad</strong> with iOS or iPadOS 16 or later. iCloud is optional and is used for sync between your devices.</p></div></div>
+    </div>
+  </div>
+</section>
 
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span class="q-icon">Q</span>
-                    <span data-i18n="support.faq2Question">How does iCloud sync work?</span>
-                </div>
-                <div class="faq-answer">
-                    <p data-i18n="support.faq2Answer">iCloud sync keeps your data synchronized across all your Apple devices:</p>
-                    <ul>
-                        <li data-i18n="support.faq2Point1">Enable iCloud sync in iOS Settings > [Your Name] > iCloud</li>
-                        <li data-i18n="support.faq2Point2">Make sure UangRumah has iCloud access enabled</li>
-                        <li data-i18n="support.faq2Point3">Your expense data will automatically sync between iPhone and iPad</li>
-                        <li data-i18n="support.faq2Point4">Changes made on one device appear on others within minutes</li>
-                        <li data-i18n="support.faq2Point5">Requires active internet connection for syncing</li>
-                    </ul>
-                </div>
-            </div>
+<section class="section section--tight" style="padding-top:0">
+  <div class="container">
+    <div class="cta-panel">
+      <h2 data-i18n="help.contact.title">Still need help?</h2>
+      <p data-i18n="help.contact.lead">Email us and we'll get back to you, usually within 1–2 business days.</p>
+      <a class="btn btn-ghost" style="background:#fff;color:#0a5f5b;border-color:#fff" href="mailto:support@uangrumah.com?subject=UangRumah%20support"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-mail"/></svg><span data-i18n="common.cta.emailUs">Email us</span></a>
+    </div>
+  </div>
+</section>
 
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span class="q-icon">Q</span>
-                    <span data-i18n="support.faq3Question">Can I export my expense data?</span>
-                </div>
-                <div class="faq-answer">
-                    <p data-i18n="support.faq3Answer">Yes! UangRumah supports data export in two formats:</p>
-                    <ul>
-                        <li><strong data-i18n="support.faq3Format1">PDF Reports:</strong> <span data-i18n="support.faq3Format1Desc">Professional formatted reports with expense summaries and daily breakdowns</span></li>
-                        <li><strong data-i18n="support.faq3Format2">CSV Files:</strong> <span data-i18n="support.faq3Format2Desc">Spreadsheet-compatible format for Excel, Numbers, or Google Sheets</span></li>
-                    </ul>
-                    <p data-i18n="support.faq3HowTo">To export: Go to Settings > Export Data > Choose format and date range > Share or save the file.</p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span class="q-icon">Q</span>
-                    <span data-i18n="support.faq4Question">How do budget alerts work?</span>
-                </div>
-                <div class="faq-answer">
-                    <p data-i18n="support.faq4Answer">Budget alerts help you stay within your spending limits:</p>
-                    <ul>
-                        <li data-i18n="support.faq4Point1">Set monthly and weekly budgets in Settings</li>
-                        <li data-i18n="support.faq4Point2">Configure alert thresholds (50%, 75%, 90%, 100%)</li>
-                        <li data-i18n="support.faq4Point3">Receive notifications when you reach each threshold</li>
-                        <li data-i18n="support.faq4Point4">Alerts are calculated in real-time as you add expenses</li>
-                        <li data-i18n="support.faq4Point5">Make sure notifications are enabled in iOS Settings</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span class="q-icon">Q</span>
-                    <span data-i18n="support.faq5Question">What are cost centers and how do I use them?</span>
-                </div>
-                <div class="faq-answer">
-                    <p data-i18n="support.faq5Answer">Cost centers help you track which payment method you used for each expense:</p>
-                    <ul>
-                        <li data-i18n="support.faq5Point1">Create cost centers for bank accounts, credit cards, cash, e-wallets, etc.</li>
-                        <li data-i18n="support.faq5Point2">Assign a cost center when adding each expense</li>
-                        <li data-i18n="support.faq5Point3">View spending breakdown by cost center in the dashboard</li>
-                        <li data-i18n="support.faq5Point4">Perfect for couples managing both joint and separate accounts</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span class="q-icon">Q</span>
-                    <span data-i18n="support.faq6Question">Can I track recurring expenses like subscriptions?</span>
-                </div>
-                <div class="faq-answer">
-                    <p data-i18n="support.faq6Answer">Yes! UangRumah supports automatic recurring expense tracking:</p>
-                    <ul>
-                        <li data-i18n="support.faq6Point1">Add an expense and mark it as "Recurring"</li>
-                        <li data-i18n="support.faq6Point2">Choose frequency: Daily, Weekly, Monthly, or Yearly</li>
-                        <li data-i18n="support.faq6Point3">Set start and optional end dates</li>
-                        <li data-i18n="support.faq6Point4">The app will automatically track these expenses going forward</li>
-                        <li data-i18n="support.faq6Point5">Perfect for subscriptions, bills, and regular payments</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span class="q-icon">Q</span>
-                    <span data-i18n="support.faq7Question">What is Privacy Mode?</span>
-                </div>
-                <div class="faq-answer">
-                    <p data-i18n="support.faq7Answer">Privacy Mode helps protect your financial information in public:</p>
-                    <ul>
-                        <li><strong data-i18n="support.faq7Feature1">Dashboard Blur:</strong> <span data-i18n="support.faq7Feature1Desc">Blurs sensitive information on the main screen</span></li>
-                        <li><strong data-i18n="support.faq7Feature2">Amount Censoring:</strong> <span data-i18n="support.faq7Feature2Desc">Hides specific amounts with asterisks</span></li>
-                        <li data-i18n="support.faq7Feature3">Toggle on/off quickly from the dashboard</li>
-                        <li data-i18n="support.faq7Feature4">Set default privacy mode in Settings</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span class="q-icon">Q</span>
-                    <span data-i18n="support.faq8Question">Is my financial data secure?</span>
-                </div>
-                <div class="faq-answer">
-                    <p data-i18n="support.faq8Answer">Yes, we take security seriously:</p>
-                    <ul>
-                        <li data-i18n="support.faq8Point1">All data is stored locally on your device by default</li>
-                        <li data-i18n="support.faq8Point2">No data is sent to external servers (except your personal iCloud if enabled)</li>
-                        <li data-i18n="support.faq8Point3">Data is encrypted during iCloud sync</li>
-                        <li data-i18n="support.faq8Point4">We never share your data with third parties</li>
-                        <li data-i18n="support.faq8Point5">Use device passcode or Face ID/Touch ID for additional security</li>
-                    </ul>
-                    <p><span data-i18n="support.faq8ReadMore">Read our</span> <a href="privacy-policy.html" data-i18n="common.privacyPolicy">Privacy Policy</a> <span data-i18n="support.faq8ForDetails">for complete details.</span></p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span class="q-icon">Q</span>
-                    <span data-i18n="support.faq9Question">Does UangRumah work offline?</span>
-                </div>
-                <div class="faq-answer">
-                    <p data-i18n="support.faq9Answer">Yes! UangRumah works fully offline:</p>
-                    <ul>
-                        <li data-i18n="support.faq9Point1">Add, edit, and delete expenses without internet</li>
-                        <li data-i18n="support.faq9Point2">View all dashboard features and reports</li>
-                        <li data-i18n="support.faq9Point3">All data is stored locally on your device</li>
-                        <li data-i18n="support.faq9Point4">Internet only needed for iCloud sync (if enabled)</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span class="q-icon">Q</span>
-                    <span data-i18n="support.faq10Question">Is UangRumah free?</span>
-                </div>
-                <div class="faq-answer">
-                    <p data-i18n="support.faq10Answer">Yes! UangRumah is completely free to use with all features included. Future versions may introduce optional premium features, but we will always maintain a robust free tier.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Troubleshooting Section -->
-        <div class="section-card" id="troubleshooting">
-            <div class="section-header">
-                <div class="section-icon">&#128295;</div>
-                <div class="section-title-group">
-                    <h2 data-i18n="support.troubleshootingSectionTitle">Troubleshooting Guide</h2>
-                    <p data-i18n="support.troubleshootingSectionSubtitle">Step-by-step solutions for common issues</p>
-                </div>
-            </div>
-
-            <div class="troubleshooting-item">
-                <h3><span>&#128260;</span> <span data-i18n="support.trouble1Title">iCloud Sync Not Working</span></h3>
-                <p data-i18n="support.trouble1Desc">If your data isn't syncing between devices, try these steps:</p>
-                <ol>
-                    <li data-i18n="support.trouble1Step1">Verify you're signed in to the same iCloud account on all devices</li>
-                    <li data-i18n="support.trouble1Step2">Check iOS Settings > [Your Name] > iCloud and ensure UangRumah is enabled</li>
-                    <li data-i18n="support.trouble1Step3">Make sure you have an active internet connection</li>
-                    <li data-i18n="support.trouble1Step4">Check available iCloud storage (Settings > [Your Name] > iCloud > Manage Storage)</li>
-                    <li data-i18n="support.trouble1Step5">Force close and reopen the app on both devices</li>
-                    <li data-i18n="support.trouble1Step6">Try toggling iCloud sync off and on again</li>
-                    <li data-i18n="support.trouble1Step7">Restart your device</li>
-                </ol>
-            </div>
-
-            <div class="troubleshooting-item">
-                <h3><span>&#128276;</span> <span data-i18n="support.trouble2Title">Notifications Not Appearing</span></h3>
-                <p data-i18n="support.trouble2Desc">If you're not receiving budget alerts or expense nudges:</p>
-                <ol>
-                    <li data-i18n="support.trouble2Step1">Go to iOS Settings > Notifications > UangRumah</li>
-                    <li data-i18n="support.trouble2Step2">Ensure "Allow Notifications" is enabled</li>
-                    <li data-i18n="support.trouble2Step3">Check that alert styles are configured (Lock Screen, Notification Center, Banners)</li>
-                    <li data-i18n="support.trouble2Step4">Verify notification settings within the UangRumah app (Settings > Notifications)</li>
-                    <li data-i18n="support.trouble2Step5">Make sure Do Not Disturb / Focus mode isn't blocking notifications</li>
-                    <li data-i18n="support.trouble2Step6">Check that you've set up budget thresholds or reminder schedules</li>
-                </ol>
-            </div>
-
-            <div class="troubleshooting-item">
-                <h3><span>&#128202;</span> <span data-i18n="support.trouble3Title">Dashboard Data Not Updating</span></h3>
-                <p data-i18n="support.trouble3Desc">If your dashboard shows outdated information:</p>
-                <ol>
-                    <li data-i18n="support.trouble3Step1">Pull down on the dashboard to refresh manually</li>
-                    <li data-i18n="support.trouble3Step2">Close and reopen the app completely</li>
-                    <li data-i18n="support.trouble3Step3">Check if expenses were added to the correct date</li>
-                    <li data-i18n="support.trouble3Step4">Verify your budget period settings (monthly vs weekly)</li>
-                    <li data-i18n="support.trouble3Step5">If using iCloud sync, wait a few minutes for synchronization</li>
-                </ol>
-            </div>
-
-            <div class="troubleshooting-item">
-                <h3><span>&#128190;</span> <span data-i18n="support.trouble4Title">Data Not Saving</span></h3>
-                <p data-i18n="support.trouble4Desc">If your expenses or changes aren't being saved:</p>
-                <ol>
-                    <li data-i18n="support.trouble4Step1">Make sure all required fields are filled in when adding expenses</li>
-                    <li data-i18n="support.trouble4Step2">Check available device storage (Settings > General > iPhone Storage)</li>
-                    <li data-i18n="support.trouble4Step3">Ensure the app has necessary permissions in iOS Settings</li>
-                    <li data-i18n="support.trouble4Step4">Update to the latest version of UangRumah from the App Store</li>
-                    <li data-i18n="support.trouble4Step5">Restart the app and try again</li>
-                    <li data-i18n="support.trouble4Step6">If problem persists, export your data and contact support</li>
-                </ol>
-            </div>
-
-            <div class="troubleshooting-item">
-                <h3><span>&#128241;</span> <span data-i18n="support.trouble5Title">App Crashes or Freezes</span></h3>
-                <p data-i18n="support.trouble5Desc">If UangRumah is unstable or crashing:</p>
-                <ol>
-                    <li data-i18n="support.trouble5Step1">Force close the app and reopen it</li>
-                    <li data-i18n="support.trouble5Step2">Restart your iPhone or iPad</li>
-                    <li data-i18n="support.trouble5Step3">Update to the latest iOS version (Settings > General > Software Update)</li>
-                    <li data-i18n="support.trouble5Step4">Update UangRumah to the latest version from the App Store</li>
-                    <li data-i18n="support.trouble5Step5">Free up device storage if running low</li>
-                    <li data-i18n="support.trouble5Step6">If crashes persist, export your data and reinstall the app</li>
-                    <li data-i18n="support.trouble5Step7">Report the issue to our support team with crash details</li>
-                </ol>
-            </div>
-
-            <div class="troubleshooting-item">
-                <h3><span>&#128269;</span> <span data-i18n="support.trouble6Title">Missing Expenses</span></h3>
-                <p data-i18n="support.trouble6Desc">If you can't find expenses you previously added:</p>
-                <ol>
-                    <li data-i18n="support.trouble6Step1">Use the search function to find specific expenses</li>
-                    <li data-i18n="support.trouble6Step2">Check date filters - expenses may be outside your current view</li>
-                    <li data-i18n="support.trouble6Step3">Look in the expense history or version history</li>
-                    <li data-i18n="support.trouble6Step4">If using iCloud sync, check on another device</li>
-                    <li data-i18n="support.trouble6Step5">Pull to refresh the expense list</li>
-                    <li data-i18n="support.trouble6Step6">Review if expenses were accidentally deleted (check recently deleted if available)</li>
-                </ol>
-            </div>
-
-            <div class="troubleshooting-item">
-                <h3><span>&#128228;</span> <span data-i18n="support.trouble7Title">Export Problems</span></h3>
-                <p data-i18n="support.trouble7Desc">If you're having issues exporting data:</p>
-                <ol>
-                    <li data-i18n="support.trouble7Step1">Ensure you have expenses in the selected date range</li>
-                    <li data-i18n="support.trouble7Step2">Check available device storage for PDF/CSV generation</li>
-                    <li data-i18n="support.trouble7Step3">Try a smaller date range if exporting large amounts of data</li>
-                    <li data-i18n="support.trouble7Step4">Make sure you have apps that can handle PDF or CSV files</li>
-                    <li data-i18n="support.trouble7Step5">Try a different export format (PDF vs CSV)</li>
-                    <li data-i18n="support.trouble7Step6">Update the app to the latest version</li>
-                </ol>
-            </div>
-
-        </div>
-
-        <!-- Contact CTA -->
-        <div class="contact-cta">
-            <h2 data-i18n="support.ctaTitle">Still Need Help?</h2>
-            <p data-i18n="support.ctaSubtitle">Our support team is here to assist you with any questions or issues.</p>
-            <a href="contact.html" class="contact-button" data-i18n="support.ctaButton">Contact Support</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <a href="index.html" class="logo" style="color: white;">
-                        <img src="assets/images/icon.png" alt="UangRumah Logo" class="logo-icon">
-                        <span>UangRumah</span>
-                    </a>
-                    <p data-i18n="home.footerDesc">Your partner for achieving 2026 financial goals. Privacy-first expense tracking for Indonesian households.</p>
-                </div>
-
-                <div class="footer-column">
-                    <h4 data-i18n="home.footerProduct">Product</h4>
-                    <ul>
-                        <li><a href="index.html#features" data-i18n="nav.features">Features</a></li>
-                        <li><a href="index.html#how-it-works" data-i18n="nav.howItWorks">How It Works</a></li>
-                        <li><a href="index.html#specs" data-i18n="nav.requirements">Requirements</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h4 data-i18n="home.footerSupport">Support</h4>
-                    <ul>
-                        <li><a href="support.html" data-i18n="common.support">Help Center</a></li>
-                        <li><a href="contact.html" data-i18n="common.contact">Contact Us</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h4 data-i18n="home.footerLegal">Legal</h4>
-                    <ul>
-                        <li><a href="privacy-policy.html" data-i18n="common.privacyPolicy">Privacy Policy</a></li>
-                        <li><a href="terms-conditions.html" data-i18n="common.termsConditions">Terms & Conditions</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2025 UangRumah. <span data-i18n="common.allRightsReserved">All rights reserved</span>.</p>
-                <p data-i18n="home.footerMadeWith">Made with care in Jakarta, Indonesia</p>
-            </div>
-            <div class="footer-disclaimer">
-                <p data-i18n="home.footerAppleDisclaimer">iCloud is a service provided by Apple Inc. Apple, the Apple logo, iPhone, iPad, Mac, and macOS are trademarks of Apple Inc.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="scripts/common.js"></script>
-    <script src="translations/index.js"></script>
-    <script src="translations/en.js"></script>
-    <script src="translations/id.js"></script>
-    <script src="translations/ms.js"></script>
-    <script src="language-switcher.js"></script>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html"><img src="assets/images/logo-96.png" alt="" width="36" height="36" loading="lazy"><span>UangRumah</span></a>
+        <p data-i18n="common.footer.tagline">A simple, private expense tracker for households and side businesses. Free on iPhone and iPad.</p>
+        <a class="appstore-btn" href="https://apps.apple.com/app/id6755369467" aria-label="Download UangRumah on the App Store" data-i18n-attr="aria-label:common.cta.appStoreLabel"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-apple"/></svg><span><small data-i18n="common.cta.downloadOn">Download on the</small><strong data-i18n="common.cta.appStore">App Store</strong></span></a>
+      </div>
+      <div>
+        <h2 data-i18n="common.footer.product">Product</h2>
+        <ul>
+          <li><a href="index.html#features" data-i18n="common.footer.features">Features</a></li>
+          <li><a href="index.html#privacy" data-i18n="common.footer.privacy">Privacy</a></li>
+          <li><a href="index.html#how-it-works" data-i18n="common.footer.howItWorks">How it works</a></li>
+          <li><a href="index.html#faq" data-i18n="common.footer.faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 data-i18n="common.footer.help">Help</h2>
+        <ul>
+          <li><a href="support.html" data-i18n="common.footer.helpCenter">Help Center</a></li>
+          <li><a href="contact.html" data-i18n="common.footer.contact">Contact us</a></li>
+          <li><a href="mailto:support@uangrumah.com">support@uangrumah.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 data-i18n="common.footer.legal">Legal</h2>
+        <ul>
+          <li><a href="privacy-policy.html" data-i18n="common.footer.privacyPolicy">Privacy Policy</a></li>
+          <li><a href="terms-conditions.html" data-i18n="common.footer.terms">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span data-year>2026</span> UangRumah. <span data-i18n="common.footer.rights">All rights reserved.</span></p>
+      <p data-i18n="common.footer.madeIn">Made with care in Jakarta, Indonesia.</p>
+    </div>
+    <p class="footer-legal" data-i18n="common.footer.apple">Apple, the Apple logo, iPhone, iPad and iCloud are trademarks of Apple Inc., registered in the U.S. and other countries and regions. App Store is a service mark of Apple Inc.</p>
+  </div>
+</footer>
+<script src="translations/en.js" defer></script>
+<script src="translations/id.js" defer></script>
+<script src="translations/ms.js" defer></script>
+<script src="scripts/i18n.js" defer></script>
+<script src="scripts/main.js" defer></script>
 </body>
 </html>
