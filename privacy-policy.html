@@ -1,242 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="UangRumah Privacy Policy - Learn how we protect your financial data and respect your privacy with our privacy-first approach." data-i18n="privacy.metaDescription">
-    <title data-i18n="privacy.title">Privacy Policy - UangRumah</title>
-    <link rel="stylesheet" href="styles/common.css">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/images/icon.png">
-    <link rel="shortcut icon" type="image/png" href="assets/images/icon.png">
-
-    <!-- PWA/Mobile App Icons -->
-    <link rel="manifest" href="manifest.json">
-    <link rel="apple-touch-icon" href="assets/images/icon.png">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="UangRumah">
-    <meta name="theme-color" content="#0D7377">
-    <meta name="msapplication-TileColor" content="#0D7377">
-    <meta name="msapplication-TileImage" content="assets/images/icon.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title data-i18n="privacy.meta.title">Privacy Policy — UangRumah</title>
+<meta name="description" content="How UangRumah handles your data: stored on your device, synced through your private iCloud, no accounts, no analytics, no ads." data-i18n-attr="content:privacy.meta.description">
+<link rel="canonical" href="https://uangrumah.com/privacy-policy.html">
+<meta name="theme-color" content="#fffdf8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d1513" media="(prefers-color-scheme: dark)">
+<meta name="apple-itunes-app" content="app-id=6755369467">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UangRumah">
+<meta property="og:title" content="Privacy Policy — UangRumah" data-i18n-attr="content:privacy.meta.title">
+<meta property="og:description" content="How UangRumah handles your data: stored on your device, synced through your private iCloud, no accounts, no analytics, no ads." data-i18n-attr="content:privacy.meta.description">
+<meta property="og:url" content="https://uangrumah.com/privacy-policy.html">
+<meta property="og:image" content="https://uangrumah.com/assets/images/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="UangRumah, a simple and private expense tracker for iPhone and iPad">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:locale:alternate" content="ms_MY">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="styles/main.css">
+<script>
+(function(){var d=document.documentElement,l=null,s;d.classList.add('js');
+try{s=localStorage.getItem('uangrumah_theme');if(s==='dark'||s==='light')d.setAttribute('data-theme',s);}catch(e){}
+try{l=new URLSearchParams(location.search).get('lang')||localStorage.getItem('uangrumah_language');}catch(e){}
+if(['en','id','ms'].indexOf(l)<0){l='en';var n=navigator.languages||[navigator.language||''];
+for(var i=0;i<n.length;i++){var c=String(n[i]).toLowerCase().slice(0,2);if(c==='id'||c==='in'){l='id';break;}if(c==='ms'){l='ms';break;}if(c==='en'){break;}}}
+d.setAttribute('data-lang',l);if(l!=='en'){d.lang=l;d.classList.add('i18n-pending');setTimeout(function(){d.classList.remove('i18n-pending');},1500);}})();
+</script>
 </head>
-<body data-page="privacy" class="bg-light">
-    <!-- Header -->
-    <header>
-        <nav>
-            <a href="index.html" class="logo">
-                <img src="assets/images/icon.png" alt="UangRumah Logo" class="logo-icon">
-                <span>UangRumah</span>
-            </a>
-            <div class="nav-right">
-                <ul class="nav-links">
-                    <li><a href="index.html" data-i18n="common.home">Home</a></li>
-                    <li><a href="index.html#features" data-i18n="nav.features">Features</a></li>
-                    <li><a href="support.html" data-i18n="common.support">Support</a></li>
-                    <li><a href="contact.html" data-i18n="common.contact">Contact</a></li>
-                </ul>
-                <select class="language-switcher" id="language-switcher" title="Select Language">
-                    <option value="en">English</option>
-                    <option value="id">Indonesian</option>
-                    <option value="ms">Bahasa Melayu</option>
-                </select>
-                <button class="mobile-menu-btn" aria-label="Menu">&#9776;</button>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Mobile Menu Overlay -->
-    <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
-
-    <!-- Mobile Menu Drawer -->
-    <div class="mobile-menu" id="mobile-menu">
-        <div class="mobile-menu-header">
-            <a href="index.html" class="logo">
-                <img src="assets/images/icon.png" alt="UangRumah Logo" class="logo-icon">
-                <span>UangRumah</span>
-            </a>
-            <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close menu">&times;</button>
-        </div>
-        <nav class="mobile-menu-nav">
-            <ul>
-                <li><a href="index.html" data-i18n="common.home">Home</a></li>
-                <li><a href="privacy-policy.html" data-i18n="common.privacy">Privacy</a></li>
-                <li><a href="terms-conditions.html" data-i18n="common.terms">Terms</a></li>
-                <li><a href="support.html" data-i18n="common.support">Support</a></li>
-                <li><a href="contact.html" data-i18n="common.contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="mobile-menu-footer">
-            <a href="mailto:support@uangrumah.com" class="mobile-menu-cta" data-i18n="contact.emailSupportTitle">Email Support</a>
-        </div>
+<body>
+<a class="skip-link" href="#main" data-i18n="common.skip">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html"><img src="assets/images/logo-96.png" alt="" width="36" height="36"><span>UangRumah</span></a>
+    <nav class="nav-main" aria-label="Main" data-i18n-attr="aria-label:common.mainNav">
+      <ul class="nav-links">
+        <li><a href="index.html#features" data-i18n="common.nav.features">Features</a></li>
+        <li><a href="index.html#privacy" data-i18n="common.nav.privacy">Privacy</a></li>
+        <li><a href="index.html#how-it-works" data-i18n="common.nav.howItWorks">How it works</a></li>
+        <li><a href="support.html" data-i18n="common.nav.help">Help</a></li>
+        <li><a href="contact.html" data-i18n="common.nav.contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-tools">
+      <div class="lang-switch" role="group" aria-label="Language" data-i18n-attr="aria-label:common.language"><button type="button" data-set-lang="en" lang="en" aria-pressed="true" title="English">EN</button><button type="button" data-set-lang="id" lang="id" aria-pressed="false" title="Bahasa Indonesia">ID</button><button type="button" data-set-lang="ms" lang="ms" aria-pressed="false" title="Bahasa Melayu">MS</button></div>
+      <button type="button" class="icon-btn theme-toggle" data-theme-toggle aria-label="Switch light or dark theme" data-i18n-attr="aria-label:common.theme"><svg class="icon i-sun" aria-hidden="true"><use href="assets/icons.svg#i-sun"/></svg><svg class="icon i-moon" aria-hidden="true"><use href="assets/icons.svg#i-moon"/></svg></button>
+      <a class="btn btn-primary btn-sm" href="https://apps.apple.com/app/id6755369467" data-i18n="common.cta.getApp">Get the app</a>
+      <button type="button" class="icon-btn menu-btn" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu" data-i18n-attr="aria-label:common.menu"><svg class="icon i-open" aria-hidden="true"><use href="assets/icons.svg#i-menu"/></svg><svg class="icon i-close" aria-hidden="true" style="display:none"><use href="assets/icons.svg#i-x"/></svg></button>
     </div>
-
-    <!-- Page Hero -->
-    <section class="page-hero">
-        <div class="page-hero-content">
-            <h1 data-i18n="privacy.heroTitle">Privacy Policy</h1>
-            <p data-i18n="privacy.heroSubtitle">Your privacy matters. Learn how we protect your data with our privacy-first approach.</p>
-            <div class="last-updated-badge">
-                <span data-i18n="privacy.lastUpdated">Last Updated</span>: November 29, 2025
-            </div>
-        </div>
-    </section>
-
-    <!-- Main Content -->
-    <section class="content narrow">
-        <!-- Key Privacy Points -->
-        <div class="key-points">
-            <div class="key-point-card">
-                <div class="key-point-icon">&#128190;</div>
-                <h3 data-i18n="privacy.keyPoint1Title">Local-First Storage</h3>
-                <p data-i18n="privacy.keyPoint1Desc">All your financial data is stored locally on your device by default. No external servers, no cloud databases we control.</p>
-            </div>
-            <div class="key-point-card">
-                <div class="key-point-icon">&#128683;</div>
-                <h3 data-i18n="privacy.keyPoint2Title">Zero Data Collection</h3>
-                <p data-i18n="privacy.keyPoint2Desc">We don't collect analytics, usage data, or any personal information. No tracking pixels, no third-party SDKs.</p>
-            </div>
-            <div class="key-point-card">
-                <div class="key-point-icon">&#9729;&#65039;</div>
-                <h3 data-i18n="privacy.keyPoint3Title">Optional iCloud Sync</h3>
-                <p data-i18n="privacy.keyPoint3Desc">If you enable iCloud sync, data goes to your personal iCloud account - controlled by Apple and your Apple ID, not us.</p>
-            </div>
-            <div class="key-point-card">
-                <div class="key-point-icon">&#128683;</div>
-                <h3 data-i18n="privacy.keyPoint4Title">No Ads, No Selling</h3>
-                <p data-i18n="privacy.keyPoint4Desc">We will never show ads or sell your data. Your financial information is never monetized.</p>
-            </div>
-        </div>
-
-        <div class="content-card">
-            <h2><span class="section-icon">&#128274;</span> <span data-i18n="privacy.section1Title">Our Privacy Commitment</span></h2>
-            <p data-i18n="privacy.section1Content">UangRumah is built with privacy at its core. We believe your financial data belongs to you - and only you. Unlike most apps, we don't collect, track, or sell your personal information.</p>
-
-            <h2><span class="section-icon">&#128190;</span> <span data-i18n="privacy.dataStoredTitle">Data Stored on Your Device</span></h2>
-            <p data-i18n="privacy.dataStoredIntro">UangRumah stores the following information locally on your device:</p>
-            <ul>
-                <li data-i18n="privacy.dataStored1">Expense records (name, amount, vendor, date, category, cost center)</li>
-                <li data-i18n="privacy.dataStored2">Budget settings and alert thresholds</li>
-                <li data-i18n="privacy.dataStored3">Custom categories and cost centers you create</li>
-                <li data-i18n="privacy.dataStored4">Vendor history for suggestions</li>
-                <li data-i18n="privacy.dataStored5">App preferences and settings</li>
-                <li data-i18n="privacy.dataStored6">Recurring expense configurations</li>
-            </ul>
-
-            <h2><span class="section-icon">&#9729;&#65039;</span> <span data-i18n="privacy.icloudTitle">iCloud Synchronization</span></h2>
-            <p data-i18n="privacy.icloudContent">When you enable iCloud sync, your expense data is backed up to your personal iCloud account. This allows you to access your data across multiple Apple devices. Important points:</p>
-            <ul>
-                <li data-i18n="privacy.icloud1">iCloud sync is disabled by default - you must explicitly enable it</li>
-                <li data-i18n="privacy.icloud2">Data is encrypted in transit and at rest by Apple</li>
-                <li data-i18n="privacy.icloud3">We have no access to your iCloud data</li>
-                <li data-i18n="privacy.icloud4">Your data is subject to Apple's Privacy Policy</li>
-                <li data-i18n="privacy.icloud5">You can disable sync or delete iCloud data anytime through iOS Settings</li>
-            </ul>
-
-            <h2><span class="section-icon">&#128683;</span> <span data-i18n="privacy.neverTitle">What We Never Do</span></h2>
-            <div class="highlight-box success">
-                <p><strong>Zero Third-Party Sharing:</strong> We do not sell, rent, trade, or share your personal or financial data with any third parties.</p>
-            </div>
-            <ul>
-                <li data-i18n="privacy.never1">Collect personal identification information</li>
-                <li data-i18n="privacy.never2">Track your location or behavior</li>
-                <li data-i18n="privacy.never3">Use analytics services (Google Analytics, Firebase, etc.)</li>
-                <li data-i18n="privacy.never4">Include advertising SDKs or networks</li>
-                <li data-i18n="privacy.never5">Sell or share data with third parties</li>
-                <li data-i18n="privacy.never6">Send data to our servers (we don't have any)</li>
-            </ul>
-
-            <h2><span class="section-icon">&#128272;</span> <span data-i18n="privacy.rightsTitle">Your Data Rights</span></h2>
-            <p data-i18n="privacy.rightsIntro">You have complete control over your data:</p>
-            <ul>
-                <li data-i18n="privacy.rights1">Access: View all your data within the app anytime</li>
-                <li data-i18n="privacy.rights2">Export: Download your data in PDF or CSV format</li>
-                <li data-i18n="privacy.rights3">Modify: Edit or update any record at any time</li>
-                <li data-i18n="privacy.rights4">Delete: Remove individual items or all data</li>
-                <li data-i18n="privacy.rights5">Portability: Take your data with you through exports</li>
-            </ul>
-
-            <h2><span class="section-icon">&#128274;</span> <span data-i18n="privacy.securityTitle">Security Measures</span></h2>
-            <p data-i18n="privacy.securityIntro">We take multiple steps to keep your data secure:</p>
-            <ul>
-                <li data-i18n="privacy.security1">iOS secure containers protect local storage</li>
-                <li data-i18n="privacy.security2">iCloud encryption for synced data</li>
-                <li data-i18n="privacy.security3">Privacy Mode to hide sensitive information in public</li>
-                <li data-i18n="privacy.security4">No vulnerable backend servers to hack</li>
-                <li data-i18n="privacy.security5">Regular updates to address security concerns</li>
-            </ul>
-
-            <div class="contact-section">
-                <h3 data-i18n="privacy.contactTitle">Questions About Privacy?</h3>
-                <p data-i18n="privacy.contactContent">If you have any questions about our privacy practices, please contact us at support@uangrumah.com. We respond within 7 business days.</p>
-                <p>
-                    <strong>Email:</strong> <a href="mailto:support@uangrumah.com" class="contact-link">support@uangrumah.com</a><br>
-                    <strong>Website:</strong> <a href="https://uangrumah.com" class="contact-link" target="_blank">uangrumah.com</a>
-                </p>
-            </div>
-
-            <div class="highlight-box">
-                <p><strong><span data-i18n="privacy.effectiveDate">Effective Date</span>:</strong> November 29, 2025<br>
-                <strong><span data-i18n="privacy.version">App Version</span>:</strong> 1.0</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <a href="index.html" class="logo" style="color: white;">
-                        <img src="assets/images/icon.png" alt="UangRumah Logo" class="logo-icon">
-                        <span>UangRumah</span>
-                    </a>
-                    <p data-i18n="home.footerDesc">Your partner for achieving 2026 financial goals. Privacy-first expense tracking for Indonesian households.</p>
-                </div>
-
-                <div class="footer-column">
-                    <h4 data-i18n="home.footerProduct">Product</h4>
-                    <ul>
-                        <li><a href="index.html#features" data-i18n="nav.features">Features</a></li>
-                        <li><a href="index.html#how-it-works" data-i18n="nav.howItWorks">How It Works</a></li>
-                        <li><a href="index.html#specs" data-i18n="nav.requirements">Requirements</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h4 data-i18n="home.footerSupport">Support</h4>
-                    <ul>
-                        <li><a href="support.html" data-i18n="common.support">Help Center</a></li>
-                        <li><a href="contact.html" data-i18n="common.contact">Contact Us</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h4 data-i18n="home.footerLegal">Legal</h4>
-                    <ul>
-                        <li><a href="privacy-policy.html" data-i18n="common.privacyPolicy">Privacy Policy</a></li>
-                        <li><a href="terms-conditions.html" data-i18n="common.termsConditions">Terms & Conditions</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2025 UangRumah. <span data-i18n="common.allRightsReserved">All rights reserved</span>.</p>
-                <p data-i18n="home.footerMadeWith">Made with care in Jakarta, Indonesia</p>
-            </div>
-            <div class="footer-disclaimer">
-                <p data-i18n="home.footerAppleDisclaimer">iCloud is a service provided by Apple Inc. Apple, the Apple logo, iPhone, iPad, Mac, and macOS are trademarks of Apple Inc.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="scripts/common.js"></script>
-    <script src="translations/index.js"></script>
-    <script src="translations/en.js"></script>
-    <script src="translations/id.js"></script>
-    <script src="translations/ms.js"></script>
-    <script src="language-switcher.js"></script>
+  </div>
+</header>
+<div class="mobile-menu" id="mobile-menu" inert>
+  <nav aria-label="Main" data-i18n-attr="aria-label:common.mainNav">
+    <ul>
+      <li><a href="index.html#features"><span data-i18n="common.nav.features">Features</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow-right"/></svg></a></li>
+      <li><a href="index.html#privacy"><span data-i18n="common.nav.privacy">Privacy</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow-right"/></svg></a></li>
+      <li><a href="index.html#how-it-works"><span data-i18n="common.nav.howItWorks">How it works</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow-right"/></svg></a></li>
+      <li><a href="support.html"><span data-i18n="common.nav.help">Help</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow-right"/></svg></a></li>
+      <li><a href="contact.html"><span data-i18n="common.nav.contact">Contact</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow-right"/></svg></a></li>
+    </ul>
+  </nav>
+  <div class="row"><span class="muted" data-i18n="common.language">Language</span><div class="lang-switch" role="group" aria-label="Language" data-i18n-attr="aria-label:common.language"><button type="button" data-set-lang="en" lang="en" aria-pressed="true" title="English">EN</button><button type="button" data-set-lang="id" lang="id" aria-pressed="false" title="Bahasa Indonesia">ID</button><button type="button" data-set-lang="ms" lang="ms" aria-pressed="false" title="Bahasa Melayu">MS</button></div></div>
+  <a class="appstore-btn" href="https://apps.apple.com/app/id6755369467" aria-label="Download UangRumah on the App Store" data-i18n-attr="aria-label:common.cta.appStoreLabel"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-apple"/></svg><span><small data-i18n="common.cta.downloadOn">Download on the</small><strong data-i18n="common.cta.appStore">App Store</strong></span></a>
+</div>
+<main id="main">
+<section class="page-hero">
+  <div class="container">
+    <span class="badge"><span class="badge-dot"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-shield"/></svg></span><span data-i18n="privacy.badge">Legal</span></span>
+    <h1 data-i18n="privacy.title">Privacy Policy</h1>
+    <p class="lead" data-i18n="privacy.lead">The short version: your financial data stays on your devices and in your own iCloud. We don't collect it, see it or sell it.</p>
+    <p class="legal-meta"><span data-i18n="privacy.updated">Last updated: 22 November 2026</span><span aria-hidden="true">·</span><span data-i18n="privacy.effective">Effective: 22 November 2026</span></p>
+  </div>
+</section>
+<section class="section" style="padding-top:24px">
+  <div class="container legal-layout">
+    <aside class="toc" aria-labelledby="toc-title">
+      <strong id="toc-title" data-i18n="privacy.toc">On this page</strong>
+      <nav aria-labelledby="toc-title">
+        <ol>
+          <li><a href="#s1" data-i18n="privacy.s1.title">Summary</a></li>
+          <li><a href="#s2" data-i18n="privacy.s2.title">Who we are</a></li>
+          <li><a href="#s3" data-i18n="privacy.s3.title">Information we collect</a></li>
+          <li><a href="#s4" data-i18n="privacy.s4.title">Data stored on your device</a></li>
+          <li><a href="#s5" data-i18n="privacy.s5.title">iCloud sync</a></li>
+          <li><a href="#s6" data-i18n="privacy.s6.title">Notifications</a></li>
+          <li><a href="#s7" data-i18n="privacy.s7.title">Exports and backups</a></li>
+          <li><a href="#s8" data-i18n="privacy.s8.title">What we never do</a></li>
+          <li><a href="#s9" data-i18n="privacy.s9.title">Your choices and rights</a></li>
+          <li><a href="#s10" data-i18n="privacy.s10.title">Children</a></li>
+          <li><a href="#s11" data-i18n="privacy.s11.title">This website</a></li>
+          <li><a href="#s12" data-i18n="privacy.s12.title">Changes to this policy</a></li>
+          <li><a href="#s13" data-i18n="privacy.s13.title">Contact</a></li>
+        </ol>
+      </nav>
+    </aside>
+    <article class="prose">
+        <section id="s1"><h2 data-i18n="privacy.s1.title">Summary</h2><div data-i18n-html="privacy.s1.body"><div class="summary-grid"><div><b>We collect nothing</b><p>No account, no analytics, no tracking and no advertising in the app.</p></div><div><b>Stored on your device</b><p>Your records are saved on your iPhone or iPad and work offline.</p></div><div><b>Synced through your iCloud</b><p>When you're signed in to iCloud, data syncs through your private iCloud account. We can't access it.</p></div><div><b>No ads, no selling</b><p>Your financial information is never shown to advertisers, shared or sold.</p></div></div></div></section>
+        <section id="s2"><h2 data-i18n="privacy.s2.title">Who we are</h2><div data-i18n-html="privacy.s2.body"><p>UangRumah is an independent app developed by Prayudi Satriyo in Jakarta, Indonesia ("we", "us"). This policy explains how the UangRumah app for iPhone and iPad and the website uangrumah.com handle information. If you have questions, email <a href="mailto:support@uangrumah.com">support@uangrumah.com</a>.</p></div></section>
+        <section id="s3"><h2 data-i18n="privacy.s3.title">Information we collect</h2><div data-i18n-html="privacy.s3.body"><p><strong>We don't collect personal information.</strong> UangRumah has no sign-up, we don't operate any servers that receive your data, and the app contains no analytics, crash-reporting, advertising or other third-party SDKs.</p><p>If you have chosen to share analytics with app developers in iOS (<strong>Settings → Privacy &amp; Security → Analytics &amp; Improvements</strong>), Apple may give us anonymous, aggregated crash and usage statistics. This is controlled by Apple and you can turn it off at any time.</p><p>If you email us, we receive your email address and whatever you choose to include, and use it only to reply to you.</p></div></section>
+        <section id="s4"><h2 data-i18n="privacy.s4.title">Data stored on your device</h2><div data-i18n-html="privacy.s4.body"><p>To work, the app stores the following on your device:</p><ul><li>Expenses: name, amount, vendor, date, category, cost center and notes</li><li>Edit history of expenses</li><li>Books, budgets and alert thresholds</li><li>Categories, cost centers and vendors you create</li><li>Recurring expense settings</li><li>App preferences such as language, currency, appearance, reminders and Hide Numbers</li></ul><p>This data is protected by iOS security, including your device passcode.</p></div></section>
+        <section id="s5"><h2 data-i18n="privacy.s5.title">iCloud sync</h2><div data-i18n-html="privacy.s5.body"><p>UangRumah uses Apple's CloudKit to keep your books in sync across devices signed in to the same Apple ID. <strong>Sync happens automatically when you're signed in to iCloud and iCloud is allowed for UangRumah.</strong> There is no separate switch inside the app.</p><ul><li>Your data is stored in your <strong>private</strong> iCloud database, which only your Apple ID can access. We have no access to it.</li><li>Apple encrypts iCloud data in transit and at rest. iCloud is governed by Apple's Privacy Policy.</li><li>To stop syncing, open iOS Settings, tap your name → <strong>iCloud</strong>, and turn off iCloud for UangRumah. Your data then stays only on that device.</li><li>App preferences (language, currency, appearance, reminders) stay on each device and are not synced.</li></ul></div></section>
+        <section id="s6"><h2 data-i18n="privacy.s6.title">Notifications</h2><div data-i18n-html="privacy.s6.body"><p>Budget alerts, Expense Nudge reminders and the monthly summary are scheduled locally on your device. Apple may send the app silent background notifications that tell it your iCloud data has changed. These contain no personal content.</p></div></section>
+        <section id="s7"><h2 data-i18n="privacy.s7.title">Exports and backups</h2><div data-i18n-html="privacy.s7.body"><p>PDF reports, CSV exports and backup files are created on your device and saved or shared wherever you choose (for example the Files app, email or messaging apps). Once you share a file, its privacy depends on where you put it.</p></div></section>
+        <section id="s8"><h2 data-i18n="privacy.s8.title">What we never do</h2><div data-i18n-html="privacy.s8.body"><ul><li>Ask you to create an account or collect your name, email or phone number in the app</li><li>Track your location or your behaviour across apps and websites</li><li>Use analytics services such as Google Analytics or Firebase</li><li>Include advertising SDKs or show ads</li><li>Sell, rent or share your data with third parties</li><li>Send your financial data to our own servers (we don't have any)</li></ul></div></section>
+        <section id="s9"><h2 data-i18n="privacy.s9.title">Your choices and rights</h2><div data-i18n-html="privacy.s9.body"><p>You have full control over your data, directly in the app:</p><ul><li><strong>Access and correct:</strong> view and edit every record at any time.</li><li><strong>Export:</strong> download your data as PDF, CSV or a backup file.</li><li><strong>Delete:</strong> delete individual expenses or a whole book. Deleting the app removes local data. To remove synced data, go to iOS Settings → your name → iCloud → Manage Account Storage.</li></ul><p>Because we don't hold your data, we can't access, correct or delete it for you, but we're happy to explain how.</p></div></section>
+        <section id="s10"><h2 data-i18n="privacy.s10.title">Children</h2><div data-i18n-html="privacy.s10.body"><p>UangRumah is not directed at children under 13. We don't knowingly collect information from anyone, including children.</p></div></section>
+        <section id="s11"><h2 data-i18n="privacy.s11.title">This website</h2><div data-i18n-html="privacy.s11.body"><p>uangrumah.com is a static website hosted on GitHub Pages. It uses no cookies, no analytics and no advertising. Your language and theme choices are saved in your browser's local storage and never leave your device. GitHub may log technical information such as IP addresses for security, under GitHub's own privacy statement.</p></div></section>
+        <section id="s12"><h2 data-i18n="privacy.s12.title">Changes to this policy</h2><div data-i18n-html="privacy.s12.body"><p>If we change this policy, we'll update the date at the top of this page. If a change significantly affects how your data is handled, we'll also mention it in the app or the App Store release notes.</p></div></section>
+        <section id="s13"><h2 data-i18n="privacy.s13.title">Contact</h2><div data-i18n-html="privacy.s13.body"><p>Questions about privacy? Email <a href="mailto:support@uangrumah.com">support@uangrumah.com</a>. We aim to reply within 7 business days.</p></div></section>
+    </article>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html"><img src="assets/images/logo-96.png" alt="" width="36" height="36" loading="lazy"><span>UangRumah</span></a>
+        <p data-i18n="common.footer.tagline">A simple, private expense tracker for households and side businesses. Free on iPhone and iPad.</p>
+        <a class="appstore-btn" href="https://apps.apple.com/app/id6755369467" aria-label="Download UangRumah on the App Store" data-i18n-attr="aria-label:common.cta.appStoreLabel"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-apple"/></svg><span><small data-i18n="common.cta.downloadOn">Download on the</small><strong data-i18n="common.cta.appStore">App Store</strong></span></a>
+      </div>
+      <div>
+        <h2 data-i18n="common.footer.product">Product</h2>
+        <ul>
+          <li><a href="index.html#features" data-i18n="common.footer.features">Features</a></li>
+          <li><a href="index.html#privacy" data-i18n="common.footer.privacy">Privacy</a></li>
+          <li><a href="index.html#how-it-works" data-i18n="common.footer.howItWorks">How it works</a></li>
+          <li><a href="index.html#faq" data-i18n="common.footer.faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 data-i18n="common.footer.help">Help</h2>
+        <ul>
+          <li><a href="support.html" data-i18n="common.footer.helpCenter">Help Center</a></li>
+          <li><a href="contact.html" data-i18n="common.footer.contact">Contact us</a></li>
+          <li><a href="mailto:support@uangrumah.com">support@uangrumah.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 data-i18n="common.footer.legal">Legal</h2>
+        <ul>
+          <li><a href="privacy-policy.html" data-i18n="common.footer.privacyPolicy">Privacy Policy</a></li>
+          <li><a href="terms-conditions.html" data-i18n="common.footer.terms">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span data-year>2026</span> UangRumah. <span data-i18n="common.footer.rights">All rights reserved.</span></p>
+      <p data-i18n="common.footer.madeIn">Made with care in Jakarta, Indonesia.</p>
+    </div>
+    <p class="footer-legal" data-i18n="common.footer.apple">Apple, the Apple logo, iPhone, iPad and iCloud are trademarks of Apple Inc., registered in the U.S. and other countries and regions. App Store is a service mark of Apple Inc.</p>
+  </div>
+</footer>
+<script src="translations/en.js" defer></script>
+<script src="translations/id.js" defer></script>
+<script src="translations/ms.js" defer></script>
+<script src="scripts/i18n.js" defer></script>
+<script src="scripts/main.js" defer></script>
 </body>
 </html>

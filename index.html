@@ -1,616 +1,545 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="UangRumah - The privacy-focused expense tracker for Indonesian households. Track expenses, manage budgets, sync across devices with iCloud. Works offline, 150+ currencies available.">
-    <meta name="keywords" content="pengeluaran, anggaran, keuangan, iOS, iCloud, Indonesia, Rupiah, expense tracker, budget, household finance">
-    <title>UangRumah - Smart Expense Tracker for Indonesian Households</title>
-
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/home.css">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/images/icon.png">
-    <link rel="shortcut icon" type="image/png" href="assets/images/icon.png">
-
-    <!-- PWA/Mobile App Icons -->
-    <link rel="manifest" href="manifest.json">
-    <link rel="apple-touch-icon" href="assets/images/icon.png">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="UangRumah">
-    <meta name="theme-color" content="#0D7377">
-    <meta name="msapplication-TileColor" content="#0D7377">
-    <meta name="msapplication-TileImage" content="assets/images/icon.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title data-i18n="home.meta.title">UangRumah — Simple, private expense tracker for iPhone &amp; iPad</title>
+<meta name="description" content="Track household spending, set monthly and weekly budgets, and see what you can still spend today. Free, no ads, no tracking. Works offline and syncs through your private iCloud. In English, Bahasa Indonesia and Bahasa Melayu." data-i18n-attr="content:home.meta.description">
+<link rel="canonical" href="https://uangrumah.com/">
+<meta name="theme-color" content="#fffdf8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d1513" media="(prefers-color-scheme: dark)">
+<meta name="apple-itunes-app" content="app-id=6755369467">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UangRumah">
+<meta property="og:title" content="UangRumah — Simple, private expense tracker for iPhone &amp; iPad" data-i18n-attr="content:home.meta.title">
+<meta property="og:description" content="Track household spending, set monthly and weekly budgets, and see what you can still spend today. Free, no ads, no tracking. Works offline and syncs through your private iCloud. In English, Bahasa Indonesia and Bahasa Melayu." data-i18n-attr="content:home.meta.description">
+<meta property="og:url" content="https://uangrumah.com/">
+<meta property="og:image" content="https://uangrumah.com/assets/images/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="UangRumah, a simple and private expense tracker for iPhone and iPad">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:locale:alternate" content="ms_MY">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="styles/main.css">
+<script>
+(function(){var d=document.documentElement,l=null,s;d.classList.add('js');
+try{s=localStorage.getItem('uangrumah_theme');if(s==='dark'||s==='light')d.setAttribute('data-theme',s);}catch(e){}
+try{l=new URLSearchParams(location.search).get('lang')||localStorage.getItem('uangrumah_language');}catch(e){}
+if(['en','id','ms'].indexOf(l)<0){l='en';var n=navigator.languages||[navigator.language||''];
+for(var i=0;i<n.length;i++){var c=String(n[i]).toLowerCase().slice(0,2);if(c==='id'||c==='in'){l='id';break;}if(c==='ms'){l='ms';break;}if(c==='en'){break;}}}
+d.setAttribute('data-lang',l);if(l!=='en'){d.lang=l;d.classList.add('i18n-pending');setTimeout(function(){d.classList.remove('i18n-pending');},1500);}})();
+</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "MobileApplication", "name": "UangRumah", "operatingSystem": "iOS 16.0 or later, iPadOS 16.0 or later", "applicationCategory": "FinanceApplication", "url": "https://uangrumah.com/", "downloadUrl": "https://apps.apple.com/app/id6755369467", "image": "https://uangrumah.com/assets/images/icon-512.png", "description": "A simple, private expense tracker for households and side businesses on iPhone and iPad. Budgets, books, reports and iCloud sync, with no ads and no tracking.", "inLanguage": ["en", "id", "ms"], "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}, {"@type": "WebSite", "name": "UangRumah", "url": "https://uangrumah.com/", "inLanguage": ["en", "id", "ms"]}]}</script>
 </head>
-<body data-page="home">
-    <!-- Header -->
-    <header>
-        <nav>
-            <a href="index.html" class="logo">
-                <img src="assets/images/icon.png" alt="UangRumah Logo" class="logo-icon">
-                <span>UangRumah</span>
-            </a>
-            <div class="nav-right">
-                <ul class="nav-links">
-                    <li><a href="#features" data-i18n="nav.features">Features</a></li>
-                    <li><a href="#how-it-works" data-i18n="nav.howItWorks">How It Works</a></li>
-                    <li><a href="#specs" data-i18n="nav.requirements">Requirements</a></li>
-                    <li><a href="support.html" data-i18n="common.support">Support</a></li>
-                </ul>
-                <select class="language-switcher" id="language-switcher" title="Select Language">
-                    <option value="en">English</option>
-                    <option value="id">Indonesian</option>
-                    <option value="ms">Bahasa Melayu</option>
-                </select>
-                <button class="mobile-menu-btn" aria-label="Menu">&#9776;</button>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Mobile Menu Overlay -->
-    <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
-
-    <!-- Mobile Menu Drawer -->
-    <div class="mobile-menu" id="mobile-menu">
-        <div class="mobile-menu-header">
-            <a href="index.html" class="logo">
-                <img src="assets/images/icon.png" alt="UangRumah Logo" class="logo-icon">
-                <span>UangRumah</span>
-            </a>
-            <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close menu">&times;</button>
-        </div>
-        <nav class="mobile-menu-nav">
-            <ul>
-                <li><a href="#features" data-i18n="nav.features">Features</a></li>
-                <li><a href="#how-it-works" data-i18n="nav.howItWorks">How It Works</a></li>
-                <li><a href="#specs" data-i18n="nav.requirements">Requirements</a></li>
-                <li><a href="support.html" data-i18n="common.support">Support</a></li>
-            </ul>
-        </nav>
-        <div class="mobile-menu-footer">
-            <a href="https://apps.apple.com/id/app/uangrumah/id6755369467" class="mobile-menu-cta" data-i18n="home.ctaButton">Get the App</a>
-        </div>
+<body>
+<a class="skip-link" href="#main" data-i18n="common.skip">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html"><img src="assets/images/logo-96.png" alt="" width="36" height="36"><span>UangRumah</span></a>
+    <nav class="nav-main" aria-label="Main" data-i18n-attr="aria-label:common.mainNav">
+      <ul class="nav-links">
+        <li><a href="index.html#features" data-i18n="common.nav.features">Features</a></li>
+        <li><a href="index.html#privacy" data-i18n="common.nav.privacy">Privacy</a></li>
+        <li><a href="index.html#how-it-works" data-i18n="common.nav.howItWorks">How it works</a></li>
+        <li><a href="support.html" data-i18n="common.nav.help">Help</a></li>
+        <li><a href="contact.html" data-i18n="common.nav.contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-tools">
+      <div class="lang-switch" role="group" aria-label="Language" data-i18n-attr="aria-label:common.language"><button type="button" data-set-lang="en" lang="en" aria-pressed="true" title="English">EN</button><button type="button" data-set-lang="id" lang="id" aria-pressed="false" title="Bahasa Indonesia">ID</button><button type="button" data-set-lang="ms" lang="ms" aria-pressed="false" title="Bahasa Melayu">MS</button></div>
+      <button type="button" class="icon-btn theme-toggle" data-theme-toggle aria-label="Switch light or dark theme" data-i18n-attr="aria-label:common.theme"><svg class="icon i-sun" aria-hidden="true"><use href="assets/icons.svg#i-sun"/></svg><svg class="icon i-moon" aria-hidden="true"><use href="assets/icons.svg#i-moon"/></svg></button>
+      <a class="btn btn-primary btn-sm" href="https://apps.apple.com/app/id6755369467" data-i18n="common.cta.getApp">Get the app</a>
+      <button type="button" class="icon-btn menu-btn" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu" data-i18n-attr="aria-label:common.menu"><svg class="icon i-open" aria-hidden="true"><use href="assets/icons.svg#i-menu"/></svg><svg class="icon i-close" aria-hidden="true" style="display:none"><use href="assets/icons.svg#i-x"/></svg></button>
+    </div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobile-menu" inert>
+  <nav aria-label="Main" data-i18n-attr="aria-label:common.mainNav">
+    <ul>
+      <li><a href="index.html#features"><span data-i18n="common.nav.features">Features</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow-right"/></svg></a></li>
+      <li><a href="index.html#privacy"><span data-i18n="common.nav.privacy">Privacy</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow-right"/></svg></a></li>
+      <li><a href="index.html#how-it-works"><span data-i18n="common.nav.howItWorks">How it works</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow-right"/></svg></a></li>
+      <li><a href="support.html"><span data-i18n="common.nav.help">Help</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow-right"/></svg></a></li>
+      <li><a href="contact.html"><span data-i18n="common.nav.contact">Contact</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow-right"/></svg></a></li>
+    </ul>
+  </nav>
+  <div class="row"><span class="muted" data-i18n="common.language">Language</span><div class="lang-switch" role="group" aria-label="Language" data-i18n-attr="aria-label:common.language"><button type="button" data-set-lang="en" lang="en" aria-pressed="true" title="English">EN</button><button type="button" data-set-lang="id" lang="id" aria-pressed="false" title="Bahasa Indonesia">ID</button><button type="button" data-set-lang="ms" lang="ms" aria-pressed="false" title="Bahasa Melayu">MS</button></div></div>
+  <a class="appstore-btn" href="https://apps.apple.com/app/id6755369467" aria-label="Download UangRumah on the App Store" data-i18n-attr="aria-label:common.cta.appStoreLabel"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-apple"/></svg><span><small data-i18n="common.cta.downloadOn">Download on the</small><strong data-i18n="common.cta.appStore">App Store</strong></span></a>
+</div>
+<main id="main">
+<!-- Hero -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <!-- Seasonal badge: edit home.hero.badge in translations/*.js; leave it empty ('') to hide -->
+      <span class="badge" data-season-badge><span class="badge-dot"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-sparkle"/></svg></span><span data-i18n="home.hero.badge">Plan your 2027 budget today</span></span>
+      <h1 data-i18n-html="home.hero.title">Know where your <span class="hl">household money</span> goes.</h1>
+      <p class="lead" data-i18n="home.hero.lead">UangRumah is a simple, private expense tracker for iPhone and iPad. Log spending in seconds, set a monthly or weekly budget, and see exactly how much you can still spend today.</p>
+      <div class="hero-cta">
+        <a class="appstore-btn" href="https://apps.apple.com/app/id6755369467" aria-label="Download UangRumah on the App Store" data-i18n-attr="aria-label:common.cta.appStoreLabel"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-apple"/></svg><span><small data-i18n="common.cta.downloadOn">Download on the</small><strong data-i18n="common.cta.appStore">App Store</strong></span></a>
+        <a class="btn btn-ghost" href="#how-it-works"><span data-i18n="common.cta.seeHow">See how it works</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow-right"/></svg></a>
+      </div>
+      <ul class="hero-proof">
+        <li class="chip"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-check"/></svg><span data-i18n="home.hero.proofFree">Free</span></li>
+        <li class="chip"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-check"/></svg><span data-i18n="home.hero.proofAds">No ads</span></li>
+        <li class="chip"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-check"/></svg><span data-i18n="home.hero.proofTracking">No tracking</span></li>
+        <li class="chip"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-check"/></svg><span data-i18n="home.hero.proofSignup">No sign-up</span></li>
+      </ul>
     </div>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <span class="hero-badge-dot"></span>
-                    <span data-i18n="home.heroBadge">Start 2026 Strong</span>
-                </div>
-                <h1 data-i18n-html="home.heroTitle">Achieve Your <span>2026 Financial Goals</span></h1>
-                <p class="hero-subtitle" data-i18n="home.heroSubtitle">Make this the year you finally take control of your household finances. Track every expense, stay on budget, and build the financial habits that will carry you through 2026 and beyond.</p>
-                <div class="hero-cta">
-                    <a href="https://apps.apple.com/id/app/uangrumah/id6755369467" class="cta-button cta-primary">
-                        <span data-i18n="home.ctaButton">Get the App</span>
-                        <span>&#8594;</span>
-                    </a>
-                    <a href="#features" class="cta-button cta-secondary">
-                        <span data-i18n="home.ctaSecondary">Explore Features</span>
-                    </a>
-                </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="float-card float-card--a">
+        <span class="fc-icon fc-teal"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-target"/></svg></span>
+        <span><strong data-i18n="home.hero.floatAllowed">Allowed today</strong><span data-amount="362000"></span></span>
+      </div>
+      <div class="float-card float-card--b">
+        <span class="fc-icon fc-gold"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-shield"/></svg></span>
+        <span><strong data-i18n="home.hero.floatPrivate">Private by design</strong><span data-i18n="home.hero.floatPrivateSub">No account, no analytics</span></span>
+      </div>
+
+      <!-- Mockup of the Dashboard tab. To use a real screenshot, replace .phone-screen's contents with <img src="assets/screens/dashboard.png" alt=""> -->
+      <div class="phone">
+        <div class="phone-screen">
+          <div class="ph-status"><span>9:41</span><i></i></div>
+          <div class="ph-nav">
+            <div class="ph-title"><span class="ph-book"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-book"/></svg></span><span data-i18n="common.mock.bookHome">Home</span></div>
+            <span class="ph-act"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-eye-off"/></svg></span>
+          </div>
+          <div class="ph-body">
+            <div class="ph-section" data-i18n="common.mock.monthlyBudget">Monthly Budget</div>
+            <div class="ph-card">
+              <div class="ph-row">
+                <span class="ph-muted" data-i18n="common.mock.spent">Spent</span>
+                <span class="ph-pill pill-ok" data-i18n="common.mock.onTrack">On Track</span>
+              </div>
+              <div class="ph-big" data-amount="5270000"></div>
+              <div class="ph-muted"><span data-amount="8500000"></span> <span data-i18n="common.mock.ofBudget">of budget</span></div>
+              <div class="ph-bar"><b style="width:62%"></b><span class="mark" style="left:70%"></span></div>
+              <div class="ph-row ph-muted"><span>62%</span><span data-i18n="common.mock.dayOf">Day 21 of 30</span></div>
+              <div class="ph-stats">
+                <div class="ph-stat"><span class="ph-muted" data-i18n="common.mock.remaining">Remaining</span><b data-amount="3230000"></b></div>
+                <div class="ph-stat"><span class="ph-muted" data-i18n="common.mock.perDay">Per Day</span><b data-amount="362000"></b></div>
+              </div>
+              <div class="ph-insight"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-trending"/></svg><span data-i18n="common.mock.insightGood">Great job! Only 62% spent with 70% of the month gone</span></div>
             </div>
-            <div class="hero-visual">
-                <div class="phone-mockup">
-                    <div class="phone-screen">
-                        <div class="phone-header">
-                            <div class="phone-header-title" data-i18n="home.mockupBudget">January 2026 Budget</div>
-                            <div class="phone-header-amount">Rp 8,500,000</div>
-                        </div>
-                        <div class="phone-content">
-                            <div class="phone-card">
-                                <div class="phone-card-row">
-                                    <div style="display: flex; align-items: center; gap: 0.75rem;">
-                                        <div class="phone-card-icon" style="background: #fef3c7;">&#127828;</div>
-                                        <div>
-                                            <div class="phone-card-title">Groceries</div>
-                                            <div class="phone-card-value">Rp 850,000</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="phone-card">
-                                <div class="phone-card-row">
-                                    <div style="display: flex; align-items: center; gap: 0.75rem;">
-                                        <div class="phone-card-icon" style="background: #dbeafe;">&#128663;</div>
-                                        <div>
-                                            <div class="phone-card-title">Transport</div>
-                                            <div class="phone-card-value">Rp 425,000</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="phone-card">
-                                <div class="phone-card-row">
-                                    <div style="display: flex; align-items: center; gap: 0.75rem;">
-                                        <div class="phone-card-icon" style="background: #d1fae5;">&#127968;</div>
-                                        <div>
-                                            <div class="phone-card-title">Utilities</div>
-                                            <div class="phone-card-value">Rp 1,200,000</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="ph-section" data-i18n="common.mock.topCategories">Top Categories</div>
+            <div class="ph-card ph-list">
+              <div class="ph-item"><span class="ph-ico c-food"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-fork"/></svg></span><span class="grow"><b data-i18n="common.mock.food">Food &amp; Dining</b><span>34%</span></span><span class="amt" data-amount="1790000"></span></div>
+              <div class="ph-item"><span class="ph-ico c-house"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-home"/></svg></span><span class="grow"><b data-i18n="common.mock.housing">Housing &amp; Utilities</b><span>24%</span></span><span class="amt" data-amount="1265000"></span></div>
+              <div class="ph-item"><span class="ph-ico c-trans"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-car"/></svg></span><span class="grow"><b data-i18n="common.mock.transport">Transportation</b><span>16%</span></span><span class="amt" data-amount="843000"></span></div>
             </div>
+          </div>
+          <div class="ph-tabs">
+            <span class="on"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-home"/></svg><span data-i18n="common.mock.tabDashboard">Dashboard</span></span>
+            <span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-sliders"/></svg><span data-i18n="common.mock.tabManage">Manage</span></span>
+            <span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-gear"/></svg><span data-i18n="common.mock.tabSettings">Settings</span></span>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Trust Badges -->
-    <section class="trust-section">
-        <div class="trust-container">
-            <div class="trust-item">
-                <div class="trust-icon">&#128274;</div>
-                <div class="trust-text">
-                    <strong data-i18n="home.trustPrivacy">Privacy First</strong>
-                    <span data-i18n="home.trustPrivacyDesc">Focus on goals, not data concerns</span>
-                </div>
-            </div>
-            <div class="trust-item">
-                <div class="trust-icon">&#9889;</div>
-                <div class="trust-text">
-                    <strong data-i18n="home.trustOffline">Works Offline</strong>
-                    <span data-i18n="home.trustOfflineDesc">Track expenses anywhere, anytime</span>
-                </div>
-            </div>
-            <div class="trust-item">
-                <div class="trust-icon">&#9729;&#65039;</div>
-                <div class="trust-text">
-                    <strong data-i18n="home.trustSync">iCloud Sync</strong>
-                    <span data-i18n="home.trustSyncDesc">Your goals follow you everywhere</span>
-                </div>
-            </div>
-            <div class="trust-item">
-                <div class="trust-icon">&#127759;</div>
-                <div class="trust-text">
-                    <strong data-i18n="home.trustCurrencies">150+ Currencies</strong>
-                    <span data-i18n="home.trustCurrenciesDesc">Choose your preferred currency</span>
-                </div>
-            </div>
+<!-- Trust strip -->
+<section class="trust">
+  <ul class="container trust-list">
+    <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-heart"/></svg><span><strong data-i18n="home.trust.free">Free</strong><span data-i18n="home.trust.freeSub">Every feature included</span></span></li>
+    <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-shield"/></svg><span><strong data-i18n="home.trust.ads">No ads</strong><span data-i18n="home.trust.adsSub">No tracking, ever</span></span></li>
+    <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-wifi-off"/></svg><span><strong data-i18n="home.trust.offline">Works offline</strong><span data-i18n="home.trust.offlineSub">No signal needed</span></span></li>
+    <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-cloud"/></svg><span><strong data-i18n="home.trust.sync">iCloud sync</strong><span data-i18n="home.trust.syncSub">iPhone and iPad</span></span></li>
+    <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-languages"/></svg><span><strong data-i18n="home.trust.langs">3 languages</strong><span data-i18n="home.trust.langsSub">EN · ID · MS</span></span></li>
+    <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-globe"/></svg><span><strong data-i18n="home.trust.currencies">150+ currencies</strong><span data-i18n="home.trust.currenciesSub">Rupiah, ringgit and more</span></span></li>
+  </ul>
+</section>
+
+<!-- Why -->
+<section class="section" id="why">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="home.why.eyebrow">Why UangRumah</span>
+      <h2 data-i18n="home.why.title">Money tracking that fits real life</h2>
+      <p class="lead" data-i18n="home.why.lead">Made for households first, with room for your side business too. UangRumah means "house money" in Indonesian.</p>
+    </div>
+    <div class="grid grid-3">
+      <article class="pillar reveal"><span class="pillar-icon tone-gold"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-bolt"/></svg></span><h3 data-i18n="home.why.p1Title">Fast enough to keep up</h3><p data-i18n="home.why.p1Text">Add an expense in a few taps. Vendors auto-complete, recurring bills add themselves, and Batch Entry clears a pile of receipts in one go.</p></article>
+      <article class="pillar reveal"><span class="pillar-icon tone-teal"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-target"/></svg></span><h3 data-i18n="home.why.p2Title">Budgets that show what's left</h3><p data-i18n="home.why.p2Text">UangRumah turns your monthly or weekly budget into a daily figure, so you always know how much you can spend today.</p></article>
+      <article class="pillar reveal"><span class="pillar-icon tone-coral"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-lock"/></svg></span><h3 data-i18n="home.why.p3Title">Private by design</h3><p data-i18n="home.why.p3Text">No account, no ads, no analytics. Your records live on your device and sync only through your own iCloud.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- Feature showcase -->
+<section class="section section--alt" id="features">
+  <div class="container showcase">
+
+    <!-- 1. Budgets -->
+    <div class="feature-row">
+      <div class="feature-copy reveal">
+        <span class="eyebrow"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-target"/></svg><span data-i18n="home.f1.eyebrow">Budgets</span></span>
+        <h2 data-i18n="home.f1.title">See what you can still spend today</h2>
+        <p class="lead" data-i18n="home.f1.lead">Set a monthly budget, a weekly budget, or both. UangRumah compares what you've spent with how far you are into the month or week, and tells you if you're on track.</p>
+        <ul class="checklist">
+          <li><span class="tick"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-check"/></svg></span><span data-i18n="home.f1.b1">A daily figure for the days that are left</span></li>
+          <li><span class="tick"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-check"/></svg></span><span data-i18n="home.f1.b2">On Track, Watch Out or Over Budget at a glance</span></li>
+          <li><span class="tick"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-check"/></svg></span><span data-i18n="home.f1.b3">An alert when you reach 50%, 75%, 90% or 100% of what your budget allows so far</span></li>
+          <li><span class="tick"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-check"/></svg></span><span data-i18n="home.f1.b4">Your week can start on Sunday or Monday</span></li>
+        </ul>
+      </div>
+      <div class="feature-visual v-teal reveal" aria-hidden="true">
+        <div class="ios-notif">
+          <img src="assets/images/logo-96.png" alt="" width="34" height="34" loading="lazy">
+          <div><div class="t"><b data-i18n="common.mock.alertTitle">Budget Alert</b><small data-i18n="common.mock.now">now</small></div><p data-i18n="common.mock.alertBody">You've reached 90% of your allowed spending for today.</p></div>
         </div>
-    </section>
-
-    <!-- Key Features Section -->
-    <section id="features" class="key-features">
-        <div class="section-container">
-            <div class="section-header">
-                <span class="section-label" data-i18n="home.featuresLabel">Your 2026 Toolkit</span>
-                <h2 class="section-title" data-i18n="home.featuresTitle">Everything You Need to Hit Your 2026 Financial Goals</h2>
-                <p class="section-subtitle" data-i18n="home.featuresSubtitle">Purpose-built tools to help you save more, spend smarter, and finally achieve the financial milestones you've been dreaming about.</p>
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="ph-status"><span>9:41</span><i></i></div>
+            <div class="ph-nav"><div class="ph-title"><span class="ph-book"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-book"/></svg></span><span data-i18n="common.mock.bookHome">Home</span></div><span class="ph-act"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-eye-off"/></svg></span></div>
+            <div class="ph-body">
+              <div class="ph-section" data-i18n="common.mock.weeklyBudget">Weekly Budget</div>
+              <div class="ph-card">
+                <div class="ph-row"><span class="ph-muted" data-i18n="common.mock.spent">Spent</span><span class="ph-pill pill-warn" data-i18n="common.mock.watchOut">Watch Out</span></div>
+                <div class="ph-big" data-amount="1560000"></div>
+                <div class="ph-muted"><span data-amount="2000000"></span> <span data-i18n="common.mock.ofBudget">of budget</span></div>
+                <div class="ph-bar warn"><b style="width:78%"></b><span class="mark" style="left:71%"></span></div>
+                <div class="ph-row ph-muted"><span>78%</span><span data-i18n="common.mock.weekDay">Day 5 of 7</span></div>
+                <div class="ph-stats">
+                  <div class="ph-stat"><span class="ph-muted" data-i18n="common.mock.remaining">Remaining</span><b data-amount="440000"></b></div>
+                  <div class="ph-stat"><span class="ph-muted" data-i18n="common.mock.perDay">Per Day</span><b data-amount="220000"></b></div>
+                </div>
+                <div class="ph-insight"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-bell"/></svg><span data-i18n="common.mock.insightWeek">Spending 78% with 71% of the week gone - watch your pace</span></div>
+              </div>
+              <div class="ph-section" data-i18n="common.mock.monthlyBudget">Monthly Budget</div>
+              <div class="ph-card">
+                <div class="ph-row"><span class="ph-muted" data-i18n="common.mock.spent">Spent</span><span class="ph-pill pill-ok" data-i18n="common.mock.onTrack">On Track</span></div>
+                <div class="ph-big" data-amount="5270000"></div>
+                <div class="ph-bar"><b style="width:62%"></b><span class="mark" style="left:70%"></span></div>
+                <div class="ph-row ph-muted"><span>62%</span><span data-i18n="common.mock.dayOf">Day 21 of 30</span></div>
+              </div>
             </div>
-
-            <div class="key-features-grid">
-                <div class="key-feature-card">
-                    <div class="key-feature-icon purple">&#128218;</div>
-                    <h3 data-i18n="home.featureMultiBook">Multi-Book Ledger</h3>
-                    <p data-i18n="home.featureMultiBookDesc">Separate your 2026 goals into dedicated books - emergency fund, vacation savings, debt payoff, or new purchases.</p>
-                </div>
-
-                <div class="key-feature-card">
-                    <div class="key-feature-icon green">&#128176;</div>
-                    <h3 data-i18n="home.featureBudget">Smart Budgeting</h3>
-                    <p data-i18n="home.featureBudgetDesc">Set your 2026 monthly targets and get alerts before you overspend. Stay on track all year long.</p>
-                </div>
-
-                <div class="key-feature-card">
-                    <div class="key-feature-icon blue">&#9889;</div>
-                    <h3 data-i18n="home.featureBatchEntry">Batch Entry Mode</h3>
-                    <p data-i18n="home.featureBatchEntryDesc">Start fresh in 2026 - quickly log past expenses and build consistent tracking habits from day one.</p>
-                </div>
-
-                <div class="key-feature-card">
-                    <div class="key-feature-icon orange">&#128202;</div>
-                    <h3 data-i18n="home.featureAnalytics">Visual Analytics</h3>
-                    <p data-i18n="home.featureAnalyticsDesc">See your 2026 progress at a glance. Monthly charts reveal spending patterns and celebrate your wins.</p>
-                </div>
-
-                <div class="key-feature-card">
-                    <div class="key-feature-icon pink">&#128274;</div>
-                    <h3 data-i18n="home.featurePrivacyMode">Privacy Mode</h3>
-                    <p data-i18n="home.featurePrivacyModeDesc">Keep your 2026 financial goals private. Blur amounts when others are around.</p>
-                </div>
-
-                <div class="key-feature-card">
-                    <div class="key-feature-icon cyan">&#128260;</div>
-                    <h3 data-i18n="home.featureRecurring">Recurring Expenses</h3>
-                    <p data-i18n="home.featureRecurringDesc">Automate your 2026 subscriptions and bills. Focus on goals, not manual data entry.</p>
-                </div>
+            <div class="ph-tabs">
+              <span class="on"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-home"/></svg><span data-i18n="common.mock.tabDashboard">Dashboard</span></span>
+              <span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-sliders"/></svg><span data-i18n="common.mock.tabManage">Manage</span></span>
+              <span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-gear"/></svg><span data-i18n="common.mock.tabSettings">Settings</span></span>
             </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
 
-    <!-- Features Detail Section -->
-    <section class="features-detail">
-        <div class="section-container">
-            <!-- Budget Management -->
-            <div class="features-category" id="budget-management">
-                <div class="category-header">
-                    <div class="category-icon">&#128176;</div>
-                    <h3 class="category-title" data-i18n="home.budgetManagementTitle">Plan Your 2026 Budget</h3>
-                </div>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-card-header">
-                            <span class="feature-card-icon">&#128197;</span>
-                            <h3 data-i18n="home.monthlyWeeklyBudgets">Monthly & Weekly Budgets</h3>
-                        </div>
-                        <p data-i18n="home.monthlyWeeklyBudgetsDesc">Map out your entire 2026 spending plan. Set monthly targets and break them into weekly milestones you can actually hit.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-card-header">
-                            <span class="feature-card-icon">&#128276;</span>
-                            <h3 data-i18n="home.smartAlerts">Smart Budget Alerts</h3>
-                        </div>
-                        <p data-i18n="home.smartAlertsDesc">Get early warnings before you go off track. Customizable alerts help you course-correct and protect your 2026 goals.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-card-header">
-                            <span class="feature-card-icon">&#128200;</span>
-                            <h3 data-i18n="home.budgetProgressTracking">Progress Tracking</h3>
-                        </div>
-                        <p data-i18n="home.budgetProgressTrackingDesc">Watch your 2026 savings grow in real-time. Color-coded visuals show exactly how close you are to each goal.</p>
-                    </div>
-                </div>
+    <!-- 2. Quick entry -->
+    <div class="feature-row">
+      <div class="feature-copy reveal">
+        <span class="eyebrow"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-bolt"/></svg><span data-i18n="home.f2.eyebrow">Expenses</span></span>
+        <h2 data-i18n="home.f2.title">Log spending in seconds</h2>
+        <p class="lead" data-i18n="home.f2.lead">Tap +, type a name and an amount, and you're done. Add a category, payment method, vendor, date and notes when you want more detail.</p>
+        <ul class="checklist">
+          <li><span class="tick"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-check"/></svg></span><span data-i18n="home.f2.b1">Batch Entry Mode keeps the form open for the next receipt</span></li>
+          <li><span class="tick"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-check"/></svg></span><span data-i18n="home.f2.b2">Vendor names auto-complete from your history</span></li>
+          <li><span class="tick"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-check"/></svg></span><span data-i18n="home.f2.b3">Recurring expenses: daily, weekly, every 2 weeks, monthly, quarterly or yearly</span></li>
+          <li><span class="tick"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-check"/></svg></span><span data-i18n="home.f2.b4">A daily Expense Nudge reminder helps the habit stick</span></li>
+        </ul>
+      </div>
+      <div class="feature-visual v-gold reveal" aria-hidden="true">
+        <div class="phone" style="margin-top:0">
+          <div class="phone-screen">
+            <div class="ph-status"><span>9:41</span><i></i></div>
+            <div class="ph-grabber"></div>
+            <div class="ph-sheet-head" data-i18n="common.mock.addExpense">Add Expense</div>
+            <div class="ph-body">
+              <div class="ph-form">
+                <div class="ph-field"><span data-i18n="common.mock.batchMode">Batch Entry Mode</span><span class="ph-switch"></span></div>
+              </div>
+              <div class="ph-amount"><b data-amount="45000"></b></div>
+              <div class="ph-form">
+                <div class="ph-field"><span data-i18n="common.mock.expenseName">Expense Name</span><span class="val on" data-i18n="common.mock.lunch">Lunch</span></div>
+                <div class="ph-field"><span data-i18n="common.mock.vendor">Vendor</span><span class="val on">Warung Bu Sri</span></div>
+                <div class="ph-suggest"><span>Warung Bu Sri</span><span>Warung Padang</span></div>
+              </div>
+              <div class="ph-form">
+                <div class="ph-field"><span data-i18n="common.mock.category">Category</span><span class="val"><span class="dot c-food"></span><span data-i18n="common.mock.food">Food &amp; Dining</span></span></div>
+                <div class="ph-field"><span data-i18n="common.mock.costCenter">Cost Center</span><span class="val" data-i18n="common.mock.cash">Cash</span></div>
+                <div class="ph-field"><span data-i18n="common.mock.date">Date</span><span class="val" data-i18n="common.mock.today">Today</span></div>
+              </div>
+              <div class="ph-button" data-i18n="common.mock.saveAnother">Save &amp; Add Another</div>
+              <div class="ph-limit" data-i18n="common.mock.batchCounter">3 expense(s) added in this batch</div>
             </div>
-
-            <!-- Expense Tracking -->
-            <div class="features-category" id="expense-tracking">
-                <div class="category-header">
-                    <div class="category-icon">&#128221;</div>
-                    <h3 class="category-title" data-i18n="home.expenseTrackingTitle">Track Every 2026 Expense</h3>
-                </div>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-card-header">
-                            <span class="feature-card-icon">&#9889;</span>
-                            <h3 data-i18n="home.quickAdd">Quick Add</h3>
-                        </div>
-                        <p data-i18n="home.quickAddDesc">Build the habit that sticks. Log expenses in seconds so tracking becomes second nature throughout 2026.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-card-header">
-                            <span class="feature-card-icon">&#128260;</span>
-                            <h3 data-i18n="home.recurringExpenses">Recurring Expenses</h3>
-                        </div>
-                        <p data-i18n="home.recurringExpensesDesc">Set up your 2026 subscriptions once and forget them. Netflix, gym, insurance - all tracked automatically.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-card-header">
-                            <span class="feature-card-icon">&#128220;</span>
-                            <h3 data-i18n="home.versionHistory">Version History</h3>
-                        </div>
-                        <p data-i18n="home.versionHistoryDesc">Review your 2026 journey anytime. Complete audit trail lets you see how your spending habits evolve.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-card-header">
-                            <span class="feature-card-icon">&#128269;</span>
-                            <h3 data-i18n="home.searchFilter">Search & Filter</h3>
-                        </div>
-                        <p data-i18n="home.searchFilterDesc">Instantly find where your money went. Filter by date, category, or vendor to spot patterns and optimize.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-card-header">
-                            <span class="feature-card-icon">&#127978;</span>
-                            <h3 data-i18n="home.vendorTracking">Vendor Tracking</h3>
-                        </div>
-                        <p data-i18n="home.vendorTrackingDesc">Discover which merchants eat your budget. Use 2026 vendor insights to negotiate better deals or switch.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-card-header">
-                            <span class="feature-card-icon">&#128197;</span>
-                            <h3 data-i18n="home.weekNavigation">Week Navigation</h3>
-                        </div>
-                        <p data-i18n="home.weekNavigationDesc">Review your 2026 week by week. Celebrate wins, learn from overspends, and stay motivated all year.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Organization & Management -->
-            <div class="features-category" id="organization">
-                <div class="category-header">
-                    <div class="category-icon">&#128450;</div>
-                    <h3 class="category-title" data-i18n="home.organizationTitle">Organize Your 2026 Finances</h3>
-                </div>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-card-header">
-                            <span class="feature-card-icon">&#127991;</span>
-                            <h3 data-i18n="home.customCategories">Custom Categories</h3>
-                        </div>
-                        <p data-i18n="home.customCategoriesDesc">Create categories that match your 2026 priorities. Vacation fund, home renovation, kids' education - you decide.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-card-header">
-                            <span class="feature-card-icon">&#128179;</span>
-                            <h3 data-i18n="home.costCenters">Cost Centers</h3>
-                        </div>
-                        <p data-i18n="home.costCentersDesc">Track where your 2026 money flows - cash, cards, e-wallets. Perfect for optimizing payment strategies.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-card-header">
-                            <span class="feature-card-icon">&#127759;</span>
-                            <h3 data-i18n="home.currencySelection">150+ Currencies</h3>
-                        </div>
-                        <p data-i18n="home.currencySelectionDesc">Select your preferred currency from 150+ options, including major world currencies and Indonesian Rupiah.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Data & Sync -->
-            <div class="features-category" id="data-sync">
-                <div class="category-header">
-                    <div class="category-icon">&#9729;&#65039;</div>
-                    <h3 class="category-title" data-i18n="home.dataSyncTitle">Keep Your 2026 Data Safe</h3>
-                </div>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-card-header">
-                            <span class="feature-card-icon">&#9729;&#65039;</span>
-                            <h3 data-i18n="home.icloudSync">iCloud Sync</h3>
-                        </div>
-                        <p data-i18n="home.icloudSyncDesc">Track your 2026 goals from any device. iPhone at the store, iPad at home - your data follows you.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-card-header">
-                            <span class="feature-card-icon">&#128190;</span>
-                            <h3 data-i18n="home.backupRestore">Backup & Restore</h3>
-                        </div>
-                        <p data-i18n="home.backupRestoreDesc">Protect your 2026 financial journey. Easy backups mean you'll never lose a year of progress.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-card-header">
-                            <span class="feature-card-icon">&#128196;</span>
-                            <h3 data-i18n="home.pdfReports">PDF Reports</h3>
-                        </div>
-                        <p data-i18n="home.pdfReportsDesc">Generate quarterly 2026 reports to review with your family. See your progress in beautiful summaries.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-card-header">
-                            <span class="feature-card-icon">&#128202;</span>
-                            <h3 data-i18n="home.csvExport">CSV Export</h3>
-                        </div>
-                        <p data-i18n="home.csvExportDesc">Analyze your 2026 spending in Excel or Sheets. Create custom reports and deeper insights.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-card-header">
-                            <span class="feature-card-icon">&#128241;</span>
-                            <h3 data-i18n="home.localStorage">Local Storage</h3>
-                        </div>
-                        <p data-i18n="home.localStorageDesc">Your 2026 financial data lives on your device by default. No account required - you're in complete control.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-card-header">
-                            <span class="feature-card-icon">&#128273;</span>
-                            <h3 data-i18n="home.dataOwnership">Data Ownership</h3>
-                        </div>
-                        <p data-i18n="home.dataOwnershipDesc">Your 2026 financial data belongs to you - always. Export or delete everything anytime. We never claim rights to your information.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Privacy & Security -->
-            <div class="features-category" id="privacy-security">
-                <div class="category-header">
-                    <div class="category-icon">&#128274;</div>
-                    <h3 class="category-title" data-i18n="home.privacySecurityTitle">Protect Your 2026 Goals</h3>
-                </div>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-card-header">
-                            <span class="feature-card-icon">&#128683;</span>
-                            <h3 data-i18n="home.offlineFirst">Offline First</h3>
-                        </div>
-                        <p data-i18n="home.offlineFirstDesc">Track expenses without wifi. Your 2026 data stays on your device - not on some company's server.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-card-header">
-                            <span class="feature-card-icon">&#128065;</span>
-                            <h3 data-i18n="home.privacyModeFeature">Privacy Mode</h3>
-                        </div>
-                        <p data-i18n="home.privacyModeFeatureDesc">Your 2026 savings goals are personal. Blur amounts instantly when others might see your screen.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-card-header">
-                            <span class="feature-card-icon">&#128272;</span>
-                            <h3 data-i18n="home.noTracking">Zero Tracking</h3>
-                        </div>
-                        <p data-i18n="home.noTrackingDesc">No ads targeting your spending habits. Your 2026 financial data is yours alone - we never see it.</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
 
-    <!-- How It Works Section -->
-    <section id="how-it-works" class="how-it-works">
-        <div class="section-container">
-            <div class="section-header">
-                <span class="section-label" data-i18n="home.howItWorksLabel">Your 2026 Journey</span>
-                <h2 class="section-title" data-i18n="home.howItWorksTitle">Start Your 2026 Financial Transformation</h2>
-                <p class="section-subtitle" data-i18n="home.howItWorksSubtitle">Get set up in minutes and begin building the money habits that will define your year.</p>
+    <!-- 3. Dashboard -->
+    <div class="feature-row">
+      <div class="feature-copy reveal">
+        <span class="eyebrow"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-pie"/></svg><span data-i18n="home.f3.eyebrow">Dashboard</span></span>
+        <h2 data-i18n="home.f3.title">Understand your spending at a glance</h2>
+        <p class="lead" data-i18n="home.f3.lead">Your dashboard shows where the money went, how you're paying for it, and how this week compares with last week.</p>
+        <ul class="checklist">
+          <li><span class="tick"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-check"/></svg></span><span data-i18n="home.f3.b1">Top categories chart for the month</span></li>
+          <li><span class="tick"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-check"/></svg></span><span data-i18n="home.f3.b2">Spending by payment method: cash, bank, card or e-wallet</span></li>
+          <li><span class="tick"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-check"/></svg></span><span data-i18n="home.f3.b3">This week compared with last week</span></li>
+          <li><span class="tick"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-check"/></svg></span><span data-i18n="home.f3.b4">Search and filter by date, category, payment method or amount</span></li>
+        </ul>
+      </div>
+      <div class="feature-visual reveal" aria-hidden="true">
+        <div class="phone" style="margin-top:0">
+          <div class="phone-screen">
+            <div class="ph-status"><span>9:41</span><i></i></div>
+            <div class="ph-nav"><div class="ph-title"><span class="ph-book"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-book"/></svg></span><span data-i18n="common.mock.bookHome">Home</span></div><span class="ph-act"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-eye-off"/></svg></span></div>
+            <div class="ph-body">
+              <div class="ph-section" data-i18n="common.mock.topCategories">Top Categories</div>
+              <div class="ph-card ph-donut">
+                <div class="donut"></div>
+                <div class="legend">
+                  <span><i class="c-food"></i><span data-i18n="common.mock.food">Food &amp; Dining</span><em>34%</em></span>
+                  <span><i class="c-house"></i><span data-i18n="common.mock.housing">Housing &amp; Utilities</span><em>24%</em></span>
+                  <span><i class="c-trans"></i><span data-i18n="common.mock.transport">Transportation</span><em>16%</em></span>
+                  <span><i class="c-edu"></i><span data-i18n="common.mock.education">Education</span><em>12%</em></span>
+                  <span><i class="c-comm"></i><span data-i18n="common.mock.comms">Communications</span><em>14%</em></span>
+                </div>
+              </div>
+              <div class="ph-section" data-i18n="common.mock.weeklyComparison">Weekly Comparison</div>
+              <div class="ph-week">
+                <div class="ph-stat" style="background:var(--ph-card)"><span class="ph-muted" data-i18n="common.mock.thisWeek">This Week</span><b data-amount="1560000"></b><span class="ph-trend">↓ <span data-i18n="common.mock.lessThanLast">12% less</span></span></div>
+                <div class="ph-stat" style="background:var(--ph-card)"><span class="ph-muted" data-i18n="common.mock.lastWeek">Last Week</span><b data-amount="1770000"></b></div>
+              </div>
+              <div class="ph-section" data-i18n="common.mock.paymentMethods">Payment Methods</div>
+              <div class="ph-card ph-pm">
+                <div class="ph-row"><b data-i18n="common.mock.bank">Bank Account</b><span class="ph-muted">48%</span></div>
+                <div class="ph-mini-bar"><b style="width:48%;background:#45b7d1"></b></div>
+                <div class="ph-row"><b data-i18n="common.mock.cash">Cash</b><span class="ph-muted">31%</span></div>
+                <div class="ph-mini-bar"><b style="width:31%;background:#1f9d55"></b></div>
+                <div class="ph-row"><b data-i18n="common.mock.ewallet">E-Wallet</b><span class="ph-muted">21%</span></div>
+                <div class="ph-mini-bar"><b style="width:21%;background:#9b59b6"></b></div>
+              </div>
             </div>
-
-            <div class="steps-grid">
-                <div class="step-card">
-                    <div class="step-number">
-                        <span>&#128241;</span>
-                    </div>
-                    <h3 data-i18n="home.step1Title">Download & Setup</h3>
-                    <p data-i18n="home.step1Desc">Start 2026 right. Install UangRumah and set up your first financial book in under 5 minutes.</p>
-                </div>
-
-                <div class="step-card">
-                    <div class="step-number">
-                        <span>&#128176;</span>
-                    </div>
-                    <h3 data-i18n="home.step2Title">Define Your 2026 Goals</h3>
-                    <p data-i18n="home.step2Desc">Set your monthly savings target. Create categories for your biggest 2026 priorities - vacation, emergency fund, or big purchases.</p>
-                </div>
-
-                <div class="step-card">
-                    <div class="step-number">
-                        <span>&#128221;</span>
-                    </div>
-                    <h3 data-i18n="home.step3Title">Track Every Day</h3>
-                    <p data-i18n="home.step3Desc">Make tracking a daily habit. Quick add takes seconds - small effort, big results over 12 months.</p>
-                </div>
-
-                <div class="step-card">
-                    <div class="step-number">
-                        <span>&#127919;</span>
-                    </div>
-                    <h3 data-i18n="home.step4Title">Celebrate Your Wins</h3>
-                    <p data-i18n="home.step4Desc">Watch your 2026 goals become reality. Review monthly progress and adjust your strategy to finish strong.</p>
-                </div>
-            </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
 
-    <!-- Technical Specs Section -->
-    <section id="specs" class="tech-specs">
-        <div class="section-container">
-            <div class="section-header">
-                <span class="section-label" data-i18n="home.specsLabel">Technical Details</span>
-                <h2 class="section-title" data-i18n="home.requirementsTitle">Requirements & Specifications</h2>
-                <p class="section-subtitle" data-i18n="home.requirementsSubtitle">Built with modern iOS technology for the best experience.</p>
+    <!-- 4. Books -->
+    <div class="feature-row">
+      <div class="feature-copy reveal">
+        <span class="eyebrow"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-book"/></svg><span data-i18n="home.f4.eyebrow">Books</span></span>
+        <h2 data-i18n="home.f4.title">Keep home and side business apart</h2>
+        <p class="lead" data-i18n="home.f4.lead">Start a second book for a side business, a renovation or a big project. Each book has its own budget, categories, payment methods and vendors.</p>
+        <ul class="checklist">
+          <li><span class="tick"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-check"/></svg></span><span data-i18n="home.f4.b1">Up to 2 books, switch with one tap</span></li>
+          <li><span class="tick"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-check"/></svg></span><span data-i18n="home.f4.b2">15 ready-made categories you can rename, recolor and extend</span></li>
+          <li><span class="tick"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-check"/></svg></span><span data-i18n="home.f4.b3">Up to 3 payment methods (cost centers) per book</span></li>
+          <li><span class="tick"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-check"/></svg></span><span data-i18n="home.f4.b4">A monthly summary reminder on the 1st of each month</span></li>
+        </ul>
+      </div>
+      <div class="feature-visual v-sage reveal" aria-hidden="true">
+        <div class="phone" style="margin-top:0">
+          <div class="phone-screen">
+            <div class="ph-status"><span>9:41</span><i></i></div>
+            <div class="ph-grabber"></div>
+            <div class="ph-sheet-head" data-i18n="common.mock.books">Books</div>
+            <div class="ph-body">
+              <div class="ph-books">
+                <div class="ph-bookrow active"><span class="ph-ico" style="background:var(--teal-600)"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-home"/></svg></span><span class="grow"><b data-i18n="common.mock.bookHome">Home</b><span data-i18n="common.mock.expensesCount142">142 expenses</span></span><span class="ph-check"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-check"/></svg></span></div>
+                <div class="ph-bookrow"><span class="ph-ico" style="background:#d99e0c"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-store"/></svg></span><span class="grow"><b data-i18n="common.mock.bookShop">Shop</b><span data-i18n="common.mock.expensesCount38">38 expenses</span></span></div>
+              </div>
+              <div class="ph-limit" data-i18n="common.mock.booksLimit">2 of 2 books</div>
+              <div class="ph-section" data-i18n="common.mock.costCenters">Cost Centers</div>
+              <div class="ph-card ph-list">
+                <div class="ph-item"><span class="ph-ico" style="background:#45b7d1"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-card"/></svg></span><span class="grow"><b data-i18n="common.mock.bank">Bank Account</b></span></div>
+                <div class="ph-item"><span class="ph-ico" style="background:#1f9d55"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-wallet"/></svg></span><span class="grow"><b data-i18n="common.mock.cash">Cash</b></span></div>
+                <div class="ph-item"><span class="ph-ico" style="background:#9b59b6"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-phone"/></svg></span><span class="grow"><b data-i18n="common.mock.ewallet">E-Wallet</b></span></div>
+              </div>
+              <div class="ph-limit" data-i18n="common.mock.costCentersLimit">3 of 3 cost centers</div>
             </div>
-
-            <div class="specs-grid">
-                <div class="spec-card">
-                    <div class="spec-icon">&#128241;</div>
-                    <div class="spec-label" data-i18n="home.platform">Platform</div>
-                    <div class="spec-value" data-i18n="home.platformValue">iOS 16.0+</div>
-                </div>
-
-                <div class="spec-card">
-                    <div class="spec-icon">&#128187;</div>
-                    <div class="spec-label" data-i18n="home.devices">Devices</div>
-                    <div class="spec-value" data-i18n="home.devicesValue">iPhone & iPad</div>
-                </div>
-
-                <div class="spec-card">
-                    <div class="spec-icon">&#9997;&#65039;</div>
-                    <div class="spec-label" data-i18n="home.technology">Technology</div>
-                    <div class="spec-value" data-i18n="home.technologyValue">SwiftUI</div>
-                </div>
-
-                <div class="spec-card">
-                    <div class="spec-icon">&#9729;&#65039;</div>
-                    <div class="spec-label" data-i18n="home.sync">Sync</div>
-                    <div class="spec-value" data-i18n="home.syncValue">iCloud</div>
-                </div>
-
-                <div class="spec-card">
-                    <div class="spec-icon">&#127759;</div>
-                    <div class="spec-label" data-i18n="home.currencies">Currencies</div>
-                    <div class="spec-value" data-i18n="home.currenciesValue">150+</div>
-                </div>
-
-                <div class="spec-card">
-                    <div class="spec-icon">&#128187;</div>
-                    <div class="spec-label" data-i18n="home.storage">Storage</div>
-                    <div class="spec-value" data-i18n="home.storageValue">Local + Cloud</div>
-                </div>
-            </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="cta-container">
-            <h2 data-i18n="home.downloadCtaTitle">Make 2026 Your Best Financial Year Yet</h2>
-            <p data-i18n="home.downloadCtaSubtitle">Join families who are already planning their 2026 financial goals with UangRumah. Start the new year with clarity and control.</p>
-            <a href="https://apps.apple.com/id/app/uangrumah/id6755369467" class="cta-button cta-primary">
-                <span data-i18n="home.downloadCtaButton">Start Your 2026 Journey</span>
-                <span>&#8594;</span>
-            </a>
-        </div>
-    </section>
+<!-- Everything else -->
+<section class="section" id="more">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="home.more.eyebrow">And more</span>
+      <h2 data-i18n="home.more.title">Everything else you'd expect</h2>
+      <p class="lead" data-i18n="home.more.lead">Small things that make tracking easier every day.</p>
+    </div>
+    <div class="grid grid-4">
+      <div class="mini-feature reveal"><span class="pillar-icon tone-teal"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-search"/></svg></span><div><h3 data-i18n="home.more.searchTitle">Search &amp; filter</h3><p data-i18n="home.more.searchText">Find any expense by name, vendor, category, payment method, date or amount.</p></div></div>
+      <div class="mini-feature reveal"><span class="pillar-icon tone-gold"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-calendar"/></svg></span><div><h3 data-i18n="home.more.weekTitle">Week by week</h3><p data-i18n="home.more.weekText">Browse your expenses one week at a time, grouped by date.</p></div></div>
+      <div class="mini-feature reveal"><span class="pillar-icon tone-coral"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-history"/></svg></span><div><h3 data-i18n="home.more.historyTitle">Edit history</h3><p data-i18n="home.more.historyText">Every change to an expense is saved, with the differences highlighted.</p></div></div>
+      <div class="mini-feature reveal"><span class="pillar-icon tone-sage"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-eye-off"/></svg></span><div><h3 data-i18n="home.more.hideTitle">Hide Numbers</h3><p data-i18n="home.more.hideText">Blur amounts with one tap when someone can see your screen.</p></div></div>
+      <div class="mini-feature reveal"><span class="pillar-icon tone-gold"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-file"/></svg></span><div><h3 data-i18n="home.more.pdfTitle">PDF reports</h3><p data-i18n="home.more.pdfText">Share a clean report for this week, month, year or any dates you choose.</p></div></div>
+      <div class="mini-feature reveal"><span class="pillar-icon tone-coral"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-table"/></svg></span><div><h3 data-i18n="home.more.csvTitle">CSV export</h3><p data-i18n="home.more.csvText">Open your data in Excel, Numbers or Google Sheets.</p></div></div>
+      <div class="mini-feature reveal"><span class="pillar-icon tone-sage"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-archive"/></svg></span><div><h3 data-i18n="home.more.backupTitle">Backup &amp; restore</h3><p data-i18n="home.more.backupText">Save a backup file anytime. Restoring creates a new book, so nothing is overwritten.</p></div></div>
+      <div class="mini-feature reveal"><span class="pillar-icon tone-teal"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-contrast"/></svg></span><div><h3 data-i18n="home.more.themeTitle">Light &amp; dark</h3><p data-i18n="home.more.themeText">Follows your system setting, or choose light or dark yourself.</p></div></div>
+      <div class="mini-feature reveal"><span class="pillar-icon tone-coral"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-access"/></svg></span><div><h3 data-i18n="home.more.a11yTitle">Accessible</h3><p data-i18n="home.more.a11yText">Works with VoiceOver and supports larger text sizes.</p></div></div>
+      <div class="mini-feature reveal"><span class="pillar-icon tone-sage"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-devices"/></svg></span><div><h3 data-i18n="home.more.devicesTitle">iPhone &amp; iPad</h3><p data-i18n="home.more.devicesText">Designed for both, and kept in sync through iCloud.</p></div></div>
+      <div class="mini-feature reveal"><span class="pillar-icon tone-teal"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-languages"/></svg></span><div><h3 data-i18n="home.more.langTitle">3 languages</h3><p data-i18n="home.more.langText">English, Bahasa Indonesia and Bahasa Melayu. Switch inside the app.</p></div></div>
+      <div class="mini-feature reveal"><span class="pillar-icon tone-gold"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-coins"/></svg></span><div><h3 data-i18n="home.more.currencyTitle">150+ currencies</h3><p data-i18n="home.more.currencyText">Pick the currency you use, from rupiah and ringgit to dollars and euros.</p></div></div>
+    </div>
+  </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <a href="index.html" class="logo" style="color: white;">
-                        <img src="assets/images/icon.png" alt="UangRumah Logo" class="logo-icon">
-                        <span>UangRumah</span>
-                    </a>
-                    <p data-i18n="home.footerDesc">Your partner for achieving 2026 financial goals. Privacy-first expense tracking for Indonesian households.</p>
-                </div>
+<!-- Privacy -->
+<section class="section privacy-band" id="privacy">
+  <div class="container privacy-grid">
+    <div class="reveal">
+      <span class="eyebrow"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-shield"/></svg><span data-i18n="home.privacy.eyebrow">Privacy</span></span>
+      <h2 data-i18n="home.privacy.title">Your money is nobody else's business</h2>
+      <p class="lead" data-i18n="home.privacy.lead">UangRumah has no servers, no accounts and no analytics. We can't see your data, even if we wanted to.</p>
+      <a class="btn btn-ghost" href="privacy-policy.html"><span data-i18n="home.privacy.link">Read the privacy policy</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow-right"/></svg></a>
+    </div>
+    <div class="privacy-items">
+      <div class="privacy-item reveal"><span class="pillar-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-devices"/></svg></span><h3 data-i18n="home.privacy.i1Title">Stored on your device</h3><p data-i18n="home.privacy.i1Text">Your records are saved on your iPhone or iPad, and everything works offline.</p></div>
+      <div class="privacy-item reveal"><span class="pillar-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-cloud"/></svg></span><h3 data-i18n="home.privacy.i2Title">Synced through your iCloud</h3><p data-i18n="home.privacy.i2Text">When you're signed in to iCloud, your devices stay in sync through your private iCloud account. Only your Apple ID can access it.</p></div>
+      <div class="privacy-item reveal"><span class="pillar-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-eye-off"/></svg></span><h3 data-i18n="home.privacy.i3Title">No ads, no tracking</h3><p data-i18n="home.privacy.i3Text">No analytics, no advertising and no third-party SDKs in the app.</p></div>
+      <div class="privacy-item reveal"><span class="pillar-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-download"/></svg></span><h3 data-i18n="home.privacy.i4Title">Yours to take with you</h3><p data-i18n="home.privacy.i4Text">Export to PDF or CSV, or save a full backup, whenever you like.</p></div>
+    </div>
+  </div>
+</section>
 
-                <div class="footer-column">
-                    <h4 data-i18n="home.footerProduct">Product</h4>
-                    <ul>
-                        <li><a href="#features" data-i18n="nav.features">Features</a></li>
-                        <li><a href="#how-it-works" data-i18n="nav.howItWorks">How It Works</a></li>
-                        <li><a href="#specs" data-i18n="nav.requirements">Requirements</a></li>
-                    </ul>
-                </div>
+<!-- Audience -->
+<section class="section" id="for-you">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="home.audience.eyebrow">Made for</span>
+      <h2 data-i18n="home.audience.title">Built for the way you handle money</h2>
+    </div>
+    <div class="grid grid-3">
+      <article class="audience-card reveal"><span class="pillar-icon tone-teal"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-home"/></svg></span><h3 data-i18n="home.audience.a1Title">Households</h3><p data-i18n="home.audience.a1Text">Keep daily spending and monthly bills under one budget, and see where the household money goes.</p></article>
+      <article class="audience-card reveal"><span class="pillar-icon tone-gold"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-user"/></svg></span><h3 data-i18n="home.audience.a2Title">Individuals</h3><p data-i18n="home.audience.a2Text">Build a daily tracking habit and finally see where your salary goes each month.</p></article>
+      <article class="audience-card reveal"><span class="pillar-icon tone-coral"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-briefcase"/></svg></span><h3 data-i18n="home.audience.a3Title">Freelancers &amp; side businesses</h3><p data-i18n="home.audience.a3Text">Keep business costs in their own book, apart from home spending, and export them when you need to.</p></article>
+    </div>
+  </div>
+</section>
 
-                <div class="footer-column">
-                    <h4 data-i18n="home.footerSupport">Support</h4>
-                    <ul>
-                        <li><a href="support.html" data-i18n="common.support">Help Center</a></li>
-                        <li><a href="contact.html" data-i18n="common.contact">Contact Us</a></li>
-                    </ul>
-                </div>
+<!-- How it works -->
+<section class="section section--alt" id="how-it-works">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="home.steps.eyebrow">Getting started</span>
+      <h2 data-i18n="home.steps.title">Up and running in a few minutes</h2>
+      <p class="lead" data-i18n="home.steps.lead">The app walks you through the basics the first time you open it.</p>
+    </div>
+    <ol class="steps">
+      <li class="step reveal"><span class="step-num">1</span><h3 data-i18n="home.steps.s1Title">Create your book</h3><p data-i18n="home.steps.s1Text">A book is a separate ledger. Start with one for your household, then add another if you need it.</p></li>
+      <li class="step reveal"><span class="step-num">2</span><h3 data-i18n="home.steps.s2Title">Set your budget</h3><p data-i18n="home.steps.s2Text">Choose a monthly or weekly budget, or both, and the alerts you want.</p></li>
+      <li class="step reveal"><span class="step-num">3</span><h3 data-i18n="home.steps.s3Title">Add expenses</h3><p data-i18n="home.steps.s3Text">Tap + whenever you spend. Pick a category to see where your money goes.</p></li>
+      <li class="step reveal"><span class="step-num">4</span><h3 data-i18n="home.steps.s4Title">Track your progress</h3><p data-i18n="home.steps.s4Text">Check the Dashboard to stay on track and spot your spending patterns.</p></li>
+    </ol>
+  </div>
+</section>
 
-                <div class="footer-column">
-                    <h4 data-i18n="home.footerLegal">Legal</h4>
-                    <ul>
-                        <li><a href="privacy-policy.html" data-i18n="common.privacyPolicy">Privacy Policy</a></li>
-                        <li><a href="terms-conditions.html" data-i18n="common.termsConditions">Terms & Conditions</a></li>
-                    </ul>
-                </div>
-            </div>
+<!-- Specs -->
+<section class="section section--tight" id="details">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="home.specs.eyebrow">The details</span>
+      <h2 data-i18n="home.specs.title">What you need to know</h2>
+    </div>
+    <dl class="specs reveal">
+      <div class="spec"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-heart"/></svg><div><dt data-i18n="home.specs.price">Price</dt><dd data-i18n="home.specs.priceValue">Free, no in-app purchases</dd></div></div>
+      <div class="spec"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-phone"/></svg><div><dt data-i18n="home.specs.requires">Requires</dt><dd data-i18n="home.specs.requiresValue">iOS or iPadOS 16 or later</dd></div></div>
+      <div class="spec"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-devices"/></svg><div><dt data-i18n="home.specs.devices">Devices</dt><dd data-i18n="home.specs.devicesValue">iPhone and iPad</dd></div></div>
+      <div class="spec"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-languages"/></svg><div><dt data-i18n="home.specs.languages">Languages</dt><dd data-i18n="home.specs.languagesValue">English, Indonesia, Melayu</dd></div></div>
+      <div class="spec"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-coins"/></svg><div><dt data-i18n="home.specs.currencies">Currencies</dt><dd data-i18n="home.specs.currenciesValue">150+ world currencies</dd></div></div>
+      <div class="spec"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-cloud"/></svg><div><dt data-i18n="home.specs.sync">Sync</dt><dd data-i18n="home.specs.syncValue">iCloud (Apple CloudKit)</dd></div></div>
+      <div class="spec"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-book"/></svg><div><dt data-i18n="home.specs.books">Books</dt><dd data-i18n="home.specs.booksValue">Up to 2</dd></div></div>
+      <div class="spec"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-card"/></svg><div><dt data-i18n="home.specs.payment">Payment methods</dt><dd data-i18n="home.specs.paymentValue">Up to 3 per book</dd></div></div>
+      <div class="spec"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-file"/></svg><div><dt data-i18n="home.specs.export">Export</dt><dd data-i18n="home.specs.exportValue">PDF, CSV and backup file</dd></div></div>
+    </dl>
+  </div>
+</section>
 
-            <div class="footer-bottom">
-                <p>&copy; 2025 UangRumah. <span data-i18n="common.allRightsReserved">All rights reserved</span>.</p>
-                <p data-i18n="home.footerMadeWith">Made with care in Jakarta, Indonesia</p>
-            </div>
-            <div class="footer-disclaimer">
-                <p data-i18n="home.footerAppleDisclaimer">iCloud is a service provided by Apple Inc. Apple, the Apple logo, iPhone, iPad, Mac, and macOS are trademarks of Apple Inc.</p>
-            </div>
-        </div>
-    </footer>
+<!-- FAQ -->
+<section class="section section--alt" id="faq">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="home.faq.eyebrow">FAQ</span>
+      <h2 data-i18n="home.faq.title">Questions, answered</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item"><summary><span data-i18n="home.faq.q1">Is UangRumah really free?</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-chevron-down"/></svg></summary><div class="faq-body" data-i18n-html="home.faq.a1"><p>Yes. Every feature is free, with no ads and no in-app purchases.</p></div></details>
+      <details class="faq-item"><summary><span data-i18n="home.faq.q2">Do I need to create an account?</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-chevron-down"/></svg></summary><div class="faq-body" data-i18n-html="home.faq.a2"><p>No. There's nothing to sign up for. UangRumah uses the iCloud account already on your device to keep your iPhone and iPad in sync.</p></div></details>
+      <details class="faq-item"><summary><span data-i18n="home.faq.q3">Where is my data stored?</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-chevron-down"/></svg></summary><div class="faq-body" data-i18n-html="home.faq.a3"><p>On your device, and in your private iCloud account when you're signed in to iCloud. We don't run any servers, so your data never reaches us.</p></div></details>
+      <details class="faq-item"><summary><span data-i18n="home.faq.q4">Does it work without internet?</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-chevron-down"/></svg></summary><div class="faq-body" data-i18n-html="home.faq.a4"><p>Yes. Everything works offline. Changes sync to your other devices the next time you're online.</p></div></details>
+      <details class="faq-item"><summary><span data-i18n="home.faq.q5">Can I share a book with my partner?</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-chevron-down"/></svg></summary><div class="faq-body" data-i18n-html="home.faq.a5"><p>Not at the moment. Sync works between devices signed in to the same Apple ID. To share your figures with someone else, send them a PDF report or a CSV export.</p></div></details>
+      <details class="faq-item"><summary><span data-i18n="home.faq.q6">Which currencies and languages are supported?</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-chevron-down"/></svg></summary><div class="faq-body" data-i18n-html="home.faq.a6"><p>More than 150 currencies, and the full app in English, Bahasa Indonesia and Bahasa Melayu. You can change both anytime in <strong>Settings → Preferences</strong>. One currency is used across the whole app.</p></div></details>
+      <details class="faq-item"><summary><span data-i18n="home.faq.q7">Is there an Android version?</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-chevron-down"/></svg></summary><div class="faq-body" data-i18n-html="home.faq.a7"><p>Not at the moment. UangRumah is available for iPhone and iPad with iOS or iPadOS 16 or later.</p></div></details>
+    </div>
+    <p class="faq-more"><a class="btn btn-ghost" href="support.html"><span data-i18n="home.faq.more">More answers in the Help Center</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow-right"/></svg></a></p>
+  </div>
+</section>
 
-    <!-- Common Scripts -->
-    <script src="scripts/common.js"></script>
+<!-- Final CTA -->
+<section class="section section--tight">
+  <div class="container">
+    <div class="cta-panel reveal">
+      <img src="assets/images/icon-192.png" alt="" width="76" height="76" loading="lazy">
+      <h2 data-i18n="home.cta.title">Start tracking today. It's free.</h2>
+      <p data-i18n="home.cta.lead">Download UangRumah and set up your first budget in a few minutes.</p>
+      <a class="appstore-btn" href="https://apps.apple.com/app/id6755369467" aria-label="Download UangRumah on the App Store" data-i18n-attr="aria-label:common.cta.appStoreLabel"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-apple"/></svg><span><small data-i18n="common.cta.downloadOn">Download on the</small><strong data-i18n="common.cta.appStore">App Store</strong></span></a>
+    </div>
+  </div>
+</section>
 
-    <!-- Page-specific Scripts -->
-    <script>
-        // Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animate-in');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.key-feature-card, .feature-card, .step-card, .spec-card').forEach(el => {
-            observer.observe(el);
-        });
-    </script>
-
-    <!-- i18n Support -->
-    <script src="translations/index.js"></script>
-    <script src="translations/en.js"></script>
-    <script src="translations/id.js"></script>
-    <script src="translations/ms.js"></script>
-    <script src="language-switcher.js"></script>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html"><img src="assets/images/logo-96.png" alt="" width="36" height="36" loading="lazy"><span>UangRumah</span></a>
+        <p data-i18n="common.footer.tagline">A simple, private expense tracker for households and side businesses. Free on iPhone and iPad.</p>
+        <a class="appstore-btn" href="https://apps.apple.com/app/id6755369467" aria-label="Download UangRumah on the App Store" data-i18n-attr="aria-label:common.cta.appStoreLabel"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-apple"/></svg><span><small data-i18n="common.cta.downloadOn">Download on the</small><strong data-i18n="common.cta.appStore">App Store</strong></span></a>
+      </div>
+      <div>
+        <h2 data-i18n="common.footer.product">Product</h2>
+        <ul>
+          <li><a href="index.html#features" data-i18n="common.footer.features">Features</a></li>
+          <li><a href="index.html#privacy" data-i18n="common.footer.privacy">Privacy</a></li>
+          <li><a href="index.html#how-it-works" data-i18n="common.footer.howItWorks">How it works</a></li>
+          <li><a href="index.html#faq" data-i18n="common.footer.faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 data-i18n="common.footer.help">Help</h2>
+        <ul>
+          <li><a href="support.html" data-i18n="common.footer.helpCenter">Help Center</a></li>
+          <li><a href="contact.html" data-i18n="common.footer.contact">Contact us</a></li>
+          <li><a href="mailto:support@uangrumah.com">support@uangrumah.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 data-i18n="common.footer.legal">Legal</h2>
+        <ul>
+          <li><a href="privacy-policy.html" data-i18n="common.footer.privacyPolicy">Privacy Policy</a></li>
+          <li><a href="terms-conditions.html" data-i18n="common.footer.terms">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span data-year>2026</span> UangRumah. <span data-i18n="common.footer.rights">All rights reserved.</span></p>
+      <p data-i18n="common.footer.madeIn">Made with care in Jakarta, Indonesia.</p>
+    </div>
+    <p class="footer-legal" data-i18n="common.footer.apple">Apple, the Apple logo, iPhone, iPad and iCloud are trademarks of Apple Inc., registered in the U.S. and other countries and regions. App Store is a service mark of Apple Inc.</p>
+  </div>
+</footer>
+<script src="translations/en.js" defer></script>
+<script src="translations/id.js" defer></script>
+<script src="translations/ms.js" defer></script>
+<script src="scripts/i18n.js" defer></script>
+<script src="scripts/main.js" defer></script>
 </body>
 </html>

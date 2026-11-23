@@ -1,311 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact UangRumah - Get in touch with our support team for help with the expense tracker app." data-i18n="contact.metaDescription">
-    <title data-i18n="contact.title">Contact Us - UangRumah</title>
-    <link rel="stylesheet" href="styles/common.css">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/images/icon.png">
-    <link rel="shortcut icon" type="image/png" href="assets/images/icon.png">
-
-    <!-- PWA/Mobile App Icons -->
-    <link rel="manifest" href="manifest.json">
-    <link rel="apple-touch-icon" href="assets/images/icon.png">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="UangRumah">
-    <meta name="theme-color" content="#0D7377">
-    <meta name="msapplication-TileColor" content="#0D7377">
-    <meta name="msapplication-TileImage" content="assets/images/icon.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title data-i18n="contact.meta.title">Contact — UangRumah</title>
+<meta name="description" content="Contact the UangRumah team by email for help, bug reports and feature ideas." data-i18n-attr="content:contact.meta.description">
+<link rel="canonical" href="https://uangrumah.com/contact.html">
+<meta name="theme-color" content="#fffdf8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d1513" media="(prefers-color-scheme: dark)">
+<meta name="apple-itunes-app" content="app-id=6755369467">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UangRumah">
+<meta property="og:title" content="Contact — UangRumah" data-i18n-attr="content:contact.meta.title">
+<meta property="og:description" content="Contact the UangRumah team by email for help, bug reports and feature ideas." data-i18n-attr="content:contact.meta.description">
+<meta property="og:url" content="https://uangrumah.com/contact.html">
+<meta property="og:image" content="https://uangrumah.com/assets/images/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="UangRumah, a simple and private expense tracker for iPhone and iPad">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:locale:alternate" content="ms_MY">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="styles/main.css">
+<script>
+(function(){var d=document.documentElement,l=null,s;d.classList.add('js');
+try{s=localStorage.getItem('uangrumah_theme');if(s==='dark'||s==='light')d.setAttribute('data-theme',s);}catch(e){}
+try{l=new URLSearchParams(location.search).get('lang')||localStorage.getItem('uangrumah_language');}catch(e){}
+if(['en','id','ms'].indexOf(l)<0){l='en';var n=navigator.languages||[navigator.language||''];
+for(var i=0;i<n.length;i++){var c=String(n[i]).toLowerCase().slice(0,2);if(c==='id'||c==='in'){l='id';break;}if(c==='ms'){l='ms';break;}if(c==='en'){break;}}}
+d.setAttribute('data-lang',l);if(l!=='en'){d.lang=l;d.classList.add('i18n-pending');setTimeout(function(){d.classList.remove('i18n-pending');},1500);}})();
+</script>
 </head>
-<body data-page="contact" class="bg-light">
-    <!-- Header -->
-    <header>
-        <nav>
-            <a href="index.html" class="logo">
-                <img src="assets/images/icon.png" alt="UangRumah Logo" class="logo-icon">
-                <span>UangRumah</span>
-            </a>
-            <div class="nav-right">
-                <ul class="nav-links">
-                    <li><a href="index.html" data-i18n="common.home">Home</a></li>
-                    <li><a href="index.html#features" data-i18n="nav.features">Features</a></li>
-                    <li><a href="support.html" data-i18n="common.support">Support</a></li>
-                    <li><a href="contact.html" data-i18n="common.contact">Contact</a></li>
-                </ul>
-                <select class="language-switcher" id="language-switcher" title="Select Language">
-                    <option value="en">English</option>
-                    <option value="id">Indonesian</option>
-                    <option value="ms">Bahasa Melayu</option>
-                </select>
-                <button class="mobile-menu-btn" aria-label="Menu">&#9776;</button>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Mobile Menu Overlay -->
-    <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
-
-    <!-- Mobile Menu Drawer -->
-    <div class="mobile-menu" id="mobile-menu">
-        <div class="mobile-menu-header">
-            <a href="index.html" class="logo">
-                <img src="assets/images/icon.png" alt="UangRumah Logo" class="logo-icon">
-                <span>UangRumah</span>
-            </a>
-            <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close menu">&times;</button>
-        </div>
-        <nav class="mobile-menu-nav">
-            <ul>
-                <li><a href="index.html" data-i18n="common.home">Home</a></li>
-                <li><a href="privacy-policy.html" data-i18n="common.privacy">Privacy</a></li>
-                <li><a href="terms-conditions.html" data-i18n="common.terms">Terms</a></li>
-                <li><a href="support.html" data-i18n="common.support">Support</a></li>
-                <li><a href="contact.html" data-i18n="common.contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="mobile-menu-footer">
-            <a href="mailto:support@uangrumah.com" class="mobile-menu-cta" data-i18n="contact.emailSupportTitle">Email Support</a>
-        </div>
+<body>
+<a class="skip-link" href="#main" data-i18n="common.skip">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html"><img src="assets/images/logo-96.png" alt="" width="36" height="36"><span>UangRumah</span></a>
+    <nav class="nav-main" aria-label="Main" data-i18n-attr="aria-label:common.mainNav">
+      <ul class="nav-links">
+        <li><a href="index.html#features" data-i18n="common.nav.features">Features</a></li>
+        <li><a href="index.html#privacy" data-i18n="common.nav.privacy">Privacy</a></li>
+        <li><a href="index.html#how-it-works" data-i18n="common.nav.howItWorks">How it works</a></li>
+        <li><a href="support.html" data-i18n="common.nav.help">Help</a></li>
+        <li><a href="contact.html" data-i18n="common.nav.contact" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-tools">
+      <div class="lang-switch" role="group" aria-label="Language" data-i18n-attr="aria-label:common.language"><button type="button" data-set-lang="en" lang="en" aria-pressed="true" title="English">EN</button><button type="button" data-set-lang="id" lang="id" aria-pressed="false" title="Bahasa Indonesia">ID</button><button type="button" data-set-lang="ms" lang="ms" aria-pressed="false" title="Bahasa Melayu">MS</button></div>
+      <button type="button" class="icon-btn theme-toggle" data-theme-toggle aria-label="Switch light or dark theme" data-i18n-attr="aria-label:common.theme"><svg class="icon i-sun" aria-hidden="true"><use href="assets/icons.svg#i-sun"/></svg><svg class="icon i-moon" aria-hidden="true"><use href="assets/icons.svg#i-moon"/></svg></button>
+      <a class="btn btn-primary btn-sm" href="https://apps.apple.com/app/id6755369467" data-i18n="common.cta.getApp">Get the app</a>
+      <button type="button" class="icon-btn menu-btn" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu" data-i18n-attr="aria-label:common.menu"><svg class="icon i-open" aria-hidden="true"><use href="assets/icons.svg#i-menu"/></svg><svg class="icon i-close" aria-hidden="true" style="display:none"><use href="assets/icons.svg#i-x"/></svg></button>
     </div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobile-menu" inert>
+  <nav aria-label="Main" data-i18n-attr="aria-label:common.mainNav">
+    <ul>
+      <li><a href="index.html#features"><span data-i18n="common.nav.features">Features</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow-right"/></svg></a></li>
+      <li><a href="index.html#privacy"><span data-i18n="common.nav.privacy">Privacy</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow-right"/></svg></a></li>
+      <li><a href="index.html#how-it-works"><span data-i18n="common.nav.howItWorks">How it works</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow-right"/></svg></a></li>
+      <li><a href="support.html"><span data-i18n="common.nav.help">Help</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow-right"/></svg></a></li>
+      <li><a href="contact.html"><span data-i18n="common.nav.contact">Contact</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow-right"/></svg></a></li>
+    </ul>
+  </nav>
+  <div class="row"><span class="muted" data-i18n="common.language">Language</span><div class="lang-switch" role="group" aria-label="Language" data-i18n-attr="aria-label:common.language"><button type="button" data-set-lang="en" lang="en" aria-pressed="true" title="English">EN</button><button type="button" data-set-lang="id" lang="id" aria-pressed="false" title="Bahasa Indonesia">ID</button><button type="button" data-set-lang="ms" lang="ms" aria-pressed="false" title="Bahasa Melayu">MS</button></div></div>
+  <a class="appstore-btn" href="https://apps.apple.com/app/id6755369467" aria-label="Download UangRumah on the App Store" data-i18n-attr="aria-label:common.cta.appStoreLabel"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-apple"/></svg><span><small data-i18n="common.cta.downloadOn">Download on the</small><strong data-i18n="common.cta.appStore">App Store</strong></span></a>
+</div>
+<main id="main">
+<section class="page-hero">
+  <div class="container">
+    <span class="badge"><span class="badge-dot"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-mail"/></svg></span><span data-i18n="contact.badge">Contact</span></span>
+    <h1 data-i18n="contact.title">We're happy to help</h1>
+    <p class="lead" data-i18n="contact.lead">Questions, bug reports or ideas for UangRumah? Send us an email. We read every one.</p>
+  </div>
+</section>
 
-    <!-- Page Hero -->
-    <section class="page-hero">
-        <div class="hero-content">
-            <div class="hero-badge">
-                <span>&#128172;</span>
-                <span data-i18n="contact.heroBadge">Get in Touch</span>
-            </div>
-            <h1 data-i18n="contact.heroTitle">Contact Us</h1>
-            <p data-i18n="contact.heroSubtitle">Have questions or need help? We're here to assist you.</p>
-        </div>
-    </section>
+<section class="section section--tight" style="padding-top:8px">
+  <div class="container contact-main">
+    <div class="card">
+      <span class="pillar-icon tone-teal"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-mail"/></svg></span>
+      <h2 data-i18n="contact.emailTitle">Email support</h2>
+      <p data-i18n="contact.emailText">The fastest way to reach us. You can also write from the app: Settings → Contact Developer.</p>
+      <a class="email-link" href="mailto:support@uangrumah.com?subject=UangRumah%20support">support@uangrumah.com</a>
+      <div><a class="btn btn-primary" href="mailto:support@uangrumah.com?subject=UangRumah%20support"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-mail"/></svg><span data-i18n="common.cta.emailUs">Email us</span></a></div>
+    </div>
+    <div class="card">
+      <ul class="info-list">
+        <li><span class="pillar-icon tone-gold"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-clock"/></svg></span><span><small data-i18n="contact.responseLabel">Response time</small><strong data-i18n="contact.responseValue">Usually 1–2 business days</strong></span></li>
+        <li><span class="pillar-icon tone-sage"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-calendar"/></svg></span><span><small data-i18n="contact.hoursLabel">Hours</small><strong data-i18n="contact.hoursValue">Monday–Friday, 09:00–17:00 WIB (UTC+7)</strong></span></li>
+        <li><span class="pillar-icon tone-teal"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-languages"/></svg></span><span><small data-i18n="contact.langLabel">We reply in</small><strong data-i18n="contact.langValue">English or Bahasa Indonesia</strong></span></li>
+        <li><span class="pillar-icon tone-coral"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-pin"/></svg></span><span><small data-i18n="contact.locationLabel">Based in</small><strong data-i18n="contact.locationValue">Jakarta, Indonesia</strong></span></li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-    <!-- Main Content -->
-    <section class="content">
-        <!-- Quick Contact Cards -->
-        <div class="contact-grid">
-            <div class="contact-card">
-                <div class="contact-icon">&#128231;</div>
-                <h3 data-i18n="contact.emailSupportTitle">Email Support</h3>
-                <p data-i18n="contact.emailSupportDesc">Send us an email and we'll respond within 1-2 business days.</p>
-                <a href="mailto:support@uangrumah.com" class="contact-link">support@uangrumah.com</a>
-            </div>
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-head">
+      <h2 data-i18n="contact.beforeTitle">Before you write</h2>
+      <p class="lead" data-i18n="contact.beforeLead">You might find an answer straight away.</p>
+    </div>
+    <div class="grid grid-3">
+      <a class="link-card" href="support.html"><span class="pillar-icon tone-teal"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-help"/></svg></span><h3 data-i18n="contact.faqTitle">Help Center</h3><p data-i18n="contact.faqText">Answers about budgets, books, export, backup and more.</p><span class="more"><span data-i18n="contact.open">Open</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow-right"/></svg></span></a>
+      <a class="link-card" href="support.html#troubleshooting"><span class="pillar-icon tone-coral"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-wrench"/></svg></span><h3 data-i18n="contact.troubleTitle">Troubleshooting</h3><p data-i18n="contact.troubleText">Step-by-step fixes for sync, notifications and crashes.</p><span class="more"><span data-i18n="contact.open">Open</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow-right"/></svg></span></a>
+      <a class="link-card" href="privacy-policy.html"><span class="pillar-icon tone-sage"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-shield"/></svg></span><h3 data-i18n="contact.privacyTitle">Privacy</h3><p data-i18n="contact.privacyText">How your data is stored and who can see it.</p><span class="more"><span data-i18n="contact.open">Open</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow-right"/></svg></span></a>
+    </div>
+  </div>
+</section>
 
-            <div class="contact-card">
-                <div class="contact-icon">&#127760;</div>
-                <h3 data-i18n="contact.websiteTitle">Website</h3>
-                <p data-i18n="contact.websiteDesc">Visit our website for more information and updates.</p>
-                <a href="https://uangrumah.com" class="contact-link" target="_blank">uangrumah.com</a>
-            </div>
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2 data-i18n="contact.includeTitle">What to include in your email</h2>
+      <p class="lead" data-i18n="contact.includeLead">A few details help us solve the problem faster.</p>
+    </div>
+    <div class="grid grid-4">
+      <div class="tip-card"><h3><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-phone"/></svg><span data-i18n="contact.deviceTitle">Your device</span></h3><ul><li data-i18n="contact.device1">iPhone or iPad model</li><li data-i18n="contact.device2">iOS or iPadOS version</li></ul></div>
+      <div class="tip-card"><h3><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-sparkle"/></svg><span data-i18n="contact.appTitle">The app</span></h3><ul><li data-i18n="contact.app1">UangRumah version (Settings → About)</li><li data-i18n="contact.app2">Whether you use iCloud sync</li></ul></div>
+      <div class="tip-card"><h3><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-help"/></svg><span data-i18n="contact.issueTitle">What happened</span></h3><ul><li data-i18n="contact.issue1">What you were trying to do</li><li data-i18n="contact.issue2">What happened instead, and any error message</li></ul></div>
+      <div class="tip-card"><h3><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-list"/></svg><span data-i18n="contact.stepsTitle">How to repeat it</span></h3><ul><li data-i18n="contact.steps1">The steps that lead to the problem</li><li data-i18n="contact.steps2">Screenshots, if you can</li></ul></div>
+    </div>
+    <div class="callout" style="margin-top:28px"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-bulb"/></svg><div><strong data-i18n="contact.ideasTitle">Have an idea?</strong> <span data-i18n="contact.ideasText">Feature requests are welcome. Tell us what you'd like UangRumah to do, and why it would help.</span></div></div>
+  </div>
+</section>
 
-            <div class="contact-card">
-                <div class="contact-icon">&#128172;</div>
-                <h3 data-i18n="contact.supportCenterTitle">Support Center</h3>
-                <p data-i18n="contact.supportCenterDesc">Check our FAQ and troubleshooting guides for quick answers.</p>
-                <a href="support.html" class="contact-button" data-i18n="contact.visitSupport">Visit Support</a>
-            </div>
-        </div>
-
-        <!-- Support Information -->
-        <div class="section-card">
-            <div class="section-header">
-                <div class="section-icon">&#128203;</div>
-                <div class="section-title-group">
-                    <h2 data-i18n="contact.supportInfoTitle">Support Information</h2>
-                    <p data-i18n="contact.supportInfoSubtitle">How to reach us and what to expect</p>
-                </div>
-            </div>
-
-            <div class="info-grid">
-                <div class="info-item">
-                    <div class="info-item-header">
-                        <span>&#128205;</span>
-                        <h4 data-i18n="contact.location">Location</h4>
-                    </div>
-                    <p data-i18n="contact.locationValue">Jakarta, Indonesia</p>
-                </div>
-
-                <div class="info-item">
-                    <div class="info-item-header">
-                        <span>&#9200;</span>
-                        <h4 data-i18n="contact.responseTime">Response Time</h4>
-                    </div>
-                    <p data-i18n="contact.responseTimeValue">1-2 Business Days</p>
-                </div>
-
-                <div class="info-item">
-                    <div class="info-item-header">
-                        <span>&#128188;</span>
-                        <h4 data-i18n="contact.businessHours">Business Hours</h4>
-                    </div>
-                    <p data-i18n="contact.businessHoursValue">Mon-Fri, 9AM-5PM WIB</p>
-                </div>
-
-                <div class="info-item">
-                    <div class="info-item-header">
-                        <span>&#127757;</span>
-                        <h4 data-i18n="contact.languages">Languages</h4>
-                    </div>
-                    <p data-i18n="contact.languagesValue">English & Indonesian</p>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Before You Contact Us -->
-        <div class="section-card">
-            <div class="section-header">
-                <div class="section-icon">&#10067;</div>
-                <div class="section-title-group">
-                    <h2 data-i18n="contact.beforeContactTitle">Before You Contact Us</h2>
-                    <p data-i18n="contact.beforeContactSubtitle">You might find answers faster by checking these resources first</p>
-                </div>
-            </div>
-
-            <div class="contact-grid">
-                <div class="contact-card">
-                    <div class="contact-icon">&#10067;</div>
-                    <h3 data-i18n="contact.faqTitle">Frequently Asked Questions</h3>
-                    <p data-i18n="contact.faqDesc">Find answers to common questions about budgets, expenses, sync, and more.</p>
-                    <a href="support.html#faq" class="contact-button" data-i18n="contact.viewFaq">View FAQ</a>
-                </div>
-
-                <div class="contact-card">
-                    <div class="contact-icon">&#128295;</div>
-                    <h3 data-i18n="contact.troubleshootingTitle">Troubleshooting Guide</h3>
-                    <p data-i18n="contact.troubleshootingDesc">Step-by-step solutions for common technical issues and problems.</p>
-                    <a href="support.html#troubleshooting" class="contact-button" data-i18n="contact.getHelp">Get Help</a>
-                </div>
-
-                <div class="contact-card">
-                    <div class="contact-icon">&#128274;</div>
-                    <h3 data-i18n="contact.privacySecurityTitle">Privacy & Security</h3>
-                    <p data-i18n="contact.privacySecurityDesc">Learn how we protect your data and respect your privacy.</p>
-                    <a href="privacy-policy.html" class="contact-button" data-i18n="common.privacyPolicy">Privacy Policy</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- What to Include -->
-        <div class="section-card">
-            <div class="section-header">
-                <div class="section-icon">&#128221;</div>
-                <div class="section-title-group">
-                    <h2 data-i18n="contact.whatToIncludeTitle">What to Include in Your Support Request</h2>
-                    <p data-i18n="contact.whatToIncludeSubtitle">Help us help you faster by including this information</p>
-                </div>
-            </div>
-
-            <div class="request-grid">
-                <div class="request-card">
-                    <div class="request-card-header">
-                        <div class="request-card-icon">&#128241;</div>
-                        <h3 data-i18n="contact.deviceInfoTitle">Device Information</h3>
-                    </div>
-                    <ul>
-                        <li data-i18n="contact.deviceInfo1">iPhone or iPad model</li>
-                        <li data-i18n="contact.deviceInfo2">iOS version number</li>
-                        <li data-i18n="contact.deviceInfo3">Available storage space</li>
-                    </ul>
-                </div>
-
-                <div class="request-card">
-                    <div class="request-card-header">
-                        <div class="request-card-icon">&#128290;</div>
-                        <h3 data-i18n="contact.appDetailsTitle">App Details</h3>
-                    </div>
-                    <ul>
-                        <li data-i18n="contact.appDetails1">UangRumah version</li>
-                        <li data-i18n="contact.appDetails2">When the issue started</li>
-                        <li data-i18n="contact.appDetails3">Frequency of the problem</li>
-                    </ul>
-                </div>
-
-                <div class="request-card">
-                    <div class="request-card-header">
-                        <div class="request-card-icon">&#128203;</div>
-                        <h3 data-i18n="contact.problemDescTitle">Problem Description</h3>
-                    </div>
-                    <ul>
-                        <li data-i18n="contact.problemDesc1">What you were trying to do</li>
-                        <li data-i18n="contact.problemDesc2">What happened instead</li>
-                        <li data-i18n="contact.problemDesc3">Any error messages</li>
-                    </ul>
-                </div>
-
-                <div class="request-card">
-                    <div class="request-card-header">
-                        <div class="request-card-icon">&#128260;</div>
-                        <h3 data-i18n="contact.stepsToReproduceTitle">Steps to Reproduce</h3>
-                    </div>
-                    <ul>
-                        <li data-i18n="contact.stepsToReproduce1">Step-by-step actions</li>
-                        <li data-i18n="contact.stepsToReproduce2">Screenshots (if applicable)</li>
-                        <li data-i18n="contact.stepsToReproduce3">How to recreate the issue</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <a href="index.html" class="logo" style="color: white;">
-                        <img src="assets/images/icon.png" alt="UangRumah Logo" class="logo-icon">
-                        <span>UangRumah</span>
-                    </a>
-                    <p data-i18n="home.footerDesc">Your partner for achieving 2026 financial goals. Privacy-first expense tracking for Indonesian households.</p>
-                </div>
-
-                <div class="footer-column">
-                    <h4 data-i18n="home.footerProduct">Product</h4>
-                    <ul>
-                        <li><a href="index.html#features" data-i18n="nav.features">Features</a></li>
-                        <li><a href="index.html#how-it-works" data-i18n="nav.howItWorks">How It Works</a></li>
-                        <li><a href="index.html#specs" data-i18n="nav.requirements">Requirements</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h4 data-i18n="home.footerSupport">Support</h4>
-                    <ul>
-                        <li><a href="support.html" data-i18n="common.support">Help Center</a></li>
-                        <li><a href="contact.html" data-i18n="common.contact">Contact Us</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h4 data-i18n="home.footerLegal">Legal</h4>
-                    <ul>
-                        <li><a href="privacy-policy.html" data-i18n="common.privacyPolicy">Privacy Policy</a></li>
-                        <li><a href="terms-conditions.html" data-i18n="common.termsConditions">Terms & Conditions</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2025 UangRumah. <span data-i18n="common.allRightsReserved">All rights reserved</span>.</p>
-                <p data-i18n="home.footerMadeWith">Made with care in Jakarta, Indonesia</p>
-            </div>
-            <div class="footer-disclaimer">
-                <p data-i18n="home.footerAppleDisclaimer">iCloud is a service provided by Apple Inc. Apple, the Apple logo, iPhone, iPad, Mac, and macOS are trademarks of Apple Inc.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="scripts/common.js"></script>
-    <script src="translations/index.js"></script>
-    <script src="translations/en.js"></script>
-    <script src="translations/id.js"></script>
-    <script src="translations/ms.js"></script>
-    <script src="language-switcher.js"></script>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html"><img src="assets/images/logo-96.png" alt="" width="36" height="36" loading="lazy"><span>UangRumah</span></a>
+        <p data-i18n="common.footer.tagline">A simple, private expense tracker for households and side businesses. Free on iPhone and iPad.</p>
+        <a class="appstore-btn" href="https://apps.apple.com/app/id6755369467" aria-label="Download UangRumah on the App Store" data-i18n-attr="aria-label:common.cta.appStoreLabel"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-apple"/></svg><span><small data-i18n="common.cta.downloadOn">Download on the</small><strong data-i18n="common.cta.appStore">App Store</strong></span></a>
+      </div>
+      <div>
+        <h2 data-i18n="common.footer.product">Product</h2>
+        <ul>
+          <li><a href="index.html#features" data-i18n="common.footer.features">Features</a></li>
+          <li><a href="index.html#privacy" data-i18n="common.footer.privacy">Privacy</a></li>
+          <li><a href="index.html#how-it-works" data-i18n="common.footer.howItWorks">How it works</a></li>
+          <li><a href="index.html#faq" data-i18n="common.footer.faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 data-i18n="common.footer.help">Help</h2>
+        <ul>
+          <li><a href="support.html" data-i18n="common.footer.helpCenter">Help Center</a></li>
+          <li><a href="contact.html" data-i18n="common.footer.contact">Contact us</a></li>
+          <li><a href="mailto:support@uangrumah.com">support@uangrumah.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 data-i18n="common.footer.legal">Legal</h2>
+        <ul>
+          <li><a href="privacy-policy.html" data-i18n="common.footer.privacyPolicy">Privacy Policy</a></li>
+          <li><a href="terms-conditions.html" data-i18n="common.footer.terms">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span data-year>2026</span> UangRumah. <span data-i18n="common.footer.rights">All rights reserved.</span></p>
+      <p data-i18n="common.footer.madeIn">Made with care in Jakarta, Indonesia.</p>
+    </div>
+    <p class="footer-legal" data-i18n="common.footer.apple">Apple, the Apple logo, iPhone, iPad and iCloud are trademarks of Apple Inc., registered in the U.S. and other countries and regions. App Store is a service mark of Apple Inc.</p>
+  </div>
+</footer>
+<script src="translations/en.js" defer></script>
+<script src="translations/id.js" defer></script>
+<script src="translations/ms.js" defer></script>
+<script src="scripts/i18n.js" defer></script>
+<script src="scripts/main.js" defer></script>
 </body>
 </html>

@@ -1,787 +1,585 @@
-// Indonesian translations
-translations.id = {
-    // Common
-    common: {
-        home: 'Beranda',
-        features: 'Fitur',
-        howItWorks: 'Cara Pakai',
-        requirements: 'Spesifikasi',
-        download: 'Unduh',
-        privacy: 'Privasi',
-        terms: 'Ketentuan',
-        support: 'Bantuan',
-        contact: 'Kontak',
-        privacyPolicy: 'Kebijakan Privasi',
-        termsConditions: 'Syarat & Ketentuan',
-        allRightsReserved: 'Hak cipta dilindungi undang-undang',
-    },
-
-    // Navigation
+/* UangRumah — Bahasa Indonesia. Keep keys in sync with en.js (run `node tools/check-i18n.mjs`). */
+window.translations = window.translations || {};
+window.translations.id = {
+  common: {
+    skip: 'Langsung ke konten',
+    menu: 'Buka menu',
+    theme: 'Ganti tema terang atau gelap',
+    language: 'Bahasa',
+    mainNav: 'Utama',
+    home: 'Beranda',
     nav: {
-        features: 'Fitur',
-        howItWorks: 'Cara Pakai',
-        requirements: 'Spesifikasi',
-        download: 'Unduh',
+      features: 'Fitur',
+      privacy: 'Privasi',
+      howItWorks: 'Cara kerja',
+      faq: 'FAQ',
+      help: 'Bantuan',
+      contact: 'Kontak'
     },
-
-    // Home Page
-    home: {
-        metaDescription: 'UangRumah - Aplikasi pencatat keuangan rumah tangga yang menjaga privasi Anda. Catat pengeluaran, atur anggaran, sinkron lewat iCloud. Bisa offline, 150+ mata uang tersedia.',
-        title: 'UangRumah - Pencatat Keuangan Cerdas untuk Keluarga Indonesia',
-
-        // Hero Section
-        heroBadge: 'Resolusi Keuangan 2026',
-        heroTitle: 'Wujudkan <span>Target Keuangan 2026</span> Anda',
-        heroSubtitle: 'Tahun ini, saatnya kendalikan keuangan rumah tangga dengan serius. Catat setiap pengeluaran, jaga anggaran tetap terkendali, dan bangun kebiasaan finansial yang akan mengubah masa depan keluarga Anda.',
-        ctaButton: 'Dapatkan Aplikasi',
-        ctaSecondary: 'Lihat Fitur',
-        mockupBudget: 'Anggaran Januari 2026',
-
-        // Trust Badges
-        trustPrivacy: 'Privasi Terjamin',
-        trustPrivacyDesc: 'Fokus menabung, bukan khawatir data',
-        trustOffline: 'Tanpa Internet',
-        trustOfflineDesc: 'Catat pengeluaran di mana saja',
-        trustSync: 'Sinkron iCloud',
-        trustSyncDesc: 'Data selalu ada di genggaman',
-        trustCurrencies: '150+ Mata Uang',
-        trustCurrenciesDesc: 'Pilih mata uang sesuai kebutuhan',
-
-        // Key Features Section
-        featuresLabel: 'Senjata Finansial 2026',
-        featuresTitle: 'Semua yang Anda Butuhkan untuk Capai Target Keuangan 2026',
-        featuresSubtitle: 'Fitur lengkap yang dirancang khusus untuk membantu Anda menabung lebih banyak, belanja lebih bijak, dan akhirnya mewujudkan impian finansial keluarga.',
-
-        // Key Feature Cards
-        featureMultiBook: 'Buku Kas Terpisah',
-        featureMultiBookDesc: 'Pisahkan target 2026 ke buku berbeda - dana darurat, tabungan liburan, cicilan, atau rencana pembelian besar.',
-        featureBudget: 'Anggaran Pintar',
-        featureBudgetDesc: 'Pasang target bulanan dan terima peringatan sebelum kebobolan. Tetap on track sepanjang tahun.',
-        featureBatchEntry: 'Catat Sekaligus',
-        featureBatchEntryDesc: 'Mulai tahun baru dengan bersih - masukkan pengeluaran lama sekaligus dan bangun kebiasaan mencatat dari hari pertama.',
-        featureAnalytics: 'Grafik & Statistik',
-        featureAnalyticsDesc: 'Pantau progres 2026 dalam sekejap. Grafik bulanan memperlihatkan pola belanja dan rayakan setiap pencapaian.',
-        featurePrivacyMode: 'Mode Rahasia',
-        featurePrivacyModeDesc: 'Jaga target keuangan tetap pribadi. Sembunyikan angka-angka saat ada orang di sekitar.',
-        featureRecurring: 'Tagihan Rutin',
-        featureRecurringDesc: 'Otomatiskan langganan dan tagihan bulanan. Fokus pada target, bukan repot catat manual.',
-
-        // Budget Management
-        budgetManagementTitle: 'Susun Anggaran 2026 Anda',
-        monthlyWeeklyBudgets: 'Anggaran Bulanan & Mingguan',
-        monthlyWeeklyBudgetsDesc: 'Rencanakan pengeluaran setahun penuh. Tetapkan target bulanan, pecah jadi milestone mingguan yang realistis.',
-        smartAlerts: 'Notifikasi Cerdas',
-        smartAlertsDesc: 'Dapat peringatan dini sebelum anggaran jebol. Atur sendiri batas peringatan dan lindungi target 2026 Anda.',
-        budgetProgressTracking: 'Pantau Progres',
-        budgetProgressTrackingDesc: 'Lihat tabungan 2026 Anda bertumbuh. Indikator warna menunjukkan seberapa dekat Anda dengan target.',
-
-        // Expense Tracking
-        expenseTrackingTitle: 'Catat Setiap Rupiah di 2026',
-        quickAdd: 'Catat Kilat',
-        quickAddDesc: 'Bangun kebiasaan yang bertahan lama. Catat pengeluaran dalam hitungan detik, jadikan ini rutinitas sepanjang 2026.',
-        recurringExpenses: 'Pengeluaran Rutin',
-        recurringExpensesDesc: 'Atur langganan sekali, selesai. Netflix, gym, asuransi - semua tercatat otomatis.',
-        versionHistory: 'Riwayat Perubahan',
-        versionHistoryDesc: 'Telusuri perjalanan keuangan 2026 kapan saja. Lihat bagaimana kebiasaan belanja Anda berevolusi.',
-        searchFilter: 'Cari & Saring',
-        searchFilterDesc: 'Temukan ke mana uang mengalir. Saring berdasarkan tanggal, kategori, atau toko untuk temukan polanya.',
-        vendorTracking: 'Lacak Merchant',
-        vendorTrackingDesc: 'Ketahui toko mana yang paling banyak menyedot uang. Gunakan insight ini untuk cari alternatif lebih hemat.',
-        weekNavigation: 'Navigasi per Minggu',
-        weekNavigationDesc: 'Evaluasi 2026 minggu demi minggu. Rayakan pencapaian, pelajari kebobolan, dan jaga semangat sepanjang tahun.',
-
-        // Organization & Management
-        organizationTitle: 'Rapikan Keuangan 2026 Anda',
-        customCategories: 'Kategori Sendiri',
-        customCategoriesDesc: 'Buat kategori sesuai prioritas 2026. Dana liburan, renovasi rumah, pendidikan anak - Anda yang atur.',
-        costCenters: 'Sumber Dana',
-        costCentersDesc: 'Lacak dari mana uang 2026 dikeluarkan - tunai, kartu, e-wallet. Cocok untuk mengatur strategi pembayaran.',
-        currencySelection: '150+ Mata Uang',
-        currencySelectionDesc: 'Pilih satu mata uang dari 150+ pilihan, termasuk mata uang utama dunia dan Rupiah Indonesia.',
-
-        // Data & Sync
-        dataSyncTitle: 'Amankan Data Keuangan 2026',
-        icloudSync: 'Sinkron iCloud',
-        icloudSyncDesc: 'Pantau target 2026 dari perangkat mana pun. iPhone di mal, iPad di rumah - data Anda selalu ikut.',
-        backupRestore: 'Cadangan & Pulihkan',
-        backupRestoreDesc: 'Lindungi perjalanan keuangan 2026. Cadangan otomatis memastikan progres setahun tidak hilang.',
-        pdfReports: 'Laporan PDF',
-        pdfReportsDesc: 'Cetak laporan kuartalan untuk evaluasi bersama keluarga. Lihat progres dalam tampilan yang rapi.',
-        csvExport: 'Ekspor CSV',
-        csvExportDesc: 'Analisis pengeluaran 2026 di Excel atau Sheets. Buat laporan custom sesuai kebutuhan.',
-        localStorage: 'Penyimpanan Lokal',
-        localStorageDesc: 'Data keuangan 2026 tersimpan di perangkat Anda secara default. Tanpa perlu akun - Anda yang pegang kendali penuh.',
-        dataOwnership: 'Kepemilikan Data',
-        dataOwnershipDesc: 'Data keuangan 2026 Anda adalah milik Anda - selamanya. Ekspor atau hapus kapan saja. Kami tidak pernah mengklaim hak atas informasi Anda.',
-
-        // Privacy & Security
-        privacySecurityTitle: 'Lindungi Target Finansial 2026',
-        offlineFirst: 'Offline Dulu',
-        offlineFirstDesc: 'Catat pengeluaran tanpa koneksi internet. Data 2026 tersimpan di HP Anda, bukan di server orang lain.',
-        privacyModeFeature: 'Mode Rahasia',
-        privacyModeFeatureDesc: 'Target tabungan adalah urusan pribadi. Sembunyikan angka dalam sekejap saat ada yang mengintip.',
-        noTracking: 'Bebas Pelacakan',
-        noTrackingDesc: 'Tidak ada iklan yang mengintai kebiasaan belanja Anda. Data keuangan 2026 Anda hanya milik Anda.',
-
-        // Legacy features (keeping for backwards compatibility)
-        dashboardAnalyticsTitle: 'Dashboard & Analisis',
-        categoryBreakdown: 'Rincian per Kategori',
-        categoryBreakdownDesc: 'Diagram lingkaran yang menampilkan distribusi pengeluaran di setiap kategori, lengkap dengan persentase dan jumlah.',
-        costCenterReports: 'Laporan Sumber Dana',
-        costCenterReportsDesc: 'Pantau pengeluaran berdasarkan metode bayar - tunai, kartu kredit, e-wallet, transfer. Pas untuk pasangan yang mengelola rekening bersama dan pribadi.',
-        privacyMode: 'Mode Rahasia',
-        privacyModeDesc: 'Sembunyikan data sensitif dengan blur dashboard dan sensor nominal untuk perlindungan di tempat umum.',
-        realtimeUpdates: 'Update Instan',
-        realtimeUpdatesDesc: 'Tarik layar untuk sinkronisasi data langsung di semua perangkat lewat iCloud.',
-        remindersNotificationsTitle: 'Pengingat & Notifikasi',
-        expenseNudge: 'Pengingat Catat',
-        expenseNudgeDesc: 'Pengingat harian untuk mencatat pengeluaran. Atur frekuensi: Tiap Hari, 2 Hari Sekali, Hari Kerja, atau Custom.',
-        budgetAlerts: 'Peringatan Anggaran',
-        budgetAlertsDesc: 'Notifikasi otomatis saat mendekati batas pengeluaran di ambang yang Anda tentukan.',
-        monthlySummary: 'Ringkasan Bulanan',
-        monthlySummaryDesc: 'Terima rangkuman pengeluaran bulanan untuk tetap aware dengan kondisi keuangan.',
-        dataExportTitle: 'Ekspor Data',
-        flexibleDateRanges: 'Rentang Tanggal Fleksibel',
-        flexibleDateRangesDesc: 'Ekspor semua data, bulan ini, bulan lalu, atau rentang custom sesuai kebutuhan laporan Anda.',
-        customizationTitle: 'Personalisasi',
-        privacySettings: 'Pengaturan Privasi',
-        privacySettingsDesc: 'Atur tampilan default dashboard dan lindungi data keuangan dengan opsi privasi yang bisa disesuaikan.',
-        builtForIndonesia: 'Khusus untuk Indonesia',
-        builtForIndonesiaDesc: 'Dukungan penuh untuk Rupiah (IDR) dan dirancang khusus untuk mengatur keuangan rumah tangga Indonesia.',
-
-        // How It Works
-        howItWorksLabel: 'Perjalanan Finansial 2026',
-        howItWorksTitle: 'Mulai Transformasi Keuangan 2026 Anda',
-        howItWorksSubtitle: 'Siap pakai dalam hitungan menit. Mulai bangun kebiasaan keuangan yang akan mengubah tahun Anda.',
-        step1Title: 'Unduh & Siapkan',
-        step1Desc: 'Awali 2026 dengan langkah tepat. Install UangRumah dan siapkan buku kas pertama dalam waktu kurang dari 5 menit.',
-        step2Title: 'Tentukan Target 2026',
-        step2Desc: 'Pasang target tabungan bulanan. Buat kategori untuk prioritas terbesar - liburan, dana darurat, atau pembelian besar.',
-        step3Title: 'Catat Setiap Hari',
-        step3Desc: 'Jadikan pencatatan sebagai kebiasaan harian. Catat kilat hanya butuh detik - usaha kecil, hasil besar selama 12 bulan.',
-        step4Title: 'Rayakan Pencapaian',
-        step4Desc: 'Saksikan target 2026 Anda terwujud. Evaluasi progres bulanan dan sesuaikan strategi untuk finish yang kuat.',
-
-        // Technical Specifications
-        specsLabel: 'Spesifikasi Teknis',
-        requirementsTitle: 'Kebutuhan Sistem & Spesifikasi',
-        requirementsSubtitle: 'Dibangun dengan teknologi iOS terkini untuk pengalaman terbaik.',
-        platform: 'Platform',
-        platformValue: 'iOS 16.0+ / macOS 13.0+',
-        devices: 'Perangkat',
-        devicesValue: 'iPhone, iPad & Mac',
-        technology: 'Teknologi',
-        technologyValue: 'SwiftUI',
-        sync: 'Sinkronisasi',
-        syncValue: 'iCloud',
-        currencies: 'Mata Uang',
-        currenciesValue: '150+',
-        storage: 'Penyimpanan',
-        storageValue: 'Lokal + iCloud',
-        currency: 'Mata Uang',
-        currencyValue: 'IDR (Rupiah)',
-
-        // CTA Section
-        downloadCtaTitle: 'Jadikan 2026 Tahun Terbaik untuk Keuangan Keluarga',
-        downloadCtaSubtitle: 'Bergabung dengan keluarga lain yang sudah merencanakan masa depan finansial 2026 bersama UangRumah. Mulai tahun baru dengan kejelasan dan kendali penuh.',
-        downloadCtaButton: 'Mulai Perjalanan 2026',
-
-        // Footer
-        footerDesc: 'Partner Anda mewujudkan target keuangan 2026. Pencatatan pengeluaran yang mengutamakan privasi untuk keluarga Indonesia.',
-        footerProduct: 'Produk',
-        footerSupport: 'Bantuan',
-        footerLegal: 'Legal',
-        footerMadeWith: 'Dibuat dengan sepenuh hati di Jakarta, Indonesia',
-        footerAppleDisclaimer: 'iCloud adalah layanan dari Apple Inc. Apple, logo Apple, iPhone, iPad, Mac, dan macOS adalah merek dagang Apple Inc.',
+    cta: {
+      getApp: 'Unduh aplikasi',
+      downloadOn: 'Unduh di',
+      appStore: 'App Store',
+      appStoreLabel: 'Unduh UangRumah di App Store',
+      seeHow: 'Lihat cara kerjanya',
+      helpCenter: 'Kunjungi Pusat Bantuan',
+      emailUs: 'Kirim email',
+      backHome: 'Kembali ke beranda'
     },
-
-    // Contact Page
-    contact: {
-        metaDescription: 'Hubungi UangRumah - Sampaikan pertanyaan atau masalah Anda kepada tim dukungan kami.',
-        title: 'Hubungi Kami - UangRumah',
-        heroBadge: 'Kami Siap Membantu',
-        heroTitle: 'Hubungi Kami',
-        heroSubtitle: 'Ada pertanyaan atau butuh bantuan? Tim kami siap membantu Anda.',
-
-        emailSupportTitle: 'Dukungan via Email',
-        emailSupportDesc: 'Kirim email dan kami akan balas dalam 1-2 hari kerja.',
-
-        websiteTitle: 'Website',
-        websiteDesc: 'Kunjungi website kami untuk info dan update terbaru.',
-
-        supportCenterTitle: 'Pusat Bantuan',
-        supportCenterDesc: 'Cek FAQ dan panduan solusi untuk jawaban cepat.',
-        visitSupport: 'Ke Pusat Bantuan',
-
-        supportInfoTitle: 'Info Dukungan',
-        supportInfoSubtitle: 'Cara menghubungi kami dan apa yang bisa diharapkan',
-        location: 'Lokasi',
-        locationValue: 'Jakarta, Indonesia',
-        responseTime: 'Waktu Respons',
-        responseTimeValue: '1-2 Hari Kerja',
-        businessHours: 'Jam Operasional',
-        businessHoursValue: 'Senin-Jumat, 09.00-17.00 WIB',
-        languages: 'Bahasa',
-        languagesValue: 'Indonesia & Inggris',
-
-        feedbackTitle: 'Masukan Anda Penting:',
-        feedbackDesc: 'UangRumah sudah tersedia di App Store. Masukan dan saran Anda sangat berharga untuk pengembangan aplikasi. Terima kasih sudah memilih UangRumah!',
-        feedbackNote: 'Masukan Anda Penting: UangRumah sudah tersedia di App Store. Masukan dan saran Anda sangat berharga untuk pengembangan aplikasi. Terima kasih sudah memilih UangRumah!',
-
-        beforeContactTitle: 'Sebelum Menghubungi Kami',
-        beforeContactSubtitle: 'Coba cek sumber-sumber ini dulu untuk jawaban yang lebih cepat',
-
-        faqTitle: 'Pertanyaan Umum (FAQ)',
-        faqDesc: 'Temukan jawaban seputar anggaran, pengeluaran, sinkronisasi, dan lainnya.',
-        viewFaq: 'Lihat FAQ',
-
-        troubleshootingTitle: 'Panduan Solusi',
-        troubleshootingDesc: 'Langkah-langkah praktis untuk mengatasi masalah teknis umum.',
-        getHelp: 'Cari Solusi',
-
-        privacySecurityTitle: 'Privasi & Keamanan',
-        privacySecurityDesc: 'Pelajari bagaimana kami melindungi data dan menjaga privasi Anda.',
-
-        whatToIncludeTitle: 'Apa yang Perlu Disertakan Saat Lapor Masalah',
-        whatToIncludeSubtitle: 'Bantu kami membantu Anda lebih cepat dengan menyertakan info berikut',
-
-        deviceInfoTitle: 'Info Perangkat',
-        deviceInfo1: 'Model iPhone atau iPad',
-        deviceInfo2: 'Versi iOS',
-        deviceInfo3: 'Sisa ruang penyimpanan',
-        deviceInfoDesc: '• Model iPhone atau iPad<br>• Versi iOS<br>• Sisa ruang penyimpanan',
-
-        appDetailsTitle: 'Detail Aplikasi',
-        appDetails1: 'Versi UangRumah',
-        appDetails2: 'Kapan masalah mulai terjadi',
-        appDetails3: 'Seberapa sering terjadi',
-        appDetailsDesc: '• Versi UangRumah<br>• Kapan masalah mulai terjadi<br>• Seberapa sering terjadi',
-
-        problemDescTitle: 'Deskripsi Masalah',
-        problemDesc1: 'Apa yang sedang Anda coba lakukan',
-        problemDesc2: 'Apa yang terjadi',
-        problemDesc3: 'Pesan error yang muncul (jika ada)',
-        problemDescDesc: '• Apa yang sedang Anda coba lakukan<br>• Apa yang terjadi<br>• Pesan error yang muncul (jika ada)',
-
-        stepsToReproduceTitle: 'Langkah Memunculkan Masalah',
-        stepsToReproduce1: 'Langkah per langkah yang dilakukan',
-        stepsToReproduce2: 'Screenshot (jika ada)',
-        stepsToReproduce3: 'Cara mengulang masalahnya',
-        stepsToReproduceDesc: '• Langkah per langkah yang dilakukan<br>• Screenshot (jika ada)<br>• Cara mengulang masalahnya',
+    footer: {
+      tagline: 'Aplikasi pencatat pengeluaran yang sederhana dan privat untuk rumah tangga dan usaha sampingan. Gratis di iPhone dan iPad.',
+      product: 'Produk',
+      help: 'Bantuan',
+      legal: 'Legal',
+      features: 'Fitur',
+      privacy: 'Privasi',
+      howItWorks: 'Cara kerja',
+      faq: 'FAQ',
+      helpCenter: 'Pusat Bantuan',
+      contact: 'Hubungi kami',
+      privacyPolicy: 'Kebijakan Privasi',
+      terms: 'Ketentuan Penggunaan',
+      madeIn: 'Dibuat dengan sepenuh hati di Jakarta, Indonesia.',
+      rights: 'Hak cipta dilindungi.',
+      apple: 'Apple, logo Apple, iPhone, iPad, dan iCloud adalah merek dagang Apple Inc. yang terdaftar di AS serta negara dan wilayah lain. App Store adalah merek layanan Apple Inc.'
     },
+    mock: {
+      bookHome: 'Rumah',
+      bookShop: 'Usaha',
+      monthlyBudget: 'Anggaran Bulanan',
+      weeklyBudget: 'Anggaran Mingguan',
+      spent: 'Terpakai',
+      ofBudget: 'dari anggaran',
+      remaining: 'Sisa',
+      perDay: 'Per Hari',
+      allowedToday: 'Diizinkan Hari Ini',
+      onTrack: 'Sesuai Target',
+      watchOut: 'Hati-hati',
+      dayOf: 'Hari 21 dari 30',
+      weekDay: 'Hari 5 dari 7',
+      insightGood: 'Hebat! Baru 62% terpakai dengan 70% bulan berlalu',
+      insightWeek: 'Sudah 78% terpakai dengan 71% minggu berlalu - perhatikan laju Anda',
+      topCategories: 'Kategori Teratas',
+      paymentMethods: 'Metode Pembayaran',
+      weeklyComparison: 'Perbandingan Mingguan',
+      thisWeek: 'Minggu Ini',
+      lastWeek: 'Minggu Lalu',
+      lessThanLast: '12% lebih hemat',
+      food: 'Makanan & Minuman',
+      housing: 'Rumah & Utilitas',
+      transport: 'Transportasi',
+      education: 'Pendidikan',
+      comms: 'Komunikasi',
+      tabDashboard: 'Dasbor',
+      tabManage: 'Kelola',
+      tabSettings: 'Pengaturan',
+      addExpense: 'Tambah Pengeluaran',
+      expenseName: 'Nama Pengeluaran',
+      lunch: 'Makan siang',
+      vendor: 'Toko',
+      category: 'Kategori',
+      costCenter: 'Sumber Dana',
+      costCenters: 'Sumber Dana',
+      cash: 'Tunai',
+      bank: 'Rekening Bank',
+      ewallet: 'E-Wallet',
+      date: 'Tanggal',
+      today: 'Hari ini',
+      recurring: 'Pengeluaran Berulang',
+      batchMode: 'Mode Entri Batch',
+      saveAnother: 'Simpan & Tambah Lagi',
+      batchCounter: '3 pengeluaran ditambahkan dalam batch ini',
+      books: 'Buku',
+      expensesCount142: '142 pengeluaran',
+      expensesCount38: '38 pengeluaran',
+      booksLimit: '2 dari 2 buku',
+      costCentersLimit: '3 dari 3 sumber dana',
+      alertTitle: 'Peringatan Anggaran',
+      alertBody: 'Anda telah mencapai 90% dari pengeluaran yang diizinkan untuk hari ini.',
+      now: 'sekarang',
+      nudgeTitle: 'Saatnya mencatat pengeluaran Anda',
+      nudgeBody: 'Jaga anggaran Anda tetap on track dengan mencatat pengeluaran hari ini'
+    }
+  },
 
-    // Support Page
-    support: {
-        metaDescription: 'Pusat Bantuan UangRumah - Temukan solusi untuk masalah umum dan panduan penggunaan aplikasi pencatat keuangan.',
-        title: 'Bantuan - UangRumah',
-        heroBadge: 'Pusat Bantuan',
-        heroTitle: 'Pusat Bantuan',
-        heroSubtitle: 'Temukan jawaban untuk pertanyaan umum dan dapatkan bantuan menggunakan UangRumah.',
-
-        gettingStartedTitle: 'Mulai dari Sini',
-        gettingStartedDesc: 'Pelajari dasar-dasar: atur anggaran, tambah pengeluaran, dan navigasi aplikasi.',
-
-        troubleshootingTitle: 'Solusi Masalah',
-        troubleshootingDesc: 'Atasi kendala umum terkait sinkronisasi, notifikasi, dan pengelolaan data.',
-
-        contactUsTitle: 'Hubungi Kami',
-        contactUsDesc: 'Tidak menemukan yang dicari? Langsung hubungi tim dukungan kami.',
-
-        systemRequirements: 'Kebutuhan Sistem',
-        systemRequirementsValue: '<strong>Platform:</strong> iOS 16.0+ / macOS 13.0+ | <strong>Perangkat:</strong> iPhone, iPad & Mac | <strong>Penyimpanan:</strong> iCloud (opsional)',
-
-        faqSectionTitle: 'Pertanyaan yang Sering Diajukan',
-        faqSectionSubtitle: 'Jawaban cepat untuk pertanyaan umum',
-
-        // FAQ Individual Keys
-        faq1Question: 'Bagaimana cara mulai pakai UangRumah?',
-        faq1Answer: 'Mulai pakai sangat gampang:',
-        faq1Step1: 'Unduh UangRumah dari App Store',
-        faq1Step2: 'Atur anggaran bulanan dan mingguan di Pengaturan',
-        faq1Step3: 'Buat kategori dan sumber dana sesuai kebutuhan',
-        faq1Step4: 'Mulai tambah pengeluaran dengan tap tombol "+"',
-        faq1Step5: 'Aktifkan pengingat untuk tetap konsisten mencatat',
-
-        faq2Question: 'Bagaimana cara kerja sinkron iCloud?',
-        faq2Answer: 'Sinkron iCloud menjaga data Anda tetap sama di semua perangkat Apple:',
-        faq2Point1: 'Aktifkan iCloud di Pengaturan iOS > [Nama Anda] > iCloud',
-        faq2Point2: 'Pastikan UangRumah punya akses ke iCloud',
-        faq2Point3: 'Data pengeluaran otomatis tersinkron antara iPhone, iPad, dan Mac',
-        faq2Point4: 'Perubahan di satu perangkat muncul di perangkat lain dalam hitungan menit',
-        faq2Point5: 'Perlu koneksi internet untuk sinkronisasi',
-
-        faq3Question: 'Bisa ekspor data pengeluaran?',
-        faq3Answer: 'Bisa! UangRumah mendukung ekspor dalam dua format:',
-        faq3Format1: 'Laporan PDF:',
-        faq3Format1Desc: 'Laporan profesional dengan ringkasan pengeluaran dan rincian harian',
-        faq3Format2: 'File CSV:',
-        faq3Format2Desc: 'Format spreadsheet untuk Excel, Numbers, atau Google Sheets',
-        faq3HowTo: 'Cara ekspor: Buka Pengaturan > Ekspor Data > Pilih format dan rentang tanggal > Bagikan atau simpan file.',
-
-        faq4Question: 'Bagaimana cara kerja peringatan anggaran?',
-        faq4Answer: 'Peringatan anggaran membantu Anda tetap di jalur:',
-        faq4Point1: 'Atur anggaran bulanan dan mingguan di Pengaturan',
-        faq4Point2: 'Tentukan batas peringatan (50%, 75%, 90%, 100%)',
-        faq4Point3: 'Terima notifikasi saat mencapai setiap batas',
-        faq4Point4: 'Peringatan dihitung real-time setiap Anda tambah pengeluaran',
-        faq4Point5: 'Pastikan notifikasi diizinkan di Pengaturan iOS',
-
-        faq5Question: 'Apa itu sumber dana dan bagaimana cara pakainya?',
-        faq5Answer: 'Sumber dana membantu melacak dari mana uang dikeluarkan:',
-        faq5Point1: 'Buat sumber dana untuk rekening bank, kartu kredit, tunai, e-wallet, dll.',
-        faq5Point2: 'Pilih sumber dana saat menambah pengeluaran',
-        faq5Point3: 'Lihat rincian pengeluaran per sumber dana di dashboard',
-        faq5Point4: 'Cocok untuk pasangan yang mengelola rekening bersama dan pribadi',
-
-        faq6Question: 'Bisa catat pengeluaran rutin seperti langganan?',
-        faq6Answer: 'Bisa! UangRumah mendukung pencatatan pengeluaran rutin otomatis:',
-        faq6Point1: 'Tambah pengeluaran dan tandai sebagai "Berulang"',
-        faq6Point2: 'Pilih frekuensi: Harian, Mingguan, Bulanan, atau Tahunan',
-        faq6Point3: 'Atur tanggal mulai dan tanggal berakhir (opsional)',
-        faq6Point4: 'Aplikasi akan otomatis mencatat pengeluaran ini ke depannya',
-        faq6Point5: 'Pas untuk langganan, tagihan, dan pembayaran rutin',
-
-        faq7Question: 'Apa itu Mode Rahasia?',
-        faq7Answer: 'Mode Rahasia melindungi info keuangan Anda di tempat umum:',
-        faq7Feature1: 'Blur Dashboard:',
-        faq7Feature1Desc: 'Samarkan info sensitif di layar utama',
-        faq7Feature2: 'Sensor Nominal:',
-        faq7Feature2Desc: 'Sembunyikan angka dengan tanda bintang',
-        faq7Feature3: 'Aktif/nonaktifkan cepat dari dashboard',
-        faq7Feature4: 'Atur mode default di Pengaturan',
-
-        faq8Question: 'Apakah data keuangan saya aman?',
-        faq8Answer: 'Ya, keamanan data adalah prioritas kami:',
-        faq8Point1: 'Semua data tersimpan lokal di perangkat Anda secara default',
-        faq8Point2: 'Tidak ada data yang dikirim ke server eksternal (kecuali iCloud pribadi jika diaktifkan)',
-        faq8Point3: 'Data terenkripsi selama sinkronisasi iCloud',
-        faq8Point4: 'Kami tidak pernah membagi data Anda ke pihak ketiga',
-        faq8Point5: 'Gunakan passcode perangkat atau Face ID/Touch ID untuk keamanan ekstra',
-        faq8ReadMore: 'Baca',
-        faq8ForDetails: 'kami untuk info lengkap.',
-
-        faq9Question: 'Bisa pakai UangRumah tanpa internet?',
-        faq9Answer: 'Bisa! UangRumah berfungsi penuh secara offline:',
-        faq9Point1: 'Tambah, edit, dan hapus pengeluaran tanpa koneksi',
-        faq9Point2: 'Akses semua fitur dashboard dan laporan',
-        faq9Point3: 'Semua data tersimpan lokal di perangkat Anda',
-        faq9Point4: 'Internet hanya perlu untuk sinkron iCloud (jika diaktifkan)',
-
-        faq10Question: 'Apakah UangRumah gratis?',
-        faq10Answer: 'Ya! UangRumah sepenuhnya gratis dengan semua fitur lengkap. Di masa depan mungkin ada fitur premium opsional, tapi kami akan selalu menyediakan versi gratis yang lengkap.',
-
-        troubleshootingSectionTitle: 'Panduan Solusi Masalah',
-        troubleshootingSectionSubtitle: 'Langkah-langkah praktis untuk masalah umum',
-
-        // Troubleshooting Individual Keys
-        trouble1Title: 'Sinkron iCloud Tidak Jalan',
-        trouble1Desc: 'Kalau data tidak tersinkron antar perangkat, coba langkah berikut:',
-        trouble1Step1: 'Pastikan login dengan akun iCloud yang sama di semua perangkat',
-        trouble1Step2: 'Cek Pengaturan iOS > [Nama Anda] > iCloud dan pastikan UangRumah aktif',
-        trouble1Step3: 'Pastikan ada koneksi internet yang stabil',
-        trouble1Step4: 'Cek sisa penyimpanan iCloud (Pengaturan > [Nama Anda] > iCloud > Kelola Penyimpanan)',
-        trouble1Step5: 'Tutup paksa dan buka ulang aplikasi di kedua perangkat',
-        trouble1Step6: 'Coba matikan lalu hidupkan lagi sinkron iCloud',
-        trouble1Step7: 'Restart perangkat Anda',
-
-        trouble2Title: 'Notifikasi Tidak Muncul',
-        trouble2Desc: 'Kalau tidak menerima peringatan anggaran atau pengingat:',
-        trouble2Step1: 'Buka Pengaturan iOS > Notifikasi > UangRumah',
-        trouble2Step2: 'Pastikan "Izinkan Notifikasi" aktif',
-        trouble2Step3: 'Cek gaya notifikasi sudah diatur (Lock Screen, Pusat Notifikasi, Banner)',
-        trouble2Step4: 'Verifikasi pengaturan notifikasi di dalam aplikasi (Pengaturan > Notifikasi)',
-        trouble2Step5: 'Pastikan mode Jangan Ganggu / Fokus tidak memblokir notifikasi',
-        trouble2Step6: 'Pastikan sudah mengatur batas anggaran atau jadwal pengingat',
-
-        trouble3Title: 'Data Dashboard Tidak Update',
-        trouble3Desc: 'Kalau dashboard menampilkan info lama:',
-        trouble3Step1: 'Tarik ke bawah di dashboard untuk refresh manual',
-        trouble3Step2: 'Tutup dan buka ulang aplikasi sepenuhnya',
-        trouble3Step3: 'Cek apakah pengeluaran ditambahkan ke tanggal yang benar',
-        trouble3Step4: 'Verifikasi pengaturan periode anggaran (bulanan vs mingguan)',
-        trouble3Step5: 'Kalau pakai sinkron iCloud, tunggu beberapa menit untuk sinkronisasi',
-
-        trouble4Title: 'Data Tidak Tersimpan',
-        trouble4Desc: 'Kalau pengeluaran atau perubahan tidak tersimpan:',
-        trouble4Step1: 'Pastikan semua field wajib sudah diisi saat menambah pengeluaran',
-        trouble4Step2: 'Cek sisa penyimpanan perangkat (Pengaturan > Umum > Penyimpanan iPhone)',
-        trouble4Step3: 'Pastikan aplikasi punya izin yang diperlukan di Pengaturan iOS',
-        trouble4Step4: 'Update ke versi terbaru UangRumah dari App Store',
-        trouble4Step5: 'Restart aplikasi dan coba lagi',
-        trouble4Step6: 'Kalau masalah berlanjut, ekspor data lalu hubungi dukungan',
-
-        trouble5Title: 'Aplikasi Crash atau Hang',
-        trouble5Desc: 'Kalau UangRumah tidak stabil atau crash:',
-        trouble5Step1: 'Tutup paksa aplikasi dan buka ulang',
-        trouble5Step2: 'Restart iPhone, iPad, atau Mac Anda',
-        trouble5Step3: 'Update ke versi iOS terbaru (Pengaturan > Umum > Update Perangkat Lunak)',
-        trouble5Step4: 'Update UangRumah ke versi terbaru dari App Store',
-        trouble5Step5: 'Kosongkan ruang penyimpanan kalau hampir penuh',
-        trouble5Step6: 'Kalau masih crash, ekspor data lalu install ulang aplikasi',
-        trouble5Step7: 'Laporkan masalah ke tim dukungan dengan detail crash',
-
-        trouble6Title: 'Pengeluaran Hilang',
-        trouble6Desc: 'Kalau tidak bisa menemukan pengeluaran yang sudah dicatat:',
-        trouble6Step1: 'Gunakan fitur pencarian untuk menemukan pengeluaran spesifik',
-        trouble6Step2: 'Cek filter tanggal - pengeluaran mungkin di luar tampilan saat ini',
-        trouble6Step3: 'Lihat di riwayat pengeluaran atau riwayat versi',
-        trouble6Step4: 'Kalau pakai sinkron iCloud, cek di perangkat lain',
-        trouble6Step5: 'Tarik untuk refresh daftar pengeluaran',
-        trouble6Step6: 'Periksa apakah tidak sengaja terhapus (cek yang baru dihapus jika tersedia)',
-
-        trouble7Title: 'Masalah Ekspor',
-        trouble7Desc: 'Kalau ada masalah saat mengekspor data:',
-        trouble7Step1: 'Pastikan ada pengeluaran dalam rentang tanggal yang dipilih',
-        trouble7Step2: 'Cek sisa penyimpanan untuk pembuatan PDF/CSV',
-        trouble7Step3: 'Coba rentang tanggal lebih kecil kalau mengekspor data banyak',
-        trouble7Step4: 'Pastikan ada aplikasi yang bisa membuka file PDF atau CSV',
-        trouble7Step5: 'Coba format ekspor berbeda (PDF vs CSV)',
-        trouble7Step6: 'Update aplikasi ke versi terbaru',
-
-        feedbackNoticeTitle: 'Kami Menghargai Masukan Anda:',
-        feedbackNoticeDesc: 'UangRumah sudah tersedia di App Store. Masukan Anda membantu kami berkembang! Silakan laporkan masalah atau saran ke support@uangrumah.com.',
-
-        ctaTitle: 'Masih Perlu Bantuan?',
-        ctaSubtitle: 'Tim dukungan kami siap membantu Anda dengan pertanyaan atau masalah apa pun.',
-        ctaButton: 'Hubungi Dukungan',
-
-        // FAQ Items (legacy)
-        faq1Q: 'Bagaimana cara mulai pakai UangRumah?',
-        faq1A: 'Mulai pakai sangat gampang:',
-        faq1Steps: [
-            'Unduh UangRumah dari App Store',
-            'Atur anggaran bulanan dan mingguan di Pengaturan',
-            'Buat kategori dan sumber dana sesuai kebutuhan',
-            'Mulai tambah pengeluaran dengan tap tombol "+"',
-            'Aktifkan pengingat untuk tetap konsisten mencatat'
-        ],
-
-        faq2Q: 'Bagaimana cara kerja sinkron iCloud?',
-        faq2A: 'Sinkron iCloud menjaga data Anda tetap sama di semua perangkat Apple:',
-        faq2Points: [
-            'Aktifkan iCloud di Pengaturan iOS > [Nama Anda] > iCloud',
-            'Pastikan UangRumah punya akses ke iCloud',
-            'Data pengeluaran otomatis tersinkron antara iPhone, iPad, dan Mac',
-            'Perubahan di satu perangkat muncul di perangkat lain dalam hitungan menit',
-            'Perlu koneksi internet untuk sinkronisasi'
-        ],
-
-        faq3Q: 'Bisa ekspor data pengeluaran?',
-        faq3A: 'Bisa! UangRumah mendukung ekspor dalam dua format:',
-        faq3Points: [
-            'Laporan PDF: Laporan profesional dengan ringkasan pengeluaran dan rincian harian',
-            'File CSV: Format spreadsheet untuk Excel, Numbers, atau Google Sheets'
-        ],
-        faq3Extra: 'Cara ekspor: Buka Pengaturan > Ekspor Data > Pilih format dan rentang tanggal > Bagikan atau simpan file.',
-
-        faq4Q: 'Bagaimana cara kerja peringatan anggaran?',
-        faq4A: 'Peringatan anggaran membantu Anda tetap di jalur:',
-        faq4Points: [
-            'Atur anggaran bulanan dan mingguan di Pengaturan',
-            'Tentukan batas peringatan (50%, 75%, 90%, 100%)',
-            'Terima notifikasi saat mencapai setiap batas',
-            'Peringatan dihitung real-time setiap Anda tambah pengeluaran',
-            'Pastikan notifikasi diizinkan di Pengaturan iOS'
-        ],
-
-        faq5Q: 'Apa itu sumber dana dan bagaimana cara pakainya?',
-        faq5A: 'Sumber dana membantu melacak dari mana uang dikeluarkan:',
-        faq5Points: [
-            'Buat sumber dana untuk rekening bank, kartu kredit, tunai, e-wallet, dll.',
-            'Pilih sumber dana saat menambah pengeluaran',
-            'Lihat rincian pengeluaran per sumber dana di dashboard',
-            'Cocok untuk pasangan yang mengelola rekening bersama dan pribadi'
-        ],
-
-        faq6Q: 'Bisa catat pengeluaran rutin seperti langganan?',
-        faq6A: 'Bisa! UangRumah mendukung pencatatan pengeluaran rutin otomatis:',
-        faq6Points: [
-            'Tambah pengeluaran dan tandai sebagai "Berulang"',
-            'Pilih frekuensi: Harian, Mingguan, Bulanan, atau Tahunan',
-            'Atur tanggal mulai dan tanggal berakhir (opsional)',
-            'Aplikasi akan otomatis mencatat pengeluaran ini ke depannya',
-            'Pas untuk langganan, tagihan, dan pembayaran rutin'
-        ],
-
-        faq7Q: 'Apa itu Mode Rahasia?',
-        faq7A: 'Mode Rahasia melindungi info keuangan Anda di tempat umum:',
-        faq7Points: [
-            'Blur Dashboard: Samarkan info sensitif di layar utama',
-            'Sensor Nominal: Sembunyikan angka dengan tanda bintang',
-            'Aktif/nonaktifkan cepat dari dashboard',
-            'Atur mode default di Pengaturan'
-        ],
-
-        faq8Q: 'Apakah data keuangan saya aman?',
-        faq8A: 'Ya, keamanan data adalah prioritas kami:',
-        faq8Points: [
-            'Semua data tersimpan lokal di perangkat Anda secara default',
-            'Tidak ada data yang dikirim ke server eksternal (kecuali iCloud pribadi jika diaktifkan)',
-            'Data terenkripsi selama sinkronisasi iCloud',
-            'Kami tidak pernah membagi data Anda ke pihak ketiga',
-            'Gunakan passcode perangkat atau Face ID/Touch ID untuk keamanan ekstra'
-        ],
-        faq8Extra: 'Baca Kebijakan Privasi kami untuk info lengkap.',
-
-        faq9Q: 'Bisa pakai UangRumah tanpa internet?',
-        faq9A: 'Bisa! UangRumah berfungsi penuh secara offline:',
-        faq9Points: [
-            'Tambah, edit, dan hapus pengeluaran tanpa koneksi',
-            'Akses semua fitur dashboard dan laporan',
-            'Semua data tersimpan lokal di perangkat Anda',
-            'Internet hanya perlu untuk sinkron iCloud (jika diaktifkan)'
-        ],
-
-        faq10Q: 'Apakah UangRumah gratis?',
-        faq10A: 'Ya! UangRumah sepenuhnya gratis dengan semua fitur lengkap. Di masa depan mungkin ada fitur premium opsional, tapi kami akan selalu menyediakan versi gratis yang lengkap.',
-
-        troubleshootingSectionTitle: 'Panduan Solusi Masalah',
-
-        // Troubleshooting Items
-        trouble1Title: 'Sinkron iCloud Tidak Jalan',
-        trouble1Desc: 'Kalau data tidak tersinkron antar perangkat, coba langkah berikut:',
-        trouble1Steps: [
-            'Pastikan login dengan akun iCloud yang sama di semua perangkat',
-            'Cek Pengaturan iOS > [Nama Anda] > iCloud dan pastikan UangRumah aktif',
-            'Pastikan ada koneksi internet yang stabil',
-            'Cek sisa penyimpanan iCloud (Pengaturan > [Nama Anda] > iCloud > Kelola Penyimpanan)',
-            'Tutup paksa dan buka ulang aplikasi di kedua perangkat',
-            'Coba matikan lalu hidupkan lagi sinkron iCloud',
-            'Restart perangkat Anda'
-        ],
-
-        trouble2Title: 'Notifikasi Tidak Muncul',
-        trouble2Desc: 'Kalau tidak menerima peringatan anggaran atau pengingat:',
-        trouble2Steps: [
-            'Buka Pengaturan iOS > Notifikasi > UangRumah',
-            'Pastikan "Izinkan Notifikasi" aktif',
-            'Cek gaya notifikasi sudah diatur (Lock Screen, Pusat Notifikasi, Banner)',
-            'Verifikasi pengaturan notifikasi di dalam aplikasi (Pengaturan > Notifikasi)',
-            'Pastikan mode Jangan Ganggu / Fokus tidak memblokir notifikasi',
-            'Pastikan sudah mengatur batas anggaran atau jadwal pengingat'
-        ],
-
-        trouble3Title: 'Data Dashboard Tidak Update',
-        trouble3Desc: 'Kalau dashboard menampilkan info lama:',
-        trouble3Steps: [
-            'Tarik ke bawah di dashboard untuk refresh manual',
-            'Tutup dan buka ulang aplikasi sepenuhnya',
-            'Cek apakah pengeluaran ditambahkan ke tanggal yang benar',
-            'Verifikasi pengaturan periode anggaran (bulanan vs mingguan)',
-            'Kalau pakai sinkron iCloud, tunggu beberapa menit untuk sinkronisasi'
-        ],
-
-        trouble4Title: 'Data Tidak Tersimpan',
-        trouble4Desc: 'Kalau pengeluaran atau perubahan tidak tersimpan:',
-        trouble4Steps: [
-            'Pastikan semua field wajib sudah diisi saat menambah pengeluaran',
-            'Cek sisa penyimpanan perangkat (Pengaturan > Umum > Penyimpanan iPhone)',
-            'Pastikan aplikasi punya izin yang diperlukan di Pengaturan iOS',
-            'Update ke versi terbaru UangRumah dari App Store',
-            'Restart aplikasi dan coba lagi',
-            'Kalau masalah berlanjut, ekspor data lalu hubungi dukungan'
-        ],
-
-        trouble5Title: 'Aplikasi Crash atau Hang',
-        trouble5Desc: 'Kalau UangRumah tidak stabil atau crash:',
-        trouble5Steps: [
-            'Tutup paksa aplikasi dan buka ulang',
-            'Restart iPhone, iPad, atau Mac Anda',
-            'Update ke versi iOS terbaru (Pengaturan > Umum > Update Perangkat Lunak)',
-            'Update UangRumah ke versi terbaru dari App Store',
-            'Kosongkan ruang penyimpanan kalau hampir penuh',
-            'Kalau masih crash, ekspor data lalu install ulang aplikasi',
-            'Laporkan masalah ke tim dukungan dengan detail crash'
-        ],
-
-        trouble6Title: 'Pengeluaran Hilang',
-        trouble6Desc: 'Kalau tidak bisa menemukan pengeluaran yang sudah dicatat:',
-        trouble6Steps: [
-            'Gunakan fitur pencarian untuk menemukan pengeluaran spesifik',
-            'Cek filter tanggal - pengeluaran mungkin di luar tampilan saat ini',
-            'Lihat di riwayat pengeluaran atau riwayat versi',
-            'Kalau pakai sinkron iCloud, cek di perangkat lain',
-            'Tarik untuk refresh daftar pengeluaran',
-            'Periksa apakah tidak sengaja terhapus (cek yang baru dihapus jika tersedia)'
-        ],
-
-        trouble7Title: 'Masalah Ekspor',
-        trouble7Desc: 'Kalau ada masalah saat mengekspor data:',
-        trouble7Steps: [
-            'Pastikan ada pengeluaran dalam rentang tanggal yang dipilih',
-            'Cek sisa penyimpanan untuk pembuatan PDF/CSV',
-            'Coba rentang tanggal lebih kecil kalau mengekspor data banyak',
-            'Pastikan ada aplikasi yang bisa membuka file PDF atau CSV',
-            'Coba format ekspor berbeda (PDF vs CSV)',
-            'Update aplikasi ke versi terbaru'
-        ],
-
-        feedbackNotice: 'Kami Menghargai Masukan Anda: UangRumah sudah tersedia di App Store. Masukan Anda membantu kami berkembang! Silakan laporkan masalah atau saran ke support@uangrumah.com.',
-
-        stillNeedHelpTitle: 'Masih Perlu Bantuan?',
-        stillNeedHelpDesc: 'Tim dukungan kami siap membantu Anda dengan pertanyaan atau masalah apa pun.',
-        contactSupportButton: 'Hubungi Dukungan',
+  home: {
+    meta: {
+      title: 'UangRumah — Aplikasi catatan pengeluaran yang sederhana dan privat untuk iPhone & iPad',
+      description: 'Catat pengeluaran rumah tangga, atur anggaran bulanan dan mingguan, dan lihat berapa yang masih bisa Anda belanjakan hari ini. Gratis, tanpa iklan, tanpa pelacakan. Bisa offline dan tersinkron lewat iCloud pribadi Anda. Tersedia dalam Bahasa Indonesia, Inggris, dan Melayu.'
     },
-
-    // Privacy Policy Page
+    hero: {
+      badge: 'Rencanakan anggaran 2027 dari sekarang',
+      title: 'Tahu ke mana <span class="hl">uang rumah</span> Anda pergi.',
+      lead: 'UangRumah adalah aplikasi pencatat pengeluaran yang sederhana dan privat untuk iPhone dan iPad. Catat pengeluaran dalam hitungan detik, atur anggaran bulanan atau mingguan, dan lihat berapa yang masih bisa Anda belanjakan hari ini.',
+      proofFree: 'Gratis',
+      proofAds: 'Tanpa iklan',
+      proofTracking: 'Tanpa pelacakan',
+      proofSignup: 'Tanpa daftar akun',
+      floatAllowed: 'Jatah hari ini',
+      floatPrivate: 'Privat sejak awal',
+      floatPrivateSub: 'Tanpa akun, tanpa analitik'
+    },
+    trust: {
+      free: 'Gratis',
+      freeSub: 'Semua fitur tersedia',
+      ads: 'Tanpa iklan',
+      adsSub: 'Tanpa pelacakan',
+      offline: 'Bisa offline',
+      offlineSub: 'Tanpa perlu sinyal',
+      sync: 'Sinkron iCloud',
+      syncSub: 'iPhone dan iPad',
+      langs: '3 bahasa',
+      langsSub: 'ID · EN · MS',
+      currencies: '150+ mata uang',
+      currenciesSub: 'Rupiah, ringgit, dan lainnya'
+    },
+    why: {
+      eyebrow: 'Kenapa UangRumah',
+      title: 'Catatan keuangan yang pas dengan kehidupan sehari-hari',
+      lead: 'Dibuat untuk rumah tangga, dengan ruang untuk usaha sampingan Anda juga.',
+      p1Title: 'Cepat, jadi tidak ketinggalan',
+      p1Text: 'Tambah pengeluaran dengan beberapa ketukan. Nama toko terisi otomatis, tagihan rutin tercatat sendiri, dan Mode Entri Batch membereskan setumpuk struk sekaligus.',
+      p2Title: 'Anggaran yang menunjukkan sisa',
+      p2Text: 'UangRumah mengubah anggaran bulanan atau mingguan Anda menjadi angka harian, sehingga Anda selalu tahu berapa yang boleh dibelanjakan hari ini.',
+      p3Title: 'Privat sejak awal',
+      p3Text: 'Tanpa akun, tanpa iklan, tanpa analitik. Catatan Anda tersimpan di perangkat dan hanya tersinkron lewat iCloud milik Anda sendiri.'
+    },
+    f1: {
+      eyebrow: 'Anggaran',
+      title: 'Lihat berapa yang masih bisa dibelanjakan hari ini',
+      lead: 'Atur anggaran bulanan, mingguan, atau keduanya. UangRumah membandingkan pengeluaran Anda dengan berapa hari yang sudah berlalu, lalu memberi tahu apakah Anda masih sesuai target.',
+      b1: 'Angka harian untuk sisa hari yang ada',
+      b2: 'Status Sesuai Target, Hati-hati, atau Melebihi Anggaran sekilas pandang',
+      b3: 'Peringatan saat Anda mencapai 50%, 75%, 90%, atau 100% dari jatah anggaran sejauh ini',
+      b4: 'Minggu bisa dimulai hari Minggu atau Senin'
+    },
+    f2: {
+      eyebrow: 'Pengeluaran',
+      title: 'Catat pengeluaran dalam hitungan detik',
+      lead: 'Ketuk +, isi nama dan jumlah, selesai. Tambahkan kategori, sumber dana, toko, tanggal, dan catatan kalau ingin lebih detail.',
+      b1: 'Mode Entri Batch membiarkan formulir tetap terbuka untuk struk berikutnya',
+      b2: 'Nama toko terisi otomatis dari riwayat Anda',
+      b3: 'Pengeluaran berulang: harian, mingguan, 2 mingguan, bulanan, triwulanan, atau tahunan',
+      b4: 'Pengingat Pengeluaran harian membantu kebiasaan mencatat'
+    },
+    f3: {
+      eyebrow: 'Dasbor',
+      title: 'Pahami pengeluaran Anda sekilas pandang',
+      lead: 'Dasbor menunjukkan ke mana uang Anda pergi, bagaimana Anda membayarnya, dan perbandingan minggu ini dengan minggu lalu.',
+      b1: 'Grafik kategori teratas bulan ini',
+      b2: 'Pengeluaran per metode pembayaran: tunai, bank, kartu, atau e-wallet',
+      b3: 'Perbandingan minggu ini dengan minggu lalu',
+      b4: 'Cari dan saring berdasarkan tanggal, kategori, sumber dana, atau jumlah'
+    },
+    f4: {
+      eyebrow: 'Buku',
+      title: 'Pisahkan keuangan rumah dan usaha',
+      lead: 'Buat buku kedua untuk usaha sampingan, renovasi, atau proyek besar. Setiap buku punya anggaran, kategori, sumber dana, dan daftar toko sendiri.',
+      b1: 'Hingga 2 buku, pindah dengan sekali ketuk',
+      b2: '15 kategori siap pakai yang bisa diganti nama, warna, dan ditambah',
+      b3: 'Hingga 3 sumber dana (metode pembayaran) per buku',
+      b4: 'Pengingat ringkasan bulanan setiap tanggal 1'
+    },
+    more: {
+      eyebrow: 'Dan lainnya',
+      title: 'Semua yang Anda harapkan',
+      lead: 'Hal-hal kecil yang membuat mencatat lebih mudah setiap hari.',
+      searchTitle: 'Cari & saring',
+      searchText: 'Temukan pengeluaran berdasarkan nama, toko, kategori, sumber dana, tanggal, atau jumlah.',
+      weekTitle: 'Per minggu',
+      weekText: 'Telusuri pengeluaran minggu demi minggu, dikelompokkan per tanggal.',
+      historyTitle: 'Riwayat perubahan',
+      historyText: 'Setiap perubahan pada pengeluaran tersimpan, lengkap dengan bagian yang diubah.',
+      hideTitle: 'Sembunyikan Angka',
+      hideText: 'Samarkan nominal dengan sekali ketuk saat ada orang lain melihat layar.',
+      pdfTitle: 'Laporan PDF',
+      pdfText: 'Bagikan laporan rapi untuk minggu, bulan, tahun ini, atau tanggal pilihan Anda.',
+      csvTitle: 'Ekspor CSV',
+      csvText: 'Buka data Anda di Excel, Numbers, atau Google Sheets.',
+      backupTitle: 'Cadangan & pulihkan',
+      backupText: 'Simpan file cadangan kapan saja. Pemulihan membuat buku baru, jadi tidak ada data yang tertimpa.',
+      themeTitle: 'Terang & gelap',
+      themeText: 'Mengikuti pengaturan sistem, atau pilih sendiri terang atau gelap.',
+      a11yTitle: 'Mudah diakses',
+      a11yText: 'Mendukung VoiceOver dan ukuran teks yang lebih besar.',
+      devicesTitle: 'iPhone & iPad',
+      devicesText: 'Dirancang untuk keduanya, dan tetap tersinkron lewat iCloud.',
+      langTitle: '3 bahasa',
+      langText: 'Bahasa Indonesia, Inggris, dan Melayu. Ganti langsung di aplikasi.',
+      currencyTitle: '150+ mata uang',
+      currencyText: 'Pilih mata uang yang Anda pakai, dari rupiah dan ringgit hingga dolar dan euro.'
+    },
     privacy: {
-        metaDescription: 'Kebijakan Privasi UangRumah - Pelajari bagaimana kami melindungi data keuangan dan menghormati privasi Anda.',
-        title: 'Kebijakan Privasi - UangRumah',
-        heroTitle: 'Kebijakan Privasi',
-        heroSubtitle: 'Privasi Anda penting bagi kami. Pelajari bagaimana kami menjaga data Anda tetap aman.',
-        lastUpdated: 'Terakhir Diperbarui',
-
-        // Section 1: Introduction
-        section1Title: 'Komitmen Privasi Kami',
-        section1Content: 'UangRumah dibangun dengan privasi sebagai fondasi utama. Kami percaya data keuangan Anda adalah milik Anda - dan hanya Anda. Berbeda dengan kebanyakan aplikasi, kami tidak mengumpulkan, melacak, atau menjual informasi pribadi Anda.',
-
-        // Key Privacy Points
-        keyPointsTitle: 'Prinsip Privasi Utama',
-        keyPoint1Title: 'Simpan di Perangkat',
-        keyPoint1Desc: 'Semua data keuangan tersimpan lokal di perangkat Anda secara default. Tidak ada server eksternal, tidak ada database cloud yang kami kendalikan.',
-        keyPoint2Title: 'Tanpa Pengumpulan Data',
-        keyPoint2Desc: 'Kami tidak mengumpulkan analytics, data penggunaan, atau informasi pribadi apa pun. Tidak ada tracking pixel, tidak ada SDK pihak ketiga.',
-        keyPoint3Title: 'iCloud Opsional',
-        keyPoint3Desc: 'Kalau Anda aktifkan sinkron iCloud, data masuk ke akun iCloud pribadi Anda - dikelola Apple dan Apple ID Anda, bukan kami.',
-        keyPoint4Title: 'Bebas Iklan, Tidak Dijual',
-        keyPoint4Desc: 'Kami tidak akan pernah menampilkan iklan atau menjual data Anda. Informasi keuangan Anda tidak pernah dimonetisasi.',
-
-        // Data We Store
-        dataStoredTitle: 'Data yang Tersimpan di Perangkat Anda',
-        dataStoredIntro: 'UangRumah menyimpan informasi berikut secara lokal di perangkat Anda:',
-        dataStored1: 'Catatan pengeluaran (nama, jumlah, merchant, tanggal, kategori, sumber dana)',
-        dataStored2: 'Pengaturan anggaran dan batas peringatan',
-        dataStored3: 'Kategori dan sumber dana yang Anda buat',
-        dataStored4: 'Riwayat merchant untuk saran otomatis',
-        dataStored5: 'Preferensi dan pengaturan aplikasi',
-        dataStored6: 'Konfigurasi pengeluaran rutin',
-
-        // iCloud Section
-        icloudTitle: 'Sinkronisasi iCloud',
-        icloudContent: 'Saat Anda aktifkan sinkron iCloud, data pengeluaran dicadangkan ke akun iCloud pribadi Anda. Ini memungkinkan akses data dari berbagai perangkat Apple. Hal penting:',
-        icloud1: 'Sinkron iCloud nonaktif secara default - Anda harus mengaktifkannya sendiri',
-        icloud2: 'Data terenkripsi saat transfer dan penyimpanan oleh Apple',
-        icloud3: 'Kami tidak punya akses ke data iCloud Anda',
-        icloud4: 'Data Anda tunduk pada Kebijakan Privasi Apple',
-        icloud5: 'Anda bisa nonaktifkan sinkron atau hapus data iCloud kapan saja lewat Pengaturan iOS',
-
-        // What We Don't Do
-        neverTitle: 'Yang Tidak Pernah Kami Lakukan',
-        never1: 'Mengumpulkan informasi identitas pribadi',
-        never2: 'Melacak lokasi atau perilaku Anda',
-        never3: 'Menggunakan layanan analytics (Google Analytics, Firebase, dll.)',
-        never4: 'Memasang SDK atau jaringan iklan',
-        never5: 'Menjual atau membagi data ke pihak ketiga',
-        never6: 'Mengirim data ke server kami (kami tidak punya server)',
-
-        // Your Rights
-        rightsTitle: 'Hak Anda atas Data',
-        rightsIntro: 'Anda punya kontrol penuh atas data Anda:',
-        rights1: 'Akses: Lihat semua data Anda di dalam aplikasi kapan saja',
-        rights2: 'Ekspor: Unduh data dalam format PDF atau CSV',
-        rights3: 'Ubah: Edit atau perbarui catatan mana pun kapan saja',
-        rights4: 'Hapus: Hapus item tertentu atau semua data',
-        rights5: 'Portabilitas: Bawa data Anda lewat fitur ekspor',
-
-        // Security
-        securityTitle: 'Langkah Keamanan',
-        securityIntro: 'Kami mengambil berbagai langkah untuk menjaga data Anda tetap aman:',
-        security1: 'Container aman iOS melindungi penyimpanan lokal',
-        security2: 'Enkripsi iCloud untuk data yang disinkronkan',
-        security3: 'Mode Rahasia untuk sembunyikan info sensitif di tempat umum',
-        security4: 'Tidak ada server backend yang rentan diretas',
-        security5: 'Update rutin untuk mengatasi masalah keamanan',
-
-        // Contact
-        contactTitle: 'Pertanyaan Soal Privasi?',
-        contactContent: 'Kalau ada pertanyaan tentang praktik privasi kami, silakan hubungi kami di support@uangrumah.com. Kami merespons dalam 7 hari kerja.',
-
-        // Footer
-        effectiveDate: 'Tanggal Berlaku',
-        version: 'Versi Aplikasi',
+      eyebrow: 'Privasi',
+      title: 'Urusan uang Anda bukan urusan orang lain',
+      lead: 'UangRumah tidak punya server, tidak punya akun, dan tidak memakai analitik. Kami tidak bisa melihat data Anda, bahkan jika kami mau.',
+      i1Title: 'Tersimpan di perangkat Anda',
+      i1Text: 'Catatan Anda disimpan di iPhone atau iPad, dan semuanya bisa dipakai offline.',
+      i2Title: 'Tersinkron lewat iCloud Anda',
+      i2Text: 'Saat Anda masuk ke iCloud, perangkat Anda tetap tersinkron lewat akun iCloud pribadi Anda. Hanya Apple ID Anda yang bisa mengaksesnya.',
+      i3Title: 'Tanpa iklan, tanpa pelacakan',
+      i3Text: 'Tidak ada analitik, iklan, maupun SDK pihak ketiga di dalam aplikasi.',
+      i4Title: 'Data Anda, bisa Anda bawa',
+      i4Text: 'Ekspor ke PDF atau CSV, atau simpan cadangan lengkap, kapan pun Anda mau.',
+      link: 'Baca kebijakan privasi'
     },
-
-    // Terms & Conditions Page
-    terms: {
-        metaDescription: 'Syarat dan Ketentuan UangRumah - Baca ketentuan penggunaan aplikasi pencatat keuangan kami.',
-        title: 'Syarat & Ketentuan - UangRumah',
-        heroTitle: 'Syarat & Ketentuan',
-        heroSubtitle: 'Mohon baca ketentuan ini sebelum menggunakan UangRumah.',
-        lastUpdated: 'Terakhir Diperbarui',
-
-        // Acceptance
-        acceptanceTitle: 'Persetujuan Ketentuan',
-        acceptanceContent: 'Dengan mengunduh, menginstall, atau menggunakan UangRumah, Anda menyetujui Syarat dan Ketentuan ini. Kalau tidak setuju, mohon jangan gunakan aplikasi ini.',
-
-        // App Store Notice
-        appStoreNoticeTitle: 'Tersedia Sekarang',
-        appStoreNoticeContent: 'UangRumah sudah tersedia di App Store. Kami terus memperbaiki aplikasi berdasarkan masukan Anda. Terima kasih sudah memilih UangRumah!',
-
-        // Description
-        descriptionTitle: 'Tentang UangRumah',
-        descriptionContent: 'UangRumah adalah aplikasi pencatat keuangan rumah tangga untuk iOS yang mengutamakan privasi. Fitur meliputi pencatatan pengeluaran, pengelolaan anggaran, sistem buku kas terpisah, ekspor data, sinkronisasi iCloud, dan lainnya.',
-
-        // Eligibility
-        eligibilityTitle: 'Siapa yang Boleh Menggunakan UangRumah',
-        eligibilityIntro: 'Untuk menggunakan UangRumah, Anda harus:',
-        eligibility1: 'Berusia minimal 18 tahun',
-        eligibility2: 'Memiliki atau menguasai perangkat iOS dengan iOS 16.0 atau lebih baru',
-        eligibility3: 'Memiliki Apple ID yang valid',
-        eligibility4: 'Mematuhi semua hukum yang berlaku',
-
-        // License
-        licenseTitle: 'Lisensi Penggunaan',
-        licenseContent: 'Kami memberikan Anda lisensi terbatas, non-eksklusif, tidak dapat dipindahtangankan untuk mengunduh, menginstall, dan menggunakan UangRumah untuk keperluan pencatatan keuangan pribadi, non-komersial.',
-
-        // Restrictions
-        restrictionsTitle: 'Larangan',
-        restrictionsIntro: 'Anda tidak boleh:',
-        restrictions1: 'Melakukan reverse engineering atau dekompilasi aplikasi',
-        restrictions2: 'Menggunakan aplikasi untuk pembukuan komersial atau persiapan pajak',
-        restrictions3: 'Menyalin, memodifikasi, atau membuat karya turunan',
-        restrictions4: 'Menyewakan, menjual, atau mendistribusikan ulang aplikasi',
-        restrictions5: 'Menggunakan aplikasi untuk tujuan ilegal',
-
-        // User Responsibilities
-        responsibilitiesTitle: 'Tanggung Jawab Pengguna',
-        responsibilitiesIntro: 'Sebagai pengguna, Anda setuju untuk:',
-        responsibilities1: 'Memasukkan informasi keuangan yang akurat',
-        responsibilities2: 'Menjaga keamanan perangkat Anda',
-        responsibilities3: 'Membuat cadangan data penting',
-        responsibilities4: 'Memverifikasi semua perhitungan secara mandiri',
-        responsibilities5: 'Menggunakan aplikasi sesuai hukum yang berlaku',
-
-        // Data Ownership
-        dataTitle: 'Kepemilikan Data',
-        dataContent: 'Anda tetap memiliki hak penuh atas semua data yang Anda masukkan ke UangRumah. Kami tidak mengklaim hak apa pun atas informasi keuangan Anda. Anda bisa mengekspor atau menghapus data kapan saja.',
-
-        // Disclaimer
-        disclaimerTitle: 'Penafian Penting',
-        disclaimerContent: 'UangRumah disediakan "sebagaimana adanya" tanpa jaminan. Kami tidak menjamin keakuratan perhitungan, ketersediaan terus-menerus, atau kesesuaian untuk tujuan tertentu. Aplikasi ini bukan pengganti nasihat keuangan, pajak, atau hukum dari profesional.',
-
-        // Limitation
-        limitationTitle: 'Batasan Tanggung Jawab',
-        limitationContent: 'Kami tidak bertanggung jawab atas kerugian finansial, kehilangan data, atau kerusakan yang timbul dari penggunaan UangRumah. Total tanggung jawab kami terbatas pada jumlah yang Anda bayarkan untuk aplikasi.',
-
-        // Termination
-        terminationTitle: 'Penghentian',
-        terminationContent: 'Anda bisa berhenti menggunakan UangRumah kapan saja dengan menghapus aplikasi. Kami berhak menghentikan aplikasi atau mengubah fitur dengan atau tanpa pemberitahuan.',
-
-        // Changes
-        changesTitle: 'Perubahan Ketentuan',
-        changesContent: 'Kami bisa memperbarui ketentuan ini dari waktu ke waktu. Penggunaan aplikasi setelah perubahan berarti Anda menerima ketentuan baru. Kami akan memberitahu Anda tentang perubahan signifikan lewat aplikasi.',
-
-        // Governing Law
-        governingTitle: 'Hukum yang Berlaku',
-        governingContent: 'Ketentuan ini diatur oleh hukum Indonesia. Setiap sengketa akan diselesaikan di pengadilan Jakarta, Indonesia.',
-
-        // Contact
-        contactTitle: 'Ada Pertanyaan?',
-        contactContent: 'Kalau ada pertanyaan tentang ketentuan ini, hubungi kami di support@uangrumah.com.',
-
-        // Footer
-        effectiveDate: 'Tanggal Berlaku',
-        version: 'Versi Aplikasi',
-        acknowledgment: 'Dengan menggunakan UangRumah, Anda mengakui telah membaca, memahami, dan menyetujui Syarat dan Ketentuan ini.',
+    audience: {
+      eyebrow: 'Dibuat untuk',
+      title: 'Cocok dengan cara Anda mengelola uang',
+      a1Title: 'Rumah tangga',
+      a1Text: 'Satukan belanja harian dan tagihan bulanan dalam satu anggaran, dan lihat ke mana uang rumah pergi.',
+      a2Title: 'Perorangan',
+      a2Text: 'Bangun kebiasaan mencatat setiap hari dan akhirnya tahu ke mana gaji Anda habis setiap bulan.',
+      a3Title: 'Freelancer & usaha sampingan',
+      a3Text: 'Simpan biaya usaha di buku tersendiri, terpisah dari pengeluaran rumah, dan ekspor saat dibutuhkan.'
     },
+    steps: {
+      eyebrow: 'Mulai',
+      title: 'Siap dipakai dalam beberapa menit',
+      lead: 'Aplikasi akan memandu Anda saat pertama kali dibuka.',
+      s1Title: 'Buat buku Anda',
+      s1Text: 'Buku adalah catatan keuangan terpisah. Mulai dengan satu untuk rumah tangga, lalu tambah lagi jika perlu.',
+      s2Title: 'Atur anggaran',
+      s2Text: 'Pilih anggaran bulanan, mingguan, atau keduanya, dan peringatan yang Anda inginkan.',
+      s3Title: 'Tambah pengeluaran',
+      s3Text: 'Ketuk + setiap kali Anda berbelanja. Pilih kategori untuk melihat ke mana uang Anda pergi.',
+      s4Title: 'Pantau kemajuan',
+      s4Text: 'Buka Dasbor untuk tetap sesuai target dan melihat pola pengeluaran Anda.'
+    },
+    specs: {
+      eyebrow: 'Detail',
+      title: 'Yang perlu Anda ketahui',
+      price: 'Harga',
+      priceValue: 'Gratis, tanpa pembelian dalam aplikasi',
+      requires: 'Membutuhkan',
+      requiresValue: 'iOS atau iPadOS 16 atau lebih baru',
+      devices: 'Perangkat',
+      devicesValue: 'iPhone dan iPad',
+      languages: 'Bahasa',
+      languagesValue: 'Indonesia, Inggris, Melayu',
+      currencies: 'Mata uang',
+      currenciesValue: '150+ mata uang dunia',
+      sync: 'Sinkronisasi',
+      syncValue: 'iCloud (Apple CloudKit)',
+      books: 'Buku',
+      booksValue: 'Hingga 2',
+      payment: 'Sumber dana',
+      paymentValue: 'Hingga 3 per buku',
+      export: 'Ekspor',
+      exportValue: 'PDF, CSV, dan file cadangan'
+    },
+    faq: {
+      eyebrow: 'FAQ',
+      title: 'Pertanyaan yang sering diajukan',
+      q1: 'Apakah UangRumah benar-benar gratis?',
+      a1: '<p>Ya. Semua fitur gratis, tanpa iklan dan tanpa pembelian dalam aplikasi.</p>',
+      q2: 'Apakah saya perlu membuat akun?',
+      a2: '<p>Tidak. Tidak ada yang perlu didaftarkan. UangRumah memakai akun iCloud yang sudah ada di perangkat Anda untuk menyinkronkan iPhone dan iPad.</p>',
+      q3: 'Di mana data saya disimpan?',
+      a3: '<p>Di perangkat Anda, dan di akun iCloud pribadi Anda jika Anda masuk ke iCloud. Kami tidak menjalankan server apa pun, jadi data Anda tidak pernah sampai ke kami.</p>',
+      q4: 'Apakah bisa dipakai tanpa internet?',
+      a4: '<p>Bisa. Semua fitur berjalan offline. Perubahan akan tersinkron ke perangkat lain begitu Anda kembali online.</p>',
+      q5: 'Bisakah saya berbagi buku dengan pasangan?',
+      a5: '<p>Untuk saat ini belum. Sinkronisasi berlaku antarperangkat yang memakai Apple ID yang sama. Untuk berbagi angka dengan orang lain, kirimkan laporan PDF atau ekspor CSV.</p>',
+      q6: 'Mata uang dan bahasa apa saja yang didukung?',
+      a6: '<p>Lebih dari 150 mata uang, dan seluruh aplikasi tersedia dalam Bahasa Indonesia, Inggris, dan Melayu. Anda bisa mengganti keduanya kapan saja di <strong>Pengaturan → Preferensi</strong>. Satu mata uang berlaku untuk seluruh aplikasi.</p>',
+      q7: 'Apakah ada versi Android?',
+      a7: '<p>Untuk saat ini belum. UangRumah tersedia untuk iPhone dan iPad dengan iOS atau iPadOS 16 atau lebih baru.</p>',
+      more: 'Jawaban lainnya di Pusat Bantuan'
+    },
+    cta: {
+      title: 'Mulai mencatat hari ini. Gratis.',
+      lead: 'Unduh UangRumah dan atur anggaran pertama Anda dalam beberapa menit.'
+    }
+  },
+
+  help: {
+    meta: {
+      title: 'Pusat Bantuan — UangRumah',
+      description: 'Jawaban atas pertanyaan umum tentang UangRumah: memulai, anggaran, buku, ekspor, cadangan, sinkronisasi iCloud, privasi, dan pemecahan masalah.'
+    },
+    badge: 'Pusat Bantuan',
+    title: 'Ada yang bisa kami bantu?',
+    lead: 'Jawaban atas pertanyaan umum, plus langkah perbaikan untuk sinkronisasi, notifikasi, dan lainnya.',
+    searchLabel: 'Cari di Pusat Bantuan',
+    searchPlaceholder: 'Cari, misalnya "cadangan" atau "peringatan anggaran"',
+    noResults: 'Tidak ada jawaban yang cocok. Coba kata lain, atau kirim email dan kami akan membantu.',
+    topics: {
+      start: 'Memulai',
+      startSub: 'Buku, pengaturan awal, dasar-dasar',
+      budgets: 'Pengeluaran & anggaran',
+      budgetsSub: 'Menambah, peringatan, berulang',
+      data: 'Buku & data Anda',
+      dataSub: 'Ekspor, cadangan, pengaturan',
+      sync: 'Sinkronisasi & privasi',
+      syncSub: 'iCloud dan siapa yang bisa melihat',
+      trouble: 'Pemecahan masalah',
+      troubleSub: 'Solusi untuk masalah umum',
+      contact: 'Hubungi kami',
+      contactSub: 'Kami membalas dalam 1–2 hari kerja'
+    },
+    g1: {
+      title: 'Memulai',
+      q1: 'Bagaimana cara memulai?',
+      a1: '<ol><li>Unduh UangRumah dari App Store.</li><li>Buka aplikasi dan ikuti pengenalan singkatnya. Buku pertama Anda dibuat otomatis.</li><li>Atur anggaran bulanan atau mingguan di <strong>Pengaturan → Anggaran</strong>.</li><li>Periksa kategori dan sumber dana (metode pembayaran) di <strong>Pengaturan</strong>.</li><li>Ketuk <strong>+</strong> di tab <strong>Kelola</strong> untuk menambah pengeluaran pertama.</li><li>Opsional: aktifkan <strong>Pengingat Pengeluaran</strong> di <strong>Pengaturan → Preferensi</strong> untuk pengingat harian.</li></ol>',
+      q2: 'Apa itu buku?',
+      a2: '<p>Buku adalah catatan keuangan terpisah, dengan pengeluaran, anggaran, kategori, sumber dana, dan daftar toko sendiri. Kebanyakan orang memakai satu buku untuk rumah tangga, lalu buku kedua untuk usaha sampingan atau proyek besar. Anda bisa punya hingga 2 buku dan berpindah lewat ikon buku di bagian atas layar.</p>',
+      q3: 'Apakah UangRumah gratis?',
+      a3: '<p>Ya. Semua fitur gratis, tanpa iklan dan tanpa pembelian dalam aplikasi.</p>',
+      q4: 'Perangkat apa saja yang didukung?',
+      a4: '<p>iPhone dan iPad dengan iOS atau iPadOS 16 atau lebih baru. Untuk saat ini belum ada versi Android.</p>'
+    },
+    g2: {
+      title: 'Pengeluaran & anggaran',
+      q1: 'Bagaimana cara menambah pengeluaran?',
+      a1: '<p>Buka tab <strong>Kelola</strong> dan ketuk <strong>+</strong>. Isi nama dan jumlah. Sisanya opsional: toko, kategori, sumber dana, tanggal, dan catatan. Ketuk <strong>Tambah Pengeluaran</strong> untuk menyimpan.</p><p>Untuk mengubah atau menghapus, ketuk pengeluaran atau geser ke kiri.</p>',
+      q2: 'Apa itu Mode Entri Batch?',
+      a2: '<p>Mode Entri Batch memungkinkan Anda menambah beberapa pengeluaran tanpa menutup formulir. Setelah setiap penyimpanan, formulir dikosongkan dan tanggal yang Anda pilih tetap dipakai, jadi memasukkan setumpuk struk jadi cepat. Aktifkan di formulir Tambah Pengeluaran.</p>',
+      q3: 'Bagaimana cara kerja pengeluaran berulang?',
+      a3: '<p>Saat menambah pengeluaran, aktifkan <strong>Pengeluaran Berulang</strong> dan pilih frekuensinya: harian, mingguan, 2 mingguan, bulanan, triwulanan, atau tahunan. Anda bisa menambahkan tanggal berakhir. Saat jatuh tempo, UangRumah mencatatnya otomatis ketika Anda membuka aplikasi.</p>',
+      q4: 'Bagaimana cara kerja peringatan anggaran?',
+      a4: '<p>Atur anggaran di <strong>Pengaturan → Anggaran</strong> dan pilih kapan Anda ingin diingatkan: pada 50%, 75%, 90%, atau 100%. UangRumah membandingkan pengeluaran bulan ini dengan jatah anggaran sampai hari ini, lalu mengirim notifikasi saat Anda mencapai batas tersebut.</p><p>Pastikan notifikasi untuk UangRumah diizinkan di Pengaturan iOS.</p>',
+      q5: 'Apa arti angka harian di Dasbor?',
+      a5: '<p>Itu adalah sisa anggaran dibagi jumlah hari yang tersisa di bulan (atau minggu) ini. Jika Anda berbelanja kurang dari angka ini setiap hari, Anda akan tetap dalam anggaran. Status <strong>Sesuai Target</strong>, <strong>Hati-hati</strong>, atau <strong>Melebihi Anggaran</strong> membandingkan pengeluaran Anda dengan berapa banyak waktu yang sudah berlalu.</p>',
+      q6: 'Apa itu sumber dana?',
+      a6: '<p>Sumber dana adalah cara Anda membayar: tunai, rekening bank, kartu kredit, atau e-wallet. Pilih salah satu saat menambah pengeluaran, dan Dasbor akan menampilkan pengeluaran per metode pembayaran. Setiap buku bisa punya hingga 3 sumber dana. Kelola di <strong>Pengaturan → Sumber Dana</strong>.</p>',
+      q7: 'Apa itu Pengingat Pengeluaran?',
+      a7: '<p>Pengingat ramah untuk mencatat pengeluaran. Pilih jam dan harinya (setiap hari, hari kerja, atau hari pilihan Anda) di <strong>Pengaturan → Preferensi → Pengingat Pengeluaran</strong>.</p>',
+      q8: 'Bisakah saya melihat apa yang berubah pada pengeluaran?',
+      a8: '<p>Bisa. UangRumah menyimpan riwayat perubahan untuk setiap pengeluaran. Buka pengeluaran untuk melihat versi sebelumnya, dengan perubahan yang disorot.</p>'
+    },
+    g3: {
+      title: 'Buku & data Anda',
+      q1: 'Berapa banyak buku yang bisa saya buat?',
+      a1: '<p>Hingga 2 buku. Nama buku maksimal 9 karakter agar pas di bagian atas layar. Kelola buku di <strong>Pengaturan → Buku</strong>.</p>',
+      q2: 'Bagaimana cara mengekspor pengeluaran?',
+      a2: '<p>Di tab <strong>Kelola</strong>, ketuk ikon ekspor, atau buka <strong>Pengaturan → Buat Laporan</strong>. Pilih <strong>PDF</strong> untuk laporan rapi atau <strong>CSV</strong> untuk spreadsheet, pilih rentang tanggal (minggu ini, bulan ini, tahun ini, atau kustom), lalu simpan atau bagikan filenya.</p>',
+      q3: 'Bagaimana cara mencadangkan dan memulihkan data?',
+      a3: '<p>Buka <strong>Pengaturan → Cadangan &amp; Pulihkan</strong>. <strong>Ekspor Cadangan</strong> menyimpan file cadangan buku yang sedang aktif, yang bisa Anda simpan di Files atau bagikan. <strong>Impor Cadangan</strong> memulihkan file cadangan sebagai <strong>buku baru</strong>, jadi data yang ada tidak pernah tertimpa.</p>',
+      q4: 'Bagaimana cara mengganti mata uang atau bahasa?',
+      a4: '<p>Buka <strong>Pengaturan → Preferensi</strong>. Anda bisa memilih Bahasa Indonesia, Inggris, atau Melayu, dan lebih dari 150 mata uang. Mata uang berlaku untuk seluruh aplikasi. Di sana Anda juga bisa memilih tampilan terang, gelap, atau mengikuti sistem.</p>',
+      q5: 'Bagaimana cara menghapus buku?',
+      a5: '<p>Buka <strong>Pengaturan → Buku</strong> dan geser buku ke kiri. Anda akan diminta konfirmasi dua kali, karena menghapus buku akan menghapus permanen semua pengeluaran, anggaran, kategori, dan sumber dananya, di semua perangkat yang tersinkron. Ekspor cadangan dulu jika data itu mungkin masih dibutuhkan.</p>'
+    },
+    g4: {
+      title: 'Sinkronisasi & privasi',
+      q1: 'Bagaimana cara kerja sinkronisasi iCloud?',
+      a1: '<p>Jika Anda masuk ke iCloud, UangRumah tersinkron otomatis antara iPhone dan iPad lewat akun iCloud pribadi Anda, menggunakan CloudKit dari Apple. Tidak ada tombol yang perlu diaktifkan di aplikasi. Gunakan Apple ID yang sama di setiap perangkat. Status sinkronisasi bisa dilihat di <strong>Pengaturan → Sinkronisasi iCloud</strong>.</p><p>Preferensi aplikasi seperti bahasa, mata uang, dan pengingat disimpan di masing-masing perangkat dan tidak ikut tersinkron.</p>',
+      q2: 'Bisakah saya memakai UangRumah tanpa iCloud?',
+      a2: '<p>Bisa. Jika Anda tidak masuk ke iCloud, atau mematikan iCloud untuk UangRumah di Pengaturan iOS, data Anda hanya ada di perangkat itu. Dalam hal ini, ekspor cadangan secara rutin dari <strong>Pengaturan → Cadangan &amp; Pulihkan</strong>, karena menghapus aplikasi juga akan menghapus data Anda.</p>',
+      q3: 'Bisakah keluarga saya melihat pengeluaran saya?',
+      a3: '<p>Hanya orang yang memakai Apple ID Anda di suatu perangkat yang bisa melihat data yang tersinkron. Berbagi buku antar-Apple ID yang berbeda belum didukung. Untuk berbagi angka dengan orang lain, kirimkan laporan PDF atau ekspor CSV.</p>',
+      q4: 'Apakah tim UangRumah bisa melihat data saya?',
+      a4: '<p>Tidak. Kami tidak menjalankan server, tidak ada akun, dan aplikasi tidak berisi kode analitik atau iklan. Data Anda tetap di perangkat dan di akun iCloud pribadi Anda, yang tidak bisa kami akses. Baca <a href="privacy-policy.html">Kebijakan Privasi</a> untuk detailnya.</p>',
+      q5: 'Apa itu Sembunyikan Angka?',
+      a5: '<p>Sembunyikan Angka menyamarkan nominal di layar, berguna saat di tempat umum. Ketuk ikon mata di Dasbor untuk menyembunyikan atau menampilkan nominal, atau atur bawaannya di <strong>Pengaturan → Preferensi</strong>.</p>'
+    },
+    g5: {
+      title: 'Pemecahan masalah',
+      t1: 'Data saya tidak tersinkron antarperangkat',
+      t1Body: '<ol><li>Pastikan setiap perangkat masuk dengan <strong>Apple ID yang sama</strong>.</li><li>Di Pengaturan iOS, ketuk nama Anda → <strong>iCloud</strong> dan pastikan UangRumah diizinkan memakai iCloud.</li><li>Pastikan kedua perangkat terhubung ke internet dan penyimpanan iCloud Anda tidak penuh.</li><li>Buka UangRumah di kedua perangkat dan tunggu beberapa menit. Sinkronisasi pertama setelah instalasi bisa lebih lama.</li><li>Periksa <strong>Pengaturan → Sinkronisasi iCloud</strong> di UangRumah untuk melihat statusnya.</li><li>Masih bermasalah? Mulai ulang kedua perangkat, lalu hubungi kami.</li></ol>',
+      t2: 'Muncul pesan "tidak ada buku" setelah instal di perangkat baru',
+      t2Body: '<p>Saat Anda memasang UangRumah di perangkat lain, buku Anda diunduh dari iCloud di latar belakang. Ini bisa memakan beberapa menit, terutama jika datanya banyak.</p><ol><li>Tetap terhubung ke internet dan biarkan aplikasi terbuka beberapa menit.</li><li>Pastikan Anda masuk dengan Apple ID yang sama dengan perangkat lain.</li><li>Jika Anda tidak memakai iCloud, buat buku baru atau pulihkan dari file cadangan.</li></ol>',
+      t3: 'Saya tidak menerima notifikasi',
+      t3Body: '<ol><li>Buka <strong>Pengaturan → Notifikasi → UangRumah</strong> di iOS dan aktifkan <strong>Izinkan Notifikasi</strong>.</li><li>Di UangRumah, periksa <strong>Pengaturan → Preferensi</strong> untuk memastikan notifikasi dan Pengingat Pengeluaran aktif.</li><li>Peringatan anggaran membutuhkan anggaran: atur di <strong>Pengaturan → Anggaran</strong>.</li><li>Pastikan mode Fokus tidak membisukan UangRumah.</li></ol>',
+      t4: 'Angka di Dasbor terlihat salah',
+      t4Body: '<ol><li>Pastikan Anda melihat buku yang benar (ikon buku di bagian atas).</li><li>Periksa tanggal pengeluaran terbaru, karena hanya pengeluaran di bulan atau minggu berjalan yang dihitung.</li><li>Periksa hari awal minggu (Minggu atau Senin) di pengaturan anggaran.</li><li>Jika Anda baru menambah pengeluaran di perangkat lain, beri waktu sebentar untuk sinkronisasi iCloud.</li></ol>',
+      t5: 'Aplikasi tertutup sendiri atau tidak mau terbuka',
+      t5Body: '<ol><li>Perbarui UangRumah ke versi terbaru dari App Store.</li><li>Perbarui iOS atau iPadOS, lalu mulai ulang perangkat.</li><li>Pastikan masih ada ruang penyimpanan kosong di perangkat.</li><li>Kirim email kepada kami berisi model perangkat, versi iOS, dan apa yang terjadi sebelum aplikasi tertutup.</li></ol><p><strong>Sebelum memasang ulang:</strong> jika Anda tidak memakai iCloud, menghapus aplikasi juga menghapus data Anda. Ekspor cadangan dulu jika memungkinkan.</p>'
+    },
+    req: {
+      title: 'Persyaratan sistem',
+      body: '<strong>iPhone atau iPad</strong> dengan iOS atau iPadOS 16 atau lebih baru. iCloud bersifat opsional dan dipakai untuk sinkronisasi antarperangkat Anda.'
+    },
+    contact: {
+      title: 'Masih butuh bantuan?',
+      lead: 'Kirim email kepada kami, biasanya kami membalas dalam 1–2 hari kerja.'
+    }
+  },
+
+  contact: {
+    meta: {
+      title: 'Kontak — UangRumah',
+      description: 'Hubungi tim UangRumah lewat email untuk bantuan, laporan bug, dan ide fitur.'
+    },
+    badge: 'Kontak',
+    title: 'Kami siap membantu',
+    lead: 'Punya pertanyaan, laporan bug, atau ide untuk UangRumah? Kirim email kepada kami. Kami membaca setiap pesan.',
+    emailTitle: 'Dukungan lewat email',
+    emailText: 'Cara tercepat menghubungi kami. Anda juga bisa menulis dari aplikasi: Pengaturan → Hubungi Pengembang.',
+    emailSubject: 'Dukungan UangRumah',
+    responseLabel: 'Waktu balasan',
+    responseValue: 'Biasanya 1–2 hari kerja',
+    hoursLabel: 'Jam kerja',
+    hoursValue: 'Senin–Jumat, 09.00–17.00 WIB',
+    langLabel: 'Kami membalas dalam',
+    langValue: 'Bahasa Indonesia atau Inggris',
+    locationLabel: 'Berbasis di',
+    locationValue: 'Jakarta, Indonesia',
+    beforeTitle: 'Sebelum menulis',
+    beforeLead: 'Mungkin jawabannya sudah tersedia.',
+    faqTitle: 'Pusat Bantuan',
+    faqText: 'Jawaban seputar anggaran, buku, ekspor, cadangan, dan lainnya.',
+    troubleTitle: 'Pemecahan masalah',
+    troubleText: 'Langkah perbaikan untuk sinkronisasi, notifikasi, dan aplikasi yang tertutup sendiri.',
+    privacyTitle: 'Privasi',
+    privacyText: 'Bagaimana data Anda disimpan dan siapa yang bisa melihatnya.',
+    open: 'Buka',
+    includeTitle: 'Yang perlu disertakan dalam email',
+    includeLead: 'Beberapa detail ini membantu kami menyelesaikan masalah lebih cepat.',
+    deviceTitle: 'Perangkat Anda',
+    device1: 'Model iPhone atau iPad',
+    device2: 'Versi iOS atau iPadOS',
+    appTitle: 'Aplikasi',
+    app1: 'Versi UangRumah (Pengaturan → Tentang)',
+    app2: 'Apakah Anda memakai sinkronisasi iCloud',
+    issueTitle: 'Apa yang terjadi',
+    issue1: 'Apa yang sedang Anda lakukan',
+    issue2: 'Apa yang terjadi, dan pesan error jika ada',
+    stepsTitle: 'Cara mengulanginya',
+    steps1: 'Langkah-langkah yang memicu masalah',
+    steps2: 'Tangkapan layar, jika memungkinkan',
+    ideasTitle: 'Punya ide?',
+    ideasText: 'Usulan fitur sangat kami terima. Ceritakan apa yang Anda ingin UangRumah lakukan, dan kenapa itu membantu.'
+  },
+
+  privacy: {
+    meta: {
+      title: 'Kebijakan Privasi — UangRumah',
+      description: 'Cara UangRumah menangani data Anda: tersimpan di perangkat, tersinkron lewat iCloud pribadi Anda, tanpa akun, tanpa analitik, tanpa iklan.'
+    },
+    badge: 'Legal',
+    title: 'Kebijakan Privasi',
+    lead: 'Ringkasnya: data keuangan Anda tetap di perangkat Anda dan di iCloud milik Anda sendiri. Kami tidak mengumpulkan, melihat, atau menjualnya.',
+    updated: 'Terakhir diperbarui: 22 November 2026',
+    effective: 'Berlaku: 22 November 2026',
+    toc: 'Di halaman ini',
+    s1: {
+      title: 'Ringkasan',
+      body: '<div class="summary-grid"><div><b>Kami tidak mengumpulkan apa pun</b><p>Tanpa akun, analitik, pelacakan, maupun iklan di aplikasi.</p></div><div><b>Tersimpan di perangkat Anda</b><p>Catatan Anda disimpan di iPhone atau iPad dan bisa dipakai offline.</p></div><div><b>Tersinkron lewat iCloud Anda</b><p>Saat Anda masuk ke iCloud, data tersinkron lewat akun iCloud pribadi Anda. Kami tidak bisa mengaksesnya.</p></div><div><b>Tanpa iklan, tidak dijual</b><p>Informasi keuangan Anda tidak pernah ditampilkan ke pengiklan, dibagikan, atau dijual.</p></div></div>'
+    },
+    s2: {
+      title: 'Tentang kami',
+      body: '<p>UangRumah adalah aplikasi independen yang dikembangkan oleh Prayudi Satriyo di Jakarta, Indonesia ("kami"). Kebijakan ini menjelaskan bagaimana aplikasi UangRumah untuk iPhone dan iPad serta situs uangrumah.com menangani informasi. Jika ada pertanyaan, kirim email ke <a href="mailto:support@uangrumah.com">support@uangrumah.com</a>.</p>'
+    },
+    s3: {
+      title: 'Informasi yang kami kumpulkan',
+      body: '<p><strong>Kami tidak mengumpulkan informasi pribadi.</strong> UangRumah tidak memerlukan pendaftaran, kami tidak mengoperasikan server yang menerima data Anda, dan aplikasi tidak berisi SDK analitik, pelaporan crash, iklan, atau pihak ketiga lainnya.</p><p>Jika Anda memilih untuk berbagi analitik dengan pengembang aplikasi di iOS (<strong>Pengaturan → Privasi &amp; Keamanan → Analitik &amp; Peningkatan</strong>), Apple dapat memberikan kepada kami statistik crash dan penggunaan yang anonim dan teragregasi. Hal ini dikendalikan oleh Apple dan dapat Anda matikan kapan saja.</p><p>Jika Anda mengirim email kepada kami, kami menerima alamat email Anda dan isi pesan yang Anda kirim, dan hanya menggunakannya untuk membalas Anda.</p>'
+    },
+    s4: {
+      title: 'Data yang tersimpan di perangkat Anda',
+      body: '<p>Agar dapat berfungsi, aplikasi menyimpan hal-hal berikut di perangkat Anda:</p><ul><li>Pengeluaran: nama, jumlah, toko, tanggal, kategori, sumber dana, dan catatan</li><li>Riwayat perubahan pengeluaran</li><li>Buku, anggaran, dan ambang peringatan</li><li>Kategori, sumber dana, dan toko yang Anda buat</li><li>Pengaturan pengeluaran berulang</li><li>Preferensi aplikasi seperti bahasa, mata uang, tampilan, pengingat, dan Sembunyikan Angka</li></ul><p>Data ini dilindungi oleh keamanan iOS, termasuk kode sandi perangkat Anda.</p>'
+    },
+    s5: {
+      title: 'Sinkronisasi iCloud',
+      body: '<p>UangRumah menggunakan CloudKit dari Apple untuk menyinkronkan buku Anda di perangkat yang masuk dengan Apple ID yang sama. <strong>Sinkronisasi berjalan otomatis saat Anda masuk ke iCloud dan iCloud diizinkan untuk UangRumah.</strong> Tidak ada tombol terpisah di dalam aplikasi.</p><ul><li>Data Anda disimpan di database iCloud <strong>pribadi</strong> Anda, yang hanya bisa diakses oleh Apple ID Anda. Kami tidak memiliki akses.</li><li>Apple mengenkripsi data iCloud saat dikirim dan saat disimpan. iCloud tunduk pada Kebijakan Privasi Apple.</li><li>Untuk menghentikan sinkronisasi, buka Pengaturan iOS, ketuk nama Anda → <strong>iCloud</strong>, lalu matikan iCloud untuk UangRumah. Data Anda kemudian hanya ada di perangkat itu.</li><li>Preferensi aplikasi (bahasa, mata uang, tampilan, pengingat) tetap di masing-masing perangkat dan tidak tersinkron.</li></ul>'
+    },
+    s6: {
+      title: 'Notifikasi',
+      body: '<p>Peringatan anggaran, Pengingat Pengeluaran, dan ringkasan bulanan dijadwalkan secara lokal di perangkat Anda. Apple dapat mengirimkan notifikasi latar belakang tanpa suara untuk memberi tahu aplikasi bahwa data iCloud Anda berubah. Notifikasi ini tidak berisi konten pribadi.</p>'
+    },
+    s7: {
+      title: 'Ekspor dan cadangan',
+      body: '<p>Laporan PDF, ekspor CSV, dan file cadangan dibuat di perangkat Anda dan disimpan atau dibagikan ke mana pun Anda pilih (misalnya aplikasi Files, email, atau aplikasi pesan). Setelah dibagikan, privasi file tersebut bergantung pada tempat Anda menyimpannya.</p>'
+    },
+    s8: {
+      title: 'Yang tidak pernah kami lakukan',
+      body: '<ul><li>Meminta Anda membuat akun atau mengumpulkan nama, email, atau nomor telepon Anda di aplikasi</li><li>Melacak lokasi atau perilaku Anda di aplikasi dan situs lain</li><li>Menggunakan layanan analitik seperti Google Analytics atau Firebase</li><li>Menyertakan SDK iklan atau menampilkan iklan</li><li>Menjual, menyewakan, atau membagikan data Anda kepada pihak ketiga</li><li>Mengirim data keuangan Anda ke server kami (kami tidak punya server)</li></ul>'
+    },
+    s9: {
+      title: 'Pilihan dan hak Anda',
+      body: '<p>Anda memegang kendali penuh atas data Anda, langsung di dalam aplikasi:</p><ul><li><strong>Akses dan koreksi:</strong> lihat dan ubah setiap catatan kapan saja.</li><li><strong>Ekspor:</strong> unduh data Anda sebagai PDF, CSV, atau file cadangan.</li><li><strong>Hapus:</strong> hapus pengeluaran satu per satu atau seluruh buku. Menghapus aplikasi akan menghapus data lokal. Untuk menghapus data yang tersinkron, buka Pengaturan iOS → nama Anda → iCloud → Kelola Penyimpanan Akun.</li></ul><p>Karena kami tidak menyimpan data Anda, kami tidak dapat mengakses, mengoreksi, atau menghapusnya untuk Anda, tetapi kami dengan senang hati menjelaskan caranya.</p>'
+    },
+    s10: {
+      title: 'Anak-anak',
+      body: '<p>UangRumah tidak ditujukan untuk anak di bawah 13 tahun. Kami tidak dengan sengaja mengumpulkan informasi dari siapa pun, termasuk anak-anak.</p>'
+    },
+    s11: {
+      title: 'Situs ini',
+      body: '<p>uangrumah.com adalah situs statis yang di-hosting di GitHub Pages. Situs ini tidak memakai cookie, analitik, atau iklan. Pilihan bahasa dan tema Anda disimpan di penyimpanan lokal browser dan tidak pernah meninggalkan perangkat Anda. GitHub dapat mencatat informasi teknis seperti alamat IP untuk keperluan keamanan, sesuai pernyataan privasi GitHub.</p>'
+    },
+    s12: {
+      title: 'Perubahan kebijakan ini',
+      body: '<p>Jika kami mengubah kebijakan ini, kami akan memperbarui tanggal di bagian atas halaman. Jika perubahan berdampak besar pada cara data Anda ditangani, kami juga akan menyampaikannya di aplikasi atau di catatan rilis App Store.</p>'
+    },
+    s13: {
+      title: 'Kontak',
+      body: '<p>Ada pertanyaan tentang privasi? Kirim email ke <a href="mailto:support@uangrumah.com">support@uangrumah.com</a>. Kami berusaha membalas dalam 7 hari kerja.</p>'
+    }
+  },
+
+  terms: {
+    meta: {
+      title: 'Ketentuan Penggunaan — UangRumah',
+      description: 'Ketentuan penggunaan aplikasi pencatat pengeluaran UangRumah untuk iPhone dan iPad.'
+    },
+    badge: 'Legal',
+    title: 'Ketentuan Penggunaan',
+    lead: 'Harap baca ketentuan ini sebelum menggunakan UangRumah. Kami menulisnya sejelas mungkin.',
+    updated: 'Terakhir diperbarui: 22 November 2026',
+    effective: 'Berlaku: 22 November 2026',
+    toc: 'Di halaman ini',
+    s1: {
+      title: 'Persetujuan atas ketentuan ini',
+      body: '<p>Dengan mengunduh, memasang, atau menggunakan UangRumah, Anda menyetujui Ketentuan Penggunaan ini. Jika Anda tidak setuju, mohon jangan gunakan aplikasi ini.</p>'
+    },
+    s2: {
+      title: 'Tentang UangRumah',
+      body: '<p>UangRumah adalah aplikasi pencatat pengeluaran yang mengutamakan privasi untuk iPhone dan iPad. Aplikasi ini memungkinkan Anda mencatat pengeluaran, mengatur anggaran, memakai buku terpisah, mengekspor laporan, dan menyinkronkan data lewat akun iCloud Anda sendiri.</p>'
+    },
+    s3: {
+      title: 'Siapa yang dapat menggunakan UangRumah',
+      body: '<p>Untuk menggunakan UangRumah, Anda harus:</p><ul><li>Berusia minimal 18 tahun</li><li>Memiliki atau menguasai iPhone atau iPad dengan iOS atau iPadOS 16 atau lebih baru</li><li>Memiliki Apple ID yang valid</li><li>Mematuhi semua hukum yang berlaku bagi Anda</li></ul>'
+    },
+    s4: {
+      title: 'Lisensi Anda',
+      body: '<p>Kami memberi Anda lisensi terbatas, non-eksklusif, dan tidak dapat dialihkan untuk mengunduh, memasang, dan menggunakan UangRumah di perangkat Apple yang Anda miliki atau kuasai, untuk mencatat pengeluaran pribadi, rumah tangga, atau usaha kecil Anda.</p>'
+    },
+    s5: {
+      title: 'Larangan',
+      body: '<p>Anda tidak boleh:</p><ul><li>Melakukan rekayasa balik atau dekompilasi aplikasi</li><li>Menyalin, memodifikasi, atau membuat karya turunan dari aplikasi</li><li>Menyewakan, menjual, atau mendistribusikan ulang aplikasi</li><li>Menggunakan aplikasi untuk tujuan yang melanggar hukum</li></ul>'
+    },
+    s6: {
+      title: 'Bukan nasihat profesional',
+      body: '<p>UangRumah adalah alat pencatatan. Aplikasi ini bukan pengganti perangkat lunak akuntansi profesional, maupun nasihat keuangan, pajak, atau hukum. Jika Anda memakainya untuk mencatat pengeluaran usaha, Anda bertanggung jawab untuk memeriksa angka-angkanya serta memenuhi kewajiban pelaporan dan pajak Anda sendiri.</p>'
+    },
+    s7: {
+      title: 'Tanggung jawab Anda',
+      body: '<p>Saat menggunakan UangRumah, Anda setuju untuk:</p><ul><li>Memasukkan informasi yang akurat</li><li>Menjaga keamanan perangkat dan Apple ID Anda</li><li>Menyimpan cadangan data yang penting bagi Anda</li><li>Memeriksa sendiri perhitungan yang penting</li><li>Menggunakan aplikasi sesuai hukum</li></ul>'
+    },
+    s8: {
+      title: 'Data Anda',
+      body: '<p>Anda memiliki seluruh data yang Anda masukkan ke UangRumah. Kami tidak mengklaim hak apa pun atasnya. Data Anda disimpan di perangkat Anda dan, saat Anda masuk ke iCloud, di akun iCloud pribadi Anda. Kami tidak memiliki salinannya dan tidak dapat memulihkannya untuk Anda, jadi simpanlah cadangan. Anda dapat mengekspor atau menghapus data kapan saja. Lihat <a href="privacy-policy.html">Kebijakan Privasi</a> untuk detailnya.</p>'
+    },
+    s9: {
+      title: 'Penafian',
+      body: '<p>UangRumah disediakan "sebagaimana adanya", tanpa jaminan apa pun. Kami tidak menjamin bahwa perhitungan akan selalu akurat, bahwa aplikasi akan selalu tersedia atau bebas kesalahan, atau bahwa aplikasi cocok untuk tujuan tertentu.</p>'
+    },
+    s10: {
+      title: 'Batasan tanggung jawab',
+      body: '<p>Sejauh diizinkan oleh hukum, kami tidak bertanggung jawab atas kerugian finansial, kehilangan data, atau kerugian lain yang timbul dari penggunaan UangRumah. Total tanggung jawab kami terbatas pada jumlah yang Anda bayarkan untuk aplikasi.</p>'
+    },
+    s11: {
+      title: 'Berhenti menggunakan',
+      body: '<p>Anda dapat berhenti menggunakan UangRumah kapan saja dengan menghapus aplikasi. Kami dapat mengubah, menangguhkan, atau menghentikan aplikasi atau fitur apa pun, dengan atau tanpa pemberitahuan.</p>'
+    },
+    s12: {
+      title: 'Perubahan ketentuan',
+      body: '<p>Kami dapat memperbarui ketentuan ini dari waktu ke waktu dan akan mengubah tanggal di bagian atas halaman ini. Jika Anda terus menggunakan aplikasi setelah perubahan, berarti Anda menerima ketentuan yang diperbarui. Kami akan memberi tahu perubahan penting di aplikasi atau di catatan rilis App Store.</p>'
+    },
+    s13: {
+      title: 'Hukum yang berlaku',
+      body: '<p>Ketentuan ini diatur oleh hukum Republik Indonesia. Setiap sengketa akan diselesaikan di pengadilan di Jakarta, Indonesia.</p>'
+    },
+    s14: {
+      title: 'Kontak',
+      body: '<p>Ada pertanyaan tentang ketentuan ini? Kirim email ke <a href="mailto:support@uangrumah.com">support@uangrumah.com</a>.</p><p>Dengan menggunakan UangRumah, Anda menyatakan telah membaca, memahami, dan menyetujui Ketentuan Penggunaan ini.</p>'
+    }
+  },
+
+  notFound: {
+    meta: { title: 'Halaman tidak ditemukan — UangRumah', description: 'Halaman ini tidak dapat ditemukan.' },
+    title: 'Halaman ini tidak ada',
+    lead: 'Tautannya mungkin sudah lama, atau halamannya sudah dipindah. Coba beranda atau Pusat Bantuan.'
+  }
 };
